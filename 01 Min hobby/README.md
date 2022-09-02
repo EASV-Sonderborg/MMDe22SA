@@ -1,5 +1,5 @@
 # Opgave 1 – Min hobby
-
+*Du skal lave en HTML side hvor du fortæller om en hobby eller interesse du har. Formålet er at opnå kendskab til HTML og semantisk markup.*
 
 ## Mandag
 
