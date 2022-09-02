@@ -4,7 +4,10 @@
 ## Mandag
 
 
-
+- Tekster
+- Overskrifter
+- Billeder
+- Links til andre (eksterne) sider
 
 I skal inkludere følgende HTML tags i jeres løsning
 
@@ -17,6 +20,8 @@ I skal inkludere følgende HTML tags i jeres løsning
 - 1-3 undersider
 - 
 
+### Validering
+Du skal validere din side via https://validator.w3.org/#validate_by_upload
 
 
 ## Bonus opgaver
