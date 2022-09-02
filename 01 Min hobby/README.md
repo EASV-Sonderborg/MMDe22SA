@@ -10,3 +10,6 @@ Derudover er I velkommen til at lege med
 ```html
 <em>, <strong>, <ul>, <li>
 ```
+
+
+Læs mere om bgcolor: https://www.geeksforgeeks.org/html-body-bgcolor-attribute/
