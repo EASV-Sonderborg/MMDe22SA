@@ -16,7 +16,7 @@ I skal inkludere følgende HTML tags i jeres løsning
 ```
 
 ## Tirsdag
-- Menu
+- Menu (navigation)
 - 1-3 undersider
 - 
 
