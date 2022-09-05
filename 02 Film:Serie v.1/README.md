@@ -10,7 +10,7 @@ _Du skal lave en HTML side for en film eller TV serie efter eget valg._
 
 Du skal inkludere følgende HTML tags i din løsning
 
-```html
+```html 
 <section>, <article>, <nav>, <header>, <footer>
 ```
 
@@ -18,6 +18,7 @@ Du skal inkludere følgende HTML tags i din løsning
 
 -
 - Valider din HTML kode mod W3C HTML standarden - https://validator.w3.org/#validate_by_upload
+- Valider din CSS - https://jigsaw.w3.org/css-validator/#validate_by_upload
 
 ## Bonus opgaver
 
