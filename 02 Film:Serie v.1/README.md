@@ -11,19 +11,7 @@ _Du skal lave en HTML side for en film eller TV serie efter eget valg._
 Du skal inkludere følgende HTML tags i din løsning
 
 ```html
-<section>
-  ,
-  <article>
-    ,
-    <nav>
-      ,
-      <header>
-        ,
-        <footer></footer>
-      </header>
-    </nav>
-  </article>
-</section>
+<section>, <article>, <nav>, <header>, <footer>
 ```
 
 ## Tirsdag
