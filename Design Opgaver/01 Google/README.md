@@ -9,7 +9,7 @@ For at hjælpe dig på vej er der flere design elementer inkluderet i filen.
 Du finder også de anvendte farver under "Library".
 
 ### Hints
-Den skrifttype som Google bruger er ```Arial````.
+Den skrifttype som Google bruger hedder Arial.
 
 ### Resourcer
 Getting started with Adobe XD: https://www.adobe.com/products/xd/learn/design/layout/design-prototype-website-adobexd.html
