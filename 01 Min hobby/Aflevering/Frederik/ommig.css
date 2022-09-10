@@ -5,7 +5,7 @@
     font-family: 'Venada', sans-serif;
 }
 
-.hero {
+main {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(20, 20, 20,0.95),rgba(20, 20, 20,0.90));
