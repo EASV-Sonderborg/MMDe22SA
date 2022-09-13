@@ -1,0 +1,90 @@
+
+body 
+
+
+
+.overskrift {
+    text-align: center;
+    font-size: 5rem;
+    color:rgb(49, 48, 42); 
+    background-color: rgb(240, 228, 221);
+    margin: 0;
+    }
+
+.information-p1 {
+    text-decoration: underline;
+    text-align: center;
+    margin: 10px;
+}
+
+.slagmarken-lol {
+    text-align: left;
+}
+
+
+
+
+
+.roller-forklaret {
+text-align: center;
+    max-width: 100%;
+    margin: 0;
+}
+
+.li-1 {
+    text-align: center; 
+    font-weight: bold;
+    color: red
+}
+
+.li-2 {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+
+
+.li-3 {
+    text-align: center;
+    font-weight: bold;
+    color: red
+
+
+    }
+
+.li-4 {
+    text-align: center;
+    font-weight: bold;
+    color: red
+
+}
+
+.li-5 {
+    text-align: center;
+    font-weight: bold;
+    color: red
+}
+
+.antal-karakter {
+padding: 20px;
+text-align: center;
+
+} 
+
+
+.testimonial-grid {
+    display: grid;
+     gap: 1rem;
+     grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 400px 400px 400px;
+} 
+
+.information-p1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
