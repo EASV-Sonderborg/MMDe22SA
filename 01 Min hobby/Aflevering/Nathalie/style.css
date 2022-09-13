@@ -1,0 +1,157 @@
+/*disse er for alle siderne */
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(255, 244, 250);
+}
+
+.index {
+    background-color: rgb(245, 254, 255);
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*Disse er for forsiden */
+.forside-info {
+    background-color: rgb(245, 254, 255);
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+.forside-info {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.forside-top-h1 {
+    grid-column: span 2;
+    text-align: center;
+}
+.forside-top-p {
+    grid-column: span 2;
+}
+.stort-billede {
+    grid-column: span 2;
+}
+
+
+/*Disse er for hobby siden */
+.hobby-side {
+    background-color: rgb(245, 254, 255);
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+}
+.hobby-side {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.hobby-top-h1 {
+    grid-column: span 2;
+    text-align: center;
+}
+.hobby-top-p {
+    grid-column: span 2;
+    text-align: center;
+}
+
+
+/*Disse er for CV siden */
+.cv-side {
+    background-color: rgb(245, 254, 255);
+    padding: 1rem;
+    border: 1px solid black;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+.nathalie-profilbillede-cv-side {
+    max-width: 100%;
+    width: 50%;
+}
+.cv-side-h1 {
+    grid-column: span 2;
+}
+.cv-side-h2 {
+    background-color: powderblue;
+    grid-column: span 2;
+    max-width: 100%;
+}
+.cv-side-min-info {
+    grid-column: span 2;
+}
+.cv-side-om-mig {
+    grid-column: span 2;
+}
+.cv-side-h4 {
+    text-align: center;
+}
+.cv-side-nathalie-info {
+    text-align: center;
+}
+.cv-side-h1 {
+    text-align: center;
+    max-width: 100%;
+}
+.cv-side-h2 {
+    text-align: center;
+    max-width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+.table {
+    padding: 1rem;
+    border: 1px solid black;
+}
+td {
+    padding: 0.5rem;
+}
+.cv-side-info {
+    grid-column: span 2;
+}
+.cv-side-table {
+    grid-column: span 2;
+}
+
+
+/*Dette er for visitkort siden */
+.card {
+    border: 15px outset;
+    margin: 5rem auto 0 auto;
+    background-color: rgb(221, 250, 254);
+    border: 2px solid black;
+    width: 450px;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr;
+}
+.card-side-h1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+.card-side-img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+.card.side.h3 {
+    margin-bottom: 0.5rem;
+}
+.card-side-p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
