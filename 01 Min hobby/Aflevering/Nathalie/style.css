@@ -16,6 +16,13 @@ body {
 img {
     max-width: 100%;
 }
+.menu {
+    font-family: "Roboto Flex Normal";
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #060606;
+}
 
 
 /*Disse er for forsiden */
@@ -34,9 +41,18 @@ img {
 .forside-top-h1 {
     grid-column: span 2;
     text-align: center;
+    font-family: "Roboto Flex Normal";
+    font-weight: bold;
+    font-size: 32px;
+    color: #060606;
 }
 .forside-top-p {
     grid-column: span 2;
+    font-family: "Roboto Flex Normal";
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #060606;
 }
 .stort-billede {
     grid-column: span 2;
