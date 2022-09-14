@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Venada', sans-serif;
+
 }
+
 
 main {
     width: 100%;
@@ -40,6 +42,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    font-family: "Roboto Slab";
+    font-weight: bold;
     color: white;
     font-size: 17px;
     transition: 0.5s;
@@ -53,6 +57,8 @@ nav ul li a:hover {
     width: 100%;
     margin: auto;
     color: white;
+    font-family: "Roboto Slab";
+    font-weight: bold;
 }
 article img {
     border-top-left-radius: 20px;
@@ -73,7 +79,8 @@ article {
 
 article h2 {
     padding-top: 1rem;
-    text-transform: uppercase;
+    font-family: "Roboto Slab";
+    font-weight: bold;
 }
 
 article p {
@@ -81,6 +88,8 @@ article p {
 }
 
 article a {
+    font-family: "Roboto Slab";
+    font-weight: bold;
     text-decoration: none;
     color: white;
     border: 2px white;
