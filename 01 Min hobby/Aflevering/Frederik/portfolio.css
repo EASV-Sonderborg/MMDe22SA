@@ -38,6 +38,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    font-family: "Roboto Slab";
+    font-weight: bold;
     color: white;
     font-size: 17px;
     transition: 0.5s;
