@@ -25,7 +25,17 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-
+footer {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
 nav .logo {
     width: 50px;
 }
