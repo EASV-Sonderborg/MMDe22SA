@@ -3,6 +3,7 @@ body {
     width: 50%;
     margin: 0 auto;
     background-color: rgb(255, 244, 250);
+    /* background-image:  ; */
 }
 
 .index {
@@ -11,17 +12,40 @@ body {
     border: 1px solid black;
     margin-top: 1rem;
     margin-bottom: 0rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-img {
-    max-width: 100%;
+li {
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    list-style-type: none;
+    text-align: center;
 }
+
 .menu {
     font-family: "Roboto Flex Normal";
     font-weight: bold;
-    font-size: 24px;
-    text-align: left;
+    font-size: 16px;
     color: #060606;
+}
+.alm-billede {
+    max-width: 100%;
+    width: auto;
+}
+img {
+    max-width: 100%;
+}
+.photo-by {
+    text-align: bottom;
+}
+.footer {
+    background-color: rgb(181, 181, 181);
+    margin-top: 1rem;
+}
+.footer-p {
+    text-align: center;
 }
 
 
@@ -41,22 +65,47 @@ img {
 .forside-top-h1 {
     grid-column: span 2;
     text-align: center;
-    font-family: "Roboto Flex Normal";
-    font-weight: bold;
-    font-size: 32px;
-    color: #060606;
 }
 .forside-top-p {
     grid-column: span 2;
-    font-family: "Roboto Flex Normal";
-    font-weight: normal;
-    font-size: 16px;
-    text-align: left;
-    color: #060606;
 }
 .stort-billede {
+    max-width: 100%;
+    border: 2px solid black;
     grid-column: span 2;
 }
+.hobby-forside-billede {
+    max-width: 100%;
+    border: 2px solid black;
+}
+.cv-forside-billede {
+    max-width: 100%;
+    border: 2px solid black;
+}
+.visitkort-forside-billede {
+    max-width: 100%;
+    border: 2px solid black;
+}
+.portfolio-forside-billede {
+    max-width: 100%;
+    border: 2px solid black;
+}
+.photo-by-v {
+    font-size: 0.6rem;
+    text-align: left;
+}
+.photo-by-h {
+    font-size: 0.6rem;
+    text-align: right;
+}
+.forside-tekst-2 {
+        flex-grow: 1;
+}
+.info-boks {
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /*Disse er for hobby siden */
@@ -79,6 +128,21 @@ img {
 .hobby-top-p {
     grid-column: span 2;
     text-align: center;
+}
+.the-imitation-game-billede {
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.minecraft-billede {
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid black;
+}
+.billede-af-kamera {
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid black;
 }
 
 
