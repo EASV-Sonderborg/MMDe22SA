@@ -118,7 +118,7 @@ article h2 {
     transform: translate(-50%, -50%);
 }
 article p {
-    font-family: "Venada";
+    font-family: Venada, sans-serif;
     position: absolute;
     text-align: center;
     top: 50%;
