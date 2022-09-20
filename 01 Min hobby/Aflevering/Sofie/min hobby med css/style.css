@@ -4,6 +4,51 @@ body {
     align-items: center;
 }
 
+/*Footer - den giver lidt issues på min hobby side*/
+footer {
+    margin-top: 3rem;
+    background-color: #F6F4F1;
+    width: 100%;
+    height: 9rem;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "footerlogo locateme"
+    "footerlogo locateme";
+}
+
+.footerlogo {
+    grid-area: footerlogo;
+    /*dette fik mit logo til at sætte sig i midten vertikalt*/
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    /*the end*/
+    padding-left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+}
+
+.locateme {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 50%;
+    grid-area: locateme;
+    text-align: center;
+    justify-content: center;
+}
+
+.locateme img {
+    margin-top: 4rem;
+    padding: 0 0.3rem; 
+    width: 2rem;
+    height: 2rem;
+    justify-items: center;
+}
+
 
 
 /*Navigation*/
@@ -55,7 +100,6 @@ li a {
     width: 50vw;
 }
 
-/*Vil meget gerne have det ind i midten*/
 .forside {
     width: 50vw;
     display: grid;
@@ -96,7 +140,7 @@ li a {
 }
 
 .hobby {
-    margin: 2rem;
+    margin-top: 2rem;
     background-color: #F6F4F1;
     border-radius: 6px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
