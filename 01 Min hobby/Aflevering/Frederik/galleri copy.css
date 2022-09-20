@@ -59,6 +59,11 @@ nav ul li a:hover {
     color: transparent;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 article img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -94,10 +99,6 @@ article a {
 article a:hover {
     color: transparent;
     -webkit-text-stroke: 0.4px white;
-}
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .gallery__header {
