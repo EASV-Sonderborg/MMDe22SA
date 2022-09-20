@@ -113,6 +113,7 @@ article img:hover {
 article h2 {
     position: absolute;
     font-family: "Roboto Slab";
+    padding-bottom: 1rem;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);

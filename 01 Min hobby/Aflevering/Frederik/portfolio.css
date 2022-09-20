@@ -19,12 +19,19 @@
 nav {
     width: 100%;
     position: absolute;
+    background-image: linear-gradient(rgba(20, 20, 20,0.65),rgba(20, 20, 20,0.60));
     top: 0;
     left: 0;
     padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+nav:hover {
+    opacity: 100%;
 }
 footer {
     width: 100%;
@@ -36,6 +43,11 @@ footer {
     align-items: center;
     justify-content: center;
     bottom: 0;
+    opacity: 0%;
+    transition: 0.5s;
+}
+footer:hover {
+    opacity: 100%;
 }
 nav .logo {
     width: 50px;
