@@ -1,0 +1,280 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*Navigation*/
+nav {
+    width: 80vw;
+} 
+nav ul {
+    list-style-type: none; /*fjerner bullets*/
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*aner ikke hvad dette gør tbh*/
+    background-color: white;
+    border-bottom: solid 2px pink;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-family: "Roboto Flex";
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/*Navigation*/
+.mitlogo {
+    width: 3rem;
+    height: 3rem;
+    position: relative; /*elementets position i forhold til de andre elementer i nav-menuen*/
+    top: 1rem
+}
+
+/*Navigation*/
+nav li {
+    display: inline-block;   
+}
+
+/*Navigation*/
+li a {
+    text-decoration: none; /*None fjerner det typiske link look*/
+    color: rgb(55, 45, 45);
+    width: 100px;
+    display: block;
+    padding: 16px;
+    font-size: 16px;
+    font-family: helvetica;
+}
+
+/*Velkommen billede*/
+.velkommen {
+    display: block;
+    width: 50vw;
+}
+
+/*Vil meget gerne have det ind i midten*/
+.forside {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.forside-h1 {
+    grid-column: 1 / span 4;
+    text-align: center;
+    
+}
+
+.forside a {
+    text-decoration: none;
+    color: black;
+    border: solid 3px pink;
+    border-radius: 9px;
+    padding: 0.5rem;
+    width: 150px;
+    justify-self: center;
+    text-align: center;
+}
+
+.forside a:hover {
+    opacity: 20%;
+    color: rgb(255, 255, 255);
+    background-color: darkcyan;
+    border: darkcyan solid 3px;
+}
+
+
+/*Hobby side*/
+.grid{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 2fr);
+    text-align: center;
+}
+
+.hobby {
+    margin: 2rem;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+    height: 50vh;
+}
+
+.hobby:hover {
+    opacity: 70%;
+    color: white;
+    background-color: black;
+}
+
+.hobby img {
+    transition: 0.5s ease;
+    border-radius: 6px;
+    width: 390px;
+    height: 210px;
+}
+
+.hobby-knap {
+    border-radius: 3px;
+    border: dotted darkgray;
+    background-color: hsl(184, 9%, 99%);
+    padding: 0.4rem;
+    align-items: center;
+    font-family: "Roboto Flex";
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    position: relative;
+}
+
+.hobby-knap:hover {
+    background-color: #EAF2F8;
+    font-style: oblique;
+}
+.hobby-knap a {
+    text-decoration: none;
+    color: black; 
+}
+/*Hobby side slutter ovenover*/
+
+/*Om mig og kontakt*/
+/*om mig*/
+.ommig {
+    grid-area: ommig;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+    max-width: max-content;
+}
+
+/*Kontakt mig*/
+.kontakt {
+    grid-area: kontakt;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 1rem;
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+    font-family: "Roboto Flex";
+    width: 20vw;
+}
+
+.kontakt h1 {
+    border-bottom: solid 2px pink;
+    text-align: center;
+}
+
+/*Rundt billede i kontakt info*/
+.kontakt img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    border-radius: 50%;
+}
+
+/*Grid til om mig og kontakt*/
+.grid-2 {
+    margin: 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "ommig ommig kontakt"
+    "ommig ommig kontakt";
+}
+
+/*CV*/
+.grid-cv {
+    margin: 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "erfaring erfaring kontakt"
+    "erfaring erfaring kontakt"
+    "skole skole kompetencer";
+}
+
+.erfaring {
+    grid-area: erfaring;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    text-align: left;
+    max-width: 60vw;
+    max-height: max-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+}
+
+.erfaring h1 {
+    border-bottom: solid 2px pink;
+}
+
+.skole {
+    grid-area: skole;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 60vw;
+    max-height: fit-content;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+} 
+
+.skole h1 {
+    border-bottom: solid 2px pink;
+}
+
+/*Hvad kan jeg*/
+.kompetencer {
+    grid-area: kompetencer;
+    background-color: #F6F4F1;
+    border-radius: 6px;
+    text-align: left;
+    max-width: 17.5vw;
+    max-height: 15.5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    box-shadow: 2px 2px 3px 3px #F0F0F0;
+}
+
+.kompetencer h2 {
+    border-bottom: solid 2px pink;
+}
+
+/*Rundt billede i kontakt info*/
+.kontakt-2 img {
+    border-radius: 50%;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+h1{
+    font-family: "Roboto Flex";
+    font-weight: bold;
+    font-size: 32px;
+}
+
+p {
+    font-family: "Roboto Flex";
+font-size: 16px;
+}
