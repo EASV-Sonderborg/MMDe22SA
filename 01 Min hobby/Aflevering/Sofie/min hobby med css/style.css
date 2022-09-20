@@ -1,12 +1,17 @@
+main {
+    min-height: 400px;
+  }
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/*Footer - den giver lidt issues på min hobby side*/
+/*Footer*/
 footer {
-    margin-top: 3rem;
+    
+    margin-top: 8rem;
     background-color: #F6F4F1;
     width: 100%;
     height: 9rem;
@@ -48,13 +53,11 @@ footer {
     height: 2rem;
     justify-items: center;
 }
-
-
-
 /*Navigation*/
 nav {
-    width: 80vw;
+    width: 100vw;
 } 
+
 nav ul {
     list-style-type: none; /*fjerner bullets*/
     text-align: center;
@@ -70,6 +73,11 @@ nav ul {
     font-size: 24px;
 }
 
+nav li:hover {
+    background-color: #F6F4F1;
+    opacity: 100%;
+}
+
 /*Navigation*/
 .mitlogo {
     width: 3rem;
@@ -80,13 +88,14 @@ nav ul {
 
 /*Navigation*/
 nav li {
-    display: inline-block;   
+    display: inline-block;
+    border-radius: 12px;
 }
 
 /*Navigation*/
 li a {
     text-decoration: none; /*None fjerner det typiske link look*/
-    color: rgb(55, 45, 45);
+    color: black;
     width: 100px;
     display: block;
     padding: 16px;
@@ -124,10 +133,10 @@ li a {
 }
 
 .forside a:hover {
-    opacity: 20%;
     color: rgb(255, 255, 255);
-    background-color: darkcyan;
-    border: darkcyan solid 3px;
+    background-color: #C0FFF4;
+    border: #C0FFF4 solid 3px;
+    color: black;
 }
 
 
@@ -291,15 +300,15 @@ li a {
     background-color: #F6F4F1;
     border-radius: 6px;
     text-align: left;
-    max-width: 17.5vw;
-    max-height: 15.5vw;
+    max-width: 18vw;
+    max-height: 17vw;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.5rem;
     box-shadow: 2px 2px 3px 3px #F0F0F0;
 }
 
-.kompetencer h2 {
+.kompetencer h1 {
     border-bottom: solid 2px pink;
 }
 
