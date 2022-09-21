@@ -139,9 +139,10 @@ button {}
     text-align: center;
 }
 .category2 {
-    background-image: url(images/category_horse.png);
+    background-image: url(images/category_beef.png);
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: 70%;
     margin-top: 5vh;
     height: 30vh;
     text-align: center;
@@ -181,4 +182,55 @@ button {}
     height: 20%;
     vertical-align: middle;
     border-radius: 1rem;
+}
+
+.site-footer {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+    "quick hours smilie"
+    ".  copyright  ."
+    ;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-color: white;
+    border-top: 0.2rem solid rgb(239, 62, 53);
+    margin-top: 10vh;
+    padding: 2rem;
+    font-family: Roboto Slab;
+}
+
+.footer-links{
+    display: grid;
+    gap: 1rem
+}
+.footer-links__headline{
+    color: rgb(239, 62, 53);
+}
+.quick-links{
+   grid-area: quick;
+}
+
+.quick-links__item{}
+
+.quick-links__link{
+    text-decoration: none;
+}
+
+.categories-links{}
+.categories-link__item{}
+
+.categories-links__link{
+    text-decoration: none;  
+}
+
+.opening-hours{
+    grid-area: hours;
+}
+.opening-hours-table{}
+.site-footer__smilie{
+    grid-area: smilie;
+}
+.site-footer__copyright{
+    grid-area: copyright;
 }
