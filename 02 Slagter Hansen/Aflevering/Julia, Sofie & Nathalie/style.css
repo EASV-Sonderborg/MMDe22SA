@@ -1,0 +1,147 @@
+/* RESET BROWSER DEFAULTS */
+body, h1, h2, h3, h4, h5, h6, p, a, ul, li, button {margin:0;padding:0;}
+ul {list-style:none;}
+
+/* GENERAL STYLES */
+body {
+    max-width: 100%;
+    justify-items: center;
+    margin: 1rem;
+    background-image: url(/images/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+button {
+    max-width: 150px;
+    min-width: 50px;
+}
+
+
+/* - - - SITE HEADER - - - */
+.site-header {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    
+    background-color: rgb(222, 208, 191);
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+.logo {
+    max-width: 100%;
+    width: 50%;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+
+
+
+/* - - - MENU - - - */
+.menu {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    grid-column: span 3;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu__item {
+    list-style-type: none;
+    text-align: center;
+    
+}
+.menu__link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* - - - HERO - - - */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    margin: 2rem;
+}
+
+.hero__heading {
+    grid-column: span 3;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.hero__subheading {
+    grid-column: span 3;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-top: 5rem;
+}
+.buy-now {
+    grid-column: span 3;
+    grid-column-start: 2;
+    justify-self: center;
+}
+.hero__image {
+    max-width: 100%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+
+
+/* - - - POPULAR PRODUCTS - - - */
+.popular-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.product {
+    background-color: aliceblue;
+}
+
+.product__image {
+    max-width: 100%;
+}
+.product__category {}
+.product__name {}
+.product__price {}
+.product__add-to-cart {}
+.product__add-to-cart--choice {}
+
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.categories img {
+    max-width: 100px
+}
+.category {
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(209, 232, 206);
+}
