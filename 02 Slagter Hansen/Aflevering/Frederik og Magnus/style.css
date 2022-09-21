@@ -52,7 +52,7 @@ button {}
 .hero {}
 .hero__heading {
     font-family: Roboto Slab;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1rem;
     color: rgb(239, 62, 53);
     background-color: white;
@@ -73,7 +73,7 @@ button {}
     position: absolute;
     text-align: center;
     font-family: Roboto Slab;
-    font-weight: 200;
+    font-weight: 400;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -144,6 +144,7 @@ button {}
 .gallery__headline {
     position: absolute;
     background-color: white;
+    color: rgb(239, 62, 53);
     border-radius: 2rem;
     padding: 0.5rem 1rem;
     margin-top: 24vh;
