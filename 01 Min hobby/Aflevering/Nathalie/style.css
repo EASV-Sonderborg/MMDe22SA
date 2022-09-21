@@ -16,14 +16,12 @@ body {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-
 li {
     border: 1px solid black;
     border-radius: 20px 20px 20px 20px;
     list-style-type: none;
     text-align: center;
 }
-
 .menu {
     font-family: "Roboto Flex Normal";
     font-weight: bold;
@@ -41,7 +39,7 @@ img {
     text-align: bottom;
 }
 .footer {
-    background-color: rgb(181, 181, 181);
+    background-color: gray;
     margin-top: 1rem;
 }
 .footer-p {
@@ -65,9 +63,12 @@ img {
 .forside-top-h1 {
     grid-column: span 2;
     text-align: center;
+    font-weight: bold;
+    font-size: 32px;
 }
 .forside-top-p {
     grid-column: span 2;
+    text-align: center;
 }
 .stort-billede {
     max-width: 100%;
@@ -104,6 +105,9 @@ img {
 .info-boks {
     display: flex;
     flex-direction: column;
+}
+.forside-h2 {
+    font-size: 24px;
 }
 
 
