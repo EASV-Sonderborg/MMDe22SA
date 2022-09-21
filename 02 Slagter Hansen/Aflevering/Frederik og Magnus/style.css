@@ -98,15 +98,13 @@ button {}
 .product {
     background-color: rgb(240, 240, 240);
     font-family: Roboto Slab;
+    display: grid;
     max-width: 20vw;
     text-align: center;
     padding: 1rem;
-    height: 60%;
-    transition: 0.7s;
+    align-content: space-between;
 }
-.product:hover {
-    height: 90%;
-}
+
 .product__image {
     max-width: 20vw;
 }
@@ -120,8 +118,79 @@ button {}
     font-weight: 600;
 }
 .product__add-to-cart {
-    
+    height: 1.5rem;
 }
 .product__add-to-cart--choice {}
 
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+}
+.category1 {
+    background-image: url(images/category_horse.png);
+    background-repeat: no-repeat;
+    height: 30vh;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
 
+.gallery__headline {
+    position: absolute;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 24vh;
+    font-family: roboto slab;
+    font-weight: 400;
+}
+.gallery__image {
+    object-fit: cover;
+    width: 20%;
+    height: 20%;
+    vertical-align: middle;
+    border-radius: 1rem;
+}
+
+.site-footer {
+    background-color: red;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-links {
+
+}
+.quick-links {
+}
+.quick-links__item {
+
+}
+.quick-links__link {
+
+}
+.categories-quick-links__item {
+
+}
+.opening-hours {
+
+}
+.opening-hours-table {
+
+}
+.site-footer__smilie {
+
+}
+.site-footer__copyright {
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+
+}
