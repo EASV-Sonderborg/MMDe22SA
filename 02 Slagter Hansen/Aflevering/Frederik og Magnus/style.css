@@ -90,6 +90,7 @@ button {}
 
 /* - - - POPULAR PRODUCTS - - - */
 .popular-products {
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -123,6 +124,7 @@ button {}
 .product__add-to-cart--choice {}
 
 .categories {
+    font-family: Roboto Slab;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -131,10 +133,32 @@ button {}
 .category1 {
     background-image: url(images/category_horse.png);
     background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 5vh;
     height: 30vh;
     text-align: center;
 }
+.category2 {
+    background-image: url(images/category_horse.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 5vh;
+    height: 30vh;
+    text-align: center;
+}
+
+.category__name {
+    padding-bottom: 25vh;
+}
+.buy-now {
+    margin-bottom: 0;
+}
+.category__description {
+    width: 15vw;
+    padding-bottom: 1rem;
+}
 .gallery {
+    padding-top: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -157,41 +181,4 @@ button {}
     height: 20%;
     vertical-align: middle;
     border-radius: 1rem;
-}
-
-.site-footer {
-    background-color: red;
-    z-index: 10;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.footer-links {
-
-}
-.quick-links {
-}
-.quick-links__item {
-
-}
-.quick-links__link {
-
-}
-.categories-quick-links__item {
-
-}
-.opening-hours {
-
-}
-.opening-hours-table {
-
-}
-.site-footer__smilie {
-
-}
-.site-footer__copyright {
-    background-color: white;
-    text-align: center;
-    padding: 1rem;
-
 }
