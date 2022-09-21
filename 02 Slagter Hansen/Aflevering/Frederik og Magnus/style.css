@@ -43,6 +43,11 @@ button {}
     color: rgb(239, 62, 53);
     font-family: Roboto Slab;
     font-weight: 500;
+    transition: 1s;
+}
+.menu__item a:hover {
+    font-weight: 600;
+    color: darkred;
 }
 .menu__link {}
 
@@ -185,7 +190,7 @@ button {}
 }
 
 .site-footer {
-    width: 100vw;
+    width: 96vw;
     display: grid;
     grid-template-areas:
     "quick hours smilie"
