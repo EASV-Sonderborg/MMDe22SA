@@ -2,8 +2,10 @@
 body {
     width: 65%;
     margin: 0 auto;
-    background-color: rgb(255, 244, 250);
-    /* background-image:  ; */
+    background-image: url(/Images/bellis-baggrund-billede.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .index {
@@ -16,6 +18,10 @@ body {
     gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+.index a {
+    text-decoration: none;
+}
+
 li {
     border: 1px solid black;
     border-radius: 20px 20px 20px 20px;
@@ -27,6 +33,21 @@ li {
     font-weight: bold;
     font-size: 16px;
     color: #060606;
+    text-decoration: none;
+}
+.menu-1 {
+    background-color: rgb(249, 210, 210);
+}
+.menu-2 {
+    background-color: rgb(249, 249, 210);
+}
+.menu-3 {
+    background-color: rgb(210, 249, 210);
+}.menu-4 {
+    background-color:rgb(210, 239, 249);
+}
+.menu-5 {
+    background-color: rgb(249, 210, 249);
 }
 .alm-billede {
     max-width: 100%;
@@ -78,6 +99,20 @@ img {
 .hobby-forside-billede {
     max-width: 100%;
     border: 2px solid black;
+}
+.forside-knap {
+    font-family: "Roboto Flex Normal";
+    color: #060606;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+}
+.forside-knap a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0rem;
 }
 .cv-forside-billede {
     max-width: 100%;
@@ -148,6 +183,14 @@ img {
     width: 100%;
     border: 2px solid black;
 }
+.hobby-fotografering {
+    display: flex;
+    flex-direction: column;
+}
+.hobby-2-info {
+    flex-grow: 1;
+}
+
 
 
 /*Disse er for CV siden */
