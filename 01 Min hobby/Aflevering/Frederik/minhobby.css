@@ -7,21 +7,14 @@
 
 }
 
-
 main {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(20, 20, 20,0.95),rgba(20, 20, 20,0.90));
-    position: relative;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
 footer {
-    width: 100%;
     position: absolute;
+    width: 100%;
     background-color: rgb(20, 20, 20);
     color: white;
     padding: 1rem;
@@ -29,15 +22,16 @@ footer {
     align-items: center;
     justify-content: center;
     bottom: 0;
+    margin: 10vh 0 0 0;
 }
+
 nav {
     width: 100%;
-    position: absolute;
     background-image: linear-gradient(rgba(20, 20, 20,0.65),rgba(20, 20, 20,0.60));
-    top: 0;
-    left: 0;
     padding: 20px 8%;
+    margin: 0 0 18vh 0;
     display: flex;
+    top: 0%;
     align-items: center;
     justify-content: space-between;
 }
@@ -118,7 +112,7 @@ article a:hover {
     grid-template-columns: repeat(3, 1fr);
 }
 .bgvideo {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -134,5 +128,39 @@ article a:hover {
     .bgvideo {
         width: auto;
         height: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        position: relative;
+    }
+    main {
+        height: 100%;
+        background-image: linear-gradient(rgba(20, 20, 20,0.95),rgba(20, 20, 20,0.90));
+    }
+    nav {
+        margin: 0 0 2vh 0;
+    }
+    footer {
+        margin: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }    
+    .fivem {
+        grid-column: span 2;
+    }
+    nav {
+        margin: 0 0 2vh 0;
+    }
+    footer {
+        margin: 0 0 0 0;
     }
 }
