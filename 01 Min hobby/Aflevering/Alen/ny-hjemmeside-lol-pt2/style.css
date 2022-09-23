@@ -1,7 +1,8 @@
 nav {
     background-color: rgba(0, 0, 0, 0.897);
     width: 100%;
-    height: 100px;
+    height: 100px; 
+
 
     
     
@@ -96,7 +97,18 @@ main {
 
 body {
     margin: 0;
+    
  
+   
+}
+
+.backgroundpic {
+    position: absolute;
+   max-width: 1920px;
+   max-height: 1080px;
+   left: 0;
+   top: 0;
+   z-index: -1;
    
 }
 
@@ -110,11 +122,11 @@ body {
   
     }
 
-.leagueexplained {
 
 
 
-}
+
+
 
 
 .anmeldelse-venstre-øvre {
@@ -131,6 +143,7 @@ body {
     border-style:outset;
     text-align: center;
     font-size: 1rem;
+    
 
 }
 
@@ -254,12 +267,12 @@ border-color: black;
     grid-area: 1 / span 2;
     position: absolute;
     margin-left: 35%; 
-    margin-top: 125px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1.5rem;
+    font-family:
     font-weight: bold;
     font-size: 3rem;
-    color: #ffffffb0;
-    text-decoration:underline;
+    color: white;
+    
 }
 
 
@@ -294,6 +307,7 @@ ________________________________________________________________________________
     margin-left: 30px;
     padding: 0;
     border: 0;
+    
   
 }
 
@@ -343,6 +357,8 @@ ________________________________________________________________________________
     padding-left: 2rem;
     border-left: 0.5px solid black;
     color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
 
 
 }
@@ -355,6 +371,8 @@ ________________________________________________________________________________
     padding-left: 2rem;
     border-left: 0.5px solid black;
     color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
    
 }
 
@@ -368,6 +386,8 @@ ________________________________________________________________________________
     padding-left: 2rem;
     border-left: 0.5px solid black;
     color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
   
     
 }
@@ -377,7 +397,10 @@ ________________________________________________________________________________
     margin: 0;
     padding-left: 2rem;
     border-left: 0.5px solid black;
-color: white;   
+    color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
+
 }
 
 .invisible {
