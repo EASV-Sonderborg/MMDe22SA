@@ -1,17 +1,20 @@
-main {
-    min-height: 400px;
-  }
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
+    max-height: 100%;
+    height: 100%;
+}
+
+main {
+    max-height: 100%;
+    height: 100%;
 }
 
 /*Footer*/
 footer {
-    
-    margin-top: 8rem;
+    margin-top: 3rem;
     background-color: #F6F4F1;
     width: 100%;
     height: 9rem;
@@ -139,35 +142,38 @@ li a {
     color: black;
 }
 
-
-/*Hobby side*/
-.grid{
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 2fr);
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
     text-align: center;
+    height: 700px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.hobby {
-    margin-top: 2rem;
+.item {
     background-color: #F6F4F1;
-    border-radius: 6px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 2px 2px 3px 3px #F0F0F0;
-    height: 50vh;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+    flex-shrink: 1;
+    flex-basis: 300px;
 }
 
-.hobby:hover {
+.item:hover {
     opacity: 70%;
     color: white;
     background-color: black;
 }
 
-.hobby img {
+.item img {
     transition: 0.5s ease;
     border-radius: 6px;
-    width: 390px;
-    height: 210px;
+    height: 200px;
+    width: 300px;
 }
 
 .hobby-knap {
@@ -176,11 +182,6 @@ li a {
     background-color: hsl(184, 9%, 99%);
     padding: 0.4rem;
     align-items: center;
-    font-family: "Roboto Flex";
-    font-weight: bold;
-    font-size: 16px;
-    align-items: center;
-    position: relative;
 }
 
 .hobby-knap:hover {

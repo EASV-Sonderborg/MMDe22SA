@@ -1,22 +1,60 @@
 * {
-    margin: 1; 
+    margin: 1;
     padding: 0;
 }
 
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #919191;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    line-height: 100px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'catamaran', serif;
+    color: black;
+    padding: 0 20px;
+}
+
+ul li a:hover {
+    color: rgb(255, 255, 255);
+
+}
+
 .img-logo {
-    padding: top 50px;;
-    width: 60px;
-    height: 100;
-    background-image: url(img/logo.jpg);
-    background-size: 200%;
-    background-color: rgb(145, 145, 145);
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 26px;
+    line-height: 100px;
+}
+
+body {
+    background-color: rgb(129, 129, 129);
+
+}
+
+h1 {
+    margin-left: 0;
 }
 
 .img-dance {
     padding: top 100px;
     width: 400px;
+}
+
+.img-team {
+    padding: top 100px;
+    width: 400px;
+    padding: 1rem;
 }
 
 .img-hiphop {
@@ -29,40 +67,19 @@
     width: 400px;
 }
 
-body{
-    background-color: rgb(136, 136, 136);
-    
+.video {
+    padding-bottom: 1px;
 }
 
-h1{
-    margin-left: 0;
-}
-
-nav {
+footer {
     width: 100%;
     height: 100px;
-    background-color: rgb(145, 145, 145);
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'catamaran', serif;
+    padding-top: 25px;
 }
 
-ul {
-    margin-left: 20px;
+.media {
+    padding-top: 250px;
 }
-
-ul li {
- list-style: none;
- display:inline-block;
- line-height: 100px;   
-}
-
-ul li a {
-   text-decoration: none;
-   font-size: 14px;
-   font-family: 'Times New Roman', Times, serif;
-   color:black;
-   padding: 0 20px;
-}
-
-ul li a:hover {
-   color: rgb(255, 255, 255);
-   
- }
