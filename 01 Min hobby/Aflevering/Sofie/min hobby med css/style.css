@@ -3,8 +3,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    max-height: 100%;
-    height: 100%;
 }
 
 main {
@@ -14,10 +12,12 @@ main {
 
 /*Footer*/
 footer {
-    margin-top: 3rem;
+    position: absolute bottom;
+    border-radius: 6px;
+    margin-top: 4rem;
     background-color: #F6F4F1;
     width: 100%;
-    height: 9rem;
+    height: 8rem;
     display: grid;
     gap: 6rem;
     grid-template-columns: repeat(2, 1fr);
@@ -34,28 +34,27 @@ footer {
     align-self: center;
     /*the end*/
     padding-left: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     align-items: center;
 }
 
 .locateme {
     display: flex;
     flex-direction: row;
-    align-self: center;
-    width: 50%;
     grid-area: locateme;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 .locateme img {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     padding: 0 0.3rem; 
     width: 2rem;
     height: 2rem;
-    justify-items: center;
 }
+
 /*Navigation*/
 nav {
     width: 100vw;
@@ -64,21 +63,14 @@ nav {
 nav ul {
     list-style-type: none; /*fjerner bullets*/
     text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /*aner ikke hvad dette gør tbh*/
     background-color: white;
     border-bottom: solid 2px pink;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-family: "Roboto Flex";
-    font-weight: bold;
-    font-size: 24px;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 nav li:hover {
-    background-color: #F6F4F1;
-    opacity: 100%;
+    border-bottom: 3px solid black;
 }
 
 /*Navigation*/
@@ -92,7 +84,6 @@ nav li:hover {
 /*Navigation*/
 nav li {
     display: inline-block;
-    border-radius: 12px;
 }
 
 /*Navigation*/
