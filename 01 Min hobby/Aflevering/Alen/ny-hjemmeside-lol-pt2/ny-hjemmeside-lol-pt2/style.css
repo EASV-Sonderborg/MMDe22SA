@@ -2,58 +2,71 @@ nav {
     background-color: rgba(0, 0, 0, 0.897);
     width: 100%;
     height: 100px;
+
     
+    
+    
+    
+}
+
+
+.vijinx {
     
 }
 
 .OmLoL {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 
 .slagmarken {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 
-    font-size: 16px;
+    font-size: 1rem;
     }
 
     .karakter {
         font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+        color: white;
+        text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .genstande {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .ranks {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-    padding: 25px;
-    font-size: 16px;
+ margin: 20px;
+    font-size: 1rem;
 }
 
 .købrp {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 58px;
+    font-size: 3.6rem;
     margin-left: 800px;
     
     
@@ -62,10 +75,11 @@ nav {
 
 .prøvdet {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(27, 109, 216);
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     padding: 25px;
-    font-size: 16px;
+    font-size: 1rem;
 }
     
     
@@ -77,21 +91,28 @@ main {
 
 }
 
+
+
+
 body {
-    background-color: rgba(228, 244, 246, 0.832);
+    margin: 0;
+ 
    
 }
 
 
    
-/*.hvorforleagueoflegends {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    }*/
+.hvorforleagueoflegends {
+    position: absolute;
+    margin: 50%;
+    margin-bottom: 500px;
+  
+  
+    }
 
 .leagueexplained {
-grid-area: 1/1/1/2;
+
+
 
 }
 
@@ -109,7 +130,7 @@ grid-area: 1/1/1/2;
     background-color: rgba(31, 15, 3, 0.486);
     border-style:outset;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
@@ -126,7 +147,7 @@ grid-area: 1/1/1/2;
     background-color: rgba(31, 15, 3, 0.486);
     border-style:outset;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 
 
 }
@@ -144,7 +165,7 @@ grid-area: 1/1/1/2;
     background-color: rgba(31, 15, 3, 0.486);
     border-style:outset;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 
 
 }
@@ -162,7 +183,7 @@ grid-area: 1/1/1/2;
     background-color: rgba(31, 15, 3, 0.486);
     border-style:outset;
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 
 
 }
@@ -229,8 +250,16 @@ border-color: black;
 }
 
 
-.leagueexplained {
- 
+.lolexplained {
+    grid-area: 1 / span 2;
+    position: absolute;
+    margin-left: 35%; 
+    margin-top: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #ffffffb0;
+    text-decoration:underline;
 }
 
 
@@ -259,12 +288,13 @@ ________________________________________________________________________________
 
 .udgivelsesdato {
     grid-area: 2 / 1 / 3 / 1;
-    font-size: small;
+    font-size:  0.8rem;
     margin: 0;
     margin-top: 150px;
     margin-left: 30px;
     padding: 0;
     border: 0;
+  
 }
 
 .udgivelsesdato-beskrivelse {
@@ -272,22 +302,25 @@ ________________________________________________________________________________
     margin-top: 0;
     margin-left: 30px;
     max-width: 50%;
+
 }
 
 .omleague-main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: white;   
 }
 
 .antal-aktive-spillere {
     grid-area: 3 / 1 / 3 / 1;
-    font-size: small;
+    font-size:  0.8rem;
     margin: 0;
     margin-top: 150px;
     margin-left: 30px;
     padding: 0;
     border: 0;
+   
 }
 
 .antal-aktive-spillere-beskrivelse {
@@ -295,23 +328,73 @@ ________________________________________________________________________________
     margin-top: 0;
     margin-left: 30px;
     max-width: 50%;
+    color: white;   
+   
   
 
 }
 
 .underspillet {
-    font-size: small;
+    grid-area: 2 / 2 / 3 / 2;
+    font-size: 0.8rem;
     margin: 0;
     margin-top: 150px;
-    margin-left: 30px;
-    padding: 0;
-    border: 0;
+    margin-left: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+
 
 }
 
 .underspillet-beskrivelse {
+    grid-area: 3 / 2 / 3 / 4;
     margin-top: 0;
-    margin-left: 30px;
-    max-width: 50%;
+    margin-left: 0;
+    max-width: 70%;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+   
 }
 
+.gamingmodes {
+    grid-area: 3 / 2 / 3 / 2;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 0;
+    padding: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+  
+    
+}
+
+.gamingmode-beskrivelse {
+    grid-area: 4 / 2 / 4 / 2;
+    margin: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+color: white;   
+}
+
+.invisible {
+    border-left: 0.5px solid black;
+    grid-area: 1 / 2 / 3 / 2;
+}
+
+.imgnerd {
+    width: 50px;
+    height: 50px;
+    background-color:#000000e5;
+}
+
+.backgroundimage {
+    position:absolute; 
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .9;
+}
