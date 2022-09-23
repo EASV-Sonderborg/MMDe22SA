@@ -1,0 +1,11 @@
+*main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 240px;
+}
+img {  
+    max-width: 50%; 
+}
+h2 {
+    min-width: 200px;
+}
