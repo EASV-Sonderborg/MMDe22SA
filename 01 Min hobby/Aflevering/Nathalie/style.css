@@ -2,7 +2,7 @@
 body {
     width: 65%;
     margin: 0 auto;
-    background-image: url(/Images/bellis-baggrund-billede.png);
+    background-image: url(Images/bellis-baggrund-billede.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
