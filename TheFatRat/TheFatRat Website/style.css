@@ -65,6 +65,13 @@ nav {
 }
 img {
     max-width: 100%;
+    width: 100%;
+}
+body {
+    background-image: url(images/TheFatRat-logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 @media only screen and (max-width: 768px) {
     .nav-menu {
