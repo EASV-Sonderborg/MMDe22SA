@@ -1,14 +1,27 @@
-.site-header {margin: 30%;}
-.logo{
-margin-left: 100%;
+.site-header {margin: 0;}
+
+
+body{
+    background-image: url("sky.jpeg") ;
 }
 
+.logo{
+
+    max-width: 5%;
+    border-radius: 2rem;
+    }
 
 .menu {}
 .menu_list {
     display: flex;
-background-color: #000000;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(15,104,240,1) 50%, rgba(0,212,255,1) 100%);
+    justify-content: space-evenly;
+    border-radius: 2rem;
+
 }
+
+.video{ justify-items:center;}
 
 .menu_item {
  padding: 20px;
@@ -16,12 +29,14 @@ padding-left: 50px;
 padding-right: 50px;
 margin-left: 40px;
 font-weight: bold;
+text-decoration: none;
+list-style: none;
 }
 
 .menu_link {
-    color: white;
+    color:#FFEB00 ;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 
@@ -29,9 +44,11 @@ font-weight: bold;
     text-align: center;
     margin-top: 40px;
     font-size: 30px;
+    color: rgb(255, 255, 0)
 }
 
 .hero_heading {
     text-align: center;
     font-size: 35px;
+    color: rgb(255, 255, 0)
 }
