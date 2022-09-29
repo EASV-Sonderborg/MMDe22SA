@@ -65,13 +65,35 @@ nav {
 }
 img {
     max-width: 100%;
+}
+.banner-img {
     width: 100%;
 }
+.profil {
+    display: flex;
+}
+.profil-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profil-img {
+    width: 35%;
+    border-radius: 200px;
+}
+.profil-h2 {
+    color: white;
+}
+.profil-p {
+    color: white;
+}
 body {
-    background-image: url(images/TheFatRat-logo.png);
+    background-image: url(images/logo-background.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #303274;
+    margin: 1rem;
 }
 @media only screen and (max-width: 768px) {
     .nav-menu {
