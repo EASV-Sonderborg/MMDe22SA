@@ -1,153 +1,101 @@
-
-/* --------BODY ----------- */ 
-
-img {
-    max-width: 100%;
-}
-.banner {
-    width: 100%;
-}
-body {
-    background-color: #303274;
-    background-image: url(images/TheFatRat-logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-
-/* ---- Nav bar/Burgerbar ---- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
-
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
 nav {
+    background-color: #302C42
+}
+.navbar {
     display: flex;
     justify-content: space-between;
-    padding: 0 15%;
-    height: 75px;
-    line-height: 75px;
-    background: #302C42;
+    align-items: center;
+    padding: 1rem 1.5rem;
 }
-
-nav .navbar-brand {
-    color: white;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: .5px;
+.hamburger {
+    display: none;
 }
-
-nav .nav-list {
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-nav .nav-list .nav-item {
-    cursor: pointer;
-    height: 100%;
-    padding: 0 30px;
-    transition: .4s;
+.nav-item {
+    margin-left: 5rem;
 }
-
-nav .nav-list .nav-item:hover {
-background: black;
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
 }
-
-nav .nav-list .nav-link {
-    color: white;
-    font-size: 18px;
+.nav-link:hover{
+    color: #482FF7;
+}
+.nav-logo {
+    font-size: 2.1rem;
     font-weight: 500;
+    color: #482FF7;
 }
-
-@media (max-width: 935px) {
-
-    nav {
-        padding: 0 2rem;
-    }
-
-    nav .nav-list .nav-item {
-        padding: 0 20px;
-    }
-    body {
-        background-color: #303274;
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+.nav-billede {
+    max-width: 8rem;
+    height: 8rem;
 }
-
-
-/* Tablet */
-@media (max-width: 675px) {
-
-    nav .nav-list {
-        display: grid;
-        position: absolute;
-        background: #302C42;
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
         width: 100%;
-        top: 75px;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
         left: 0;
-        transform: translateY(-100%);
-        z-index: -1;
-        transition: .6s;
     }
-
-    nav .nav-list .nav-item {
-        padding-left: 35px;
+    .nav-item {
+        margin: 2.5rem 0;
     }
-
-    nav .navbar-toggler {
-        display: grid !important;
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-nav .navbar-toggler {
-    display: none;
-    height: min-content;
-    margin: 18px -10px 0 0;
-    cursor: pointer;
-}
-
-nav .navbar-toggler .bar {
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background: white;
-    border-radius: 10%;
-    transition: .4s;
-}
-
-input {
-    display: none;
-}
-
-input:checked ~ nav .nav-list {
-    transform: translateY(0);
-}
-
-input:checked ~ nav .navbar-toggler {
-    margin-top: 35px;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
-    position: absolute;
-    transform: rotate(45deg);
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
-    display: none;
-}
-
-input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-
-
