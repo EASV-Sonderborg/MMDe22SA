@@ -1,3 +1,4 @@
+/* navbar/burgermenu */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 * {
     margin: 0;
@@ -63,9 +64,27 @@ nav {
     max-width: 8rem;
     height: 8rem;
 }
+/* End navbar/burgermenu */
+
+/* alle sider */
 img {
     max-width: 100%;
 }
+body {
+    background-image: url(images/logo-background.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #303274;
+    margin: 1rem;
+}
+footer {
+    background-color: #302C42;
+    margin-top: 2rem;
+}
+/* End alle sider */
+
+/* Forside */
 .banner-img {
     width: 100%;
 }
@@ -90,14 +109,6 @@ img {
 }
 .profil-p {
     color: white;
-}
-body {
-    background-image: url(images/logo-background.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #303274;
-    margin: 1rem;
 }
 .body-music {
     display: grid;
@@ -128,9 +139,8 @@ h3 {
     margin-top: 2rem;
     border: 1px solid black;
 }
-footer {
-    background-color: #302C42;
-}
+/* End forsiden */
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
