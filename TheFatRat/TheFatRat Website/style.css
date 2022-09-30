@@ -70,7 +70,10 @@ img {
     width: 100%;
 }
 .profil {
-    display: flex;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
 }
 .profil-text {
     display: flex;
@@ -78,8 +81,9 @@ img {
     justify-content: center;
 }
 .profil-img {
-    width: 35%;
+    width: 50%;
     border-radius: 60%;
+    justify-self: center;
 }
 .profil-h2 {
     color: white;
@@ -95,6 +99,39 @@ body {
     background-color: #303274;
     margin: 1rem;
 }
+.body-music {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.body-music-h1 {
+    color: white;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+}
+h3 {
+    color: white;
+}
+.unity {
+    border: 1px solid black;
+}
+.monody {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.fly-away {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+.the-calling {
+    margin-top: 2rem;
+    border: 1px solid black;
+}
+footer {
+    background-color: #302C42;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
