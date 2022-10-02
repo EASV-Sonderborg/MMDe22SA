@@ -141,12 +141,59 @@ h3 {
 }
 /* End forsiden */
 
+/* Contact siden*/
+.contact-body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.contact-body-h1 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-bottom: 0rem;
+}
+.contact-img {
+    width: 50%;
+    border-radius: 20%;
+    justify-self: center;
+}
+.contact-info {
+    color: white;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+.platform-body {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.platform-body-h1 {
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    margin-bottom: 0rem;
+}
+.platform-img {
+    width: 50%;
+    border-radius: 20%;
+    justify-self: center;
+}
+.platform-info {
+    color: white;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+/* Ende contact siden */
+
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 1rem;
         flex-direction: column;
         background-color: #302C42;
         width: 100%;
