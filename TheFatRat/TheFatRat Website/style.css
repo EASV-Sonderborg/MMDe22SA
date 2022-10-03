@@ -63,6 +63,7 @@ nav {
 .nav-billede {
     max-width: 8rem;
     height: 8rem;
+    border-radius: 20%;
 }
 /* End navbar/burgermenu */
 
@@ -71,10 +72,6 @@ img {
     max-width: 100%;
 }
 body {
-    background-image: url(images/logo-background.PNG);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     background-color: #303274;
     margin: 1rem;
 }
@@ -182,6 +179,10 @@ h3 {
     border-radius: 25%;
     justify-self: center;
     border: 1px solid black;
+}
+.platform-logo-img {
+    border-radius: 25%;
+    justify-self: center;
 }
 .platform-info {
     color: white;
@@ -360,9 +361,75 @@ h3 {
 }
 
 @media only screen and (min-width: 769px) {
+    /*Contact*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+        margin-bottom: 0rem;
+        grid-column: span 2;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .contact-img3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .contact-img4 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
     .platform-body {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 24px;
+        margin-bottom: 0rem;
+        grid-column: span 2;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .platform-img3 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .platform-img4 {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-image: url(images/logo-background.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #303274;
+        margin: 1rem;
     }
 }
