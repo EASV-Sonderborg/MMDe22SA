@@ -136,6 +136,8 @@ a {
 
 .mostpopular {
     margin: 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .mostpopular h1 {
     font-family: Bebas Neue;
@@ -256,4 +258,21 @@ a {
         width: auto;
         height: 100%;
     }
+}
+@media screen and (min-width: 640px) {
+    .mostpopular {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .cover_right, .cover_left {
+        width: 50vw;
+    }
+    .listennow {
+        width: 20vw;
+    }
+    .frontpage__gallery_img {
+        height: 200px;
+    }
+    .cover_left {
+        margin-top: 0;
 }
