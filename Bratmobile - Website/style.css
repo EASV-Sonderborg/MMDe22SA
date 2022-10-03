@@ -44,8 +44,8 @@ a {
 }
 
 .header .img-logo {
-    height: 60px;
-    width: 60px;
+    height: 40%;
+    width: 40%;
     padding: 10px 20px;
     float: right;
     display: block;
@@ -126,11 +126,13 @@ a {
     bottom: 0;
     z-index: -1;
 }
+
 .mostpopular h1 {
     font-family: Bebas Neue;
     font-size: 2rem;
     margin: 1rem;
 }
+
 .cover_right {
     background-color: white;
     width: 100vw;
@@ -138,6 +140,7 @@ a {
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
 }
+
 .cover_left {
     margin-top: 1rem;
     background-color: white;
@@ -147,18 +150,21 @@ a {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
+
 .cover_left img {
     margin: 1rem 0 1rem;
     width: 140px;
     justify-self: end;
     grid-row: span 2;
 }
+
 .albumimg {
     margin: 1rem 0 1rem;
     width: 140px;
     grid-row: span 2;
     align-self: center;
 }
+
 .listennow {
     border: 2px solid black;
     width: 35vw;
@@ -168,9 +174,11 @@ a {
     padding: 0.7rem 0 0.5rem;
     font-family: Bebas Neue;
 }
+
 .mostpopular a {
     text-decoration: none;
 }
+
 .cover_right h1 {
     text-align: right;
 }
@@ -194,13 +202,15 @@ a {
         display: none;
     }
 }
-@media (min-aspect-ratio: 16/9){
+
+@media (min-aspect-ratio: 16/9) {
     .frontpage__video {
         width: 100%;
         height: auto;
     }
 }
-@media (max-aspect-ratio: 16/9){
+
+@media (max-aspect-ratio: 16/9) {
     .front__video {
         width: auto;
         height: 100%;
