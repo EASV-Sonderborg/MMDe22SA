@@ -11,36 +11,49 @@
 
 <body>
     <header class="header">
-        <a href="index.html"><img class="img-logo" src="images/logo.jpeg"></a>
+        <a href="index.html"><img class="img-logo" src="images/bratmobilelogo5.svg"></a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
         <ul class="menu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">music</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </header>
 
-    <article class="cover1">
-        <img class="albumimg" src="images/album1.jpeg" alt="">
-        <h1>Cool Schmool</h1>
-        <h2>listen now!</h2>
-    </article>
+    <section class="frontpage__intro">
+        <video autoplay loop muted plays-inline class="frontpage__video">
+            <source src="images/frontpage__video.mp4" type="video/mp4">
+        </video>
+    </section>
 
-    <article class="cover2">
-        <h1>Gimme Brains</h1>
-        <img class="albumimg" src="images/album2.jpeg" alt="">
-        <h2>listen now!</h2>
-        
-
-    </article>
-
-    <article class="cover3">
-        <img class="albumimg" src="images/album3.jpeg" alt="">
-        <h1>Cherry Bomb</h1>
-        <h2>listen now!</h2>
-    </article>
+    <section class="mostpopular">
+        <article class="cover_right">
+            <img class="albumimg" src="images/album1.jpeg" alt="Cool Schmool album-cover">
+            <h1 class="albumtitle">Cool Schmool</h1>
+            <a href="www.youtube.com">
+                <h2 class="listennow">listen now!</h2>
+            </a>
+        </article>
+        <article class="cover_left">
+            <h1 class="albumtitle2">Gimme Brains</h1>
+            <img class="albumimg" src="images/album2.jpeg" alt="Gimme Brains album-cover">
+            <a href="www.youtube.com">
+                <h2 class="listennow">listen now!</h2>
+            </a>
+        </article>
+        <article class="cover_right">
+            <img class="albumimg" src="images/album3.jpeg" alt="Cherry Bomb album-cover">
+            <h1 class="albumtitle">Cherry Bomb</h1>
+            <a href="www.youtube.com">
+                <h2 class="listennow">listen now!</h2>
+            </a>
+        </article>
+    </section>
+    <section class="frontpage__gallery">
+        <img src="images/#.png" alt="">
+    </section>
 </body>
 
 
