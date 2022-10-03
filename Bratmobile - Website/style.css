@@ -5,19 +5,22 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(images/pink\ on\ white.png);
+    background-image: url(images/brackbrat4.svg);
+    background-color: #411243;
     background-size: 100vw;
     background-size: cover;
     width: 100vw;
 }
 
 a {
-    color: black;
+    font-family: Bebas Neue;
+    font-weight: 600;
+    text-align: center;
+    color: white;
 }
 
 .header {
-    background-image: url(images/black\ on\ pink.png);
-    background-size: 100vw;
+    background-color: #661053FA;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100vw;
@@ -30,18 +33,18 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgb(170, 99, 173)
+    background-color: #411243;
 }
 
 .header ul a {
     display: block;
     padding: 20px;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     text-decoration: none;
 }
 
 .header ul a:hover {
-    background-color: rgb(229, 137, 234);
+    background-color: #661053FA;
 }
 
 .header .img-logo {
@@ -69,7 +72,7 @@ a {
 }
 
 .header .menu-icon .nav-icon {
-    background: rgb(0, 0, 0);
+    background: white;
     display: block;
     height: 2px;
     width: 18px;
@@ -78,7 +81,7 @@ a {
 }
 
 .header .menu-icon .nav-icon:before {
-    background: rgb(0, 0, 0);
+    background: white;
     content: "";
     display: block;
     height: 100%;
@@ -89,7 +92,7 @@ a {
 }
 
 .header .menu-icon .nav-icon::after {
-    background: rgb(0, 0, 0);
+    background: white;
     content: "";
     display: block;
     height: 100%;
@@ -141,7 +144,8 @@ a {
 }
 
 .cover_right {
-    background-color: white;
+    background-color: #661053FA;
+    color: white;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -150,7 +154,8 @@ a {
 
 .cover_left {
     margin-top: 1rem;
-    background-color: white;
+    background-color: #661053FA;
+    color: white;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,7 +178,7 @@ a {
 }
 
 .listennow {
-    border: 2px solid black;
+    border: 2px solid white;
     width: 35vw;
     border-radius: 2rem;
     text-transform: uppercase;
@@ -184,10 +189,12 @@ a {
 }
 .cover_left a {
     text-decoration: none;
+    color: white;
 }
 .cover_right a {
     text-decoration: none;
     justify-self: end;
+    color: white;
 }
 
 .cover_right h1 {
