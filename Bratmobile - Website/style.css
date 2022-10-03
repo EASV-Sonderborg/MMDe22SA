@@ -5,8 +5,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(215, 79, 195);
-    background-image: url(images/brackbrat3.svg);
+    background-image: url(images/pink\ on\ white.png);
+    background-size: 100vw;
     background-size: cover;
     width: 100vw;
 }
@@ -16,7 +16,8 @@ a {
 }
 
 .header {
-    background-color: rgb(213, 94, 227);
+    background-image: url(images/black\ on\ pink.png);
+    background-size: 100vw;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100vw;
@@ -122,11 +123,17 @@ a {
 
 .frontpage__video {
     position: relative;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
     right: 0;
     bottom: 0;
     z-index: -1;
 }
 
+.mostpopular {
+    margin: 1rem 0 1rem;
+}
 .mostpopular h1 {
     font-family: Bebas Neue;
     font-size: 2rem;
@@ -173,14 +180,29 @@ a {
     text-align: center;
     padding: 0.7rem 0 0.5rem;
     font-family: Bebas Neue;
+    margin: 0;
 }
-
-.mostpopular a {
+.cover_left a {
     text-decoration: none;
+}
+.cover_right a {
+    text-decoration: none;
+    justify-self: end;
 }
 
 .cover_right h1 {
     text-align: right;
+}
+
+.frontpage__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+}
+.frontpage__gallery_img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
 }
 
 @media (min-width:48em) {
