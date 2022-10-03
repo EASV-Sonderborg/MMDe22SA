@@ -241,6 +241,20 @@ h3 {
     border: 2px solid black;
     justify-self: center;
 }
+.sixth-pic {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 75%;
+    border: 2px solid black;
+    justify-self: center;
+}
+.seventh-pic {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 75%;
+    border: 2px solid black;
+    justify-self: center;
+}
 .billede-beskrivelse-et {
     text-align: center;
     color: white;
@@ -282,6 +296,22 @@ h3 {
     justify-self: center;
 }
 .billede-beskrive-fem {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    max-width: 75%;
+    justify-self: center;
+}
+.billede-beskrive-seks {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    max-width: 75%;
+    justify-self: center;
+}
+.billede-beskrive-syv {
     text-align: center;
     color: white;
     font-weight: 200;
