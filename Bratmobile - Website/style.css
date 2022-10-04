@@ -23,7 +23,7 @@ a {
 .header {
     background-color: #411243;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
-    position: fixed;
+    position: relative;
     width: 100vw;
     z-index: 3;
 
@@ -291,6 +291,22 @@ main {
     padding: 0 0.5rem;
 }
 .footer__some li {
+    display: inline-block;
+}
+
+
+/* music.html page */
+.afspil_musik {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: end;
+}
+.afspil_musik img {
+    width: 35px;
+    padding-left: 0.2rem;
+}
+.afspil_musik li {
+    list-style: none;
     display: inline-block;
 }
 @media (min-width:48em) {
