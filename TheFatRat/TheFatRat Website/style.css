@@ -79,6 +79,14 @@ footer {
     background-color: #302C42;
     margin-top: 2rem;
 }
+.footer-text {
+    text-align: center;
+    color: rgb(180, 180, 216);
+}
+.footer-text-small {
+    text-align: center;
+    color: rgb(180, 180, 216);
+}
 /* End alle sider */
 
 /* Forside */
@@ -95,6 +103,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 4rem;
 }
 .profil-img {
     width: 50%;
@@ -106,6 +115,7 @@ footer {
 }
 .profil-p {
     color: white;
+    margin-top: 1rem;
 }
 .body-music {
     display: grid;
@@ -544,6 +554,11 @@ h3 {
         background-color: #303274;
         margin: 1rem;
     }
+    .nav-link{
+        font-size: 2rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
     /*Forside*/
     .profil-h2 {
         color: white;
@@ -667,5 +682,130 @@ h3 {
 
 /*Stationær størrelse*/
 @media only screen and (min-width: 2000px) {
+    .nav-link{
+        font-size: 2.4rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+    }
+    /*Forside*/
+    .profil-h2 {
+        color: white;
+        font-size: 40px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 30px;
+    }
+    /*Contact side*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 48px;
+        margin-bottom: 0rem;
+        grid-column: span 4;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img4 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info4 {
+        grid-column-start: 4;
+        grid-row-start: 3;
+        justify-self: center;
+    }
 
+
+
+
+
+    .platform-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 48px;
+        margin-bottom: 0rem;
+        grid-column: span 4;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img4 {
+        grid-column-start: 4;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info4 {
+        grid-column-start: 4;
+        grid-row-start: 3;
+        justify-self: center;
+    }
 }
