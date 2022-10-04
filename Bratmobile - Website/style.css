@@ -17,10 +17,11 @@ a {
     font-weight: 600;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
 
 .header {
-    background-color: #661053FA;
+    background-color: #411243;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100vw;
@@ -39,17 +40,18 @@ a {
 .header ul a {
     display: block;
     padding: 20px;
-    border-right: 1px solid white;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .header ul a:hover {
-    background-color: #661053FA;
+    background-color: white;
+    color: #411243;
 }
 
 .header .img-logo {
-    height: 40%;
-    width: 40%;
+    height: 50px;
+    width: auto;
     padding: 10px 20px;
     float: right;
     display: block;
@@ -133,36 +135,46 @@ a {
     bottom: 0;
     z-index: -1;
 }
-
+.mostpopular__title h1, .gallery__title h1 {
+    font-family: Bebas Neue;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    background-color: #411243;
+    margin: 1rem 1rem 0;
+    padding: 1rem;
+}
 .mostpopular {
-    margin: 1rem 0 1rem;
+    margin: 0 0 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 .mostpopular h1 {
     font-family: Bebas Neue;
     font-size: 2rem;
-    margin: 1rem;
 }
 
 .cover_right {
-    background-color: #661053FA;
+    background-color: #411243;
     color: white;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
 }
-
 .cover_left {
     margin-top: 1rem;
-    background-color: #661053FA;
+    background-color: #411243;
     color: white;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
     margin-bottom: 1rem;
+}
+.cover_left1 {
+    display: none;
 }
 
 .cover_left img {
@@ -171,12 +183,12 @@ a {
     justify-self: end;
     grid-row: span 2;
 }
-
 .albumimg {
     margin: 1rem 0 1rem;
     width: 140px;
     grid-row: span 2;
     align-self: center;
+    transition: 0.7s;
 }
 
 .listennow {
@@ -188,6 +200,11 @@ a {
     padding: 0.7rem 0 0.5rem;
     font-family: Bebas Neue;
     margin: 0;
+    transition: 0.7s;
+}
+.listennow:hover {
+    background-color: white;
+    color: #661053FA;
 }
 .cover_left a {
     text-decoration: none;
@@ -202,30 +219,96 @@ a {
 .cover_right h1 {
     text-align: right;
 }
+main {
+    display: flex;
+    align-items: center;
+}
 
+.gallery_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.viewgallery {
+    font-family: "Bebas Neue";
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 2rem;
+    padding: 1rem 1.5rem 0.5rem;
+    transition: 0.5s;
+}
+.viewgallery:hover {
+    background-color: white;
+    color: #411243;
+}
 .frontpage__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
     background-color: black;
     margin-bottom: 1rem;
+    transition: 0.7s;
+}
+.frontpage__gallery:hover {
+    opacity: 40%;
 }
 .frontpage__gallery_img {
     width: 100%;
     height: 100px;
     object-fit: cover;
 }
-.frontpage__gallery a {
-    font-family: Bebas Neue;
+.upperfooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #411243;
+    justify-items: center;
+}
+.underfooter {
+    background-color: #411243;
+    font-family: "Bebas Neue";
     font-weight: 600;
-    color: red;
-    position: absolute;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    color: white;
+}
+.footer__links {
+    color: white;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.footer__links li {
+    padding: 0.5rem;
+}
+.footer__some img {
+    width: 50px;
+    padding: 0 0.5rem;
+}
+.footer__some li {
+    display: inline-block;
 }
 
+
+/* music.html page */
+.afspil_musik {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: end;
+}
+.afspil_musik img {
+    width: 35px;
+    padding-left: 0.2rem;
+}
+.afspil_musik li {
+    list-style: none;
+    display: inline-block;
+}
 @media (min-width:48em) {
     .header li {
         float: left;
@@ -237,7 +320,6 @@ a {
 
     .header .menu {
         clear: none;
-        float: left;
         max-height: none;
     }
 
@@ -245,20 +327,12 @@ a {
         display: none;
     }
 }
-
 @media (min-aspect-ratio: 16/9) {
     .frontpage__video {
         width: 100%;
         height: auto;
     }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .front__video {
-        width: auto;
-        height: 100%;
-    }
-}
+} 
 @media screen and (min-width: 640px) {
     .mostpopular {
         grid-template-columns: 1fr 1fr;
@@ -276,4 +350,68 @@ a {
     .cover_left {
         margin-top: 0;
     }
+    .header .img-logo {
+        height: 60px;
+    }
+    .upperfooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #411243;
+        justify-items: center;
+    }
+    .footer__links li {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+    .footer__some {
+        align-self: center;
+    }
 }
+@media screen and (min-width: 960px) {
+    .frontpage__video {
+        margin-top: 0;
+    }
+    .mostpopular {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 0 0 1rem;
+    }
+    .cover_right, .cover_left {
+        width: 31vw;
+    }
+    .listennow {
+        width: 13vw;
+    }
+    .frontpage__gallery {
+        margin: 0 1rem 1rem;
+    }
+    .frontpage__gallery_img {
+        height: 200px;
+    }
+    .cover_left {
+        display: none;
+    }
+    .header .img-logo {
+        height: 60px;
+    }
+    .cover_left1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #411243;
+        color: white;
+        width: 31vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 1rem;
+    }
+    .cover_left1 a {
+        text-decoration: none;
+        justify-self: end;
+        color: white;
+    }
+    
+    .cover_left1 h1 {
+        text-align: right;
+    }
+}
+
+
