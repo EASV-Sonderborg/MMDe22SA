@@ -134,17 +134,41 @@ h3 {
 .unity {
     border: 1px solid black;
 }
+.unity-image {
+    justify-self: center;
+}
+.unity-text {
+    text-align: center;
+}
 .monody {
     margin-top: 2rem;
     border: 1px solid black;
+}
+.monody-image {
+    justify-self: center;
+}
+.monody-text {
+    text-align: center;
 }
 .fly-away {
     margin-top: 2rem;
     border: 1px solid black;
 }
+.fly-away-image {
+    justify-self: center;
+}
+.fly-away-text {
+    text-align: center;
+}
 .the-calling {
     margin-top: 2rem;
     border: 1px solid black;
+}
+.the-calling-image {
+    justify-self: center;
+}
+.the-calling-text {
+    text-align: center;
 }
 /* End forsiden */
 
@@ -472,6 +496,74 @@ h3 {
         color: white;
         font-size: 15px;
     }
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 28px;
+        grid-column: span 2
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .the-calling {
+        margin-top: 0rem;
+        border: 1px solid black;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
     /*Contact*/
     .contact-body {
         display: grid;
@@ -545,7 +637,7 @@ h3 {
 
 
 /*Laptop størrelse*/
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 992px) {
     body {
         background-image: url(images/logo-background.PNG);
         background-repeat: no-repeat;
@@ -568,6 +660,62 @@ h3 {
         color: white;
         font-size: 20px;
     }
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 34px;
+        grid-column: span 3
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
     /*Contact side*/
     .contact-body {
         display: grid;
@@ -605,22 +753,22 @@ h3 {
     .contact-info1 {
         grid-column-start: 1;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info2 {
         grid-column-start: 2;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info3 {
         grid-column-start: 3;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info4 {
         grid-column-start: 1;
         grid-row-start: 5;
-        justify-self: center;
+        text-align: center;
     }
     .platform-body {
         display: grid;
@@ -658,22 +806,22 @@ h3 {
     .platform-info1 {
         grid-column-start: 1;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info2 {
         grid-column-start: 2;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info3 {
         grid-column-start: 3;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info4 {
         grid-column-start: 1;
         grid-row-start: 5;
-        justify-self: center;
+        text-align: center;
     }
 }
 
@@ -681,7 +829,7 @@ h3 {
 
 
 /*Stationær størrelse*/
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1200px) {
     .nav-link{
         font-size: 2.4rem;
         font-weight: 400;
@@ -696,6 +844,62 @@ h3 {
         color: white;
         font-size: 30px;
     }
+    .body-music {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .body-music-h1 {
+        color: white;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        font-size: 45px;
+        grid-column: span 4
+    }
+    .unity-image {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .unity-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .monody-image {
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .monody-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .fly-away-image {
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fly-away-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .the-calling-image {
+        justify-self: center;
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+    .the-calling-text {
+        margin-bottom: 2rem;
+        text-align: center;
+        grid-column-start: 4;
+        grid-row-start: 3;
+    }
     /*Contact side*/
     .contact-body {
         display: grid;
@@ -733,28 +937,23 @@ h3 {
     .contact-info1 {
         grid-column-start: 1;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info2 {
         grid-column-start: 2;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info3 {
         grid-column-start: 3;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .contact-info4 {
         grid-column-start: 4;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
-
-
-
-
-
     .platform-body {
         display: grid;
         gap: 1rem;
@@ -791,21 +990,21 @@ h3 {
     .platform-info1 {
         grid-column-start: 1;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info2 {
         grid-column-start: 2;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info3 {
         grid-column-start: 3;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
     .platform-info4 {
         grid-column-start: 4;
         grid-row-start: 3;
-        justify-self: center;
+        text-align: center;
     }
 }
