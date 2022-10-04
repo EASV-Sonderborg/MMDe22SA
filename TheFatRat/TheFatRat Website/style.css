@@ -322,7 +322,95 @@ h3 {
 }
 /* End gallery side */
 
+/* ------------ Music side -------------- */ 
 
+/* .main-music {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.musicpage-overskrift {
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.nederstealbums {
+    border-bottom: 1px solid black;
+    border-radius: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid black;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    gap: 2rem;
+  
+}
+.overskrift-årstal {
+    grid-column: span 3;
+    text-align:left;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+
+
+.songs {
+    border-radius: 30%;
+    width: 15rem;
+    border: 2px solid black;
+}
+
+.albums--2013 {
+    margin-top: 3rem;
+}
+
+.albums--2018 {
+    margin-bottom: 5rem;
+}
+
+   
+.albumstext {
+    color: white;
+    grid-area: 1 / span 2;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.albumsbillede-et {
+    padding: 1.2rem;
+    border-radius: 30%;
+    width: 15rem;
+    justify-self: end;
+   
+
+}
+
+.albumsbillede-to {
+    padding: 1.2rem;
+    border-radius: 30%;
+    width: 15rem;
+    justify-self: start;
+  
+}
+
+
+
+
+
+
+
+
+/* ---------- MUSIC SIDE END ------------*/ 
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
