@@ -331,45 +331,35 @@ h3 {
 .musicpage-overskrift {
     color: white;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .nederstealbums {
-    border: 1px solid red;
+    border-bottom: 1px solid black;
     border-radius: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 
 .albums {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 2px solid black;
+    border-bottom: 1px solid black;
     margin-bottom: 2.5rem;
     padding: 2rem;
     gap: 2rem;
-    border-radius: 1rem;
-    background-color: #d3d3d333; 
+  
 }
-.overskrift-et {
+.overskrift-årstal {
     grid-column: span 3;
     text-align:left;
     font-weight: bold;
     text-decoration: underline;
+    color: white;
 }
 
-.overskrift-to {
-    grid-column: span 3;
-    text-align:left;
-    font-weight: bold;
-    text-decoration: underline;
-}
 
-.overskrift-tre {
-     grid-column: span 3;
-    text-align:left;
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 
 
@@ -380,7 +370,7 @@ h3 {
 }
 
 .albums--2013 {
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .albums--2018 {
@@ -390,15 +380,17 @@ h3 {
    
 .albumstext {
     color: white;
-    grid-area: 4 / span 3;
+    grid-area: 1 / span 2;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .albumsbillede-et {
     padding: 1.2rem;
     border-radius: 30%;
     width: 15rem;
-    justify-items: right;
+    justify-self: end;
+   
 
 }
 
@@ -406,7 +398,8 @@ h3 {
     padding: 1.2rem;
     border-radius: 30%;
     width: 15rem;
-    grid-area: 5 / 3 / 6 / 4;
+    justify-self: start;
+  
 }
 
 
