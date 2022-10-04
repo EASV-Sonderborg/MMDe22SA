@@ -360,7 +360,20 @@ h3 {
     }
 }
 
+
+
+
+/*Tablet størrelse*/
 @media only screen and (min-width: 769px) {
+    /*Forside*/
+    .profil-h2 {
+        color: white;
+        font-size: 20px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 15px;
+    }
     /*Contact*/
     .contact-body {
         display: grid;
@@ -378,18 +391,22 @@ h3 {
     .contact-img1 {
         grid-column-start: 1;
         grid-row-start: 2;
+        justify-self: center;
     }
     .contact-img2 {
         grid-column-start: 2;
         grid-row-start: 2;
+        justify-self: center;
     }
     .contact-img3 {
         grid-column-start: 1;
         grid-row-start: 4;
+        justify-self: center;
     }
     .contact-img4 {
         grid-column-start: 2;
         grid-row-start: 4;
+        justify-self: center;
     }
 
     .platform-body {
@@ -408,21 +425,28 @@ h3 {
     .platform-img1 {
         grid-column-start: 1;
         grid-row-start: 2;
+        justify-self: center;
     }
     .platform-img2 {
         grid-column-start: 2;
         grid-row-start: 2;
+        justify-self: center;
     }
     .platform-img3 {
         grid-column-start: 1;
         grid-row-start: 4;
+        justify-self: center;
     }
     .platform-img4 {
         grid-column-start: 2;
         grid-row-start: 4;
+        justify-self: center;
     }
 }
 
+
+
+/*Laptop størrelse*/
 @media only screen and (min-width: 1000px) {
     body {
         background-image: url(images/logo-background.PNG);
@@ -432,4 +456,128 @@ h3 {
         background-color: #303274;
         margin: 1rem;
     }
+    /*Forside*/
+    .profil-h2 {
+        color: white;
+        font-size: 30px;
+    }
+    .profil-p {
+        color: white;
+        font-size: 20px;
+    }
+    /*Contact side*/
+    .contact-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        margin-bottom: 0rem;
+        grid-column: span 3;
+    }
+    .contact-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .contact-img4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .contact-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .contact-info4 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        justify-self: center;
+    }
+    .platform-body {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .platform-body-h1 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 32px;
+        margin-bottom: 0rem;
+        grid-column: span 3;
+    }
+    .platform-img1 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img2 {
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img3 {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    .platform-img4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        justify-self: center;
+    }
+    .platform-info1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info2 {
+        grid-column-start: 2;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info3 {
+        grid-column-start: 3;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    .platform-info4 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        justify-self: center;
+    }
+}
+
+
+
+
+/*Stationær størrelse*/
+@media only screen and (min-width: 2000px) {
+
 }
