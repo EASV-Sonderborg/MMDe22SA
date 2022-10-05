@@ -1,5 +1,4 @@
 body {
-  max-width: 100%;
   margin: 1rem;
   background-image: url(/img/front.gif);
   color: white;
@@ -435,26 +434,27 @@ max-width: 100%;
 }
 
   .albumcover {
-  visibility: hidden;
-}
+display: none;
+  }
+
 .someh1{
-  visibility: hidden;
+display: none;
 }
 .socials{
-  visibility: hidden;
+display: none;
 }
 .rara{
-  visibility: hidden;
+  display: none;
 }
 .twitter{
-  visibility: hidden;
+  display: none;
 }
 .bandcamp{
-  visibility: hidden;
+  display: none;
 }
 
 .twitch {
-  visibility: hidden;
+  display: none;
 }
 /* - - - -- - -- - - end of hidden objects -- - - - -- - - -- - - - - */
 
@@ -495,6 +495,18 @@ main {
   margin-top: 1rem;
 }
 
+.forside {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+ }
+ 
+ .main-flex {
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+ }
+
 .frontbanner {
   visibility: visible;
   border-radius: 12px;
@@ -504,10 +516,9 @@ main {
   visibility: visible;
   background-image: url(/img/glitch.gif);
   border-radius: 12px; 
-  height: max-content;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .feed h1 {
@@ -548,28 +559,29 @@ margin: 0;
   border-bottom-left-radius: 12px;  
 }
 
-.twitchlink {
+.twitch {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 15px;
   justify-content: center;
   text-align: center;
   background-color: #19cccf7d;
   border-radius: 12px;
+
 }
 
-.twitchlink p {
+.twitch p {
   margin: 0;
 }
 
-.twitchlink img {
+.twitch img {
   margin: auto;
   width: 40%;
   height: 40%;
   margin-bottom: .5rem;
 }
 
-.twitchlink a {
+.twitchlink {
   text-decoration: none;
   color: white;
   border: 1px solid #9147FF;
@@ -580,18 +592,6 @@ margin: 0;
   margin-top: .5rem;
 }
 
-.forside {
- display: grid;
- grid-template-columns: 1fr 2fr;
- gap: 1rem;
-}
-
-.main-flex {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-
-}
 
 .aboutband {
   background-color: #bf5c9f;
