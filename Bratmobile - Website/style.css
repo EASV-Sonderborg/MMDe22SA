@@ -190,7 +190,7 @@ a {
     width: 140px;
     grid-row: span 2;
     align-self: center;
-    transition: 0.7s;
+    border: 4px solid rgb(170, 36, 133);
 }
 
 .listennow {
