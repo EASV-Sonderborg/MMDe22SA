@@ -391,7 +391,7 @@ main {
 .band {
     padding-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 1rem;
 }
@@ -399,10 +399,13 @@ main {
 .band__member {
     color: white;
     background-color: #411243;
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue";
+    font-weight: 300;
     padding: 1rem;
     text-align: center;
     text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
 
 .band__img {
@@ -412,7 +415,8 @@ main {
 }
 
 .name {
-    font-size: 16px;
+    font-family: "Sigmar One";
+    font-size: 2rem;
 }
 
 .text {
@@ -420,13 +424,23 @@ main {
     background-color: #411243;
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
+.text__about__title {
+    font-family: "Sigmar One";
+    font-size: 2rem;
+}
 .text__about {
     padding: 1rem 1rem 2rem;
     padding-bottom: 1rem;
+    text-align: center;
+}
+.text__about p {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
 
 
@@ -457,6 +471,12 @@ main {
 }
 
 @media screen and (min-width: 640px) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+    .text {
+        grid-template-columns: 1fr 1fr;
+    }
     .gallery__section {
         grid-template-columns: 1fr 1fr;
     }
@@ -509,6 +529,12 @@ main {
 }
 
 @media screen and (min-width: 960px) {
+    .band {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .text {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .gallery__section {
         grid-template-columns: repeat(3, 1fr);
     }
