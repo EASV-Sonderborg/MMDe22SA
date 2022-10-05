@@ -407,10 +407,10 @@ main {
     letter-spacing: 10rem;
 }
 
-.member-about {
-    line-break: auto;
-    line-height: 20rem;
-}
+ .member-about {
+    line-break: auto; 
+    line-height: 20rem; 
+}  
 
 .band__img {
     width: 100%;
