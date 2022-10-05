@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sigmar+One&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -395,47 +396,39 @@ main {
     padding-bottom: 1rem;
 }
 
-.band__member__person {
+.band__member {
     color: white;
     background-color: #411243;
     font-family: Bebas Neue;
     padding: 1rem;
     text-align: center;
     text-align: center;
-    line-break: auto;
-    line-height: 10rem;
-    letter-spacing: 10rem;
 }
-
- .member-about {
-    line-break: auto; 
-    line-height: 20rem; 
-}  
 
 .band__img {
     width: 100%;
-    border-radius: 15rem;
+    border-radius: 100%;
+
 }
 
 .name {
     font-size: 16px;
 }
 
-/* text */
 .text {
+    color: white;
+    background-color: #411243;
+    padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .text__about {
-    color: white;
-    font-family: Bebas Neue;
-    background-color: #411243;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
     padding-bottom: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
+
 
 @media (min-width:48em) {
     .header li {
