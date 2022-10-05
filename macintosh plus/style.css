@@ -1,0 +1,732 @@
+body {
+  max-width: 100%;
+  margin: 1rem;
+  background-image: url(/img/front.gif);
+  color: white;
+  background-repeat: no-repeat; /*makes it not repeat itself*/
+  background-attachment: fixed; /*covers the whole screen and locks itself in place*/
+  background-size:cover; /*Makes the background image fit to the whole screen*/
+  font-family: 'Orbitron', sans-serif;
+}
+
+h1 h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+p {
+  font-family: 'Palanquin', sans-serif;
+}
+
+img {
+max-width: 100%;
+}
+
+/* - - - MOBILE - - - */
+@media screen and (min-width: 390px) and (max-device-width: 789px) {
+
+/* - - -- - - - - -- - - -- --  NAVIGATION - - - -- - - -- - - - -*/
+#menuToggle
+{
+  display: block;
+  position: relative;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #DCFF4D;
+  
+  transition: color 0.3s ease;
+}
+
+/*
+#menuToggle a:hover
+{
+  color: #DCFF4D;
+}*/
+
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #DCFF4D;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #DCFF4D;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen - dette er menuen!!!!
+ */
+#menu
+{
+  position: absolute;
+  width: 100vh;
+  height: 42.5vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #4C0060;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  margin-left: 1rem;
+}
+
+#menu img {
+  visibility: hidden;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* - - - - - - -- - - - - - - - - - - - - - */
+
+/* - - - - - - - FORSIDE - - - - - - - -*/ 
+
+.frontbanner {
+  visibility: visible;
+  margin-top: .5rem;
+  border-radius: 12px;
+}
+
+  .mobile-hide {
+    display:none;
+  } 
+
+    .aboutband {
+        margin-top: .5rem;
+        background-color: #bf5c9f;
+        border-radius: 12px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "h1 statue"
+        "para statue";
+  }
+
+    .aboutband p {
+      grid-area: para;
+        padding: .5rem;
+        margin: 0;
+    }
+
+    .aboutband h1 {
+      grid-area: h1;
+      margin: 0;
+      padding: .5rem;
+
+    }
+
+    .aboutband img {
+      object-fit: cover;
+      grid-row: span 3;
+      margin-bottom: .5rem;
+    }
+
+
+    .aboutartist {
+      margin-top: 1rem;
+      background-color: #bf5c9f;
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+      "statue h1"
+      "statue para";
+}
+
+  .aboutartist p {
+    grid-area: para;
+      padding: .5rem;
+      margin: 0;
+  }
+
+  .aboutartist h1 {
+    grid-area: h1;
+    margin: 0;
+    padding: .5rem;
+  }
+
+  .aboutartist img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-row: span 3;
+    padding-bottom: .5rem;
+  }
+
+    .mobile-vek {
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: #DCFF4D;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+
+    .banner {
+        margin-top: 1rem;
+        align-items: center;    
+        justify-content: center;    
+    }
+
+    .banner img {
+        border-radius: 12px;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-top: .5rem;
+        margin-top: 0;
+    }
+
+    .selfie {
+        padding-bottom: .5rem;
+    }
+
+    .selfie img {
+      display: block;
+      padding-top: .5rem;
+      margin: auto;
+      max-width: 95%;
+      border-radius: 12px;
+    }
+
+    .albumcover {
+      display: flex;
+      margin-top: 1rem;
+      border-radius: 12px;
+      justify-content: center; 
+    }
+
+    .albumcover img {
+      border-radius:12px;
+    }
+
+    .socials {
+      display: flex;
+        margin-top: 1rem;
+        background-color: #ff819c;
+        justify-content: center;
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0.5rem;
+        gap: .5rem;
+        border-bottom-right-radius: 12px; 
+      border-bottom-left-radius: 12px;
+      flex-wrap: wrap;
+    }
+
+    .someh1 {
+      background-color: #ff819c;
+      text-align: center;
+      margin-bottom: 0;
+      padding-bottom: 1rem;
+      padding-top: .5rem;
+      border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    }
+
+    .socials img {
+        border-radius: 12px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        margin-top: 0;
+        height: 44px;
+          }
+
+    .twitch img {
+    width: 95%;
+    min-width: 60%;
+    justify-content: center;
+    }
+
+    .socials a {
+        margin-left: .5rem;
+    }
+    /* - - - - Forside slutter her - - - - - */
+
+    /* - - - - - - DISCOGRAPHY - - - - - - */
+
+    .albums {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .albums img {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    .albums figure {
+      width: calc(47% - 0.5rem);
+      margin: 0;
+      background-color: #bf5c9f;
+      border-radius: 6px;
+      padding: .3rem;
+    }
+
+    .albums figcaption {  
+      text-align: center;
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - */    
+
+    /* - - - - - - MERCH - - - - - - */
+
+    .merch {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 0;
+    }
+
+.merch figure {
+  margin: 0;
+  margin-bottom: 1rem;
+  background-color: #52b2d9;
+  border-radius: 6px;
+  padding: .3rem;
+}
+
+.merch figcaption {
+  background-color: #52b2d9;
+  text-align: center;
+  border-radius: 6px;
+  padding-top: .25rem;
+}
+
+    .merch img {
+      width: 100%;
+      height: 85%;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+
+    /* - - - - - - - - - - - - - - - - - - - */    
+
+
+    /* - - - - FOOTER - - - -  */
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .footer p {
+        margin: 0;
+        font-size: 1rem;
+        color: #DCFF4D;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: #DCFF4D;
+    }
+
+    /* - - - - - - - - - - - - */    
+
+
+}
+
+/* - - - COMPUTER - - - */
+@media screen and (min-width: 790px) {
+
+  /* - - - - Hidden Objects - - - - */
+
+#menuToggle {
+  visibility: hidden;
+}
+
+  .albumcover {
+  visibility: hidden;
+}
+.someh1{
+  visibility: hidden;
+}
+.socials{
+  visibility: hidden;
+}
+.rara{
+  visibility: hidden;
+}
+.twitter{
+  visibility: hidden;
+}
+.bandcamp{
+  visibility: hidden;
+}
+
+.twitch {
+  visibility: hidden;
+}
+/* - - - -- - -- - - end of hidden objects -- - - - -- - - -- - - - - */
+
+/* - - - -- - - - - -- NAVIGATION - -- - - - - - - -*/ 
+
+#menu {
+visibility: visible;
+background: #4d006089;
+padding: 2rem;
+border-radius: 12px;
+}
+
+#menu img {
+  position: absolute;
+  right: 40px;
+  top: 70px;
+  height: 5%;
+  width: 10%;
+}
+
+#menu li {
+  display: inline-block;
+  padding-right: 3.5rem;
+  list-style-type: none;
+  align-content: center;
+  color: #DCFF4D;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #DCFF4D;
+  opacity: 100%;
+}
+
+  /* - - - - Forside - - - - */
+
+main {
+  margin-top: 1rem;
+}
+
+.frontbanner {
+  visibility: visible;
+  border-radius: 12px;
+}
+
+.feed {
+  visibility: visible;
+  background-image: url(/img/glitch.gif);
+  border-radius: 12px; 
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feed h1 {
+  margin: 0;
+  padding: 1rem;
+}
+
+.feed-bandcamp {
+  background-color: #dbff4d8e;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.feed-bandcamp p {
+  text-align: center;
+  margin: 0;
+}
+
+.twittersection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feed-tweet {
+  background-color: #1da0f295;
+  border-radius: 12px;
+  padding: 2px;
+}
+
+.feed-tweet p {
+text-align: center;
+margin: 0;
+}
+
+.feed-tweet img {
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;  
+}
+
+.twitchlink {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  text-align: center;
+  background-color: #19cccf7d;
+  border-radius: 12px;
+}
+
+.twitchlink p {
+  margin: 0;
+}
+
+.twitchlink img {
+  margin: auto;
+  width: 40%;
+  height: 40%;
+  margin-bottom: .5rem;
+}
+
+.twitchlink a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #9147FF;
+  background-color: #9147FF;
+  width: 35%;
+  border-radius: 12px;
+  margin: auto;
+  margin-top: .5rem;
+}
+
+.forside {
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ gap: 1rem;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+}
+
+.aboutband {
+  background-color: #bf5c9f;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "h1 statue"
+  "para statue";
+}
+
+.aboutband p {
+grid-area: para;
+  padding: .5rem;
+  margin: 0;
+}
+
+.aboutband h1 {
+grid-area: h1;
+margin: 0;
+padding: .5rem;
+
+}
+
+.aboutband img {
+object-fit: cover;
+grid-row: span 3;
+margin-bottom: .5rem;
+}
+
+
+.aboutartist {
+background-color: #5cbe10;
+border-radius: 12px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-areas: 
+"statue h1"
+"statue para";
+}
+
+.aboutartist p {
+grid-area: para;
+padding: .5rem;
+margin: 0;
+}
+
+.aboutartist h1 {
+grid-area: h1;
+margin: 0;
+padding: .5rem;
+}
+
+.aboutartist img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  grid-row: span 3;
+  padding-bottom: .5rem;
+}
+
+.section-flex {
+  display: flex;
+  gap: .5rem;
+  border-radius: 12px;
+}
+
+.mobile-vek {
+  background-color:#DCFF4D;
+  width: 50%;
+  border-radius: 12px;
+}
+
+.mobile-vek img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.veklogo {
+  border-radius: 12px;
+}
+
+.giphy {
+  width: 50%;
+  border-radius: 12px;
+}
+
+/* - - - - - - - - - - - - -  DISCOGRAPHY - - - - - - - - - - - - -  */
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  text-align: center;
+}
+
+.albums figure {
+  background-color: #bf5c9f;
+  border-radius: 6px;
+      padding: .3rem;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.floral {
+  grid-area: 2/2/4/4;
+}
+
+.floral figcaption {
+  padding-top: .5rem;
+}
+
+/* - - - - FOOTER - - - -  */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #DCFF4D;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #DCFF4D;
+}
+
+}
+
