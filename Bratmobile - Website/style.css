@@ -137,7 +137,9 @@ a {
     bottom: 0;
     z-index: -1;
 }
-.mostpopular__title h1, .gallery__title h1 {
+
+.mostpopular__title h1,
+.gallery__title h1 {
     font-family: Bebas Neue;
     font-weight: 600;
     font-size: 3rem;
@@ -147,11 +149,13 @@ a {
     margin: 1rem 1rem 0;
     padding: 1rem;
 }
+
 .mostpopular {
     margin: 0 0 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
+
 .mostpopular h1 {
     font-family: Bebas Neue;
     font-size: 2rem;
@@ -165,6 +169,7 @@ a {
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
 }
+
 .cover_left {
     margin-top: 1rem;
     background-color: #411243;
@@ -175,6 +180,7 @@ a {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
+
 .cover_left1 {
     display: none;
 }
@@ -185,6 +191,7 @@ a {
     justify-self: end;
     grid-row: span 2;
 }
+
 .albumimg {
     margin: 1rem 0 1rem;
     width: 140px;
@@ -204,14 +211,17 @@ a {
     margin: 0;
     transition: 0.7s;
 }
+
 .listennow:hover {
     background-color: white;
     color: #661053FA;
 }
+
 .cover_left a {
     text-decoration: none;
     color: white;
 }
+
 .cover_right a {
     text-decoration: none;
     justify-self: end;
@@ -221,6 +231,7 @@ a {
 .cover_right h1 {
     text-align: right;
 }
+
 main {
     display: flex;
     align-items: center;
@@ -245,10 +256,12 @@ main {
     padding: 1rem 1.5rem 0.5rem;
     transition: 0.5s;
 }
+
 .viewgallery:hover {
     background-color: white;
     color: #411243;
 }
+
 .frontpage__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -257,14 +270,17 @@ main {
     margin-bottom: 1rem;
     transition: 0.7s;
 }
+
 .frontpage__gallery:hover {
     opacity: 40%;
 }
+
 .frontpage__gallery_img {
     width: 100%;
     height: 100px;
     object-fit: cover;
 }
+
 .upperfooter {
     display: grid;
     grid-template-columns: 1fr;
@@ -272,6 +288,7 @@ main {
     justify-items: center;
     width: 100vw;
 }
+
 .underfooter {
     background-color: #411243;
     font-family: "Bebas Neue";
@@ -280,33 +297,41 @@ main {
     padding: 0.5rem;
     color: white;
 }
+
 .footer__links {
     color: white;
     list-style: none;
     text-align: center;
     font-size: 1.5rem;
 }
+
 .footer__links li {
     padding: 0.5rem;
 }
+
 .footer__links li a {
     opacity: 100%;
     transition: 0.4s;
 }
+
 .footer__links li a:hover {
     opacity: 40%;
 }
+
 .footer__some img {
     width: 50px;
     padding: 0 0.5rem;
 }
+
 .footer__some li {
     display: inline-block;
 }
+
 .footer__some li a {
     opacity: 100%;
     transition: 0.4s;
 }
+
 .footer__some li a:hover {
     opacity: 40%;
 }
@@ -318,17 +343,21 @@ main {
     grid-column-end: 4;
     justify-self: end;
 }
+
 .afspil_musik img {
     width: 35px;
     padding-left: 0.2rem;
 }
+
 .afspil_musik li a {
     opacity: 100%;
     transition: 0.4s;
 }
+
 .afspil_musik li a:hover {
     opacity: 40%;
 }
+
 .afspil_musik li {
     list-style: none;
     display: inline-block;
@@ -344,6 +373,7 @@ main {
     margin: 0 1rem 1rem;
     transition: 0.7s;
 }
+
 .gallery_img {
     width: 100%;
     height: auto;
@@ -351,9 +381,62 @@ main {
     opacity: 100%;
     transition: 0.7s;
 }
+
 .gallery_img:hover {
     opacity: 100%;
 }
+
+/* about.html*/
+.band {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
+}
+
+.band__member__person {
+    color: white;
+    background-color: #411243;
+    font-family: Bebas Neue;
+    padding: 1rem;
+    text-align: center;
+    text-align: center;
+    line-break: auto;
+    line-height: 10rem;
+    letter-spacing: 10rem;
+}
+
+.member-about {
+    line-break: auto;
+    line-height: 20rem;
+}
+
+.band__img {
+    width: 100%;
+    border-radius: 15rem;
+}
+
+.name {
+    font-size: 16px;
+}
+
+/* text */
+.text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text__about {
+    color: white;
+    font-family: Bebas Neue;
+    background-color: #411243;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 @media (min-width:48em) {
     .header li {
         float: left;
@@ -372,85 +455,110 @@ main {
         display: none;
     }
 }
+
 @media (min-aspect-ratio: 16/9) {
     .frontpage__video {
         width: 100%;
         height: auto;
     }
-} 
+}
+
 @media screen and (min-width: 640px) {
     .gallery__section {
         grid-template-columns: 1fr 1fr;
     }
+
     .gallery_img {
         height: 200px;
     }
+
     .mostpopular {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    .cover_right, .cover_left {
+
+    .cover_right,
+    .cover_left {
         width: 50vw;
     }
+
     .listennow {
         width: 20vw;
     }
+
     .frontpage__gallery_img {
         height: 200px;
     }
+
     .cover_left {
         margin-top: 0;
     }
+
     .header .img-logo {
         height: 60px;
     }
+
     .upperfooter {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background-color: #411243;
         justify-items: center;
     }
+
     .footer__links li {
         padding: 0.5rem;
         display: inline-block;
     }
+
     .footer__some {
         align-self: center;
     }
 }
+
 @media screen and (min-width: 960px) {
     .gallery__section {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .gallery_img {
         height: 300px;
         opacity: 40%;
     }
+
     .frontpage__video {
         margin-top: 0;
     }
+
     .mostpopular {
         grid-template-columns: 1fr 1fr 1fr;
         padding: 0 0 0 1rem;
     }
-    .cover_right, .cover_left {
+
+    .cover_right,
+    .cover_left {
         width: 31vw;
     }
+
     .listennow {
         width: 13vw;
     }
+
     .frontpage__gallery {
         margin: 0 1rem 1rem;
     }
+
     .frontpage__gallery_img {
         height: 200px;
     }
+
     .cover_left {
         display: none;
     }
+
     .header .img-logo {
         height: 60px;
     }
+
     .cover_left1 {
         margin-top: 0;
         margin-bottom: 0;
@@ -461,15 +569,14 @@ main {
         grid-template-columns: 1fr 1fr;
         padding: 0 1rem;
     }
+
     .cover_left1 a {
         text-decoration: none;
         justify-self: end;
         color: white;
     }
-    
+
     .cover_left1 h1 {
         text-align: right;
     }
 }
-
-
