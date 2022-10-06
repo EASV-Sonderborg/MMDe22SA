@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+ul {
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +18,7 @@ body {
 }
 
 a {
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue";
     font-weight: 600;
     text-align: center;
     color: white;
@@ -142,12 +145,13 @@ a {
 .gallery__title h1 {
     font-family: "Sigmar One";
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     color: rgb(170, 36, 133);
     background-color: #411243;
-    margin: 1rem 1rem 0;
+    margin: 1rem 0 0;
     padding: 1rem;
+    width: 100vw;
 }
 
 .mostpopular {
@@ -159,27 +163,28 @@ a {
 .mostpopular h1 {
     font-family: "Sigmar One";
     line-height: 1.6rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .cover_right {
     background-color: #411243;
     color: white;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 1rem;
+    padding: 1rem;
+    justify-self: center;
+    width: 100%;
 }
 
 .cover_left {
-    margin-top: 1rem;
+    margin: 1rem 0 1rem;
     background-color: #411243;
     color: white;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 1rem;
-    margin-bottom: 1rem;
+    justify-self: center;
+    padding: 1rem;
+    width: 100%;
 }
 
 .cover_left1 {
@@ -208,7 +213,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     padding: 0.7rem 0 0.5rem;
-    font-family: Bebas Neue;
+    font-family: "Bebas Neue";
     margin: 0;
     transition: 0.7s;
 }
@@ -254,7 +259,7 @@ main {
     border: 2px solid white;
     border-radius: 2rem;
     font-size: 2rem;
-    padding: 1rem 1.5rem 0.5rem;
+    padding: 0.75rem 1.5rem 0.5rem;
     transition: 0.5s;
 }
 
@@ -267,7 +272,6 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
-    background-color: black;
     margin-bottom: 1rem;
     transition: 0.7s;
 }
@@ -279,6 +283,8 @@ main {
 .frontpage__gallery_img {
     width: 100%;
     height: 100px;
+
+    background-color: black;
     object-fit: cover;
 }
 
@@ -371,7 +377,7 @@ main {
     grid-template-columns: 1fr;
     width: 100vw;
     background-color: black;
-    margin: 0 1rem 1rem;
+    margin: 0 0 1rem;
     transition: 0.7s;
 }
 
@@ -474,6 +480,27 @@ main {
 }
 
 @media screen and (min-width: 640px) {
+    .mostpopular__title h1,
+    .gallery__title h1 {
+        font-size: 3rem;
+    }
+    .mostpopular h1 {
+        font-size: 2rem;
+    }
+    .riot--grrrl {
+        grid-column: span 2;
+    }
+    .erin--smith {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: span 2;
+    }
+    .erin--smith p {
+        padding: 1rem;
+    }
+    .erin--img {
+        align-self: center;
+    }
     .band {
         grid-template-columns: 1fr 1fr;
     }
@@ -493,15 +520,13 @@ main {
         gap: 1rem;
     }
 
-    .cover_right,
-    .cover_left {
-        width: 50vw;
-    }
 
     .listennow {
         width: 20vw;
     }
-
+    .frontpage__gallery {
+        width: 100vw;
+    }
     .frontpage__gallery_img {
         height: 200px;
     }
@@ -509,7 +534,10 @@ main {
     .cover_left {
         margin-top: 0;
     }
-
+    .cover__cherry {
+        width: 100vw;
+        grid-column: span 2;
+    }
     .header .img-logo {
         height: 60px;
     }
@@ -532,6 +560,17 @@ main {
 }
 
 @media screen and (min-width: 960px) {
+    .riot--grrrl {
+        grid-column: span 1;
+    }
+    .erin--smith {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+    .erin--smith p {
+        padding: 0;
+    }
     .band {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -553,20 +592,19 @@ main {
 
     .mostpopular {
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 0 0 1rem;
-    }
-
-    .cover_right,
-    .cover_left {
-        width: 31vw;
+        padding: 0;
     }
 
     .listennow {
         width: 13vw;
     }
-
+    .cover__cherry {
+        width: 33vw;
+        grid-column: span 1;
+        padding: 0 1rem;
+    }
     .frontpage__gallery {
-        margin: 0 1rem 1rem;
+        margin: 0 0 1rem;
     }
 
     .frontpage__gallery_img {
@@ -586,10 +624,10 @@ main {
         margin-bottom: 0;
         background-color: #411243;
         color: white;
-        width: 31vw;
+        width: 32vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0 1rem;
+        padding: 0;
     }
 
     .cover_left1 a {

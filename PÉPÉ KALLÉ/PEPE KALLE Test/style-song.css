@@ -23,6 +23,7 @@ nav{
     -webkit-backdrop-filter: blur(5px);
     
 
+
 }
 
 ul{
@@ -61,31 +62,6 @@ nav a:hover{
    
 }
 /* Content On site*/
-
-.content{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.5fr 3fr; 
-    grid-template-rows: 0.2fr 1.8fr; 
-    gap: 0px 20px; 
-    grid-template-areas: 
-      "side-info info-text"
-      "side-info info-text";
-    text-align: center;
-    margin-right: 1rem;
-    margin-top: 1rem;
-
-}
-
-.info-text{
-    grid-area: info-text;
-}
-
-.side-info{
-    grid-area: side-info;
-    column-span: 2;
-    border: 2px solid black;
-}
 
 /* Footer Styling*/
 footer {
