@@ -225,13 +225,25 @@ h3 {
 }
 /* Ende contact siden */
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* gallery side */
 .overskrift-gallery {
     text-align: center;
     padding: 2rem;
     grid-area: 1 / span 1;
-    text-decoration: underline;
     font-size: 2.5rem;
+    color: white;
 }
 .underoverskrift-to {
     margin: 10px;
@@ -356,95 +368,93 @@ h3 {
 }
 /* End gallery side */
 
-/* ------------ Music side -------------- */ 
 
-/* .main-music {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ Music side -------------- */ 
 
 .musicpage-overskrift {
     color: white;
     text-align: center;
     margin-top: 4rem;
 }
-
 .nederstealbums {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid purple;
     border-radius: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
-
 .albums {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid purple;
     margin-bottom: 2.5rem;
     padding: 2rem;
     gap: 2rem;
-  
+}
+.singletopics {
+    color: white;
+   text-align: center;
+   padding-bottom: 2rem;
+    grid-area: 1 / span 3;
+    font-size: 2rem;
 }
 .overskrift-årstal {
     grid-column: span 3;
     text-align:left;
     font-weight: bold;
-    text-decoration: underline;
     color: white;
 }
-
-
-
-
-
 .songs {
-    border-radius: 30%;
-    width: 15rem;
-    border: 2px solid black;
+    border: 2px solid purple;
 }
-
 .albums--2013 {
     margin-top: 3rem;
 }
-
 .albums--2018 {
     margin-bottom: 5rem;
 }
-
-   
 .albumstext {
     color: white;
     grid-area: 1 / span 2;
     text-align: center;
     padding-bottom: 2rem;
+    font-size: 2rem;
 }
-
 .albumsbillede-et {
     padding: 1.2rem;
-    border-radius: 30%;
-    width: 15rem;
     justify-self: end;
-   
-
+    grid-area: 2 / 1 / 3 / 1;
 }
-
 .albumsbillede-to {
     padding: 1.2rem;
-    border-radius: 30%;
-    width: 15rem;
     justify-self: start;
-  
+    grid-area: 2 / 2 / 3 / 2;
+}
+.album-et {
+    text-align: center;
+    color: white;
+}
+.album-to {
+    text-align: center;
 }
 
-
-
-
-
-
-
-
 /* ---------- MUSIC SIDE END ------------*/ 
+
+
+
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -632,7 +642,49 @@ h3 {
         grid-row-start: 4;
         justify-self: center;
     }
+
+    /*---- Music ----*/
+    .main-music {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .nederstealbums {
+        grid-area: 1 / 1 / 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        border: none;
+    }
+    .nederstealbums img {
+        width: 60%;
+    }
+    .singletopics {
+        grid-area: 1 / span 3;
+        font-size: 2rem;
+    }
+    .albumstext {
+        font-size: 2rem;
+    }
+    .album-et {
+        padding-top: 3rem;
+    }
+    .album-to {
+        padding-top: 3rem;
+    }
+
+
+    /*----Gallery----*/
+    .main-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+       margin-top: 2rem;
+    }
 }
+
+
 
 
 
@@ -823,6 +875,25 @@ h3 {
         grid-row-start: 5;
         text-align: center;
     }
+
+
+    /*---- Music ----*/
+    .albumstext {
+        font-size: 3rem;
+    }
+    .singletopics {
+        font-size: 3rem;
+    }
+    .album-et {
+        font-size: 2.4rem;
+    }
+    .overskrift-årstal {
+        font-size: 2.4rem;
+    }
+    .nederstealbums {
+        width: 80%;
+    }
+
 }
 
 
