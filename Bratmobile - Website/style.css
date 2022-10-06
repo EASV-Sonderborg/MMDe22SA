@@ -151,7 +151,7 @@ a {
 }
 
 .mostpopular {
-    margin: 0 0 1rem;
+    margin: 0 1rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -165,7 +165,7 @@ a {
 .cover_right {
     background-color: #411243;
     color: white;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
@@ -256,6 +256,7 @@ main {
     font-size: 2rem;
     padding: 1rem 1.5rem 0.5rem;
     transition: 0.5s;
+    padding: 0 1rem;
 }
 
 .viewgallery:hover {
@@ -376,6 +377,7 @@ main {
 }
 
 .gallery_img {
+    border: 4px solid rgb(170, 36, 133);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -389,7 +391,7 @@ main {
 
 /* about.html*/
 .band {
-    padding-top: 1rem;
+    padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -438,11 +440,11 @@ main {
     padding-bottom: 1rem;
     text-align: center;
 }
-.text__about p {
-    font-family: "Bebas Neue";
+.text__about p, .band p {
+    font-family: "Noto Sans";
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
 }
 
 
@@ -473,6 +475,20 @@ main {
 }
 
 @media screen and (min-width: 640px) {
+    .riot--grrrl {
+        grid-column: span 2;
+    }
+    .erin--smith {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: span 2;
+    }
+    .erin--smith p {
+        padding: 1rem;
+    }
+    .erin--img {
+        align-self: center;
+    }
     .band {
         grid-template-columns: 1fr 1fr;
     }
@@ -494,7 +510,8 @@ main {
 
     .cover_right,
     .cover_left {
-        width: 50vw;
+        width: 47vw;
+        padding: 0 1rem;
     }
 
     .listennow {
@@ -508,7 +525,11 @@ main {
     .cover_left {
         margin-top: 0;
     }
-
+    .cover__cherry {
+        width: 100%;
+        grid-column: span 2;
+        padding: 0 1rem;
+    }
     .header .img-logo {
         height: 60px;
     }
@@ -531,6 +552,17 @@ main {
 }
 
 @media screen and (min-width: 960px) {
+    .riot--grrrl {
+        grid-column: span 1;
+    }
+    .erin--smith {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+    .erin--smith p {
+        padding: 0;
+    }
     .band {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -563,7 +595,11 @@ main {
     .listennow {
         width: 13vw;
     }
-
+    .cover__cherry {
+        width: 31cw;
+        grid-column: span 1;
+        padding: 0 1rem;
+    }
     .frontpage__gallery {
         margin: 0 1rem 1rem;
     }
