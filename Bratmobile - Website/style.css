@@ -114,7 +114,7 @@ a {
 }
 
 .header .menu-btn:checked~.menu {
-    max-height: 240px;
+    max-height: 300px;
 }
 
 .header .menu-btn:checked~.menu-icon .nav-icon {
@@ -133,7 +133,6 @@ a {
 
 .frontpage__video {
     position: relative;
-    margin-top: 1rem;
     width: 100%;
     height: auto;
     right: 0;
@@ -174,6 +173,7 @@ a {
     padding: 1rem;
     justify-self: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .cover_left {
@@ -185,6 +185,7 @@ a {
     justify-self: center;
     padding: 1rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .cover_left1 {
@@ -418,6 +419,7 @@ main {
 .band__img {
     width: 100%;
     border-radius: 100%;
+    border: 4px solid rgb(170, 36, 133);
 
 }
 
