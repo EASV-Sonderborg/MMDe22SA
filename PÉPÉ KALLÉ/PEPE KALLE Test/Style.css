@@ -63,33 +63,26 @@ nav a:hover{
 /* Content On site*/
 
 .content{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.5fr 3fr; 
-    grid-template-rows: 0.2fr 1.8fr; 
-    gap: 0px 20px; 
-    grid-template-areas: 
-      "side-info info-text"
-      "side-info info-text";
-    text-align: center;
-    margin-right: 1rem;
     margin-top: 1rem;
-
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.info-text{
-    grid-area: info-text;
+.stuff{
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    padding: 1rem;
 }
-
-.side-info{
-    grid-area: side-info;
-    column-span: 2;
-    border: 2px solid black;
-}
-
 /* Footer Styling*/
 footer {
-    position: absolute;
+    position:end ;
     bottom: 0;
     width: 100%;
     height: 30px;
