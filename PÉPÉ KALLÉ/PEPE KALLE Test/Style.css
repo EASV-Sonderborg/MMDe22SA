@@ -1,12 +1,12 @@
 body{
     margin: 0;
     padding: 0;
-    /*background-image: url(Images/PEPE-GIF.gif);*/
+    
     background-image: linear-gradient(to right bottom, #1158ac, #7453ad, #ac4b9f, #d34786, #ea5367, #de5060, #d14c5a, #c54954, #98355b, #662a55, #361f43, #101027);
     font-family: Roboto;
     max-width: 100vw;
 }
-
+/* Header/nav*/
 header{
     margin: 0;
     width: 100vw;
@@ -17,12 +17,11 @@ nav{
     font-family: Roboto;
     height: 116px;
     margin: 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.04);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 
 }
 
@@ -44,7 +43,7 @@ li{
     text-decoration: none;
 }
 nav a{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -61,7 +60,6 @@ nav a:hover{
     border-bottom: 1px solid azure;
    
 }
-
 /* Content On site*/
 
 .content{
@@ -88,3 +86,24 @@ nav a:hover{
     column-span: 2;
     border: 2px solid black;
 }
+
+/* Footer Styling*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content:space-evenly;
+    background: rgba(255, 255, 255, 0.04);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+    align-items: center;
+  }
+  .footer-text{
+    font-size: 10px;
+    text-align: center;
+  }
