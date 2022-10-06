@@ -169,22 +169,22 @@ a {
 .cover_right {
     background-color: #411243;
     color: white;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem;
     justify-self: center;
+    width: 100%;
 }
 
 .cover_left {
     margin: 1rem 0 1rem;
     background-color: #411243;
     color: white;
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-self: center;
     padding: 1rem;
+    width: 100%;
 }
 
 .cover_left1 {
@@ -520,11 +520,6 @@ main {
         gap: 1rem;
     }
 
-    .cover_right,
-    .cover_left {
-        width: 50vw;
-        margin: 0;
-    }
 
     .listennow {
         width: 20vw;
@@ -600,18 +595,13 @@ main {
         padding: 0;
     }
 
-    .cover_right,
-    .cover_left {
-        width: 30vw;
-    }
-
     .listennow {
         width: 13vw;
     }
     .cover__cherry {
         width: 33vw;
         grid-column: span 1;
-        padding: 0;
+        padding: 0 1rem;
     }
     .frontpage__gallery {
         margin: 0 0 1rem;
