@@ -7,6 +7,7 @@
 ul {
     padding: 0;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -436,18 +437,23 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin: 0 0 1rem;
 }
+
 .text__about__title {
     font-family: "Sigmar One";
     font-size: 2rem;
     color: rgb(170, 36, 133);
 }
+
 .text__about {
     padding: 1rem 1rem 2rem;
     padding-bottom: 1rem;
     text-align: center;
 }
-.text__about p, .band p {
+
+.text__about p,
+.band p {
     font-family: "Noto Sans";
     font-weight: 400;
     font-size: 1.2rem;
@@ -482,33 +488,42 @@ main {
 }
 
 @media screen and (min-width: 640px) {
+
     .mostpopular__title h1,
     .gallery__title h1 {
         font-size: 3rem;
     }
+
     .mostpopular h1 {
         font-size: 2rem;
     }
+
     .riot--grrrl {
         grid-column: span 2;
     }
+
     .erin--smith {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column: span 2;
     }
+
     .erin--smith p {
         padding: 1rem;
     }
+
     .erin--img {
         align-self: center;
     }
+
     .band {
         grid-template-columns: 1fr 1fr;
     }
+
     .text {
         grid-template-columns: 1fr 1fr;
     }
+
     .gallery__section {
         grid-template-columns: 1fr 1fr;
     }
@@ -526,9 +541,11 @@ main {
     .listennow {
         width: 20vw;
     }
+
     .frontpage__gallery {
         width: 100vw;
     }
+
     .frontpage__gallery_img {
         height: 200px;
     }
@@ -536,10 +553,12 @@ main {
     .cover_left {
         margin-top: 0;
     }
+
     .cover__cherry {
         width: 100vw;
         grid-column: span 2;
     }
+
     .header .img-logo {
         height: 60px;
     }
@@ -565,20 +584,25 @@ main {
     .riot--grrrl {
         grid-column: span 1;
     }
+
     .erin--smith {
         display: block;
         grid-template-columns: 1fr;
         grid-column: span 1;
     }
+
     .erin--smith p {
         padding: 0;
     }
+
     .band {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .text {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .gallery__section {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -600,11 +624,13 @@ main {
     .listennow {
         width: 13vw;
     }
+
     .cover__cherry {
         width: 33vw;
         grid-column: span 1;
         padding: 0 1rem;
     }
+
     .frontpage__gallery {
         margin: 0 0 1rem;
     }
