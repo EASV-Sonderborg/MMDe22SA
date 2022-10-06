@@ -474,6 +474,20 @@ main {
 }
 
 @media screen and (min-width: 640px) {
+    .riot--grrrl {
+        grid-column: span 2;
+    }
+    .erin--smith {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: span 2;
+    }
+    .erin--smith p {
+        padding: 1rem;
+    }
+    .erin--img {
+        align-self: center;
+    }
     .band {
         grid-template-columns: 1fr 1fr;
     }
@@ -532,6 +546,17 @@ main {
 }
 
 @media screen and (min-width: 960px) {
+    .riot--grrrl {
+        grid-column: span 1;
+    }
+    .erin--smith {
+        display: block;
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+    .erin--smith p {
+        padding: 0;
+    }
     .band {
         grid-template-columns: 1fr 1fr 1fr;
     }
