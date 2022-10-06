@@ -225,13 +225,25 @@ h3 {
 }
 /* Ende contact siden */
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* gallery side */
 .overskrift-gallery {
     text-align: center;
     padding: 2rem;
     grid-area: 1 / span 1;
-    text-decoration: underline;
     font-size: 2.5rem;
+    color: white;
 }
 .underoverskrift-to {
     margin: 10px;
@@ -355,6 +367,20 @@ h3 {
     justify-self: center;
 }
 /* End gallery side */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------ Music side -------------- */ 
 
@@ -618,36 +644,44 @@ h3 {
     }
 
     /*---- Music ----*/
-.main-music {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-.nederstealbums {
-    grid-area: 1 / 1 / 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 3rem;
-    border: none;
-}
-.nederstealbums img {
-    width: 60%;
-}
-.singletopics {
-    grid-area: 1 / span 3;
-    font-size: 2rem;
-}
-.albumstext {
-    font-size: 2rem;
-}
-.album-et {
-    padding-top: 3rem;
-}
-.album-to {
-    padding-top: 3rem;
-}
+    .main-music {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .nederstealbums {
+        grid-area: 1 / 1 / 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        border: none;
+    }
+    .nederstealbums img {
+        width: 60%;
+    }
+    .singletopics {
+        grid-area: 1 / span 3;
+        font-size: 2rem;
+    }
+    .albumstext {
+        font-size: 2rem;
+    }
+    .album-et {
+        padding-top: 3rem;
+    }
+    .album-to {
+        padding-top: 3rem;
+    }
+
+
+    /*----Gallery----*/
+    .main-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+       margin-top: 2rem;
+    }
 }
 
 
