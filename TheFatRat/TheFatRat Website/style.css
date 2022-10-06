@@ -126,7 +126,7 @@ footer {
     color: white;
     margin-top: 4rem;
     margin-bottom: 2rem;
-    font-size: 24px;
+    font-size: 20px;
 }
 h3 {
     color: white;
@@ -182,7 +182,7 @@ h3 {
     color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0rem;
 }
 .contact-img {
@@ -205,7 +205,7 @@ h3 {
     color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 0rem;
 }
 .platform-img {
@@ -490,11 +490,11 @@ h3 {
     /*Forside*/
     .profil-h2 {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
     }
     .profil-p {
         color: white;
-        font-size: 15px;
+        font-size: 12px;
     }
     .body-music {
         display: grid;
@@ -505,7 +505,7 @@ h3 {
         color: white;
         margin-top: 4rem;
         margin-bottom: 2rem;
-        font-size: 28px;
+        font-size: 22px;
         grid-column: span 2
     }
     .unity-image {
@@ -574,7 +574,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 0rem;
         grid-column: span 2;
     }
@@ -608,7 +608,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 24px;
+        font-size: 22px;
         margin-bottom: 0rem;
         grid-column: span 2;
     }
@@ -647,18 +647,18 @@ h3 {
         margin: 1rem;
     }
     .nav-link{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
     }
     /*Forside*/
     .profil-h2 {
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
     .profil-p {
         color: white;
-        font-size: 20px;
+        font-size: 14px;
     }
     .body-music {
         display: grid;
@@ -669,7 +669,7 @@ h3 {
         color: white;
         margin-top: 4rem;
         margin-bottom: 2rem;
-        font-size: 34px;
+        font-size: 24px;
         grid-column: span 3
     }
     .unity-image {
@@ -726,7 +726,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 0rem;
         grid-column: span 3;
     }
@@ -779,7 +779,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 32px;
+        font-size: 24px;
         margin-bottom: 0rem;
         grid-column: span 3;
     }
@@ -831,18 +831,18 @@ h3 {
 /*Stationær størrelse*/
 @media only screen and (min-width: 1200px) {
     .nav-link{
-        font-size: 2.4rem;
+        font-size: 2.0rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
     }
     /*Forside*/
     .profil-h2 {
         color: white;
-        font-size: 40px;
+        font-size: 24px;
     }
     .profil-p {
         color: white;
-        font-size: 30px;
+        font-size: 16px;
     }
     .body-music {
         display: grid;
@@ -853,7 +853,7 @@ h3 {
         color: white;
         margin-top: 4rem;
         margin-bottom: 2rem;
-        font-size: 45px;
+        font-size: 28px;
         grid-column: span 4
     }
     .unity-image {
@@ -910,7 +910,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 48px;
+        font-size: 28px;
         margin-bottom: 0rem;
         grid-column: span 4;
     }
@@ -963,7 +963,7 @@ h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        font-size: 48px;
+        font-size: 28px;
         margin-bottom: 0rem;
         grid-column: span 4;
     }
