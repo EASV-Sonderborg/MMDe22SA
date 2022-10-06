@@ -151,7 +151,7 @@ a {
 }
 
 .mostpopular {
-    margin: 0 0 1rem;
+    margin: 0 1rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -165,7 +165,7 @@ a {
 .cover_right {
     background-color: #411243;
     color: white;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem;
@@ -256,6 +256,7 @@ main {
     font-size: 2rem;
     padding: 1rem 1.5rem 0.5rem;
     transition: 0.5s;
+    padding: 0 1rem;
 }
 
 .viewgallery:hover {
@@ -509,7 +510,8 @@ main {
 
     .cover_right,
     .cover_left {
-        width: 50vw;
+        width: 47vw;
+        padding: 0 1rem;
     }
 
     .listennow {
@@ -523,7 +525,11 @@ main {
     .cover_left {
         margin-top: 0;
     }
-
+    .cover__cherry {
+        width: 100%;
+        grid-column: span 2;
+        padding: 0 1rem;
+    }
     .header .img-logo {
         height: 60px;
     }
@@ -589,7 +595,11 @@ main {
     .listennow {
         width: 13vw;
     }
-
+    .cover__cherry {
+        width: 31cw;
+        grid-column: span 1;
+        padding: 0 1rem;
+    }
     .frontpage__gallery {
         margin: 0 1rem 1rem;
     }
