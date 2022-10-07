@@ -147,7 +147,7 @@ a {
     font-weight: 600;
     font-size: 2rem;
     text-align: center;
-    color: rgb(170, 36, 133);
+    color: white;
     background-color: #411243;
     margin: 1rem 0 0;
     padding: 1rem;
@@ -427,7 +427,7 @@ main {
 .name {
     font-family: "Sigmar One";
     font-size: 2rem;
-    color: rgb(170, 36, 133);
+    color: white;
 }
 
 .text {
@@ -443,7 +443,7 @@ main {
 .text__about__title {
     font-family: "Sigmar One";
     font-size: 2rem;
-    color: rgb(170, 36, 133);
+    color: whitesmoke;
 }
 
 .text__about {
