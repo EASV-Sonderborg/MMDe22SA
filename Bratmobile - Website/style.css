@@ -170,9 +170,10 @@ a {
     background-color: #411243;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 1rem;
     justify-self: center;
+    justify-items: center;
     width: 100%;
     overflow: hidden;
 }
@@ -182,8 +183,9 @@ a {
     background-color: #411243;
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-self: center;
+    justify-items: center;
     padding: 1rem;
     width: 100%;
     overflow: hidden;
@@ -195,14 +197,14 @@ a {
 
 .cover_left img {
     margin: 1rem 0 1rem;
-    width: 140px;
-    justify-self: end;
+    width: 200px;
+    justify-self: center;
     grid-row: span 2;
 }
 
 .albumimg {
     margin: 1rem 0 1rem;
-    width: 140px;
+    width: 200px;
     grid-row: span 2;
     align-self: center;
     border: 4px solid rgb(170, 36, 133);
@@ -216,7 +218,7 @@ a {
     text-align: center;
     padding: 0.7rem 0 0.5rem;
     font-family: "Bebas Neue";
-    margin: 0;
+    margin: 0 0 1rem;
     transition: 0.7s;
 }
 
@@ -232,7 +234,7 @@ a {
 
 .cover_right a {
     text-decoration: none;
-    justify-self: end;
+    justify-self: center;
     color: white;
 }
 
@@ -348,18 +350,17 @@ main {
 
 /* music.html page */
 .afspil_musik {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    justify-self: end;
+    justify-self: center;
 }
 
 .afspil_musik img {
-    width: 35px;
+    width: 45px;
     padding-left: 0.2rem;
 }
 
 .afspil_musik li a {
     opacity: 100%;
+    padding: 0.5rem;
     transition: 0.4s;
 }
 
@@ -657,17 +658,18 @@ main {
         color: white;
         width: 32vw;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-template-columns: 1fr;
         padding: 1rem;
     }
 
     .cover_left1 a {
         text-decoration: none;
-        justify-self: end;
+        justify-self: center;
         color: white;
     }
 
     .cover_left1 h1 {
-        text-align: right;
+        text-align: center;
     }
 }
