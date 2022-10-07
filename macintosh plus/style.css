@@ -1,6 +1,6 @@
 body {
   margin: 1rem;
-  background-image: url(/img/front.gif);
+  background-image: url(img/front.gif);
   color: white;
   background-repeat: no-repeat; /*makes it not repeat itself*/
   background-attachment: fixed; /*covers the whole screen and locks itself in place*/
@@ -526,7 +526,7 @@ main {
 
 .feed {
   visibility: visible;
-  background-image: url(/img/glitch.gif);
+  background-image: url(img/glitch.gif);
   border-radius: 12px; 
   display: flex;
   flex-direction: column;
