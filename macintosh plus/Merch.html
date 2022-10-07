@@ -11,13 +11,13 @@
     <title>Document</title>
 </head>
 <body>
-    <nav role="navigation">
+    <nav>
         <div id="menuToggle">
           <!--
           A fake / hidden checkbox is used as click reciever,
           so you can use the :checked selector on it.
           -->
-          <input type="checkbox"/>
+          <input type="checkbox">
           
           <!--
           Some spans to act as a hamburger.
@@ -34,10 +34,10 @@
           but hey, it's pure CSS magic.
           -->
           <ul id="menu">
-            <a href="index.html"><li>Home</li></a>
-            <a href="Discography.html"><li>Discography</li></a>
-            <a href="Merch.html"><li>Merch</li></a>
-            <img src="img/logo.png" alt="" class="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Discography.html">Discography</a></li>
+            <li><a href="Merch.html">Merch</a></li>
+            <li><img src="img/logo.png" alt="" class="logo"></li>
           </ul>
         </div>
       </nav>
@@ -45,15 +45,14 @@
       
       <section class="m-top">
         <h1 class="glitchheadline">Merch</h1>
-        <article id="look">
+        <section id="look">
             <img src="img/getthelook.gif" alt="">
-        </article>
+        </section>
         <article id="yay">
             <img src="img/yay.gif" alt="">
         </article>
       </section>
 
-      </section>
       <section class="merch-gallery">
          <figure class="merch">
                 <img src="img/merch/sleepline-casette.jpeg" alt="">
@@ -89,7 +88,6 @@
                 <figcaption>Sick&Panic Vinyl</figcaption>
             </figure> 
          </section>
-      </section>
 
       <footer class="footer">
         <p>Vektroid</p>
