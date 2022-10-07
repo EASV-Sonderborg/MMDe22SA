@@ -234,9 +234,6 @@ h3 {
 
 
 
-
-
-
 /* gallery side */
 .overskrift-gallery {
     text-align: center;
@@ -251,7 +248,7 @@ h3 {
 .main-gallery {
     display: grid;
     grid-template-columns: 1fr;
-   margin-top: 2rem;
+    margin-top: 2rem;
 }
 .first-pic {
     margin-bottom: 1rem;
@@ -679,8 +676,148 @@ h3 {
     /*----Gallery----*/
     .main-gallery {
         display: grid;
-        grid-template-columns: 1fr;
-       margin-top: 2rem;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;
+    }
+    .overskrift-gallery {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 2;
+        font-size: 2.5rem;
+        color: white;
+    }
+    .first-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .second-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .third-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .fourth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    .fifth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+    .sixth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 6;
+    }
+    .seventh-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 8;
+    }
+    .billede-beskrivelse-et {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-to {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-tre {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .billede-beskrivelse-fire {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-fem {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 7;
+    }
+    .billede-beskrive-seks {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 7;
+    }
+    .billede-beskrive-syv {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 9;
     }
 }
 
@@ -894,6 +1031,152 @@ h3 {
         width: 80%;
     }
 
+    /*----Gallery----*/
+    .main-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 2rem;
+    }
+    .overskrift-gallery {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 3;
+        font-size: 2.5rem;
+        color: white;
+    }
+    .first-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .second-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .third-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fourth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .fifth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    .sixth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 4;
+    }
+    .seventh-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 6;
+    }
+    .billede-beskrivelse-et {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-to {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-tre {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-fire {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-fem {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-seks {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-syv {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 7;
+    }
 }
 
 
@@ -1077,5 +1360,152 @@ h3 {
         grid-column-start: 4;
         grid-row-start: 3;
         text-align: center;
+    }
+
+    /*----Gallery----*/
+    .main-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 2rem;
+    }
+    .overskrift-gallery {
+        text-align: center;
+        padding: 2rem;
+        grid-area: 1 / span 4;
+        font-size: 2.5rem;
+        color: white;
+    }
+    .first-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .second-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .third-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+    .fourth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 4;
+        grid-row-start: 2;
+    }
+    .fifth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    .sixth-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+    .seventh-pic {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        max-width: 75%;
+        border: 2px solid black;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 4;
+    }
+    .billede-beskrivelse-et {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-to {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-tre {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 3;
+    }
+    .billede-beskrivelse-fire {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 4;
+        grid-row-start: 3;
+    }
+    .billede-beskrive-fem {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-seks {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 2;
+        grid-row-start: 5;
+    }
+    .billede-beskrive-syv {
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        margin-bottom: 2rem;
+        max-width: 75%;
+        justify-self: center;
+        grid-column-start: 3;
+        grid-row-start: 5;
     }
 }
