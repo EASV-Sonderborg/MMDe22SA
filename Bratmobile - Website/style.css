@@ -8,6 +8,8 @@ ul {
     padding: 0;
 }
 
+/* body */
+
 body {
     margin: 0;
     padding: 0;
@@ -18,6 +20,8 @@ body {
     width: 100vw;
 }
 
+/* header- texten */
+
 a {
     font-family: "Bebas Neue";
     font-weight: 600;
@@ -27,6 +31,8 @@ a {
     font-size: 1.5rem;
 }
 
+/* header */
+
 .header {
     background-color: #411243;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
@@ -35,6 +41,8 @@ a {
     z-index: 3;
 
 }
+
+/* header- ul- listen */
 
 .header ul {
     margin: 0;
@@ -56,6 +64,8 @@ a {
     color: #411243;
 }
 
+/* header- logo */
+
 .header .img-logo {
     height: 50px;
     width: auto;
@@ -65,6 +75,8 @@ a {
     font-size: 2em;
 
 }
+
+/* header- hamburger-menu */
 
 .header .menu {
     clear: both;
@@ -79,6 +91,8 @@ a {
     cursor: pointer;
 
 }
+
+/* header- hamburger- menu/ stregerne */
 
 .header .menu-icon .nav-icon {
     background: white;
@@ -111,6 +125,8 @@ a {
     top: -5px;
 }
 
+/* chek-box væk */
+
 .header .menu-btn {
     display: none;
 }
@@ -118,6 +134,8 @@ a {
 .header .menu-btn:checked~.menu {
     max-height: 300px;
 }
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
 
 .header .menu-btn:checked~.menu-icon .nav-icon {
     background: transparent;
