@@ -160,6 +160,8 @@ a {
     z-index: -1;
 }
 
+/* album-musik */
+
 .mostpopular__title h1,
 .gallery__title h1 {
     font-family: "Sigmar One";
@@ -266,6 +268,8 @@ main {
     align-items: center;
 }
 
+/* gallery */
+
 .gallery_button {
     width: 100%;
     display: flex;
@@ -290,6 +294,8 @@ main {
     background-color: white;
     color: #411243;
 }
+
+/* gallery- forside */
 
 .frontpage__gallery {
     display: grid;
@@ -329,6 +335,8 @@ main {
     padding: 0.5rem;
     color: white;
 }
+
+/* footer__links */
 
 .footer__links {
     color: white;
@@ -451,6 +459,8 @@ main {
     color: white;
 }
 
+/* text-beskrivelse- deres historie */
+
 .text {
     color: white;
     background-color: #411243;
@@ -481,6 +491,7 @@ main {
     line-height: 1.7rem;
 }
 
+/* mobil-størrelse, med header-menu */
 
 @media (min-width:48em) {
     .header li {
@@ -507,6 +518,8 @@ main {
         height: auto;
     }
 }
+
+/* tablet-størrelse */
 
 @media screen and (min-width: 640px) {
 
@@ -600,6 +613,8 @@ main {
         align-self: center;
     }
 }
+
+/* computer-størrelse */
 
 @media screen and (min-width: 960px) and (max-width: 1100px) {
     .mostpopular h1 {
