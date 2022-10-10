@@ -9,15 +9,15 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Orbitron', Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: 'Palanquin', sans-serif;
+  font-family: 'Palanquin', 'Times New Roman', Times, serif, sans-serif;
 }
 
 a {
-  font-family: 'Silkscreen', cursive;
+  font-family: 'Silkscreen', cursive, 'Times New Roman', Times, serif;
 }
 
 img {
@@ -25,7 +25,7 @@ max-width: 100%;
 }
 
 /* - - - MOBILE - - - */
-@media screen and (max-device-width: 789px) {
+@media screen and (max-device-width: 767px) {
 
 /* - - -- - - - - -- - - -- --  NAVIGATION - - - -- - - -- - - - -*/
 #menuToggle
@@ -307,7 +307,7 @@ max-width: 100%;
       flex-wrap: wrap;
     }
 
-    .someh1 {
+    .socialsh1 {
       background-color: #ff819c;
       text-align: center;
       margin-bottom: 0;
@@ -371,6 +371,10 @@ max-width: 100%;
       display: none;
     }
 
+    .yay {
+      display: none;
+    }
+
     .merch-gallery {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -399,6 +403,7 @@ max-width: 100%;
   text-align: center;
   border-radius: 6px;
   padding-top: .25rem;
+  font-size: 12px;
 }
 
     .merch img {
@@ -437,7 +442,7 @@ max-width: 100%;
 }
 
 /* - - - COMPUTER - - - */
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 768px) {
 
   /* - - - - Hidden Objects - - - - */
 
