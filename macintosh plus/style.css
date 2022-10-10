@@ -454,7 +454,7 @@ max-width: 100%;
 display: none;
   }
 
-.someh1{
+.socialsh1{
 display: none;
 }
 
@@ -625,7 +625,7 @@ main {
 
 .lastpicture {
   align-self: center;
-width: 75%;
+width: 50%;
 }
 
 .aboutband {
@@ -640,7 +640,7 @@ padding: 0;
 }
 
 .aboutband img {
-width: 30%;
+width: 15%;
 }
 
 .abouttext {
