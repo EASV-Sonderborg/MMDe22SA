@@ -293,6 +293,8 @@ main {
     object-fit: cover;
 }
 
+/* footer */
+
 .upperfooter {
     display: grid;
     grid-template-columns: 1fr;
