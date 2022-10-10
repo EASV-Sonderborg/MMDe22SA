@@ -563,12 +563,6 @@ main {
   color: white;
 }
 
-.twittersection {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .feed-tweet {
   background-color: #1da0f288;
   border-radius: 12px;
