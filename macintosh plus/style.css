@@ -25,7 +25,7 @@ max-width: 100%;
 }
 
 /* - - - MOBILE - - - */
-@media screen and (max-device-width: 789px) {
+@media screen and (max-device-width: 767px) {
 
 /* - - -- - - - - -- - - -- --  NAVIGATION - - - -- - - -- - - - -*/
 #menuToggle
@@ -442,7 +442,7 @@ max-width: 100%;
 }
 
 /* - - - COMPUTER - - - */
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 768px) {
 
   /* - - - - Hidden Objects - - - - */
 
