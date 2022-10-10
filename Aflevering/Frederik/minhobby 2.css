@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Venada', sans-serif;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(20, 20, 20,0.95),rgba(20, 20, 20,0.90));
+}
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    margin: 10vh 0 0 0;
+}
+
+nav {
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 20, 20,0.65),rgba(20, 20, 20,0.60));
+    padding: 20px 8%;
+    margin: 0 0 18vh 0;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+}
+
+.overskrift {
+    width: 100%;
+    margin: auto;
+    color: white;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+}
+article img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+section {
+    padding: 2rem;
+}
+
+article {
+    border-radius: 20px;
+    background-color: rgba(40, 40, 40, 0.6);
+    text-align: center;
+    color: white;
+}
+
+article h2 {
+    padding-top: 1rem;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+}
+
+article p {
+    padding: 2rem;
+}
+
+article a {
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border: 2px white;
+    transition: 0.5s;
+}
+
+article a:hover {
+    color: transparent;
+    -webkit-text-stroke: 0.4px white;
+}
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .bgvideo {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .bgvideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        position: relative;
+    }
+    main {
+        height: 100%;
+        background-image: linear-gradient(rgba(20, 20, 20,0.95),rgba(20, 20, 20,0.90));
+    }
+    nav {
+        margin: 0 0 2vh 0;
+    }
+    footer {
+        margin: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 940px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }    
+    .fivem {
+        grid-column: span 2;
+    }
+    nav {
+        margin: 0 0 2vh 0;
+    }
+    footer {
+        margin: 0 0 0 0;
+    }
+}

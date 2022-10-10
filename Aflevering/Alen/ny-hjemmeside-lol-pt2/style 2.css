@@ -1,0 +1,423 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.897);
+    width: 100%;
+    height: 100px; 
+
+
+    
+    
+    
+    
+}
+
+
+.vijinx {
+    
+}
+
+.OmLoL {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1rem;
+    
+}
+
+.slagmarken {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1rem;
+    }
+
+    .karakter {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1rem;
+}
+
+.genstande {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1rem;
+}
+
+.ranks {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ margin: 20px;
+    font-size: 1rem;
+}
+
+.købrp {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 3.6rem;
+    margin-left: 800px;
+    
+    
+    
+}
+
+.prøvdet {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 25px;
+    font-size: 1rem;
+}
+    
+    
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+
+
+
+body {
+    margin: 0;
+    
+ 
+   
+}
+
+.backgroundpic {
+    position: absolute;
+   max-width: 1920px;
+   max-height: 1080px;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   
+}
+
+
+   
+.hvorforleagueoflegends {
+    position: absolute;
+    margin: 50%;
+    margin-bottom: 500px;
+  
+  
+    }
+
+
+
+
+
+
+
+
+.anmeldelse-venstre-øvre {
+    grid-area: 2/1/3/2;
+     
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid white;
+    padding: 40px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgba(31, 15, 3, 0.486);
+    border-style:outset;
+    text-align: center;
+    font-size: 1rem;
+    
+
+}
+
+.anmeldelse-venstre-nedre { 
+    grid-area: 3/1/4/2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid white; 
+    padding: 40px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgba(31, 15, 3, 0.486);
+    border-style:outset;
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+.anmeldelse-højre-øvre {
+    grid-area: 2/2/2/3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid white; 
+    padding: 45px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgba(31, 15, 3, 0.486);
+    border-style:outset;
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+.anmeldelse-højre-nedre {
+    grid-area: 3/2/3/3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 5px solid white;
+    padding: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: rgba(31, 15, 3, 0.486);
+    border-style:outset;
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+.lol-banner {
+    grid-area: 1 / 1 / 2 / 3; 
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    width: 1424px;
+    height: 200px;
+    justify-self: center;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.img-venstre-øvre {
+    grid-area: 2/1/2/1;
+    border-radius: 200px;
+    width: 60px;
+    height: 60px;
+    margin-left: 170px; 
+    margin-top: 10px;
+    position: relative;
+    border-style: outset;
+    border-color: black;
+    
+}
+
+.img-venstre-nedre {
+grid-area: 3 / 1 / 3 / 1;
+border-radius: 200px;
+width: 60px;
+height: 60px;
+margin-left: 170px; 
+margin-top: 10px;
+position: relative;
+border-style: outset;
+border-color: black;
+}
+
+.img-højre-øvre {
+    grid-area: 2 / 2 / 2 / 2;
+    border-radius: 200px;
+width: 60px;
+height: 60px;
+margin-left: 170px; 
+margin-top: 10px;
+position: relative;
+border-style: outset;
+border-color: black;
+}
+
+.img-højre-nedre {
+    grid-area: 3 / 2 / 3 / 2;
+    border-radius: 200px;
+    width: 60px;
+    height: 60px;
+    margin-left: 170px; 
+    margin-top: 10px;
+    position: relative;
+    border-style: outset;
+    border-color: black;
+}
+
+
+.lolexplained {
+    grid-area: 1 / span 2;
+    position: absolute;
+    margin-left: 35%; 
+    margin-top: 1.5rem;
+    font-family:
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    
+}
+
+
+
+/*OM LEAGUE OF LEGENDS - STYLING 
+________________________________________________________________________________*/ 
+
+.omlol {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 36px; 
+    border-bottom: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style:ridge;
+    padding-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 0; 
+    margin-left: 25px;
+    justify-self: left;
+
+    
+}
+
+.udgivelsesdato {
+    grid-area: 2 / 1 / 3 / 1;
+    font-size:  0.8rem;
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 30px;
+    padding: 0;
+    border: 0;
+    
+  
+}
+
+.udgivelsesdato-beskrivelse {
+    grid-area: 3 / 1 / 3 / 1;
+    margin-top: 0;
+    margin-left: 30px;
+    max-width: 50%;
+
+}
+
+.omleague-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: white;   
+}
+
+.antal-aktive-spillere {
+    grid-area: 3 / 1 / 3 / 1;
+    font-size:  0.8rem;
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 30px;
+    padding: 0;
+    border: 0;
+   
+}
+
+.antal-aktive-spillere-beskrivelse {
+    grid-area: 4 / 1 / 4 / 1;
+    margin-top: 0;
+    margin-left: 30px;
+    max-width: 50%;
+    color: white;   
+   
+  
+
+}
+
+.underspillet {
+    grid-area: 2 / 2 / 3 / 2;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
+
+
+}
+
+.underspillet-beskrivelse {
+    grid-area: 3 / 2 / 3 / 4;
+    margin-top: 0;
+    margin-left: 0;
+    max-width: 70%;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
+   
+}
+
+.gamingmodes {
+    grid-area: 3 / 2 / 3 / 2;
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: 150px;
+    margin-left: 0;
+    padding: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
+  
+    
+}
+
+.gamingmode-beskrivelse {
+    grid-area: 4 / 2 / 4 / 2;
+    margin: 0;
+    padding-left: 2rem;
+    border-left: 0.5px solid black;
+    color: white;   
+    background-color:#0e4141a1; 
+    border-radius: 10px;
+
+}
+
+.invisible {
+    border-left: 0.5px solid black;
+    grid-area: 1 / 2 / 3 / 2;
+}
+
+.imgnerd {
+    width: 50px;
+    height: 50px;
+    background-color:#000000e5;
+}
+
+.backgroundimage {
+    position:absolute; 
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .9;
+}

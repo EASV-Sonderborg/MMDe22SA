@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Venada', sans-serif;
+
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+    min-height: 100vh;
+}
+footer {
+    position: relative;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0%;
+    margin: 10vh 0 0 0;
+}
+
+nav {
+    width: 100%;
+    background-image: linear-gradient(rgba(20, 20, 20,0.65),rgba(20, 20, 20,0.60));
+    padding: 20px 8%;
+    margin: 0 0 10vh 0;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+}
+
+.gallery__header {
+    font-family: "Roboto Slab";
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 0 1rem 10vh 1rem;
+}
+.tenerife {
+    grid-column: span 1;
+}
+.kreta {
+    grid-column: span 2;
+}
+.mallorca {
+    grid-column: span 2;
+}
+.copenhagen {
+    grid-column: span 1;
+}
+.london {
+    grid-column: span 1;
+}
+.bulgarien {
+    grid-column: span 2;
+}
+article img {
+    width: 100%;
+}
+
+article {
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
+    color: transparent;
+    transition: 0.5s;
+}
+article:hover {
+    color: white;
+}
+article img {
+    opacity: 100%;
+    transition: 0.5s;
+}
+article img:hover {
+    opacity: 30%;
+}
+article h2 {
+    position: absolute;
+    font-family: "Roboto Slab";
+    padding-bottom: 1rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+article p {
+    font-family: Venada, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin: 0 1rem 15vh;
+    }
+    .tenerife {
+        grid-column: span 2;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 960px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 1rem 15vh;
+    }
+    .tenerife {
+        grid-column: span 2;
+    }
+}
