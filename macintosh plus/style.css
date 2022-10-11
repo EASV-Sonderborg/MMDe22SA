@@ -166,7 +166,7 @@ max-width: 100%;
   margin-left: 1rem;
 }
 
-#menu img {
+.machintosh__logo {
   visibility: hidden;
 }
 
@@ -312,7 +312,7 @@ max-width: 100%;
       gap: 1rem;
     }
 
-    .albums img {
+    .album__images {
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
     }
@@ -332,46 +332,46 @@ max-width: 100%;
     /* - - - - - - - - - - - - - - - - - - - */    
 
     /* - - - - - - MERCH - - - - - - */
-    .m-top {
-      display: none;
-    }
+  .m-top {
+    display: none;
+  }
+    
+  .merch_top_anime_gif {
+    display: none;
+  }
 
-    .yay {
-      display: none;
-    }
+  .merch__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
 
-    .merch-gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin: 0;
-      margin-top: 1rem;
-    }
+  .merch {
+    margin: 0;
+    padding: .5rem;
+    background-color: #52b2d9;
+    border-radius: 6px;
+  }
 
-    .merch {
-      margin: 0;
-      padding: .5rem;
-      background-color: #52b2d9;
-      border-radius: 6px;
-    }
+  .merch figure {
+    margin: 0;
+    margin-bottom: 1rem;
+    background-color: #52b2d9;
+    border-radius: 6px;
+    padding: .3rem;
+  }
 
-.merch figure {
-  margin: 0;
-  margin-bottom: 1rem;
-  background-color: #52b2d9;
-  border-radius: 6px;
-  padding: .3rem;
-}
+  .merch figcaption {
+    background-color: #52b2d9;
+    text-align: center;
+    border-radius: 6px;
+    padding-top: .25rem;
+    font-size: 12px;
+  }
 
-.merch figcaption {
-  background-color: #52b2d9;
-  text-align: center;
-  border-radius: 6px;
-  padding-top: .25rem;
-  font-size: 12px;
-}
-
-    .merch img {
+    .merch__items {
       width: 100%;
       height: 85%;
       border-top-left-radius: 6px;
@@ -434,7 +434,7 @@ padding: 2rem;
 border-radius: 12px;
 }
 
-#menu img {
+.machintosh__logo {
   position: absolute;
   right: 40px;
   top: 70px;
@@ -651,7 +651,7 @@ main {
 
 /* - - - - - - - - -  MERCH MERCH MERCH - - - - - - - - - - - - - -  */
 
-.m-top{
+.merch_and_disco__top {
   background-image: url(/img/giphy.gif);
   display: flex;
   justify-content: center;
@@ -664,14 +664,14 @@ main {
   
 }
 
-.glitchheadline  {
+.merch_and_disco__header  {
   font-family: 'Chakra Petch', sans-serif;  
   letter-spacing: 1rem;
   font-size: 5rem;
   color: #DCFF4D;
 }
 
-.merch-gallery{
+.merch__gallery{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -693,7 +693,7 @@ main {
    transition: 0.3 all ease-in-out;
 }
 
-.merch img {
+.merch__items {
   width: 100%;
   height: 85%;
 }
