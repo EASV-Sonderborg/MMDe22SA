@@ -24,6 +24,10 @@ img {
 max-width: 100%;
 }
 
+.logo{width: 100px;
+}
+
+
 /* - - - MOBILE - - - */
 @media screen and (max-device-width: 767px) {
 
@@ -443,7 +447,7 @@ max-width: 100%;
 
 /* - - - COMPUTER - - - */
 @media screen and (min-width: 768px) {
-
+ 
   /* - - - - Hidden Objects - - - - */
 
 #menuToggle {
