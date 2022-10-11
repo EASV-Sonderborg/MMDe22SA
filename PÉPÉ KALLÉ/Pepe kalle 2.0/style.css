@@ -1,0 +1,95 @@
+body{
+    font-family: Roboto;
+    margin-top: 51px;
+    width: 99%;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* nav bar */
+header{
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    background-color: beige;
+    top: 0;
+    
+}
+
+.header-text{
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+
+}
+/* nav bar end */
+
+/* top image */
+.top-image{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-image__img{
+    border-radius: 2rem ;
+    width: 100%;
+}
+/* top image end */
+
+/* quick facts */
+.quick-facts{
+    
+}
+.quick-facts__content{
+    display: grid;
+    grid-template-columns: 1.2fr; 
+    grid-template-rows: 0.4fr 1.6fr;
+    text-align: center;
+
+}
+.quick-facts__headline{
+    background-color: beige;
+    border-radius: 1rem;
+}
+
+.quick-facts__info{
+    background-color: beige;
+    border-radius: 1rem;
+}
+.quick-facts__text{
+    
+}
+/* quick facts end*/
+
+/* top tracks*/
+
+/* top tracks end*/
+
+
+/*top albums*/
+
+.top-albums{
+    text-align: center;
+    background-color: beige;
+    border-radius: 1rem;
+}
+.top-albums__content{
+    display: grid; 
+    grid-template-columns: 1fr 1.2fr; 
+    grid-template-rows: 1fr 1fr; 
+
+}
+.top-albums__img{
+    max-width:50vw
+}
+/* top album end */
