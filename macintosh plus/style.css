@@ -182,63 +182,61 @@ max-width: 100%;
 
 /* - - - - - - - FORSIDE - - - - - - - -*/ 
 
-.giphy {
+.forside__bottom__gif {
   display: none;
 }
 
-.frontbanner {
+.forside__banner {
   visibility: visible;
   margin-top: .5rem;
   border-radius: 12px;
 }
 
-  .mobile-hide {
+  .feed__mobile__hide {
     display:none;
   } 
 
-    .aboutband {
+    .about__band {
         margin-top: .5rem;
         background-color: #bf5c9f;
         border-radius: 12px;
   }
 
-    .aboutband p {
+    .about__band__body {
         padding: .5rem;
         margin: 0;
     }
 
-    .aboutband h1 {
+    .about__band__header {
       margin: 0;
       padding: .5rem;
-
     }
 
-   .pinkstatue {
-    display: none;
-   }
+    .about__band__image {
+      display: none;
+    }
 
-   .anime {
-    display: none;
-   }
+    .about__artist__image {
+      display: none;
+    }
 
-
-    .aboutartist {
+    .about__artist {
       margin-top: 1rem;
       background-color: #5cbe10;
       border-radius: 12px;
 }
 
-  .aboutartist p {
+  .about__artist__body {
       padding: .5rem;
       margin: 0;
   }
 
-  .aboutartist h1 {
+  .about__artist__header {
     margin: 0;
     padding: .5rem;
   }
 
-    .mobile-vek {
+    .forside__vekroid__section {
       display: flex;
       flex-direction: column-reverse;
       background-color: #DCFF4D;
@@ -246,100 +244,63 @@ max-width: 100%;
       margin-top: 1rem;
     }
 
-    .mobile-vek img {
+    .forside__vekroid__section__selfie {
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
     }
 
-    .veklogo {
+    .forside__vekroid__section__logo {
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
     }
 
-    .banner {
-        margin-top: 1rem;
-        align-items: center;    
-        justify-content: center;    
-    }
-
-    .banner img {
-        border-radius: 12px;
-        height: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 95%;
-        padding-top: .5rem;
-        margin-top: 0;
-    }
-
-    .selfie {
-        padding-bottom: .5rem;
-    }
-
-    .selfie img {
-      display: block;
-      padding-top: .5rem;
-      margin: auto;
-      max-width: 95%;
-      border-radius: 12px;
-    }
-
-    .albumcover {
+    .mobilforside__album__cover {
       display: flex;
       margin-top: 1rem;
       border-radius: 12px;
       justify-content: center; 
-    }
-
-    .albumcover img {
       border-radius:12px;
       width: 100%;
     }
 
-    .socials {
-      display: flex;
-        margin-top: 1rem;
-        background-color: #ff819c;
-        justify-content: center;
-        padding-top: 0;
-        margin-top: 0;
-        padding-bottom: 0.5rem;
-        gap: .5rem;
-        border-bottom-right-radius: 12px; 
+    .mobil__main__socials {
+      margin-top: 1rem;
+      background-color: #ff819c;
+      justify-content: center;
+      padding-top: 0;
+      margin-top: 0;
+      padding-bottom: 0.5rem;
+      gap: .5rem;
+      border-bottom-right-radius: 12px; 
       border-bottom-left-radius: 12px;
-      flex-wrap: wrap;
     }
 
-    .socialsh1 {
+    .mobil__socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mobil__socials__header {
       background-color: #ff819c;
       text-align: center;
       margin-bottom: 0;
       padding-bottom: 1rem;
       padding-top: .5rem;
       border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+      border-top-right-radius: 12px;
     }
 
-    .socials img {
-        border-radius: 12px;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        max-height: 44px;
-        max-width: 44px;
-          }
-
-    .twitch img {
-    width: 95%;
-    min-width: 60%;
-    justify-content: center;
+    .mobil__socials__images {
+      border-radius: 12px;
+      height: 100%;
+      margin-top: 0;
+      max-width: 60px;
+      width: 50px;
     }
 
-    .socials a {
-        margin-left: .5rem;
-    }
+
     /* - - - - Forside slutter her - - - - - */
 
     /* - - - - - - DISCOGRAPHY - - - - - - */
@@ -454,31 +415,14 @@ max-width: 100%;
   visibility: hidden;
 }
 
-  .albumcover {
-display: none;
-  }
-
-.socialsh1{
-display: none;
-}
-
-.socials{
-display: none;
-}
-
-.rara{
-  display: none;
-}
-.twitter{
-  display: none;
-}
-.bandcamp{
+.mobilforside__album__cover{
   display: none;
 }
 
-.twitch {
+.mobil__main__socials{
   display: none;
 }
+
 /* - - - -- - -- - - end of hidden objects -- - - - -- - - -- - - - - */
 
 /* - - - -- - - - - -- NAVIGATION - -- - - - - - - -*/ 
@@ -524,18 +468,18 @@ main {
   gap: 1rem;
  }
  
- .main-flex {
+ .forside__flex {
    display: flex;
    flex-direction: column;
    gap: 1rem;
  }
 
-.frontbanner {
+.forside__banner {
   visibility: visible;
   border-radius: 12px;
 }
 
-.feed {
+.feed__main {
   visibility: visible;
   background-image: url(img/glitch.gif);
   border-radius: 12px; 
@@ -544,7 +488,7 @@ main {
   gap: 1rem;
 }
 
-.feed h1 {
+.feed__title {
   font-family: 'Chakra Petch', sans-serif;  
   color: #DCFF4D;
   letter-spacing: .5rem;
@@ -556,41 +500,37 @@ main {
   border-top-right-radius: 12px;
 }
 
-.feed a {
-  font-size: 1rem;
-}
-
-.feed-bandcamp {
+.feed__bandcamp {
   background-color: #dbff4da9;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   text-align: center;
 }
 
-.feed-bandcamp a {
+.feed__bandcamp__link {
   text-decoration: none;
   color: white;
 }
 
-.feed-tweet {
+.feed__twitter {
   background-color: #1da0f288;
   border-radius: 12px;
   padding: 2px;
   text-align: center;
 }
 
-.feed-tweet a {
+.feed__twitter__link {
   text-decoration: none;
   color: white;
   font-weight: 700;
 }
 
-.feed-tweet img {
+.feed__twitter__profile {
   border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;  
+  border-bottom-left-radius: 12px;
 }
 
-.twitch {
+.feed__twitch {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -601,18 +541,17 @@ main {
 
 }
 
-.twitch p {
+.feed__twitch__text {
   margin: 0;
 }
 
-.twitch img {
+.feed__twitch__vtupe {
   margin: auto;
-  width: 40%;
-  height: 40%;
+  width: 150px;
   margin-bottom: .5rem;
 }
 
-.twitchlink {
+.feed__twitch__patreon, .feed__twitch__bandcamp, .feed__twitch__email, .feed__twitch__link--purple {
   text-decoration: none;
   color: white;
   border: 1px solid #9147FF;
@@ -622,83 +561,89 @@ main {
   margin: auto;
 }
 
-.twitch a {
+.feed__twitch__link {
   text-decoration: none;
   color: white;
 }
 
-.lastpicture {
+.feed__lastpicture {
   align-self: center;
-width: 50%;
+  width: 200px;
 }
 
-.aboutband {
+.about__band {
   background-color: #bf5c9f;
   border-radius: 12px;
   display: flex;
 }
 
-.aboutband h1 {
-margin: .5rem .7rem;
-padding: 0;
+.about__band__header {
+  margin: .5rem .7rem;
+  padding: 0;
 }
 
-.aboutband img {
-width: 15%;
+.about__band__image {
+  width: 100px;
 }
 
-.abouttext {
+.about__band__text {
   display: flex;
   flex-direction: column;
 }
 
-.abouttext p {
+.about__band__body {
   padding: 0;
   margin: .5rem .7rem;
 }
 
-.aboutartist {
-background-color: #5cbe10;
-border-radius: 12px;
-display: flex;
+.about__artist {
+  background-color: #5cbe10;
+  border-radius: 12px;
+  display: flex;
 }
 
-.aboutartist h1 {
+.about__artist__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__artist__header {
   margin: .5rem .7rem;
   padding: 0;
 }
 
-.aboutartist p {
+.about__artist__body {
   margin-top: 0;
   margin-left: .7rem;
 }
 
-.aboutartist img {
+.about__artist__image {
+  width: 200px;
   align-self: flex-end;
 }
 
-.section-flex {
+.section__flex {
   display: flex;
   gap: .5rem;
   border-radius: 12px;
 }
 
-.mobile-vek {
+.forside__vekroid__section {
   background-color:#DCFF4D;
   width: 50%;
   border-radius: 12px;
 }
 
-.mobile-vek img {
+.forside__vekroid__section__selfie {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.veklogo {
+.forside__vekroid__section__logo {
   border-radius: 12px;
 }
 
-.giphy {
+.forside__bottom__gif {
   width: 50%;
   border-radius: 12px;
 }
