@@ -259,8 +259,10 @@ a {
     color: white;
 }
 
-.cover_right h1 {
+.cover_right h2 {
     text-align: right;
+    font-family: "Sigmar One";
+    font-size: 1.5rem;
 }
 
 main {
