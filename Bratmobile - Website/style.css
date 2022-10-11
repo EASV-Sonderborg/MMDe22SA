@@ -13,7 +13,7 @@ ul {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(images/brackbrat4.svg);
+    background-image: url(images/black\ on\ pink.png);
     background-color: #411243;
     background-size: 100vw;
     background-size: cover;
@@ -651,7 +651,7 @@ main {
 
     .gallery_img {
         height: 300px;
-        opacity: 40%;
+        opacity: 70%;
     }
 
     .frontpage__video {
