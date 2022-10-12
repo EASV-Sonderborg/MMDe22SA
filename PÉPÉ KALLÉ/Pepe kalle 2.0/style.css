@@ -89,19 +89,34 @@ li{
     grid-template-rows: 1fr 1fr; 
 
 }
+
 .top-albums__img{
     max-width:50vw
 }
 /* top album end */
 
+
+/* picture gallery */
+.picture-gallery{
+        text-align: center;
+        background-color: beige;
+        border-radius: 1rem;
+}
 .picture-gallery__imgs{
     max-width: 100vw;
+}
+/* picture gallery end */
+
+
+/* shop */
+.shop{
+    text-align: center;
+    background-color: beige;
+    border-radius: 1rem;
 }
 
 .shop__items{
     max-width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10rem;
     
 }
+/* shop end */
