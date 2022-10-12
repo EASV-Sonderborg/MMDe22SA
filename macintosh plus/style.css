@@ -652,7 +652,7 @@ main {
 /* - - - - - - - - -  MERCH MERCH MERCH - - - - - - - - - - - - - -  */
 
 .merch_and_disco__top {
-  background-image: url(/img/giphy.gif);
+  background-image: url(img/giphy.gif);
   display: flex;
   justify-content: center;
   align-items: center;
