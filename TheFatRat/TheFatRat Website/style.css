@@ -244,7 +244,7 @@ h3 {
 
 
 /* --------gallery side-------- */
-.overskrift-gallery {
+.gallery__heading {
     text-align: center;
     padding: 2rem;
     grid-area: 1 / span 1;
@@ -254,63 +254,22 @@ h3 {
 .underoverskrift-to {
     margin: 10px;
 }
-.main-gallery {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 2rem;
 }
 /* Styling og placering af billeder*/
-.first-pic {
+.photo__img {
     margin-bottom: 1rem;
     margin-top: 1rem;
     max-width: 75%;
     border: 2px solid black;
     justify-self: center;
 }
-.second-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
-.third-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
-.fourth-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
-.fifth-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
-.sixth-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
-.seventh-pic {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    max-width: 75%;
-    border: 2px solid black;
-    justify-self: center;
-}
+
 /* Styling og placering af tekst*/
-.billede-beskrivelse-et {
+.photo__text {
     text-align: center;
     color: white;
     font-weight: 200;
@@ -318,62 +277,7 @@ h3 {
     max-width: 75%;
     justify-self: center;
 }
-.billede-beskrivelse-to {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrivelse-tre {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrivelse-fire {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrivelse-fire {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrive-fem {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrive-seks {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
-.billede-beskrive-syv {
-    text-align: center;
-    color: white;
-    font-weight: 200;
-    margin-bottom: 2rem;
-    max-width: 75%;
-    justify-self: center;
-}
+
 /* --------End gallery side-------- */
 
 
@@ -674,82 +578,19 @@ h3 {
 
     /* --------Gallery-------- */
     /*Opskalering og placering af galleriet*/
-    .main-gallery {
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 2rem;
     }
-    .overskrift-gallery {
+    .gallery__heading {
         text-align: center;
         padding: 2rem;
         grid-area: 1 / span 2;
         font-size: 2.5rem;
         color: white;
-    }
-    .first-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-    .second-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-    .third-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 4;
-    }
-    .fourth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 4;
-    }
-    .fifth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 6;
-    }
-    .sixth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 6;
-    }
-    .seventh-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 8;
-    }
-    .billede-beskrivelse-et {
+    } 
+        .photo__text {
         text-align: center;
         color: white;
         font-weight: 200;
@@ -758,66 +599,6 @@ h3 {
         justify-self: center;
         grid-column-start: 1;
         grid-row-start: 3;
-    }
-    .billede-beskrivelse-to {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-tre {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 5;
-    }
-    .billede-beskrivelse-fire {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-fem {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 7;
-    }
-    .billede-beskrive-seks {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 7;
-    }
-    .billede-beskrive-syv {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 9;
     }
 }
 
@@ -1035,150 +816,17 @@ h3 {
 
     /* --------Gallery-------- */
     /*Opskalering og placering af billeder i gallery*/
-    .main-gallery {
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 2rem;
     }
-    .overskrift-gallery {
+    .gallery__heading {
         text-align: center;
         padding: 2rem;
         grid-area: 1 / span 3;
         font-size: 2.5rem;
         color: white;
-    }
-    .first-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-    .second-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-    .third-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 2;
-    }
-    .fourth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 4;
-    }
-    .fifth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 4;
-    }
-    .sixth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 4;
-    }
-    .seventh-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 6;
-    }
-    .billede-beskrivelse-et {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-to {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-tre {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-fire {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-fem {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-seks {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-syv {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 7;
     }
 }
 
@@ -1367,151 +1015,16 @@ h3 {
     }
     /* --------Gallery-------- */
     /*Opskaleret og placeret i større grid*/
-    .main-gallery {
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 2rem;
     }
-    .overskrift-gallery {
+    .gallery__heading {
         text-align: center;
         padding: 2rem;
         grid-area: 1 / span 4;
         font-size: 2.5rem;
         color: white;
-    }
-    /*Placering*/
-    .first-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 2;
-    }
-    .second-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 2;
-    }
-    .third-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 2;
-    }
-    .fourth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 4;
-        grid-row-start: 2;
-    }
-    .fifth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 4;
-    }
-    .sixth-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 4;
-    }
-    .seventh-pic {
-        margin-bottom: 1rem;
-        margin-top: 1rem;
-        max-width: 75%;
-        border: 2px solid black;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 4;
-    }
-    /*Design og placering*/
-    .billede-beskrivelse-et {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-to {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-tre {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 3;
-    }
-    .billede-beskrivelse-fire {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 4;
-        grid-row-start: 3;
-    }
-    .billede-beskrive-fem {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-seks {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 2;
-        grid-row-start: 5;
-    }
-    .billede-beskrive-syv {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 3;
-        grid-row-start: 5;
     }
 }
