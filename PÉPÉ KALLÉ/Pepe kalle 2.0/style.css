@@ -3,6 +3,7 @@ body{
     margin-top: 51px;
     width: 99%;
     background-image: image(start-pic.jpeg) ;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +24,7 @@ header{
 .header-text{
     color: black;
     text-decoration: none;
-    list-style: none;
+    list-style: none; 
     
 }
 
@@ -108,17 +109,20 @@ li{
     text-align: center;
     background-color: #86283B;
     border-radius: 1rem;
+    
 }
 .picture-gallery__content{
     display: grid ;
     grid-template-columns: 1.5fr 1.5fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 0.2rem;
+
 }
 
 .picture-gallery__imgs{
     max-width: 50vw;
     border-radius: 2rem;
+
 }
 /* picture gallery end */
 
@@ -129,6 +133,7 @@ li{
     background-color: #86283B;
     border-radius: 1rem;
     width: 99vw;
+
 }
 
 .shop__content{
@@ -152,11 +157,9 @@ li{
 }
 .buy-now{
     display: block;
-    background-color: #yellow;
+    background-color: #yellow ;
     width: 50%;
     border-radius: 2rem;
-    
-
 
 }
 /* shop end */
@@ -165,7 +168,8 @@ li{
 footer{
     background-color: #86283B   ;
     border-radius: 1rem;
-    text-align: center;  
+    text-align: center; 
+
 }
 
 /*footer end*/
