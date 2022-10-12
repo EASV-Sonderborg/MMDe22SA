@@ -8,15 +8,19 @@ ul {
     padding: 0;
 }
 
+/* body */
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url(images/brackbrat4.svg);
+    background-image: url(images/black\ on\ pink.png);
     background-color: #411243;
     background-size: 100vw;
     background-size: cover;
     width: 100vw;
 }
+
+/* header- texten */
 
 a {
     font-family: "Bebas Neue";
@@ -24,7 +28,10 @@ a {
     text-align: center;
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
 }
+
+/* header */
 
 .header {
     background-color: #411243;
@@ -34,6 +41,8 @@ a {
     z-index: 3;
 
 }
+
+/* header- ul- listen */
 
 .header ul {
     margin: 0;
@@ -55,6 +64,8 @@ a {
     color: #411243;
 }
 
+/* header- logo */
+
 .header .img-logo {
     height: 50px;
     width: auto;
@@ -64,6 +75,8 @@ a {
     font-size: 2em;
 
 }
+
+/* header- hamburger-menu */
 
 .header .menu {
     clear: both;
@@ -78,6 +91,8 @@ a {
     cursor: pointer;
 
 }
+
+/* header- hamburger- menu/ stregerne */
 
 .header .menu-icon .nav-icon {
     background: white;
@@ -110,6 +125,8 @@ a {
     top: -5px;
 }
 
+/* chek-box væk */
+
 .header .menu-btn {
     display: none;
 }
@@ -117,6 +134,8 @@ a {
 .header .menu-btn:checked~.menu {
     max-height: 300px;
 }
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
 
 .header .menu-btn:checked~.menu-icon .nav-icon {
     background: transparent;
@@ -140,6 +159,8 @@ a {
     bottom: 0;
     z-index: -1;
 }
+
+/* album-musik */
 
 .mostpopular__title h1,
 .gallery__title h1 {
@@ -238,14 +259,18 @@ a {
     color: white;
 }
 
-.cover_right h1 {
+.cover_right h2 {
     text-align: right;
+    font-family: "Sigmar One";
+    font-size: 1.5rem;
 }
 
 main {
     display: flex;
     align-items: center;
 }
+
+/* gallery */
 
 .gallery_button {
     width: 100%;
@@ -272,6 +297,8 @@ main {
     color: #411243;
 }
 
+/* gallery- forside */
+
 .frontpage__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -292,6 +319,8 @@ main {
     object-fit: cover;
 }
 
+/* footer */
+
 .upperfooter {
     display: grid;
     grid-template-columns: 1fr;
@@ -308,6 +337,8 @@ main {
     padding: 0.5rem;
     color: white;
 }
+
+/* footer__links */
 
 .footer__links {
     color: white;
@@ -430,6 +461,8 @@ main {
     color: white;
 }
 
+/* text-beskrivelse- deres historie */
+
 .text {
     color: white;
     background-color: #411243;
@@ -460,6 +493,7 @@ main {
     line-height: 1.7rem;
 }
 
+/* mobil-størrelse, med header-menu */
 
 @media (min-width:48em) {
     .header li {
@@ -486,6 +520,8 @@ main {
         height: auto;
     }
 }
+
+/* tablet-størrelse */
 
 @media screen and (min-width: 640px) {
 
@@ -580,6 +616,8 @@ main {
     }
 }
 
+/* computer-størrelse */
+
 @media screen and (min-width: 960px) and (max-width: 1100px) {
     .mostpopular h1 {
         font-size: 1rem;
@@ -615,7 +653,7 @@ main {
 
     .gallery_img {
         height: 300px;
-        opacity: 40%;
+        opacity: 70%;
     }
 
     .frontpage__video {

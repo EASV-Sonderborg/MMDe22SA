@@ -1,4 +1,6 @@
-/* navbar/burgermenu */
+/* --------navbar/burgermenu-------- */
+
+/* Burgermenu kopiret fra website https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 * {
     margin: 0;
@@ -65,9 +67,10 @@ nav {
     height: 8rem;
     border-radius: 20%;
 }
-/* End navbar/burgermenu */
+/* --------End navbar/burgermenu-------- */
 
-/* alle sider */
+
+/* --------alle sider-------- */
 img {
     max-width: 100%;
 }
@@ -75,9 +78,16 @@ body {
     background-color: #303274;
     margin: 1rem;
 }
+/* Design af footer */
 footer {
     background-color: #302C42;
     margin-top: 2rem;
+}
+.footer_contact {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 5rem;
 }
 .footer-text {
     text-align: center;
@@ -87,12 +97,14 @@ footer {
     text-align: center;
     color: rgb(180, 180, 216);
 }
-/* End alle sider */
+/* --------End alle sider-------- */
 
-/* Forside */
+
+/* --------Forside-------- */
 .banner-img {
     width: 100%;
 }
+/*Opsætning og design af TheFatRat info*/
 .profil {
     display: grid;
     gap: 1rem;
@@ -117,6 +129,7 @@ footer {
     color: white;
     margin-top: 1rem;
 }
+/*Opsætning og design af Most popular music*/
 .body-music {
     display: grid;
     gap: 1rem;
@@ -170,9 +183,11 @@ h3 {
 .the-calling-text {
     text-align: center;
 }
-/* End forsiden */
+/* --------End forsiden-------- */
 
-/* Contact siden*/
+
+/* --------Contact siden-------- */
+/* Opsætning og styling af første section */
 .contact-body {
     display: grid;
     gap: 1rem;
@@ -196,6 +211,8 @@ h3 {
     justify-self: center;
     margin-bottom: 2rem;
 }
+
+/* Opsætning og styling af anden section */
 .platform-body {
     display: grid;
     gap: 1rem;
@@ -212,7 +229,7 @@ h3 {
     width: 30%;
     border-radius: 25%;
     justify-self: center;
-    border: 1px solid black;
+   
 }
 .platform-logo-img {
     border-radius: 25%;
@@ -223,18 +240,10 @@ h3 {
     justify-self: center;
     margin-bottom: 2rem;
 }
-/* Ende contact siden */
+/* --------Ende contact siden-------- */
 
 
-
-
-
-
-
-
-
-
-/* gallery side */
+/* --------gallery side-------- */
 .overskrift-gallery {
     text-align: center;
     padding: 2rem;
@@ -250,6 +259,7 @@ h3 {
     grid-template-columns: 1fr;
     margin-top: 2rem;
 }
+/* Styling og placering af billeder*/
 .first-pic {
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -299,6 +309,7 @@ h3 {
     border: 2px solid black;
     justify-self: center;
 }
+/* Styling og placering af tekst*/
 .billede-beskrivelse-et {
     text-align: center;
     color: white;
@@ -316,6 +327,14 @@ h3 {
     justify-self: center;
 }
 .billede-beskrivelse-tre {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 2rem;
+    max-width: 75%;
+    justify-self: center;
+}
+.billede-beskrivelse-fire {
     text-align: center;
     color: white;
     font-weight: 200;
@@ -355,10 +374,10 @@ h3 {
     max-width: 75%;
     justify-self: center;
 }
-/* End gallery side */
+/* --------End gallery side-------- */
+
 
 /* ------------ Music side -------------- */ 
-
 .musicpage-overskrift {
     color: white;
     text-align: center;
@@ -394,7 +413,7 @@ h3 {
 .songs {
     border: 2px solid purple;
 }
-.albums--2013 {
+.albums--2015 {
     margin-top: 3rem;
 }
 .albums--2018 {
@@ -424,12 +443,10 @@ h3 {
 .album-to {
     text-align: center;
 }
-
-/* ---------- MUSIC SIDE END ------------*/ 
-
+/* --------MUSIC SIDE END-------- */ 
 
 
-
+/* Navbar/burgermenu responsive skalering (Kopiert fra anden hjemmeside) */
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -472,7 +489,8 @@ h3 {
 
 /*Tablet størrelse*/
 @media only screen and (min-width: 769px) {
-    /*Forside*/
+    /* --------Forside-------- */
+    /*Opskalering af font på profil*/
     .profil-h2 {
         color: white;
         font-size: 16px;
@@ -481,6 +499,7 @@ h3 {
         color: white;
         font-size: 12px;
     }
+    /*Opskalering og placering af Most Popular Music*/
     .body-music {
         display: grid;
         gap: 1rem;
@@ -549,7 +568,9 @@ h3 {
         grid-column-start: 2;
         grid-row-start: 5;
     }
-    /*Contact*/
+
+    /* --------Contact-------- */
+    /*Opskalering og placering af kontakt info*/
     .contact-body {
         display: grid;
         gap: 1rem;
@@ -583,7 +604,7 @@ h3 {
         grid-row-start: 4;
         justify-self: center;
     }
-
+    /*Opskalering og placering af platforms info*/
     .platform-body {
         display: grid;
         gap: 1rem;
@@ -618,7 +639,8 @@ h3 {
         justify-self: center;
     }
 
-    /*---- Music ----*/
+    /* --------Music-------- */
+    /*Opskalering og placering*/
     .main-music {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -650,8 +672,8 @@ h3 {
         padding-top: 3rem;
     }
 
-
-    /*----Gallery----*/
+    /* --------Gallery-------- */
+    /*Opskalering og placering af galleriet*/
     .main-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -801,10 +823,9 @@ h3 {
 
 
 
-
-
 /*Laptop størrelse*/
 @media only screen and (min-width: 992px) {
+    /* --------alle sider-------- */
     body {
         background-image: url(images/logo-background.PNG);
         background-repeat: no-repeat;
@@ -818,7 +839,7 @@ h3 {
         font-weight: 400;
         color: rgb(255, 255, 255);
     }
-    /*Forside*/
+    /* --------Forside-------- */
     .profil-h2 {
         color: white;
         font-size: 20px;
@@ -827,6 +848,7 @@ h3 {
         color: white;
         font-size: 14px;
     }
+    /*Opskalering og placering af Most Popular Music i større grid*/
     .body-music {
         display: grid;
         gap: 1rem;
@@ -883,7 +905,8 @@ h3 {
         grid-column-start: 1;
         grid-row-start: 5;
     }
-    /*Contact side*/
+    /* --------Contact side-------- */
+    /*Opskalering og placering kontakt info i større grid*/
     .contact-body {
         display: grid;
         gap: 1rem;
@@ -937,6 +960,7 @@ h3 {
         grid-row-start: 5;
         text-align: center;
     }
+    /*Opskalering og placering platform info i større grid*/
     .platform-body {
         display: grid;
         gap: 1rem;
@@ -991,8 +1015,8 @@ h3 {
         text-align: center;
     }
 
-
-    /*---- Music ----*/
+    /* --------Music-------- */
+    /*Opskalering af font*/
     .albumstext {
         font-size: 3rem;
     }
@@ -1009,7 +1033,8 @@ h3 {
         width: 80%;
     }
 
-    /*----Gallery----*/
+    /* --------Gallery-------- */
+    /*Opskalering og placering af billeder i gallery*/
     .main-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1158,16 +1183,15 @@ h3 {
 }
 
 
-
-
 /*Stationær størrelse*/
 @media only screen and (min-width: 1200px) {
+    /* --------alle sider-------- */
     .nav-link{
         font-size: 2.0rem;
         font-weight: 400;
         color: rgb(255, 255, 255);
     }
-    /*Forside*/
+    /* --------Forside-------- */
     .profil-h2 {
         color: white;
         font-size: 24px;
@@ -1176,6 +1200,7 @@ h3 {
         color: white;
         font-size: 16px;
     }
+    /*Opskalering og placering i et større grid*/
     .body-music {
         display: grid;
         gap: 1rem;
@@ -1232,7 +1257,8 @@ h3 {
         grid-column-start: 4;
         grid-row-start: 3;
     }
-    /*Contact side*/
+    /* --------Contact side-------- */
+    /*Opskaleret og placering i et større grid*/
     .contact-body {
         display: grid;
         gap: 1rem;
@@ -1339,8 +1365,8 @@ h3 {
         grid-row-start: 3;
         text-align: center;
     }
-
-    /*----Gallery----*/
+    /* --------Gallery-------- */
+    /*Opskaleret og placeret i større grid*/
     .main-gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1353,6 +1379,7 @@ h3 {
         font-size: 2.5rem;
         color: white;
     }
+    /*Placering*/
     .first-pic {
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -1416,6 +1443,7 @@ h3 {
         grid-column-start: 3;
         grid-row-start: 4;
     }
+    /*Design og placering*/
     .billede-beskrivelse-et {
         text-align: center;
         color: white;
