@@ -258,12 +258,12 @@ h3 {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 2rem;
+    gap: 2rem;
 }
 /* Styling og placering af billeder*/
 .photo__img {
     margin-bottom: 1rem;
     margin-top: 1rem;
-    max-width: 75%;
     border: 2px solid black;
     justify-self: center;
 }
@@ -274,7 +274,6 @@ h3 {
     color: white;
     font-weight: 200;
     margin-bottom: 2rem;
-    max-width: 75%;
     justify-self: center;
 }
 
@@ -579,9 +578,7 @@ h3 {
     /* --------Gallery-------- */
     /*Opskalering og placering af galleriet*/
     .gallery {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 2rem;
     }
     .gallery__heading {
         text-align: center;
@@ -590,16 +587,7 @@ h3 {
         font-size: 2.5rem;
         color: white;
     } 
-        .photo__text {
-        text-align: center;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 2rem;
-        max-width: 75%;
-        justify-self: center;
-        grid-column-start: 1;
-        grid-row-start: 3;
-    }
+    
 }
 
 
@@ -816,10 +804,8 @@ h3 {
 
     /* --------Gallery-------- */
     /*Opskalering og placering af billeder i gallery*/
-    .gallery {
-        display: grid;
+    .gallery { 
         grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 2rem;
     }
     .gallery__heading {
         text-align: center;
@@ -1016,9 +1002,7 @@ h3 {
     /* --------Gallery-------- */
     /*Opskaleret og placeret i større grid*/
     .gallery {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 2rem;
     }
     .gallery__heading {
         text-align: center;
