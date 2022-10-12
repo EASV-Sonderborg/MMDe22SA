@@ -3,6 +3,7 @@ body{
     margin-top: 51px;
     width: 99%;
     background-image: image(start-pic.jpeg) ;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +24,7 @@ header{
 .header-text{
     color: black;
     text-decoration: none;
-    list-style: none;
+    list-style: none; 
     
 }
 
@@ -152,7 +153,7 @@ li{
 }
 .buy-now{
     display: block;
-    background-color: #yellow;
+    background-color: yellow ;
     width: 50%;
     border-radius: 2rem;
     
