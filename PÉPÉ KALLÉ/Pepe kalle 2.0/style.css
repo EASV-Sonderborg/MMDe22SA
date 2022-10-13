@@ -69,16 +69,9 @@ nav a{
 
 
 /* quick facts */
-.quick-facts{
+
     
-}
-.quick-facts__content{
-    text-align: center; 
-    align-items: center;
-}
-.quick-facts__img{
-    
-}
+
 .quick-facts__setup{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -86,6 +79,14 @@ nav a{
     gap: 0px 0px; 
     grid-template-areas: 
     "quick-facts__info quick-facts__img"; 
+    align-items: center;
+    justify-items: center;
+}
+
+.quick-facts__content{
+    text-align: center; 
+    
+    
 }
 
 
@@ -133,11 +134,9 @@ nav a{
 
 /* picture gallery */
 .picture-gallery{
-    text-align: center;
-    
-    
-    
+    text-align: center; 
 }
+
 .picture-gallery__content{
     display: grid ;
     grid-template-columns: 1fr 1fr; 
@@ -150,17 +149,14 @@ nav a{
 
 .picture-gallery__imgs{
     max-width: 49vw;
-    
-    
-
 }
+
 /* picture gallery end */
 
 
 /* shop */
 .shop{
     text-align: center;
-    
 }
 
 .shop__content{
@@ -168,9 +164,8 @@ nav a{
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
-    
 }
+
 .product{
     display: grid;
     padding-bottom: 1rem;
@@ -212,9 +207,7 @@ footer{
 @media screen and (min-width: 760px) {
 
 /*MediaQ shop settings*/  
-.product{
-    
-}  
+ 
 .shop__content{
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -228,18 +221,14 @@ footer{
 }
 
 @media screen and (min-width: 1200px) {
-.header{
-    z-index: 10000;
-}
+
 
 .shop__content{
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 2rem;
 }
-.product{
-   
-}
+
     
 .product__img{
     margin-top: 2rem;
@@ -249,11 +238,39 @@ footer{
     transform: scale(1.25);
 }
 
-.buy-now{
-    width:;
-}
+
 .buy-now:hover{
     background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color:#ffab23;
 }
+    
 }
+@media screen and (min-width: 1600px) {
+    
+    .shop__content{
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 2rem;
+    }
+ 
+        
+    .product__img{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }   
+    .product__img:hover{
+        transform: scale(1.25);
+    }
+    
+    
+    .buy-now:hover{
+        background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+        background-color:#ffab23;
+    }
+    }
+
+
+/* Used content
+https://www.bestcssbuttongenerator.com/#/14
+
+*/
