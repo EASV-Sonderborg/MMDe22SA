@@ -69,16 +69,25 @@ nav a{
 
 
 /* quick facts */
-
-.quick-facts__content{
-    display: grid;
-    grid-template-columns: 1.2fr; 
-    grid-template-rows: 0.4fr 1.6fr;
-    text-align: center;
+.quick-facts{
     
-    
-
 }
+.quick-facts__content{
+    text-align: center; 
+    align-items: center;
+}
+.quick-facts__img{
+    
+}
+.quick-facts__setup{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "quick-facts__info quick-facts__img"; 
+}
+
 
 /* quick facts end*/
 
@@ -157,7 +166,7 @@ nav a{
 .shop__content{
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1.5fr 1.5fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr;
     
     
@@ -200,23 +209,51 @@ footer{
 
 
 /*Media Querries*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 760px) {
 
-/*MediaQ shop settings*/    
+/*MediaQ shop settings*/  
 .product{
-    padding: 3rem;
-    gap: 3rem;
+    
+}  
+.shop__content{
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
 }
 
-.product__img:hover{
-    transform: scale(1.25);
-}
-.buy-now:hover{
-    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
+
 /*MediaQ shop settings end*/ 
 
 
+}
 
+@media screen and (min-width: 1200px) {
+.header{
+    z-index: 10000;
+}
+
+.shop__content{
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 2rem;
+}
+.product{
+   
+}
+    
+.product__img{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}   
+.product__img:hover{
+    transform: scale(1.25);
+}
+
+.buy-now{
+    width:;
+}
+.buy-now:hover{
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color:#ffab23;
+}
 }
