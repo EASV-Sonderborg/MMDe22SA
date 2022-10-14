@@ -381,6 +381,9 @@ main {
 
 
 /* music.html page */
+.albumtitle, .albumtitle2 {
+    font-family: "Sigmar One";
+}
 .afspil_musik {
     justify-self: center;
 }
