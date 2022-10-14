@@ -235,10 +235,11 @@ a {
     border: 2px solid white;
     width: 35vw;
     border-radius: 2rem;
-    text-transform: uppercase;
     text-align: center;
-    padding: 0.7rem 0 0.5rem;
-    font-family: "Bebas Neue";
+    padding: 0.5rem 0.3rem 0.5rem;
+    font-family: "Sigmar One";
+    font-size: 1.5rem;
+    line-height: 1.2rem;
     margin: 0 0 1rem;
     transition: 0.7s;
 }
@@ -259,11 +260,11 @@ a {
     color: white;
 }
 
-.cover_right h2 {
+/* .cover_right h2 {
     text-align: right;
     font-family: "Sigmar One";
     font-size: 1.5rem;
-}
+} */
 
 main {
     display: flex;
