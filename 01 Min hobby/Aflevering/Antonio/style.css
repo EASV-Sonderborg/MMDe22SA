@@ -4,12 +4,16 @@ img {
     justify-content: center;
     }
 
+    p{
     
-    h1,h2, h3,p {
+        color: white;
+    }
+    h1,h2, h3 {
     color:white;
     padding: 5px; ;
     text-align: center;
     border: 0ch;
+
     } 
 h1 {margin: 10px;;
 
