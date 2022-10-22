@@ -1,11 +1,19 @@
 
+header{
+    font:  sans-serif;
+    color:white;
+ 
+  
+}
 img {
+   
     max-width: 40%;
     justify-content: center;
-    }
 
-    p{
-    
+   }
+
+ p{
+    font: 1em sans-serif;
         color: white;
     }
     h1,h2, h3 {
@@ -19,9 +27,35 @@ h1 {margin: 10px;;
 
 }
 body {
+   
+   grid-template-columns: max-content;
+
+    
     background-color: hsl(287, 91%, 14%);
     margin: 1rem;
     
+      }
+      .navegacion{
+        width: 1000px;
+        margin: 30px auto;
+       background-color:white ;
+      }
+      .navegacion ul{
+        list-style: none;
+      }
+      .menu >li{
+        position: relative;
+        display: inline-block;
+      }
+      .menu >li > a{
+        display: block;
+        padding: 15px 20px;
+        font-family: open sans-serif;
+        text-decoration:none;
+      }
+      .menu :hover{
+        color: aqua;
+        transition: all .3s;
       }
 article{
     text-align: center;
@@ -40,7 +74,7 @@ p{
 #newyork{ image: resolution 50px; ;
     
 }
-}
+
 #newyork{
     
 
