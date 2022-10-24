@@ -1,0 +1,31 @@
+body {
+    background-color: lightgrey;
+    margin: 2rem;
+}
+
+.fruit-collection {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.fruit__img {
+    max-width: 100%;
+}
+
+.fruit {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+.fruit__button {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: darkblue;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
