@@ -37,8 +37,8 @@ body {
       }
       .navegacion{
         width: 1000px;
-        margin: 30px auto;
-       background-color:white ;
+        margin: 10px auto;
+       background-color:rgba(198, 233, 215, 0.384)) ;
       }
       .navegacion ul{
         list-style: none;
@@ -49,21 +49,23 @@ body {
       }
       .menu >li > a{
         display: block;
-        padding: 15px 20px;
+        padding: 0px 18px;
         font-family: open sans-serif;
         text-decoration:none;
+        color: rgb(239, 230, 230);
       }
       .menu :hover{
-        color: aqua;
+        color: rgb(231, 86, 13);
         transition: all .3s;
-      }
-article{
-    text-align: center;
 
-    }
-p{
-    font-size: medium;
-}
+      }
+      #container{ 
+        width: 100%;
+       text-align:center ;
+        border: 10px white;
+        
+
+
 .profil {
     display: grid;
     gap: 1rem;
@@ -78,4 +80,5 @@ p{
 #newyork{
     
 
+}
 }
