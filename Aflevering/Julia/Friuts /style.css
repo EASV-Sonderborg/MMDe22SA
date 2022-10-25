@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(179, 67, 67);
+    margin: 2rem;
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    
+}
+.navbar__link{
+    display:block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 1.25rem;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: brown;
+    margin-right: 10px;
+}
+
+.navbar__link:hover{
+    background-color: rgb(119, 17, 17);
+    border-radius: 10px;
+}
+
+
+.fruit__img{
+    max-width: 100%;
+}
+
+
+.fruit-collection{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    
+}
+
+.fruit{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+}
+
+input:hover{
+    background-color: rgba(250, 122, 87, 0.66);
+}
+input{
+    border-style: solid;
+    border-color: rgba(241, 63, 63, 0.684);
+    border-width:  1px;
+    border-radius: 10px;
+}
+
+.fruit__button{
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 8px 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    width: 50%;
+    align-self: center;
+    font-weight: bold;
+  }
+
+.fruit__button:hover{
+    color: black;
+  }
+
+.input-box{
+    align-self: center;
+  }
+
+/* - - -Desktop - - - */
+@media screen and (min-width: 821px) {
+    .navbar{
+        display: flex;
+    }
+    .navbar__item{
+        flex-grow: 1;    
+    }
+    .fruit-collection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+    }
+    .fruit__button:active {
+        box-shadow: 2px 2px 5px #151413;}
+} 
+
+
+
+/* - - - MOBILE - - - */
+@media screen and (max-device-width: 480px){
+    h2{
+        text-align: center;
+    }
+    p{
+        padding-left:.5rem;
+        text-align: center;
+    }
+    .navbar__link{
+        margin: 5px;
+        padding:6px;
+    }
+    
+.fruit-collection{
+    display: flex;
+  flex-direction: column;
+}
+.input-box{
+    display: none;
+}
+}
+
+/* - - -TABLET - - - */
+@media screen and (min-width:481px) and (max-width:820px){
+    .fruit-collection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    } 
+    .navbar__link{
+        margin:6px ;
+        padding: 10px;}
+    .fruit-collection{
+        margin-top: 1.5rem;
+    }
+    .input-box{
+        display: none;
+    }
+    }
+
