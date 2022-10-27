@@ -3,31 +3,9 @@ body {
     margin: 2rem;
 }
 
-.navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 10px;
-    
-}
-.navbar__link{
-    display:block;
+a.nav-logo{
     color: white;
-    text-decoration: none;
-    text-align: center;
-    font-family: sans-serif;
-    padding: 1.25rem;
-    border-style: solid;
-    border-radius: 10px;
-    background-color: brown;
-    margin-right: 10px;
 }
-
-.navbar__link:hover{
-    background-color: rgb(119, 17, 17);
-    border-radius: 10px;
-}
-
 
 .fruit__img{
     max-width: 100%;
@@ -83,6 +61,81 @@ input{
   }
 
 /* - - -Desktop - - - */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9eeee;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ecf0f7;
+}
+
+.nav-link:hover{
+    color: #f7e02f;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #6ef72f;
+}
+
+
+
+
+
 @media screen and (min-width: 821px) {
     .navbar{
         display: flex;
@@ -97,9 +150,51 @@ input{
         margin-top: 2rem;
     }
     .fruit__button:active {
-        box-shadow: 2px 2px 5px #151413;}
+        box-shadow: 2px 2px 5px #f2a85d;}
 } 
 
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
 
 
 /* - - - MOBILE - - - */
@@ -111,11 +206,7 @@ input{
         padding-left:.5rem;
         text-align: center;
     }
-    .navbar__link{
-        margin: 5px;
-        padding:6px;
-    }
-    
+   
 .fruit-collection{
     display: flex;
   flex-direction: column;
@@ -123,6 +214,8 @@ input{
 .input-box{
     display: none;
 }
+
+
 }
 
 /* - - -TABLET - - - */
@@ -132,9 +225,7 @@ input{
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     } 
-    .navbar__link{
-        margin:6px ;
-        padding: 10px;}
+
     .fruit-collection{
         margin-top: 1.5rem;
     }
@@ -142,4 +233,6 @@ input{
         display: none;
     }
     }
+
+/*------------------ RWD Burger COD PEN */
 
