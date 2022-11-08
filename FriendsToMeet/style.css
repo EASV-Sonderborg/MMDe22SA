@@ -1,3 +1,50 @@
 body {
     background-color: rgb(226, 201, 193);
 }
+img {
+    max-width: 100%;
+}
+
+
+
+/*Profil*/
+.profilHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.profil {
+    margin: 1rem;
+}
+.profil__img {
+    /*Center billedet*/
+    max-width: 50%;
+    border-radius: 30px;
+    border: solid black 1px;
+    /*Centreing af billedet*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profil__info {
+    background-color: rgba(250, 255, 251, 0.463);
+    border-radius: 30px;
+}
+.profil__infoText {
+    padding: 1.5rem;
+}
+.friends {
+    margin: 1rem;
+}
+.friendsHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.friends__img {
+    max-width: 15%;
+    border-radius: 50px;
+    padding: 1rem;
+}
