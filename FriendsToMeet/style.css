@@ -20,9 +20,15 @@ img {
 .profil__img {
     /*Center billedet*/
     max-width: 50%;
-    border-radius: 30px;
+    border-radius: 15%;
     border: solid black 1px;
     /*Centreing af billedet*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profil__chatImg {
+    max-width: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +51,64 @@ img {
 }
 .friends__img {
     max-width: 15%;
-    border-radius: 50px;
+    border-radius: 50%;
     padding: 1rem;
+}
+
+/*Chat*/
+/*https://www.w3schools.com/howto/howto_css_chat.asp*/
+.container {
+    border: 2px solid #dedede;
+    background-color: rgba(250, 255, 251, 0.463);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: rgba(250, 255, 251, 0.463);
+}
+  
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Style images */
+.container img {
+    float: left;
+    max-width: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+  
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+  
+/* Style time text */
+.time-right {
+    float: right;
+    color: rgb(148, 148, 148);
+}
+  
+/* Style time text */
+.time-left {
+    float: left;
+    color: rgb(148, 148, 148);
+}
+
+/*Tastertur*/
+/*https://www.youtube.com/watch?v=DN0gXtYGR2o*/
+.chat__input:active {
+    /*Prøver at få den til ikke at zoom ind*/
+    zoom: 0%;
 }
