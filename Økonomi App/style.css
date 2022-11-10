@@ -1,0 +1,30 @@
+body{background: linear-gradient(to left, #1894f444 19%, #4e80a622 81%);
+}
+h1,h2{
+  text-align: center;
+}
+
+/* - - - - - -  -login- - - - - - - - - - - */
+.login__tagline{
+ text-transform: uppercase;
+  background: linear-gradient(to right,#30CFD0 0%, #13036d  50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 8 vw;
+  font-family: "Poppins", sans-serif; 
+  margin: 0;
+
+}
+.login__tagline-under{
+color: rgb(89, 93, 97);
+}
+.login__text{
+  text-align: center;
+}
+
+
+/*- - - - - - - - - - accountoverwiev - - - - - - - -*/
+.magnus{
+  text-align: center;
+}
