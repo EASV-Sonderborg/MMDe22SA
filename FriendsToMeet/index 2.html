@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends to meet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Video som jeg brugte til at lave menu drop down: https://www.youtube.com/watch?v=7aGLkT4y4ls&t=1684s-->
+    <nav>
+        <section class="logo">Friends to meet</section>
+        <label for="drop" class="toggele" id="main-toggle"><span class="nav-icon"></span></label>
+        <input type="checkbox" id="drop">
+        <ul class="menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Forums</a></li>
+
+            <li>
+                <!-- Frist Menu Drop Down-->
+                <label for="drop-2" class="toggle">Grupper</label>
+                <a href="#">Grupper</a>
+                <input type="checkbox" id="drop-2">
+                <ul>
+                    <li><a href="#">Mine grupper</a></li>
+                    <li><a href="#">Lokale grupper</a></li>
+                    <li><a href="#">Regionale grupper</a></li>
+                    <li><a href="#">Landsdækkende grupper</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <!--Second Menu Drop Down-->
+                <label for="drop-3" class="toggle">Events</label>
+                <a href="#">Events</a>
+                <input type="checkbox" id="drop-3">
+                <ul>
+                    <li><a href="#">Lokale events</a></li>
+                    <li><a href="#">Regionale events</a></li>
+                    <li><a href="#">Landsdækkende events</a></li>
+                </ul>
+
+            <li><a href="#">Find nye venner</a></li>
+            <li><a href="#">Indstillinger</a></li>
+
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
