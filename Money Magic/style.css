@@ -15,9 +15,9 @@ body{
     flex-direction: column;
     gap: 1rem    ;
     text-align: center;
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
-    height: 50%;
+    
     
 }
 
@@ -27,13 +27,14 @@ body{
 
 .login__input{
     padding: 0.2rem;
-    margin: 0.2rem
-
+    margin: 0.2rem;
+    border-radius: 5px;
 }
 
 .login-signup__button{
     padding: 0.5rem;
-    border-radius: 35px;
+    border-radius: 5px;
+    background-color: #35A7FF;
 
 }
 .login-signup__switch{
