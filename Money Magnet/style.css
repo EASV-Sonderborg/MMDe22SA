@@ -1,3 +1,27 @@
+/*custom proppeties */
+:root{
+    --spacingDefoult: 
+    --spacingSmall:var(--spacingDefoult)
+    --spacingMedium:var(--spacingDefoult)
+    --spacingLarge:var(--spacingDefoult)
+    --spacingXLarge:var(--spacingDefoult)
+
+
+    --fontSizeSmall:8px;
+    --fontsizeMedium: 16px;
+    --fontSizeLarge: 24px;
+    --fontSizeXLarge:36px;
+
+    --maincolor: lightgray;
+    --borderRadius: 10px;
+
+
+}
+
+/*end custoum propperties  */
+
+
+
 body{
     background-color: #a5a9ac;
     margin: 0;
