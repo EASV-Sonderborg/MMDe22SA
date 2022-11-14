@@ -13,7 +13,10 @@
     --fontSizeXLarge:36px;
 
     --maincolor: lightgray;
-    --borderRadius: 10px;
+
+    --borderRadiusSmall:5px;
+    --borderRadiusMedium: 10px;
+  
 
 
 }
@@ -53,6 +56,7 @@ body{
     padding: 0.2rem;
     margin: 0.2rem;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 .login-signup__button{
@@ -64,6 +68,10 @@ body{
 }
 .login-signup__switch{
     padding: 1rem;
+}
 
-    
+.login__fill-in{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
 }
