@@ -10,27 +10,32 @@
 </head>
 
 <body>
-  <section class="login">
-    <article>
+  <section class="sign-up">
+
+    <form class="login" action="/action_page.php">
+
       <img class="login__logo" src="img/logo.png" alt="Money Magnet Logo">
       <h1 class="login__topline">Sign up</h1>
 
-      <input class="login__input" type="text" placeholder="Username">
-
-      <input class="login__input" type="text" placeholder="Password">
-      <input class="login__input" type="text" placeholder="Repeat Password">
-      <button class="login-signup__button"> Create Account</button>
-    </article>
+      <label for="username">Username:</label> <br>
+      <input class="login__input"name="username" placeholder="Username"><br>
     
-    <article class="login-signup__switch">
-      Already have a login? <a href="login.html">
-        Click here
-      </a>
-    </article>
+
+      <label for="password">Enter your password min.8 characters</label><br>
+      <input class="login__input" type="text" name="password" placeholder="Password" minlength="8"><br>
+
+      <label for="repeatp"> Reapeat </label><br>
+      <input class="login__input"  type="text" name="repeatp" placeholder="Repeat password"
+      minlength="8">
+
+    
+      <button class="login-signup__button"> Create Account</button>
+  
+    </form>
+
+    <p>Already have a login?<a href="login.html">Click here</a></p> 
+
   </section>
 
-
-
 </body>
-
 </html>
