@@ -26,7 +26,7 @@
 
 
 body{
-    background-color: #a5a9ac;
+    background: linear-gradient(to left, #1894f444 19%, #4e80a622 81%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,7 +35,7 @@ body{
 
 
 .login{
-    background-color: #fff;
+  
     padding: 2rem 1rem;
     margin: 50px auto;
     display: flex;
