@@ -114,7 +114,7 @@ body {
         position: absolute;
         bottom: 0;
         text-align: center;
-        width: -webkit-fill-available;
+        margin: auto 60px;
     }
 
     /* Sign up page */
