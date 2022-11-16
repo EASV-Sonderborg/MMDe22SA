@@ -1,0 +1,40 @@
+body, h1 {
+    margin: 0;
+}
+/* Styling the scroll and fixed bottom menu */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg_image.jpeg);
+    background-size: cover;
+}
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightpink;
+    padding: 1rem;
+}
+.scroll {
+    overflow-y: scroll;
+    padding: 20px;
+}
+footer {
+    background-color: lightpink;
+}
+nav {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+a {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+a:link, a:visited {
+    color: darkviolet;
+}

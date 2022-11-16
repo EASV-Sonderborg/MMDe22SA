@@ -68,11 +68,6 @@ body {
     }
 
     .login__frontpage {
-        /* margin: auto;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
         align-self: center;
         justify-self: center;
     }
@@ -111,13 +106,28 @@ body {
     }
 
     .loginFooter {
-        position: absolute;
-        bottom: 0;
         text-align: center;
-        width: -webkit-fill-available;
+        margin: auto;
+        text-align: center;
+        display: block;
+        width: 100%;
+        /* position: absolute; */
     }
 
+
     /* Sign up page */
+
+    .signUp__header {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: var(--section-clr);
+        border-radius: 1rem;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+    }
+
+    .signUp--h2 {
+        text-align: center;
+    }
 
     .signUp {
         border-radius: 12px;
@@ -141,8 +151,6 @@ body {
         border: none;
         background-color: rgba(245, 245, 245, 0.691);
         outline: none;
-        /* border-top-left-radius: 12px;
-        border-top-right-radius: 12px; */
         }
 
 
