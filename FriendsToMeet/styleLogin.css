@@ -1,0 +1,278 @@
+:root {
+    /* Farver */
+    --font-clr: black;
+    --secondary-clr: #D8F3DC;
+    --third-clr: #007474;
+    --bgd-clr: #E2C9C1;
+    --section-clr: #fafffb94;
+
+    /* Font Size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeMedium: 16px;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
+}
+
+h1 {
+    margin: .5rem;
+    font-size: var(--fontSizeXLarge);
+}
+
+h2 {
+    font-size: var(--fontSizeLarge);
+    margin: 0 .5rem;
+}
+
+p, label {
+    font-size: var(--fontSizeMedium);
+    font-weight: 450;
+}
+
+/* - - - - - - - - - - -  */
+
+body {
+    background-color: var(--bgd-clr);
+    font-family: 'Times New Roman', Times, serif;
+    margin: .5rem;
+    padding: 2rem;
+}
+
+.signUpHeader, .friendsToMeetHeader {
+    font-family: 'Pacifico', cursive;
+    color: var(--third-clr);
+    text-shadow: 1px 1px 3px whitesmoke;
+    font-size: xx-large;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+    /* Login Page */
+
+    .loginHeader {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .loginText {
+        text-align: center;
+        margin-top: .5rem;
+
+    }
+
+    .signUpHeader {
+        margin-bottom: 2rem;
+        text-align: center;
+
+    }
+
+    .login__frontpage {
+        /* margin: auto;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        align-self: center;
+        justify-self: center;
+    }
+
+    .login {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .login__input {
+        padding: 1rem;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .login__button {
+        border-radius: 2rem;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 3px 3px 1rem rgb(118, 118, 118);
+        background-color: var(--third-clr);
+        color: white;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    .login__link {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double #32D74B;
+        font-weight: bold;
+    }
+
+    .loginFooter {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: -webkit-fill-available;
+    }
+
+    /* Sign up page */
+
+    .signUp {
+        border-radius: 12px;
+        background-color: var(--section-clr);
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin: auto;
+        width: 100%;
+    }
+
+    .signUp__labels {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    input {
+        border: none;
+        background-color: rgba(245, 245, 245, 0.691);
+        outline: none;
+        /* border-top-left-radius: 12px;
+        border-top-right-radius: 12px; */
+        }
+
+
+    .signUp__input {
+        margin: 0;
+        padding: .5rem;
+        border-top-right-radius: 12px;
+        border-bottom: solid var(--third-clr);
+        border-left: solid var(--third-clr);
+    }
+
+    .signUp__picture {
+        background-color: var(--section-clr);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border-radius: 12px;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+    }
+
+    .signUp--pfp {
+        margin-top: 1rem;
+        width: 40%;
+        border-radius: 15%;
+        border: var(--third-clr) 6px double;
+        align-self: center;
+    }
+
+    .signUp__addpicture {
+        display: flex;
+        align-self: center;
+        gap: .5rem;
+        margin: .5rem;
+    }
+
+    .signUp__text {
+        margin: 0;
+        font-size: var(--fontSizeMedium);
+        border-bottom: solid var(--third-clr);
+        width: fit-content;
+     }
+    
+    .signUp--camera {
+        width: 24px;
+    }
+
+    .signUp__agree {
+        display: flex;
+        justify-content: start;
+        margin: 1rem;
+    }
+
+    .signUp__checktext {
+        margin: 0;
+        padding: .5rem;
+    }
+
+    .signUp--arrow {
+        width: 30px;
+    }
+
+    .signUp--link {
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        align-content: flex-end;
+    }
+
+    .signUp__forward {
+        background-color: var(--third-clr);
+        border-radius: 12px;
+        text-align: right;
+        align-self: center;
+        display: flex;
+        justify-content: flex-end;
+        justify-self: center;
+        margin: .5rem;
+        width: 150px;
+    }
+
+    .signUp__back {
+        background-color: var(--third-clr);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: flex-end;   
+        justify-self: center;
+        width: 150px; 
+        margin: .5rem;
+    }
+
+   
+    .signUp__redirect {
+        display: flex;
+        justify-content: space-between;   
+
+    }
+   
+
+    /* Pick your interests page */
+
+    .interests {
+        background-color: var(--section-clr);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+    }
+
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .hobbyHeader {
+        margin-bottom: 1rem;
+    }
+
+    .hobbyH2Header {
+        margin-bottom: .2rem;
+    }
+
+    .hobbyCheckbox {
+        display: flex;
+        margin: .5rem .5rem;
+    }
+
+    .redirect {
+        display: flex;
+        justify-content: space-between;   
+    }
