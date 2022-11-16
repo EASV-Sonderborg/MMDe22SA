@@ -4,8 +4,40 @@ body {
 img {
     max-width: 100%;
 }
-footer {
-    background-color: aquamarine
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28pt;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24pt;
+    font-weight: normal;
+}
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+    font-weight: normal;
+}
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    font-weight: normal;
+}
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: normal;
+}
+h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    font-weight: normal;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    font-weight: lighter;
 }
 
 /*Forside*/
@@ -240,6 +272,7 @@ a {
     border-radius: 25px;
 }
 .event__popupImg {
+    width: 75%;
     padding: 1rem;
     grid-column-start: 1;
     grid-row-start: 1;
@@ -265,12 +298,40 @@ a {
     border: none;
     text-decoration: none;
 }
+.forsideInfo {
+    background-color: rgb(250, 255, 251, 0.64);
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 15px;
+}
+.ForsideInfo__img {
+    width: 50%;
+}
+.forsideInfo__header {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.forsideInfo__text {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.forsideInfo__text2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.ForsideInfo__img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row: span 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Profil*/
 .header {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;
-    font-weight: bold;
     text-align: center;
 }
 .profil {
