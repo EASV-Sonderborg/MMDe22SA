@@ -57,7 +57,7 @@ li {
 a {
     text-decoration: none;
 }
-.header{
+.header {
     border-bottom: 1px solid #E2E8F0;
     background-color: rgb(226, 201, 193);
     padding: 1rem;
@@ -270,6 +270,7 @@ a {
     grid-template-columns: 1fr 3fr 1fr;
     margin: 2rem;
     border-radius: 25px;
+    border: solid green 1px;
 }
 .event__popupImg {
     width: 75%;
@@ -298,6 +299,7 @@ a {
     border: none;
     text-decoration: none;
 }
+
 .forsideInfo {
     background-color: rgb(250, 255, 251, 0.64);
     margin: 1rem;
@@ -363,17 +365,9 @@ a {
 }
 .profil__infoText {
     padding: 1.5rem;
-    font-family: PT Sans, 'Times New Roman', Times, serif;
-    font-size: 16px;
 }
 .friends {
     margin: 1rem;
-}
-.friendsHeader {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
 }
 .friends__img {
     max-width: 90%;
@@ -448,4 +442,7 @@ a {
     margin: .5rem;
     padding: 1rem;
     border-radius: 15px;
+}
+.forums__img {
+    max-width: 15%;
 }
