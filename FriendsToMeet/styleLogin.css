@@ -119,6 +119,18 @@ body {
 
     /* Sign up page */
 
+    .signUp__header {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        background-color: var(--section-clr);
+        border-radius: 1rem;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+    }
+
+    .signUp--h2 {
+        text-align: center;
+    }
+
     .signUp {
         border-radius: 12px;
         background-color: var(--section-clr);
