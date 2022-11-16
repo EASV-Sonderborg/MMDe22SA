@@ -14,6 +14,10 @@
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
 }
 
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     margin: .5rem;
     font-size: var(--fontSizeXLarge);
@@ -34,20 +38,27 @@ p, label {
 body {
     background-color: var(--bgd-clr);
     font-family: 'Times New Roman', Times, serif;
-    margin: .5rem;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0;
 }
 
-.signUpHeader, .friendsToMeetHeader {
+.friendsToMeetHeader {
     font-family: 'Pacifico', cursive;
     color: var(--third-clr);
     text-shadow: 1px 1px 3px whitesmoke;
     font-size: xx-large;
-    margin-bottom: 5rem;
     text-align: center;
+    margin: 0;
 }
 
     /* Login Page */
+
+    .login__forside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
 
     .loginHeader {
         margin: 0;
@@ -58,12 +69,6 @@ body {
     .loginText {
         text-align: center;
         margin-top: .5rem;
-
-    }
-
-    .signUpHeader {
-        margin-bottom: 2rem;
-        text-align: center;
 
     }
 
@@ -105,9 +110,13 @@ body {
         font-weight: bold;
     }
 
+    .loginNoProfile {
+        margin: 0;
+    }
+
     .loginFooter {
         text-align: center;
-        margin: auto;
+        margin: 0;
         text-align: center;
         display: block;
         width: 100%;
@@ -118,6 +127,7 @@ body {
     /* Sign up page */
 
     .signUp__header {
+        margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 1rem;
         background-color: var(--section-clr);
@@ -271,9 +281,6 @@ body {
         margin-bottom: 1rem;
     }
 
-    .hobbyH2Header {
-        margin-bottom: .2rem;
-    }
 
     .hobbyCheckbox {
         display: flex;
