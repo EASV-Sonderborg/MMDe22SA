@@ -23,16 +23,39 @@
 
 /*end custoum propperties  */
 
-
-
 body{
-    background: linear-gradient(to left, #1894f444 19%, #4e80a622 81%);
+  background-color: #FAF9F6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.login__logo{
+ max-width: 35%;
+ align-self: center;
+ margin-bottom: 5vh ;
+  }
 
+  .login-signup__button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #35A7FF;
+    margin: 1.2rem;
+    width:30vh;
+    align-self: center;
+}
+
+.login__input{
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    margin-bottom:1.5rem;
+    width:30vh;
+    align-self: center;
+  
+}
+  /*- - - - - - - Sign-up Site starts - - - - - - - */
+  
 .sign-up__box{
     padding: 2rem 1rem;
     margin: 50px auto;
@@ -41,37 +64,35 @@ body{
     text-align: center;
     width: 70%;
     border-radius: 10px;
+  align-content:center ;
 }
+
+
+p{ text-align: center;}
+/*- - - - - - Ends sign-up site - - - - - - - */
+
+
+
+/* - - - - - -  Login site starts - - - - - */ 
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    text-align: center;
+    align-content: space-between;
+}  
+
+.login__form{
+margin-top: 50px;
+}
+
 
 .login__topline{
-
+    margin-bottom: 6vh;
 }
 
-.login__input{
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    margin-bottom: 3rem;
-}
-
-.login-signup__button{
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color: #35A7FF;
-    margin: 1.2rem;
-
-}
 .login-signup__switch{
     padding: 1rem;
+    text-align: center;
 }
-
-.login__fill-in{
-    display: grid;
-    grid-template-columns: 70%;
-    justify-content: center;
-}
-
-p{text-align: center;
-
-}
-/*- - - - - - end sing-up site - - - - - - - */
