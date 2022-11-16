@@ -1,0 +1,77 @@
+/*custom proppeties */
+:root{
+    --spacingDefoult: 
+    --spacingSmall:var(--spacingDefoult)
+    --spacingMedium:var(--spacingDefoult)
+    --spacingLarge:var(--spacingDefoult)
+    --spacingXLarge:var(--spacingDefoult)
+
+
+    --fontSizeSmall:8px;
+    --fontsizeMedium: 16px;
+    --fontSizeLarge: 24px;
+    --fontSizeXLarge:36px;
+
+    --maincolor: lightgray;
+
+    --borderRadiusSmall:5px;
+    --borderRadiusMedium: 10px;
+  
+
+
+}
+
+/*end custoum propperties  */
+
+
+
+body{
+    background-color: #a5a9ac;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.login{
+    background-color: #fff;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem    ;
+    text-align: center;
+    width: 70%;
+    border-radius: 10px;
+    
+    
+}
+
+.login__topline{
+
+}
+
+.login__input{
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.login-signup__button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #35A7FF;
+    margin: 1.2rem;
+
+}
+.login-signup__switch{
+    padding: 1rem;
+}
+
+.login__fill-in{
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+}

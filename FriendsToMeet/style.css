@@ -1,3 +1,344 @@
 body {
     background-color: rgb(226, 201, 193);
 }
+img {
+    max-width: 100%;
+}
+
+/*Forside*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: rgb(226, 201, 193);
+    padding: 1rem;
+    border: solid rgb(226, 201, 193) 2px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+}
+.nav-link:hover{
+    color: #767193;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: rgb(49, 161, 66);
+}@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: rgb(193, 218, 226);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(193, 218, 226);
+    overflow: hidden;
+}
+  
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+/* Add an active class to highlight the current page */
+.active {
+    background-color: rgb(193, 218, 226);
+    color: white;
+}
+  
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+  
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(193, 218, 226);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(193, 218, 226);
+    color: black;
+}
+  
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(193, 218, 226);
+    color: black;
+}
+  
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Profil*/
+.profilHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.profil {
+    margin: 1rem;
+}
+.profil__img {
+    /*Center billedet*/
+    max-width: 50%;
+    border-radius: 15%;
+    border: solid black 1px;
+    /*Centreing af billedet*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profil__chatImg {
+    max-width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profil__info {
+    background-color: rgba(250, 255, 251, 0.463);
+    border-radius: 25px;
+}
+.profil__infoText {
+    padding: 1.5rem;
+    font-family: PT Sans, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.friends {
+    margin: 1rem;
+}
+.friendsHeader {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.friends__img {
+    max-width: 20%;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+/*Chat*/
+/*https://www.w3schools.com/howto/howto_css_chat.asp*/
+.container {
+    background-color: rgba(250, 255, 251, 0.463);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    background-color: rgba(250, 255, 251, 0.463);
+}
+  
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Style images */
+.container img {
+    float: left;
+    max-width: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+  
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+  
+/* Style time text */
+.time-right {
+    float: right;
+    color: rgb(148, 148, 148);
+}
+  
+/* Style time text */
+.time-left {
+    float: left;
+    color: rgb(148, 148, 148);
+}
+
+/*Tastertur*/
+/*https://www.youtube.com/watch?v=DN0gXtYGR2o*/
+.chat__input:active {
+    /*Prøver at få den til ikke at zoom ind*/
+    zoom: 0%;
+}

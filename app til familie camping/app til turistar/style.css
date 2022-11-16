@@ -1,0 +1,33 @@
+/*__/*
+.menu{
+        
+    display:flex ;
+    justify-content:space-around ;
+    }
+
+.menu > li{
+position: relative;
+display: inline-block;
+d
+}
+.menu > li > a{
+display:block; 
+padding: 15px 20px;
+color:blueviolet;
+font-family:'Open Sans';
+text-decoration:none;
+
+}
+.menu li a:hover{
+color: azure;
+transition: all .3s;
+
+}
+*/__*/
+
+  /* Card layout - flexbox stuff */
+  @media screen and (min-width:650px ) {
+    .flowers__card{
+     width: calc( 50% - .5rem);
+     margin-bottom: 0%;
+    } 
