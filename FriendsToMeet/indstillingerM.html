@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indstillinger</title>
+    <script src="https://kit.fontawesome.com/dd568fad28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleIndstillinger.css">
+    <style>
+        :root {
+            /* Farver */
+            --font-clr: black;
+            --secondary-clr: #D8F3DC;
+            --third-clr: #007474;
+            --bgd-clr: #E2C9C1;
+            --section-clr: #fafffb94;
+
+            /* Font Size */
+            --fontSizeXSmall: calc(var(--fontSizeMedium)/1.5);
+            --fontSizeSmall: calc(var(--fontSizeMedium)/2);
+            --fontSizeMedium: 16px;
+            --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+            --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);
+        }
+
+        .toggle {
+            background-color: rgb(243, 240, 240);
+
+        }
+
+        .toggle-switch {
+            background: #ccc;
+        }
+
+        .toggle-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+        }
+
+        .toggle:hover .toggle-switch:before {
+            background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .toggle-checkbox:checked+.toggle-switch {
+            background: var(--third-clr);
+        }
+
+        .toggle__icon {
+            width: 18px;
+        }
+
+        .toggle-label {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Styling buttons */
+        .buttons__button--primary {
+            background-color: var(--third-clr);
+            color: var(--section-clr);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        .buttons__button {
+            width: 100%;
+            font-size: var(--fontSizeMedium);
+        }
+
+        .buttons__form {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Friends to Meet</a>
+        <a href="index.html">Forside</a>
+        <a href="profil.html">Profil</a>
+        <div class="dropdown">
+            <button class="dropbtn">Forums
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lokale_forum.html">-Lokale forums</a>
+                <a href="#">-Regionale forums</a>
+                <a href="#">-Landsdækkende forums</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Grupper
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">-Lokale grupper</a>
+                <a href="#">-Regionale grupper</a>
+                <a href="#">-Landsdækkende grupper</a>
+            </div>
+        </div>
+        <a href="#about">Events</a>
+        <a href="findNyeVenner.html">Find nye venner</a>
+        <a href="indstillinger.html">Indstillinger</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script src="main.js"></script>
+
+
+    <section class="settingPage">
+        <section class="settings">
+
+            <h1 class="header">Instillinger</h1>
+            <label class="toggle">
+                <span class="toggle-label">
+                    <img class="toggle__icon" src="images/bell-regular.svg" alt="bell icon">
+                    Notifikationer
+                </span>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">
+                    <img class="toggle__icon" src="images/envelope-regular.svg" alt="envelope icon">
+                    Nyhedsbreve
+                </span>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">
+                    <img class="toggle__icon" src="images/face-grin-wide-regular.svg" alt="face icon">
+                    Face ID</span>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">
+                    <img class="toggle__icon" src="images/moon-regular.svg" alt="moon icon">
+                    Mørktilstand</span>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+            </label>
+
+        </section>
+
+        <section class="buttons">
+
+            <form class="buttons__form" action="loginpage.html">
+                <button class="buttons__button">
+                    Slet kontoen
+                </button>
+            </form>
+
+            <form class="buttons__form" action="loginpage.html">
+                <button class="buttons__button buttons__button--primary">
+                    Log ud
+                </button>
+            </form>
+        </section>
+
+    </section>
+</body>
+
+</html>
