@@ -15,7 +15,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 50px;
+    padding: 10px;
+    background-color: rgb(243, 240, 240);
 }
 
 .toggle-switch {
@@ -93,5 +94,6 @@ body {
 }
 
 .buttons__button {
-    padding: 1rem;
+    padding: 20px;
+    border-radius: 30px;
 }
