@@ -344,6 +344,7 @@ a {
     max-width: 50%;
     border-radius: 15%;
     border: solid black 1px;
+    margin-bottom: .5rem;
     /*Centreing af billedet*/
     display: block;
     margin-left: auto;
@@ -445,4 +446,33 @@ a {
 }
 .forums__img {
     max-width: 15%;
+}
+
+
+/*Find nye venner*/
+.findFriend {
+    width: 70%;
+    border-radius: 50%;
+    border: solid white 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.newFriend__knapper {
+    display: flex;
+    justify-content: center;
+}
+.likeKnap {
+    width: 15%;
+    margin: .5rem;
+}
+.chatKnap {
+    width: 15%;
+    margin: .5rem;
+}
+.newFriend__info {
+    background-color: rgb(250, 255, 251, 0.64);
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem;
 }
