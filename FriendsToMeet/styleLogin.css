@@ -285,6 +285,16 @@ body {
         margin: auto;
     }
 
+    .hobby__section {
+        display: flex;
+        align-items: center;
+        margin: .5rem;
+    }
+
+    .hobby__section--icon {
+        width: 44px;
+    }
+
     .hobby {
         display: flex;
         flex-direction: column;
