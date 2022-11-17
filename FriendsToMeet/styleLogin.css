@@ -7,8 +7,8 @@
     --section-clr: #fafffb94;
 
     /* Font Size */
-    --fontSizeXSmall: calc(var(--fontSizeMedium)/1.5);
-    --fontSizeSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.1);
     --fontSizeMedium: 16px;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
@@ -103,10 +103,22 @@ body {
         text-decoration: none;
     }
 
+    .loginForgottenPassword {
+        font-size: var(--fontSizeMedium);
+        text-align: center;
+    }
+
+    .loginForgottenPassword--link {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--third-clr);
+        font-weight: bold;
+    }
+
     .login__link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double #32D74B;
+        border-bottom: double var(--third-clr);
         font-weight: bold;
     }
 
@@ -132,7 +144,6 @@ body {
         padding: 1rem;
         background-color: var(--section-clr);
         border-radius: 1rem;
-        box-shadow: 3px 3px 12px rgb(118, 118, 118);
     }
 
     .signUp--h2 {
@@ -142,7 +153,6 @@ body {
     .signUp {
         border-radius: 12px;
         background-color: var(--section-clr);
-        box-shadow: 3px 3px 12px rgb(118, 118, 118);
         display: flex;
         flex-direction: column;
         gap: .5rem;
@@ -154,7 +164,7 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: 1rem;
+        margin: .5rem 1rem;
     }
 
     input {
@@ -167,9 +177,15 @@ body {
     .signUp__input {
         margin: 0;
         padding: .5rem;
-        border-top-right-radius: 12px;
         border-bottom: solid var(--third-clr);
         border-left: solid var(--third-clr);
+    }
+
+    .signUp--minreq {
+        margin: 0;
+        font-size: var(--fontSizeSmall);
+        font-style: italic;
+        font-weight: 300;
     }
 
     .signUp__picture {
@@ -178,7 +194,6 @@ body {
         flex-direction: column;
         margin-bottom: 1rem;
         border-radius: 12px;
-        box-shadow: 3px 3px 12px rgb(118, 118, 118);
     }
 
     .signUp--pfp {
@@ -199,8 +214,8 @@ body {
     .signUp__text {
         margin: 0;
         font-size: var(--fontSizeMedium);
-        border-bottom: solid var(--third-clr);
         width: fit-content;
+        font-weight: bold;
      }
     
     .signUp--camera {
@@ -268,7 +283,6 @@ body {
         display: flex;
         flex-direction: column;
         margin: auto;
-        box-shadow: 3px 3px 12px rgb(118, 118, 118);
     }
 
     .hobby {
