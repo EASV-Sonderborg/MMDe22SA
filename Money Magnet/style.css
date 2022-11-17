@@ -107,8 +107,8 @@ footer{
     position: fixed;
     bottom: 0;
     width: 99%;
-    border: #25241f 2px solid;
-    border-radius: 10px 10px 0px 0px;
+    border-top: rgba(0, 0, 0, 0.144) 2px solid;
+    
     
 }
 
@@ -117,17 +117,29 @@ footer{
     display: flex;
     justify-content: space-evenly;
     padding-left: 0;
+    height: auto;
+    
 
+}
+
+.nav__items{
+       
 }
 
 .nav__items-icon{
     text-decoration: none;
-    
+    color: var(--navcolor);
 }
+.nav__items-icon::content{
+    color: var(--navcolor-active);
+}
+   
+    
+
 
 .nav__list-img{
-    max-width: 100%;
-   
+    max-width: 65%;
+
 }
 
 
