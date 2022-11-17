@@ -13,16 +13,20 @@
     --fontSizeXLarge:36px;
 
     --maincolor: lightgray;
+    --navcolor: #35a7ff;
+    --navcolor-active: #6bf178;
 
     --borderRadiusSmall:5px;
     --borderRadiusMedium: 10px;
-  
+    
 
 
 }
 
 /*end custoum propperties  */
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
   background-color: #FAF9F6;
     margin: 0;
@@ -96,3 +100,37 @@ margin-top: 50px;
     padding: 1rem;
     text-align: center;
 }
+
+
+/* - - - - - -  Bottom Navbar - - - - - */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    border: #25241f 2px solid;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+
+}
+
+.nav__items-icon{
+    text-decoration: none;
+    
+}
+
+.nav__list-img{
+    max-width: 100%;
+   
+}
+
+
+
+
+/* - - - - - -  Bottom Navbar End - - - - - */ 
