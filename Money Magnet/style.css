@@ -23,7 +23,7 @@
 
 }
 
-/*end custoum propperties  */
+/*end custom propperties  */
 html {
     scroll-behavior: smooth;
   }
@@ -54,16 +54,17 @@ body{
     margin-bottom: 1rem;
     border-radius: 5px;
     margin-bottom:1.5rem;
-    width:30vh;
+    width:36vh;
     align-self: center;
   
 }
 
   /*- - - - - - - Sign-up Site starts - - - - - - - */
-  
+.sign-up{
+    height: 100vh;
+}
 .sign-up__box{
     padding: 2rem 1rem;
-    margin: 50px auto;
     display: flex;
     flex-direction: column ;
     text-align: center;
