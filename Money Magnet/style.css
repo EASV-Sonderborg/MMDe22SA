@@ -1,4 +1,4 @@
-/*custom proppeties */
+/*- - - - - - - Custom Propperties - - - - - - - */
 :root{
     --spacingDefoult: 
     --spacingSmall:var(--spacingDefoult)
@@ -18,12 +18,14 @@
 
     --borderRadiusSmall:5px;
     --borderRadiusMedium: 10px;
+
+/* Settings Styler */ 
     
 
 
 }
 
-/*end custom propperties  */
+/*- - - - - - - End Custom Propperties - - - - - - - */
 html {
     scroll-behavior: smooth;
   }
