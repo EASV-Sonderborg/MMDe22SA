@@ -108,14 +108,27 @@ margin-top: 50px;
 /* - - - - - -  Settings site  - - - - - */ 
 .settings{
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr;
+grid-auto-columns: 1fr; 
+grid-template-columns: 0.3fr 1.5fr; 
 
+align-items: center;
+justify-items: center;
+
+border: 1px solid black;
+margin-bottom: var(--spacingDefoult);
 
 }
 
+.settings__text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    text-align: left;
+    
+}
 .settings__icon{
-
+ 
 }
 
 .settings__headtext{
@@ -170,9 +183,10 @@ grid-template-rows: 1fr 1fr;
 footer{
     position: fixed;
     bottom: 0;
-    width: 99%;
+    width: 100%;
     border-top: rgba(0, 0, 0, 0.144) 2px solid;
-    
+    z-index: 99999;
+    background-color: var(--maincolor);
     
 }
 
