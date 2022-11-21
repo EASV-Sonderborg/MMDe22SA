@@ -46,7 +46,7 @@ body {
     font-family: 'Pacifico', cursive;
     color: var(--third-clr);
     text-shadow: 1px 1px 3px whitesmoke;
-    font-size: xx-large;
+    font-size: var(--fontSizeXLarge);
     text-align: center;
     margin: 0;
 }
@@ -90,6 +90,8 @@ body {
         box-shadow: 3px 3px 12px rgb(118, 118, 118);
         border-radius: 2rem;
         margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;
     }
 
     .login__button {
@@ -181,6 +183,8 @@ body {
         padding: .5rem;
         border-bottom: solid var(--third-clr);
         border-left: solid var(--third-clr);
+        width: 100%;
+        height: 100%;
     }
 
     .signUp--minreq {
@@ -228,6 +232,7 @@ body {
         display: flex;
         justify-content: start;
         margin: 1rem;
+        align-items: center;
     }
 
     .signUp__checktext {
