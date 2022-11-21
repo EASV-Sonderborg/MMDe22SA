@@ -1,4 +1,4 @@
-/*custom proppeties */
+/*- - - - - - - Custom Propperties - - - - - - - */
 :root{
     --spacingDefoult: 
     --spacingSmall:var(--spacingDefoult)
@@ -13,16 +13,22 @@
     --fontSizeXLarge:36px;
 
     --maincolor: lightgray;
+    --navcolor: #35a7ff;
+    --navcolor-active: #6bf178;
 
     --borderRadiusSmall:5px;
     --borderRadiusMedium: 10px;
-  
+
+/* Settings Styler */ 
+    
 
 
 }
 
-/*end custoum propperties  */
-
+/*- - - - - - - End Custom Propperties - - - - - - - */
+html {
+    scroll-behavior: smooth;
+  }
 body{
   background-color: #FAF9F6;
     margin: 0;
@@ -50,16 +56,16 @@ body{
     margin-bottom: 1rem;
     border-radius: 5px;
     margin-bottom:1.5rem;
-    width:30vh;
+    width:36vh;
     align-self: center;
-  
 }
 
-  /*- - - - - - - Sign-up Site starts - - - - - - - */
-  
+  /*- - - - - - - Sign-up Site - - - - - - - */
+.sign-up{
+    height: 100vh;
+}
 .sign-up__box{
     padding: 2rem 1rem;
-    margin: 50px auto;
     display: flex;
     flex-direction: column ;
     text-align: center;
@@ -73,7 +79,7 @@ p{ text-align: center;}
 
 
 
-/* - - - - - -  Login site starts - - - - - */ 
+/* - - - - - -  Login site - - - - - */ 
 
 .login{
     display: flex;
@@ -96,3 +102,125 @@ margin-top: 50px;
     padding: 1rem;
     text-align: center;
 }
+
+/* - - - - - -  End Login site  - - - - - */ 
+
+/* - - - - - -  Settings site  - - - - - */ 
+.settings{
+display: grid;
+grid-auto-columns: 1fr; 
+grid-template-columns: 0.3fr 1.5fr; 
+
+align-items: center;
+justify-items: center;
+
+border: 1px solid black;
+margin-bottom: var(--spacingDefoult);
+
+}
+
+.settings__text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    text-align: left;
+    
+}
+.settings__icon{
+ 
+}
+
+.settings__headtext{
+
+}
+
+.settings__subtext{
+
+}
+
+
+
+
+
+/* - - - - - -  End Settings site  - - - - - */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* - - - - - -  Bottom Navbar - - - - - */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: rgba(0, 0, 0, 0.144) 2px solid;
+    z-index: 99999;
+    background-color: var(--maincolor);
+    
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    height: auto;
+    
+
+}
+
+.nav__items{
+       
+}
+
+.nav__items-icon{
+    text-decoration: none;
+    color: var(--navcolor);
+}
+.nav__items-icon::content{
+    color: var(--navcolor-active);
+}
+   
+    
+
+
+.nav__list-img{
+    max-width: 65%;
+
+}
+
+
+
+
+/* - - - - - -  Bottom Navbar End - - - - - */ 
