@@ -9,7 +9,7 @@
     /* Font Size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
     --fontSizeSmall: calc(var(--fontSizeMedium)/1.1);
-    --fontSizeMedium: 16px;
+    --fontSizeMedium: 1rem;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
 }
