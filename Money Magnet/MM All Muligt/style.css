@@ -4,22 +4,21 @@
 :root{
 
   --fontSizeXLarge:26px;
-  --fontSizeLarge: 18,4px;
+  --fontSizeLarge: 20px;
   --fontsizeMedium: 16px;
   --fontSizeSmall:13px;
 
  
- --spacingDefoult:();
- --spacingXLarge:var(--spacingDefoult);
- --sacingLarge:var(--spacingDefoult);
- --spacingMedium:var(--spacingDefoult);
- --spacingSmall:var(--spacingDefoult);
+ --spacingDefault:();
+ --spacingXLarge:var(--spacingDefault);
+ --sacingLarge:var(--spacingDefault);
+ --spacingMedium:var(--spacingDefault);
+ --spacingSmall:var(--spacingDefault);
 
 
  --maincolor: #CED8E2;
  --secondarycolor:#92C347;
  --tetriarycolor: #fbe896;
-  ;
 
 
  --borderRadiusSmall:5px;
@@ -40,11 +39,19 @@ body{
     font-family:  'Mukta', sans-serif; 
 
 }
-
+#date{
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 4rem;
+  font-size: 1rem;
+  font-weight: 200;
+  }
 /*  Magnus  welcome text på toppen*/
 .name--text{
   font-size: var(--fontSizeLarge);
-  margin: .75rem auto 2.5rem;
+  font-weight: 200;
+   margin: 0;
+
   }
 
 
@@ -69,6 +76,7 @@ body{
     align-self: center;
     font-weight: 800;
     border-width: 1px;
+   
     
 }
 
@@ -110,11 +118,8 @@ background-color:  #FBE869;
     border-radius: 10px;
     align-content:center ;
 }
-p{ text-align: center;}
 
 /*- - - - - -sign-up site  ends - - - - - - - */
-
-
 
 
 
@@ -122,14 +127,16 @@ p{ text-align: center;}
 /* - - - - - -  Login site starts - - - - - */ 
 
 .login{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: auto;
-    text-align: center;
+  height: 100vh;
 }  
 
 .login__form{
-margin-top: 50px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column ;
+  text-align: center;
+  border-radius: 10px;
+  align-content:center ;
 }
 
 .login__topline{
@@ -139,16 +146,9 @@ margin-top: 50px;
 .login-signup__switch{
     padding: 1rem;
     text-align: center;
-    margin-top:10vh ;
+    margin-top:6vh ;
 }
 /* - - - - - -  LOGIN SITES ENDS - - - - - */ 
-
-
-
-
-
-
-
 
 
 
@@ -208,6 +208,7 @@ margin-top:4vh ;
 
 }
 /*h1 - -money magnet  titel*/ 
+
 .landing__tagline{    
 margin-top:2vh;
 margin-bottom: auto;
@@ -264,10 +265,8 @@ font-weight: 400;
 }
 
 .landing_down--bottons{
-  grid-area: 1/2/4/3;
+  grid-area: 1/2/4/3;}
 
-
-}
 
 h4{
   margin-top: 2px;
@@ -275,7 +274,7 @@ h4{
   font-family: 'Mukta', sans-serif;
 }
 
-h3{
+.landingunderskrift__text{
   text-align: center;
   font-size: 2.5vh;
   margin-bottom:0%;
@@ -297,45 +296,32 @@ width:300px;
 
 
 
-/* - - - - - - - - - - - -BALANCE ACCOUNT STARTS - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - -ACCOUNT SITE STARTS - - - - - - - - -*/
+.underaccount__text{
+  font-size:var(--fontsizeMedium);
+  font-weight: 100;
+} 
+
 .balanceaccount{
   width: 100vw;
   height: 100vh;
+}
 
-}
-.dato{
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-}
 .overskrift__account{
   color: #8AB5E3;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: xx-large;
 }
-
-
 .overskrift{
 text-align: center;
 }
-
 .balanceaccount__welcome--text{
   display: flex;
   flex-direction: column;
-  align-content: center;
   text-align: center;
 }
-/*
-.balance__input{
-width: 70%;
-height:35px ;
-margin: .5rem auto 5rem ;
-border-radius: var(--borderRadiusSmall) ;
-border-width: 1px ;
-background: #f0f8ff;
-}
 
-.balance__input:active{
-background-color:var(--maincolor)};
-*/
+
 
 .label{
   font-weight: 100;
@@ -345,14 +331,15 @@ background-color:var(--maincolor)};
 .input--nbr{
   height: 25px;
   width: 70%;
-  margin: .5rem auto 2rem;
   border-radius:var(--borderRadiusSmall) ;
   border-width: 1px ;
+  margin-bottom: 1.5rem;
 }
 
 .label__inputs{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .input__nbr:active{
@@ -364,32 +351,6 @@ font-size: xx-large;
 margin: 1rem auto 3rem;
 border-radius: var(--borderRadiusSmall); }
 
-.circles{
-  height:  40px;
-  width: 40px;
-  border-style: solid;
-  border-radius: 50%;
-  border-width: 1px;
-  border-color: grey;
-  background-color: #CED8E2;
-  margin: 1rem auto;
-
-}
-
-.cirkles--set{
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  align-self: center;
-  margin-bottom: 1rem;
-
-}
-.cirkle1{
-align-self: center;
-margin-bottom: 2px;
-padding-top: 25%;
-
-}
 
 .goto-monthlyexpences{
   margin-top: 1rem;
@@ -399,7 +360,6 @@ padding-top: 25%;
   color: black;
   text-align: right;
   font-weight: 100;
-
 }
 
 .arrows{
@@ -407,22 +367,22 @@ display: flex;
 flex-direction:inline ;
 flex-wrap: nowrap;
 gap: 1rem;
-margin-left: 1.5rem;
-margin-right: 1.5rem;
+justify-content: center;
+align-items: center;
 font-size: 20px;
 border-top: solid  grey 1px;
-align-self: center;
-
-
 }
 
 .arrow__p{
-  margin-top: .5rem;
+margin-top: .5rem;
 font-size: 15px;
 margin-bottom: 0%;
 font-weight: 100;
 }
 /* - - - - - - - - - - - -BALANCE ACCOUNT ENDS  - - - - - - - - - - - - - - */
+
+
+/* - - - - - - - - - - - - ACCOUNT ENDS  - - - - - - - - - - - - - - */
 
 /* - - - - - - - - - - - -  MONTHLY EXPENCES STARTS  - - - - - - - - - - - - - - */
 
