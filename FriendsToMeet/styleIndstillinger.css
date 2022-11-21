@@ -1,3 +1,19 @@
+:root {
+    /* Farver */
+    --font-clr: black;
+    --secondary-clr: #D8F3DC;
+    --third-clr: #007474;
+    --bgd-clr: #E2C9C1;
+    --section-clr: #fafffb94;
+
+    /* Font Size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeMedium: 16px;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);
+}
+
 *,
 *:before,
 *:after {
@@ -28,7 +44,8 @@ body {
     margin-right: 5px;
     position: relative;
     vertical-align: middle;
-    transition: background 0.25s;
+    transition: background var(--third-clr);
+
 }
 
 .toggle-switch:before,
@@ -55,7 +72,7 @@ body {
 }
 
 .toggle-checkbox:checked+.toggle-switch {
-    background: #56c080;
+    background: var(--third-clr);
 }
 
 .toggle-checkbox:checked+.toggle-switch:before {
@@ -82,18 +99,28 @@ body {
 }
 
 .header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 30px;
     gap: 2rem;
 }
 
-.buttons__button {
+.buttons__button__logout {
     padding: 20px;
     border-radius: 30px;
+    font-size: 15px;
+    background-color: var(--third-clr);
+    width: 19.5vh;
+}
+
+.buttons__button__disable {
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: rgb(213, 189, 180);
 }
