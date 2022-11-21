@@ -163,7 +163,9 @@ margin-top: 50px;
   display:inline-flex;
   flex-direction: row;
   gap:30px;
-  place-self: center;
+  justify-content: center;
+  width: 100vw;
+  padding-left: 0;
 }
 
 
