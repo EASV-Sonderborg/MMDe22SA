@@ -264,6 +264,22 @@ a {
 
 
 /*Forside*/
+/* Close button */
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+/* Change color on mouse-over */
+.closebtn:hover {
+    color: lightgrey;
+}
+
+
 .event__popup {
     background-color: rgb(216, 243, 220);
     display: grid;
@@ -457,6 +473,8 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    grid-column-start: 2;
+    grid-row-start: 1;
 }
 .newFriend__knapper {
     display: flex;
@@ -475,4 +493,19 @@ a {
     border-radius: 25px;
     padding: 1rem;
     margin: 1rem;
+}
+.movable {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: .5fr 5fr .5fr;
+}
+.arrow__Left {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    align-self: center;
+}
+.arrow__Right {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    align-self: center;
 }
