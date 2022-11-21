@@ -171,6 +171,8 @@ body {
         border: none;
         background-color: rgba(245, 245, 245, 0.691);
         outline: none;
+        width: 1.5rem;
+        height: 1.5rem;
         }
 
 
@@ -309,6 +311,12 @@ body {
     .hobbyCheckbox {
         display: flex;
         margin: .5rem .5rem;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    input[type=checkbox] {
+        background-color: #007474;
     }
 
     .redirect {
