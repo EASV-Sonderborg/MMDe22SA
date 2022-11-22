@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/dd568fad28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+      <link rel="icon" type="image/x-icon" href="img/Magnet-Logo2.png">
+      <title>Account</title>
+</head>
+<body>
+
+<section class="balanceaccount" >
+    <section  class="balanceaccount__content">
+
+        <header>
+            <p> <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+                  <SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+                  var timerID = null
+                  function wyswietlDate()
+                  {
+                    var data = new Date();
+                    var miesiac = data.getMonth() + 1;
+                    if (miesiac < 10){
+                        miesiac = "0" + miesiac;
+                    }
+                    var dzien = data.getDate();
+                    if (dzien < 10){
+                        dzien = "0" + dzien;
+                    }
+                    var rok = data.getYear();
+                    if (rok < 1000){
+                        rok = 2000 + rok - 100;
+                    }
+                    var dzisiaj = dzien + "." + miesiac + "." + rok;
+                    document.write(dzisiaj);
+                  }
+                  // Koniec kodu JavaScript -->
+                  </SCRIPT>
+         
+                  <p id="date">Today 
+                     <SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+                  /*<!--hvis søgemaskine bruge ikke Java Script, så blive det gemt*/
+                  wyswietlDate()
+                  // Koniec kodu JavaScript */
+                    </SCRIPT>
+                   </p>
+        </header>
+            <main> 
+                   <section class="balanceaccount__welcome--text">
+                   <h3 class="name--text">Hello</h3>
+                   <h3  class="name--text">Magnus</h3>
+                   <h2  class="overskrift overskrift__account">Account</h2>
+                   <label for="label__input--text"></section> 
+                   
+                    
+                  <section  class="underaccount__text">
+                  <p>Your account balance today </p>
+                   <p class=" balance--nbr--txt"> 9.897.654 €</p>
+                  </section>
+
+                 
+                  <section class="label__inputs" >
+                     <label for="label__input--text ">Monthly budget</label>
+                     <input class="input--nbr" type="number" name="label__input">
+                     <label for="label__input--text ">Per day</label>
+                     <input class="input--nbr" type="number" name="label__input">
+                  </section>   
+                
+            </main> 
+        
+    
+             <section class="arrows">
+                <a href="" class="goto-monthlyexpences" > <i class="fi-ss-angle-double-left"></i></a>
+                <p class="arrow__p">Daily expencess</p>
+                <p class="arrow__p" >Monthly expences</p>
+                <a href="MonthlyExpences.html" class="goto-monthlyexpences" >  <i class="fi-ss-angle-double-right"></i></a>
+            </section>
+
+      
+
+            <footer>
+                <nav class="botton__nav">
+                  <ul class="nav__list">
+                      <li class="nav__items">
+                        <a href="tips.html" class="nav__items-icon">
+                          <ion-icon size="large" class="nav__list-img"   name="bulb-outline"></ion-icon>
+                        </a>
+                      </li>
+            
+                      <li class="nav__items">
+                        <a href="#" class="nav__items-icon">
+                          <ion-icon size="large" class="nav__list-img" name="bar-chart-outline"></ion-icon>
+                        </a>
+                      </li>
+            
+                      <li class="nav__items">
+                        <a href="overview.html" class="nav__items-icon">
+                          <ion-icon size="large" class="nav__list-img" name="home-outline"></ion-icon>
+                        </a>
+                      </li>
+            
+                      <li class="nav__items">
+                        <a href="#" class="nav__items-icon">
+                          <ion-icon size="large" class="nav__list-img" name="cash-outline"></ion-icon>
+                        </a>
+                      </li>
+            
+                      <li class="nav__items">
+                        <a href="settings.html" class="nav__items-icon">
+                          <ion-icon size="large" class="nav__list-img" name="settings-outline"></ion-icon>
+                        </a>
+                      </li>
+                  </ul>
+                </nav>
+            
+            
+            </footer>
+</body>
+
+</html>
