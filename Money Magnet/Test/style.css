@@ -1,23 +1,27 @@
 /*- - - - - - - Custom Propperties - - - - - - - */
 :root{
-    --spacingDefoult: 
-    --spacingSmall:var(--spacingDefoult)
-    --spacingMedium:var(--spacingDefoult)
-    --spacingLarge:var(--spacingDefoult)
-    --spacingXLarge:var(--spacingDefoult)
-
-
-    --fontSizeSmall:8px;
+    --fontSizeXLarge:2rem;
+    --fontSizeLarge: 1.25rem;
     --fontsizeMedium: 16px;
-    --fontSizeLarge: 24px;
-    --fontSizeXLarge:36px;
+    --fontSizeSmall:13px;
+  
+   
+   --spacingDefault:();
+   --spacingXLarge:var(--spacingDefault);
+   --sacingLarge:var(--spacingDefault);
+   --spacingMedium:var(--spacingDefault);
+   --spacingSmall:var(--spacingDefault);
+  
+  
+   --maincolor: #CED8E2;
+   --secondarycolor:#92C347;
+   --tetriarycolor: #fbe896;
+  
+  
+   --borderRadiusSmall:5px;
+   --borderRadiusMedium: 10px;
 
-    --maincolor: lightgray;
-    --navcolor: #35a7ff;
-    --navcolor-active: #6bf178;
-
-    --borderRadiusSmall:5px;
-    --borderRadiusMedium: 10px;
+    
 
 /* Settings Styler */ 
     
@@ -31,33 +35,10 @@ html {
   }
 body{
   background-color: #FAF9F6;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.login__logo{
- max-width: 35%;
- align-self: center;
- margin-bottom: 5vh ;
-  }
-
-  .login-signup__button{
-    padding: 0.5rem;
-    border-radius: 5px;
-    background-color: #35A7FF;
-    margin: 1.2rem;
-    width:30vh;
-    align-self: center;
-}
-
-.login__input{
-    padding: 0.2rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    margin-bottom:1.5rem;
-    width:36vh;
-    align-self: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Mukta', sans-serif; 
 }
 
   /*- - - - - - - Sign-up Site - - - - - - - */
