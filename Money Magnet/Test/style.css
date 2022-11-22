@@ -120,43 +120,7 @@ margin-bottom: var(--spacingDefoult);
 
 
 
-/* - - - - - -  End Settings site  - - - - - */ 
-
-
-
-
-
-/*custom proppeties */
-
-
-:root{
-
-    --fontSizeXLarge:2rem;
-    --fontSizeLarge: 1.25rem;
-    --fontsizeMedium: 16px;
-    --fontSizeSmall:13px;
-  
-   
-   --spacingDefault:();
-   --spacingXLarge:var(--spacingDefault);
-   --sacingLarge:var(--spacingDefault);
-   --spacingMedium:var(--spacingDefault);
-   --spacingSmall:var(--spacingDefault);
-  
-  
-   --maincolor: #CED8E2;
-   --secondarycolor:#92C347;
-   --tetriarycolor: #fbe896;
-  
-  
-   --borderRadiusSmall:5px;
-   --borderRadiusMedium: 10px;
-    
-  
-  }
-  
-  /*end custoum propperties  */
-  
+/* - - - - - -  End Settings site  - - - - - */   
   /*- - - - - -  style  style style   - - - - - - */ 
   
   body{
