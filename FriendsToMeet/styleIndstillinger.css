@@ -99,6 +99,7 @@ body {
 }
 
 .header {
+    font-size: var(--fontSizeXLarge);
     margin-bottom: 30px;
 }
 
