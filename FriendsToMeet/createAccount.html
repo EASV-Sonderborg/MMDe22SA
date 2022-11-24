@@ -21,25 +21,27 @@
 
         <section class="signUp__picture">
             <img class="signUp--pfp" src="images/cat.png" alt="">
-                <section class="signUp__addpicture">
-                    <input class="signUp--camera" type="image" src="images/camera.png" alt="black camera logo">
-                    <p class="signUp__text">Tilføj billede</p>
-                </section>
+                <label for="avatar" class="signUp__addpicture">
+                    <img class="signUp--camera"  src="images/camera.png" alt="black camera logo">
+                    <input type="file"
+                    id="avatar" name="avatar"
+                    accept="image/*">
+                </label>
         </section>
 
         <section class="signUp">
             <section class="signUp__labels">
-                <label class="signUp__text" for="firstName">First Name</label>
+                <label class="signUp__text" for="firstName">Fornavn</label>
                 <input class="signUp__input" name="firstNamw" id="firstName" type="text">
             </section>
 
             <section class="signUp__labels">
-                <label class="signUp__text" for="lastName">Last Name</label>
+                <label class="signUp__text" for="lastName">Efternavn</label>
                 <input class="signUp__input" name="lastName" id="lastName" type="text">
             </section>
 
             <section class="signUp__labels">
-                <label class="signUp__text" for="emailAddress">Email Address</label>
+                <label class="signUp__text" for="emailAddress">Email Addresse</label>
                 <input class="signUp__input" name="emailAddress" id="emailAddress" type="text">
             </section>
 
@@ -55,7 +57,7 @@
             </section>
 
             <section class="signUp__labels">
-                <label class="signUp__text" for="confirmPassword">Confirm Password</label>
+                <label class="signUp__text" for="confirmPassword">Bekræft Password</label>
                 <input class="signUp__input" name="confirmPassword" id="confirmPassword" type="password" minlength="8">
             </section>
 
@@ -67,18 +69,18 @@
                 </section>
                 <section class="signUp__agree">
                     <input class="signUp__checkbox" type="checkbox" name="ToS" value="ToS" id="ToS">
-                    <label for="ToS" class="signUp__checktext">Jeg bekræfter at jeg har læst og 
-                    forstået Terms of Service</label>
+                    <label for="ToS" class="signUp__checktext">Jeg bekræfter, at jeg har læst og 
+                    forstået <a class="signUp--ToSlink" href="#">Terms of Service</a></label>
                 </section>
             </section>
 
             <article class="signUp__redirect">
                 <a class="signUp__back signUp--link" href="loginpage.html">Tilbage
-                    <img class="signUp--arrow" src="images/leftarrow.png" alt="">
+                    <img class="signUp--arrow" src="images/thinLeftArrow.png" alt="">
                 </a>
             
                 <a class="signUp__forward signUp--link" href="hobby.html">Videre
-                    <img class="signUp--arrow" src="images/rightarrow.png" alt="">
+                    <img class="signUp--arrow" src="images/whiteRightArrow.png" alt="">
                 </a>
             </article>
 
