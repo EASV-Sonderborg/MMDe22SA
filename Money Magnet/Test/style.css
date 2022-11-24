@@ -1,25 +1,27 @@
 /*- - - - - - - Custom Propperties - - - - - - - */
 :root{
-    --fontSizeXLarge:2rem;
-    --fontSizeLarge: 1.25rem;
-    --fontsizeMedium: 16px;
-    --fontSizeSmall:13px;
+  --fontSizeXLarge:calc(var(--fontsizeDefault)*1.5);
+  --fontSizeLarge: calc(var(--fontsizeDefault)*1.2) ;
+  --fontsizeDefault:1rem;
+  --fontSizeSmall:calc(var(--fontsizeDefault)*0.6);
   
    
-   --spacingDefault:();
-   --spacingXLarge:var(--spacingDefault);
-   --sacingLarge:var(--spacingDefault);
-   --spacingMedium:var(--spacingDefault);
-   --spacingSmall:var(--spacingDefault);
+  --spacingMini: calc(var(--spacingDefault)*0.5);
+  --spacingSmall: calc(var(--spacingDefault)*0.8);
+  --spacingDefault:(1rem);
+  --spacingLarge: calc(var(--spacingDefault)*1.2);
+  --spacingXLarge: calc(var(--spacingDefault)*1.5);
+  --spacingXLarge: calc(var(--spacingDefault)*2);
+   
   
   
-   --maincolor: #CED8E2;
-   --secondarycolor:#92C347;
-   --tetriarycolor: #fbe896;
+  --maincolor: #CED8E2;
+  --secondarycolor:#92C347;
+  --tetriarycolor: #fbe896;
   
   
-   --borderRadiusSmall:5px;
-   --borderRadiusMedium: 10px;
+  --borderRadiusSmall:5px;
+  --borderRadiusMedium: 10px;
 
     
 
@@ -285,7 +287,7 @@ margin-bottom: var(--spacingDefoult);
     margin-right: 0;
   
   }
-  .landing_down{
+  .landing__down{
     display: grid;
     grid-template-columns:45% 1fr;
     grid-template-rows: 5 1fr;
