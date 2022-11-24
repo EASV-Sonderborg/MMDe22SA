@@ -1,8 +1,6 @@
 .imageSlider {
-    position: relative;
     display: flex;
     gap: 1rem;
-    width: 100vw;
     overflow-x: scroll;
 }
 
