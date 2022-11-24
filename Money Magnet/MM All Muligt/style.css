@@ -541,6 +541,31 @@ font-size: var(--fontSizeLarge);
   text-align: right
 }
 
+/* - - - - - - - - - - - TRYING ARROWS ON  EXPENSES!!!!!! - - - - - - - - - - - -  */
+.arrows--expenses{
+  border-top-style: dotted;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom:.5rem;
+  }
+  
+  .arrow__p{
+  margin-top: .5rem;
+  font-size: 15px;
+  margin-bottom: 0%;
+  font-weight: 100;
+  
+  }
+
+
+
+
+
+
 /* - - - - - - - - - - - NAV BAR STARTS HERE - - - - - - - - - - - -  */
 
 @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
