@@ -124,14 +124,14 @@ body {
     .loginForgottenPassword--link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--button-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
     .login__link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--button-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
@@ -296,7 +296,6 @@ body {
         border: solid var(--button-clr) 2px;
         color: var(--font-clr);
     }
-
    
     .signUp__redirect {
         display: flex;
@@ -304,6 +303,13 @@ body {
 
     }
    
+    .signUp--ToSlink {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+
+    }
 
     /* Pick your interests page */
 
