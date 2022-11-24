@@ -6,7 +6,7 @@
   --fontSizeXLarge:2rem;
   --fontSizeLarge: 1.25rem;
   --fontsizeMedium: 16px;
-  --fontSizeSmall:13px;
+  --fontSizeSmall:14px;
 
  
  --spacingDefault:();
@@ -16,9 +16,12 @@
  --spacingSmall:var(--spacingDefault);
 
 
- --maincolor: #CED8E2;
- --secondarycolor:#92C347;
- --tetriarycolor: #fbe896;
+ --mainColor: #CED8E2;
+ --secondColor:#8AB5E3;
+ --thirdColor:#92C347;
+ --fourthcolor: #fbe896;
+ --colorGradient:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+ --colorGradientTwo: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
 
 
  --borderRadiusSmall:5px;
@@ -30,7 +33,6 @@
 /*end custoum propperties  */
 
 /*- - - - - -  style  style style   - - - - - - */ 
-
 body{
   background-color: #FAF9F6;
     margin: 0;
@@ -45,6 +47,7 @@ body{
   margin-bottom: 2rem;
   font-size: 1rem;
   font-weight: 200;
+  text-align: left;
   }
 
 /*  Magnus  welcome text på toppen*/
@@ -69,21 +72,23 @@ body{
   }
 
   .login-signup__button{
-    padding: 0.5rem;
-    border-radius: 8px;
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
     background-color:#92C347;
     margin: 1.2rem;
     width:25vh;
     align-self: center;
     font-weight: 800;
+    font-size: var(--fontsizeMedium);
     border-width: 1px;
-   
+    border-radius: 24px;
+    padding: 2px 24px;
+    height: 44px;
     
 }
 
 .login-signup__button:hover{
     box-shadow: rgba(0, 0, 0, .4) 2px 8px 8px -5px;
-  
+
   }
   .login-signup__button:active {
 background-color:  #FBE869;
@@ -93,17 +98,18 @@ background-color:  #FBE869;
 .login__input{
     padding: 0.5rem;
     border-radius: 8px;
-    background: #CED8E2;
+    background: var(--mainColor);
+    border-color:var(--maincolor);
     margin-bottom:2rem;
     width:35vh;
     align-self: center;
     margin-top: .2rem;
-    border-style:solid ;
-    border-color:#CED8E2;
+    border-radius: 24px;
+    padding: 2px 24px;
+    height: 44px;
+    border-style: none;
   
 }
-
-
 
 
 /*- - - - - - - Sign-up Site starts - - - - - - - */
@@ -142,13 +148,13 @@ background-color:  #FBE869;
 }
 
 .login__topline{
-    margin-bottom: 6vh;
+    margin: 0 auto 2vh  ;
 }
 
 .login-signup__switch{
     padding: 1rem;
     text-align: center;
-    margin-top:6vh ;
+    margin-top:2vh ;
 }
 /* - - - - - -  LOGIN SITES ENDS - - - - - */ 
 
@@ -157,22 +163,27 @@ background-color:  #FBE869;
 
 /*- - - - - - LANDING PAGE STARTS - - - - - */
 .landing{
-  max-height:100vh;
+  height:100vh;
+ 
 
 }
 
 
 .landing__list {
-  margin-top: 2px auto;
+  margin: 0;
+  padding-bottom: 1rem;
   font-family: 'Mukta', sans-serif;
   font-weight: 100;
-  font-size:small;
-  display:inline-flex;
+  font-size:var(--fontSizeSmall);
+  display:flex;
   flex-direction: row;
-  gap:30px;
+  gap:1.5rem;
   justify-content: center;
   width: 100vw;
   padding-left: 0;
+white-space: nowrap;
+text-align: center;
+
 }
 
 
@@ -182,24 +193,29 @@ background-color:  #FBE869;
 
 p{
   margin-top: 0%;
+  text-align: center;
 }
+
+
 .info__app{
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  background: var(--mainColor);
+  border-radius: var(--borderRadiusMedium);
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
+  overflow: hidden;
+  max-width: fit-content;
+  padding: .75rem;
+  width:80%;
+  margin:auto;
+  margin-bottom: 3rem;
 
-} 
+}
+
 .landing__info__box{
   margin-top: 0;
   margin-right: 0;
 
-}
-.landing_down{
-  display: grid;
-  grid-template-columns:45% 1fr;
-  grid-template-rows: 5 1fr;
-}
-.women{
-  grid-area: 2/1/6/2;
 }
 
 img.logo__main{
@@ -223,51 +239,62 @@ font-family: 'Mukta', sans-serif;
 }
 
 
-.landing__p {
-margin-bottom: 0;
-margin-top: 17px;
+.landing__no-account{ /*button*/
 font-family: 'Mukta', sans-serif;
-font-weight: 400;
+font-weight: 200;
+margin-bottom: 5px;
+font-size: var(--fontSizeLarge);
 
 }
 
-.landing__p__haveaccount{
+.landing__haveaccount{
 margin-top: 0;
 margin-bottom: 0;
 font-family: 'Mukta', sans-serif;
-font-weight: 400;
-
-
+font-weight: 200;
+font-size: var(--fontSizeLarge);
 }
+
 .landing__signup--botton{
-  padding:1rem;
-  border-radius:15px;
   background-color:#FBE869;
-  margin:  2 .5rem;
-  margin-bottom: 16px;
-  margin-top: 3px ;
-  margin-left:6.8vh ;
-  width:18vh;
-  align-self: center;
+  width:22vh;
   font-weight: 800;
   border-width: 1px;
-  
+  border-color: var(--mainColor);
+  border-style: solid;
+  border-radius: 24px;
+  height: 44px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  margin-bottom: 1.5rem;
+  font-size: var(--fontsizeMedium);
 }
 .landing__login--botton{
-  padding:1rem;
-  border-radius: 15px;
   background-color:#92C347;
-  margin-top: 3px ;
-  margin-left:6.8vh ;
-  width:18vh;
-  align-self: center;
+  width:22vh;
   font-weight: 800;
   border-width: 1px;
+  border-color: var(--mainColor);
+  border-style: solid;
+  border-radius: 24px;
+  height: 44px;
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  font-size: var(--fontsizeMedium);
+ 
+}
+.landing_down{   /* poczatkowo GRID Wrapper*/
+display: flex;
+flex-direction:row ;
+justify-content: center;
+margin: auto;
+padding-right: 0;
 
 }
 
 .landing_down--bottons{
-  grid-area: 1/2/4/3;}
+display: flex;
+flex-direction: column;
+padding-right: 1.5rem;
+}
 
 
 h4{
@@ -288,31 +315,16 @@ h4{
 display: flex;
 flex-direction: column;
 text-align: center;
-margin-bottom: 2px;
+margin-bottom:1.5rem;
 }
 
 
 .women{
-width:300px;
+width:35vh;
+
 }
 
-
-
 /* - - - - - - - - - - - -ACCOUNT SITE STARTS - - - - - - - - -*/
-.underaccount__text{
-border-radius: 5px;
- box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
-fill: currentcolor;
- font-size: 18px;
-  font-size:var(--fontsizeMedium);
-  font-weight: 100;
-  text-align: center;
-  background-color: #8AB5E3;
-  padding-top: 1rem;
-  
-
-
-} 
 
 
 .balanceaccount{
@@ -343,6 +355,11 @@ text-align: center;
   align-items: center;
   background: #F6F9FE;
   border-radius: 24px;
+  padding: 2px 24px;
+  height: 44px;
+  letter-spacing: .25px;
+  line-height: normal;
+  text-align: center;
   border-style: none;
   box-sizing: border-box;
   color: #3880b8;
@@ -350,11 +367,6 @@ text-align: center;
   fill: currentcolor;
  font-size: 18px;
   font-weight: 500;
-  height: 44px;
-  letter-spacing: .25px;
-  line-height: normal;
-  padding: 2px 24px;
-  text-align: center;
   margin-bottom: 1.5rem;
   margin-top: .5rem;
 }
@@ -371,12 +383,19 @@ text-align: center;
 }
 
 .balance--nbr--txt{
-font-size: xx-large;
-font-weight: 500;
-margin: 1rem auto 3rem;
-border-radius: var(--borderRadiusSmall); 
-margin-bottom: 5rem;
-padding-bottom: 1rem;
+ padding:2rem;
+ font-size: xx-large;
+ font-weight: 500;
+ margin: 1rem auto 3rem;
+ border-radius: var(--borderRadiusSmall); 
+ 
+ border-radius: 5px;
+ box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+ fill: currentcolor;
+  text-align: center;
+  background: var(--colorGradient)
+ 
+
 
 }
 
@@ -391,7 +410,8 @@ padding-bottom: 1rem;
 }
 
 .arrows{
-  position: relative;
+align-self: center;
+border-top-style: dotted;
 display: flex;
 flex-wrap: nowrap;
 gap: 1rem;
@@ -399,7 +419,8 @@ justify-content: center;
 align-items: center;
 font-size: 20px;
 margin-bottom:.5rem;
-margin-top: 3rem;
+margin-top: 2rem;
+
 
 }
 
@@ -408,6 +429,7 @@ margin-top: .5rem;
 font-size: 15px;
 margin-bottom: 0%;
 font-weight: 100;
+
 
 }
 
@@ -418,23 +440,108 @@ font-weight: 100;
 /* - - - - - - - - - - - - ACCOUNT ENDS  - - - - - - - - - - - - - - */
 
 /* - - - - - - - - - - - -  MONTHLY EXPENCES STARTS  - - - - - - - - - - - - - - */
+.page__wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 
-.overskrift__expences{
-  color: rgba(255, 0, 0, 0.859);
-  font-weight: 200;
 }
+.monthly--nbr{
+  background: var(--colorGradient);
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ font-size: xx-large;
+ font-weight: 500;
+ margin-bottom: 5rem;
+ margin-left: 0;
+ margin-right: 0;
+ box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+ border-radius: 5px;
+
+
+}
+
+ .overskrift__monthly{
+  color: #E8918C;
+  font-weight: 400;
+  font-size: var(--fontSizeXLarge);
+
+ }
+
 .chart{
-  margin:1.5rem;
-  margin-top: .5rem;
-  width: 80%;
- align-self: center;
+  margin: 0 0 1rem 0;
+ max-width:90%;
+  align-self: center;
+
 }
+
+
 
 
 
 /* - - - - - - - - - - - - EXPENCES  MONTHLY ENDS  - - - - - - - - - - - - - - */
 
+/* - - - - - - - - - - - EXPENSES LIST STARTS - - - - - - - - - - - -  */
 
+.page__wrapper{
+  height: 100vh;
+}
+.overskrift__expenses{
+color: #E8918C;
+font-weight: 400;
+font-size: var(--fontSizeXLarge);
+margin-bottom: 5px;
+
+}
+.your__list{
+  margin-bottom: 1.75rem;
+  font-size: var(--fontSizeLarge);
+  font-weight: 400;
+}
+
+.list__expenses{
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  padding-top:2rem; 
+  padding-bottom: 2rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+ box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+ background-color: var(--mainColor);
+ border-radius: var(--borderRadiusSmall);
+
+  
+  }
+  .ikon__moneysack{
+    max-width:  3.5rem;
+    padding-bottom: 12px;
+  }
+  .see__list{
+    text-decoration: none;
+    grid-area:  5/2/6/4;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between
+
+  }
+
+.seelist__link{
+text-decoration: none;
+padding-top: .5rem;
+color: black;
+font-size: var(--fontSizeLarge);
+}
+
+.gotolist{
+  font-size:var(--fontSizeLarge);
+  padding-top: .5rem;
+  margin-right: 14px;
+  text-align: right
+}
 
 /* - - - - - - - - - - - NAV BAR STARTS HERE - - - - - - - - - - - -  */
 
@@ -442,7 +549,7 @@ font-weight: 100;
 
 footer{
 position: fixed;
-background-color: rgb(74, 67, 71);
+background-color: #8AB5E3;
 width: 100%;
 list-style: none;
 bottom: 0;
@@ -466,3 +573,4 @@ padding-left: 0px;
 
 /* - - - - - -  Bottom Navbar End - - - - - */ 
 
+fi-ss-eye.svg
