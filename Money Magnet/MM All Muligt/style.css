@@ -179,10 +179,9 @@ background-color:  #FBE869;
   flex-direction: row;
   gap:1.5rem;
   justify-content: center;
-  width: 100vw;
   padding-left: 0;
 white-space: nowrap;
-text-align: center;
+
 
 }
 
@@ -194,6 +193,7 @@ text-align: center;
 p{
   margin-top: 0%;
   text-align: center;
+  font-size:var(--fontSizeLarge);
 }
 
 
@@ -204,11 +204,10 @@ p{
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
   overflow: hidden;
-  max-width: fit-content;
   padding: .75rem;
-  width:80%;
   margin:auto;
   margin-bottom: 3rem;
+  width: 80%;
 
 }
 
@@ -419,16 +418,12 @@ justify-content: center;
 align-items: center;
 font-size: 20px;
 margin-bottom:.5rem;
-
-
-
 }
 
 .arrow__p{
 margin-top: .5rem;
-font-size: 15px;
 margin-bottom: 0%;
-font-weight: 100;
+font-weight: 200;
 
 
 }
@@ -525,23 +520,61 @@ margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between
-
+    justify-content: center;
+    margin-top: 2rem;
   }
+
+a{
+  text-decoration: none;
+}
+  .gotolist{
+  font-size:var(--fontSizeLarge);
+   margin-block: auto;
+   padding-left: 1rem;
+   color: black;
+    }
 
 .seelist__link{
 text-decoration: none;
-padding-top: .5rem;
+padding-top: 1rem;
 color: black;
 font-size: var(--fontSizeLarge);
+
 }
 
-.gotolist{
-  font-size:var(--fontSizeLarge);
-  padding-top: .5rem;
-  margin-right: 14px;
-  text-align: right
+.edit__field{
+  margin-top: 2.5rem;
+text-align: center;
 }
+
+.edit__img{
+  max-width:5rem;
+}
+
+/* - - - - - - - - - - - ARROWS ON  EXPENSES- - - - - - - - - - - -  */
+.arrows--expenses{
+  border-top-style: dotted;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom:.5rem;
+  }
+  
+  .arrow__p{
+  margin-top: .5rem;
+  margin-bottom: 0%;
+  font-weight: 100;
+  font-size:var(--fontSizeLarge);
+  
+  }
+
+
+
+
+
 
 /* - - - - - - - - - - - NAV BAR STARTS HERE - - - - - - - - - - - -  */
 
@@ -549,7 +582,6 @@ font-size: var(--fontSizeLarge);
 
 footer{
 position: fixed;
-
 width: 100%;
 list-style: none;
 bottom: 0;
@@ -561,6 +593,7 @@ list-style: none;
 padding-left: 0px;
 background-color: #8AB5E3;
 padding: 1rem;
+margin-bottom: 0;
 }
 
 .navbar__ikon{
