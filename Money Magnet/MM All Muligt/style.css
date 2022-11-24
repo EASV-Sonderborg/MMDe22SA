@@ -179,10 +179,9 @@ background-color:  #FBE869;
   flex-direction: row;
   gap:1.5rem;
   justify-content: center;
-  width: 100vw;
   padding-left: 0;
 white-space: nowrap;
-text-align: center;
+
 
 }
 
@@ -204,11 +203,10 @@ p{
   font-family: 'Mukta', sans-serif;
   font-weight: 200;
   overflow: hidden;
-  max-width: fit-content;
   padding: .75rem;
-  width:80%;
   margin:auto;
   margin-bottom: 3rem;
+  width: 80%;
 
 }
 
