@@ -28,9 +28,7 @@
 
 /* test forsøg på spacing */
 h1 { 
-    margin-top: var(--spaceXSmall);
-    margin-left: var(--spaceXSmall);
-    margin-bottom: var(--spaceXSmall);
+    margin: 0 0 var(--spaceXSmall) 0;
     font-size: var(--fontSizeXLarge);
 }
 
@@ -38,7 +36,7 @@ h1 {
 
 h2 {
     font-size: var(--fontSizeLarge);
-    margin: 0 .5rem;
+    margin: 0;
 }
 
 p, label {
@@ -126,14 +124,14 @@ body {
     .loginForgottenPassword--link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--button-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
     .login__link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--button-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
@@ -154,11 +152,10 @@ body {
     /* Sign up page */
 
     .signUp__header {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
+        margin-bottom: var(--spaceMedium);
+        padding: var(--spaceMedium);
         background-color: var(--section-clr);
-        border-radius: 1rem;
+        border-radius: var(--spaceMedium);
     }
 
     .signUp--h2 {
@@ -170,16 +167,16 @@ body {
         background-color: var(--section-clr);
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: var(--spaceMedium);
         margin: auto;
         width: 100%;
+        padding: var(--spaceSmall);
     }
 
     .signUp__labels {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: .5rem 1rem;
     }
 
     input {
@@ -193,7 +190,7 @@ body {
 
     .signUp__input {
         margin: 0;
-        padding: .5rem;
+        padding: var(--spaceXSmall);
         border-bottom: solid var(--button-clr);
         border-left: solid var(--button-clr);
         width: 100%;
@@ -211,12 +208,12 @@ body {
         background-color: var(--section-clr);
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: var(--spaceMedium);
         border-radius: 12px;
     }
 
     .signUp--pfp {
-        margin-top: 1rem;
+        margin-top: var(--spaceXSmall);
         width: 40%;
         border-radius: 15%;
         border: var(--button-clr) 6px double;
@@ -227,7 +224,7 @@ body {
         display: flex;
         align-self: center;
         gap: .5rem;
-        margin: .5rem;
+        padding: var(--spaceXSmall);
     }
 
     .signUp__text {
@@ -237,8 +234,19 @@ body {
         font-weight: bold;
      }
     
+    .signUp--cameraText {
+        align-self: center;
+        margin: 0;
+    }
+
     .signUp--camera {
-        width: 24px;
+        width: 2rem;
+        background-color: transparent;
+    }
+
+    #avatar {
+        width: 86px;
+        background-color: transparent;
     }
 
     .signUp__agree {
@@ -274,10 +282,10 @@ body {
         justify-self: center;
         margin: .5rem;
         width: 150px;
+        border: solid var(--button-clr) 2px;
     }
 
     .signUp__back {
-        background-color: var(--button-clr);
         border-radius: 12px;
         display: flex;
         flex-direction: row-reverse; 
@@ -285,8 +293,9 @@ body {
         justify-self: center;
         width: 150px; 
         margin: .5rem;
+        border: solid var(--button-clr) 2px;
+        color: var(--font-clr);
     }
-
    
     .signUp__redirect {
         display: flex;
@@ -294,6 +303,13 @@ body {
 
     }
    
+    .signUp--ToSlink {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+
+    }
 
     /* Pick your interests page */
 
@@ -303,38 +319,39 @@ body {
         display: flex;
         flex-direction: column;
         margin: auto;
+        padding: var(--spaceSmall);
     }
 
     .hobby__section {
         display: flex;
         align-items: center;
-        margin: .5rem;
+        margin-bottom: var(--spaceXSmall);
     }
 
     .hobby__section--icon {
-        width: 44px;
+        width: 2rem;
+    }
+
+    .hobbyHeader {
+        margin-bottom: var(--fontSizeSmall);
+    }
+
+    .hobbyH2Header {
+        margin-left: var(--spaceXSmall);
+        align-self: flex-end;
     }
 
     .hobby {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: var(--spaceMedium);
     }
-
-    .hobbyHeader {
-        margin-bottom: 1rem;
-    }
-
 
     .hobbyCheckbox {
         display: flex;
-        margin: .5rem .5rem;
-        align-items: center;
-        gap: .5rem;
-    }
 
-    input[type=checkbox] {
-        background-color: #007474;
+        align-items: center;
+        gap: var(--spaceXSmall);
     }
 
     .redirect {
