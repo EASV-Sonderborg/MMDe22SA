@@ -103,6 +103,10 @@ body {
     margin-bottom: 30px;
 }
 
+.rightarrow {
+    width: 44px;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
