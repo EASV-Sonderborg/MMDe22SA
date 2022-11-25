@@ -266,6 +266,7 @@ a {
 .event__popupSecondHeader {
     grid-column-start: 2;
     grid-row-start: 2;
+    align-self: flex-end;
     font-size: var(--fontSizeMedium);
 }
 .event__popupText {
@@ -322,6 +323,7 @@ a {
 .headerText {
     text-align: center;
     font-size: var(--fontSizeXLarge);
+    margin-top: 1rem;
 }
 .headerText2 {
     font-size: var(--fontSizeLarge);
