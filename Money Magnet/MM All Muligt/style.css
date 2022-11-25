@@ -236,6 +236,7 @@ font-size: 26px;
 border-bottom:solid  #92C347 ;
 font-family: 'Mukta', sans-serif;
 
+
 }
 
 
@@ -321,6 +322,7 @@ margin-bottom:1.5rem;
 
 .women{
 width:35vh;
+margin-left: 3rem;
 
 }
 
@@ -328,9 +330,11 @@ width:35vh;
 
 
 .balanceaccount{
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+
+
 
 }
 
@@ -557,7 +561,7 @@ text-align: center;
 }
 
 .edit__img{
-max-width:4.5rem;
+max-width:3.5rem;
 
 }
 
@@ -603,7 +607,8 @@ justify-content: space-around;
 list-style: none;
 padding-left: 0px;
 background-color: #8AB5E3;
-padding: var(--spacingCommon);
+padding-top: .75rem;
+padding-bottom: .75rem;
 margin-bottom: 0;
 margin-top: 0;
 }
