@@ -1,0 +1,18 @@
+:root {
+    /* Farver */
+    --font-color: Black;
+    --background-color: rgb(237, 237, 237);
+    --button-color: white;
+    --buttonBorder-color: rgb(207, 229, 226);
+    --buttonHover-color: rgb(200, 219, 188);
+    --sections-color: white;
+
+    /* Font size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1rem;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+
+    /* Spaceing */
+}
