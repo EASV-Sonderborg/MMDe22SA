@@ -6,6 +6,7 @@
     --buttonBorder-color: rgb(207, 229, 226);
     --buttonHover-color: rgb(200, 219, 188);
     --sections-color: white;
+    --package-box: #A7A9AC;
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -14,5 +15,10 @@
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
 
-    /* Spaceing */
+    /* Spacing */
+    --spaceXSmall: calc(var(--fontSizeMedium)/2);
+    --spaceSmall: calc(var(--fontSizeMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--fontSizeMedium)*1.5);
+    --spaceXLarge: calc(var(--fontSizeMedium)*2);
 }
