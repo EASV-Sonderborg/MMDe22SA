@@ -1,8 +1,28 @@
+:root
 body {
+  position: relative;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  
+ 
   margin: 0;
   padding: 5px;
-  
   }
+  img{
+    height: auto;
+    width: auto;
+    max-height: 100;
+    max-width: 100%;
+  
+
+  
+   
+  }
+  
+  
   .topBar {
     display: flex;
     justify-content: space-between;
@@ -33,7 +53,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #808A72 ;
- background-size: cover;
+
 }
 
 .scroll {
@@ -44,9 +64,10 @@ body {
 footer {
  
 text-align: center;
+size: 100%;
+o
 
 }
 
 
 
-}
