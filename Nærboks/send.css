@@ -37,3 +37,7 @@ body {
     width: 2.75rem;
 }
 
+/* Send side */
+.bodySend {
+    background-color: var(--backgroundSend-color);
+}
