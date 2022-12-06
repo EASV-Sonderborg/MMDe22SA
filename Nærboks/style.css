@@ -28,6 +28,7 @@
 
 body {
     margin: var(--spaceMedium);
+    background-color: var(--background-color);
 }
 
 .button {
