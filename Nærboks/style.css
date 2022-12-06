@@ -23,3 +23,10 @@
     --spaceLarge: calc(var(--fontSizeMedium)*1.5);
     --spaceXLarge: calc(var(--fontSizeMedium)*2);
 }
+
+
+.button {
+    background-color: var(--button-color);
+    border-style: 3px var(--buttonBorder-color);
+    width: 44px;
+}
