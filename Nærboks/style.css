@@ -24,9 +24,12 @@
     --spaceXLarge: calc(var(--fontSizeMedium)*2);
 }
 
+body {
+    margin: var(--spaceMedium);
+}
 
 .button {
     background-color: var(--button-color);
     border-style: 3px var(--buttonBorder-color);
-    width: 44px;
+    width: 2.75rem;
 }
