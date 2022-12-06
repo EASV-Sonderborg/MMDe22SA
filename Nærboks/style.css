@@ -7,6 +7,7 @@
     --buttonHover-color: rgb(200, 219, 188);
     --sections-color: white;
     --package-box: #A7A9AC;
+    --secondary-border-color: #F1ABAB;
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
