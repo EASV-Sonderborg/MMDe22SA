@@ -1,7 +1,7 @@
 :root {
     /* Farver */
     --font-color: #58595B;
-    --background-color: rgb(237, 237, 237);
+    --background-color: #EDEDED;
     --backgroundSend-color: rgb(224, 152, 154);
     --backgroundPickup-color: rgb(200, 219, 188);
     --button-color: white;
@@ -24,6 +24,10 @@
     --spaceMedium: 1rem;
     --spaceLarge: calc(var(--fontSizeMedium)*1.5);
     --spaceXLarge: calc(var(--fontSizeMedium)*2);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
