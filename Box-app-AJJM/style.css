@@ -1,21 +1,28 @@
 :root{
-    --overskrift:var(--overskrift);
-    --undertekst:var(--overskrift);
-    --tekstKnapper:var(--overskrift);
-    --klikbarTekst:var(--klikbarTekst);
+    /* Farver*/
+    --colorBottonMain: #00c608;
+    --colorBottonSecond: #ebd071;
+    --colorTekstInfo: #000000;
+    --colorTekstAttention: #DC5956;
+    --colorElements: #ffffff;
 
-    --colorBGround:linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    --colorBottonMain:var(--colorBGround);
-    --colorBottonSecond:var(--colorBGround);
-    --colorTekstInfo:var(--colorBGround);
-    --colorTekstAttention:var(--colorBGround);
-    --colorElements:var(--colorBGround);
+   /* Knapper */
+    --buttonborderradius: 25px ;
+    
 
-   --borderRadiusBottonMain:10px;
-   
-   
-   /*spacing*/
-   
+   /* Text mod */    
+   --overskrift: 2rem;
+   --undertekst:var(--overskrift*0.75);
+   --tekstKnapper:var(--overskrift*0.875);
+   --klikbarTekst:var(--overskrift*0.5);
+
+   /* spacing */
+    --spaceingXSmall: var(--spaceingMedium*0.5) ;
+    --spaceingSmall: var(--spaceingMedium*0.8) ;
+    --spaceingMedium: 1rem ;
+    --spaceingLarge: var(--spaceingMedium*1.4) ;
+    --spaceingXLarge: var(--spaceingMedium*2) ;
+
    
 }
 
