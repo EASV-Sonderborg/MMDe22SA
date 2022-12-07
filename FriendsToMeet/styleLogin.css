@@ -1,0 +1,360 @@
+:root {
+    /* Farver */
+    --font-clr: black;
+    --secondary-clr: #D8F3DC;
+    --button-clr: #007474;
+    --bgd-clr: #E2C9C1;
+    --section-clr: #fafffb94;
+
+    /* Font Size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1rem;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
+
+    /* Spacing */
+    --spaceXSmall: calc(var(--spaceMedium)/2);
+    --spaceSmall: calc(var(--spaceMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--spaceMedium)*1.5);
+    --spaceXLarge: calc(var(--spaceMedium)*2.5); 
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* test forsøg på spacing */
+h1 { 
+    margin: 0 0 var(--spaceXSmall) 0;
+    font-size: var(--fontSizeXLarge);
+}
+
+/* - - - - -  */
+
+h2 {
+    font-size: var(--fontSizeLarge);
+    margin: 0;
+}
+
+p, label {
+    font-size: var(--fontSizeMedium);
+    font-weight: 450;
+}
+
+/* - - - - - - - - - - -  */
+
+body {
+    background-color: var(--bgd-clr);
+    font-family: 'Times New Roman', Times, serif;
+    padding: var(--spaceMedium);
+    margin: 0;
+}
+
+.friendsToMeetHeader {
+    font-family: 'Pacifico', cursive;
+    color: var(--button-clr);
+    text-shadow: 1px 1px 3px whitesmoke;
+    font-size: var(--fontSizeXLarge);
+    text-align: center;
+    margin: 0;
+}
+
+    /* Login Page */
+
+    .login__forside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    .loginHeader {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .loginText {
+        text-align: center;
+        margin-top: .5rem;
+
+    }
+
+    .login__frontpage {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .login {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .login__input {
+        padding: 1rem;
+        box-shadow: 3px 3px 12px rgb(118, 118, 118);
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login__button {
+        border-radius: 2rem;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 3px 3px 1rem rgb(118, 118, 118);
+        background-color: var(--button-clr);
+        color: white;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    .loginForgottenPassword {
+        font-size: var(--fontSizeMedium);
+        text-align: center;
+    }
+
+    .loginForgottenPassword--link {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+    }
+
+    .login__link {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+    }
+
+    .loginNoProfile {
+        margin: 0;
+    }
+
+    .loginFooter {
+        text-align: center;
+        margin: 0;
+        text-align: center;
+        display: block;
+        width: 100%;
+        /* position: absolute; */
+    }
+
+
+    /* Sign up page */
+
+    .signUp__header {
+        margin-bottom: var(--spaceMedium);
+        padding: var(--spaceMedium);
+        background-color: var(--section-clr);
+        border-radius: var(--spaceMedium);
+    }
+
+    .signUp--h2 {
+        text-align: center;
+    }
+
+    .signUp {
+        border-radius: 12px;
+        background-color: var(--section-clr);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spaceMedium);
+        margin: auto;
+        width: 100%;
+        padding: var(--spaceSmall);
+    }
+
+    .signUp__labels {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input {
+        border: none;
+        background-color: rgba(245, 245, 245, 0.691);
+        outline: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        }
+
+
+    .signUp__input {
+        margin: 0;
+        padding: var(--spaceXSmall);
+        border-bottom: solid var(--button-clr);
+        border-left: solid var(--button-clr);
+        width: 100%;
+        height: 100%;
+    }
+
+    .signUp--minreq {
+        margin: 0;
+        font-size: var(--fontSizeSmall);
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    .signUp__picture {
+        background-color: var(--section-clr);
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--spaceMedium);
+        border-radius: 12px;
+    }
+
+    .signUp--pfp {
+        margin-top: var(--spaceXSmall);
+        width: 40%;
+        border-radius: 15%;
+        border: var(--button-clr) 6px double;
+        align-self: center;
+    }
+
+    .signUp__addpicture {
+        display: flex;
+        align-self: center;
+        gap: .5rem;
+        padding: var(--spaceXSmall);
+    }
+
+    .signUp__text {
+        margin: 0;
+        font-size: var(--fontSizeMedium);
+        width: fit-content;
+        font-weight: bold;
+     }
+    
+    .signUp--cameraText {
+        align-self: center;
+        margin: 0;
+    }
+
+    .signUp--camera {
+        width: 2rem;
+        background-color: transparent;
+    }
+
+    #avatar {
+        width: 86px;
+        background-color: transparent;
+    }
+
+    .signUp__agree {
+        display: flex;
+        justify-content: start;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .signUp__checktext {
+        margin: 0;
+        padding: .5rem;
+    }
+
+    .signUp--arrow {
+        width: 30px;
+    }
+
+    .signUp--link {
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        align-content: flex-end;
+    }
+
+    .signUp__forward {
+        background-color: var(--button-clr);
+        border-radius: 12px;
+        text-align: right;
+        align-self: center;
+        display: flex;
+        justify-content: flex-end;
+        justify-self: center;
+        margin: .5rem;
+        width: 150px;
+        border: solid var(--button-clr) 2px;
+    }
+
+    .signUp__back {
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row-reverse; 
+        justify-content: flex-end;   
+        justify-self: center;
+        width: 150px; 
+        margin: .5rem;
+        border: solid var(--button-clr) 2px;
+        color: var(--font-clr);
+    }
+   
+    .signUp__redirect {
+        display: flex;
+        justify-content: space-between;   
+
+    }
+   
+    .signUp--ToSlink {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+
+    }
+
+    /* Pick your interests page */
+
+    .interests {
+        background-color: var(--section-clr);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: var(--spaceSmall);
+    }
+
+    .hobby__section {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--spaceXSmall);
+    }
+
+    .hobby__section--icon {
+        width: 2rem;
+    }
+
+    .hobbyHeader {
+        margin-bottom: var(--fontSizeSmall);
+    }
+
+    .hobbyH2Header {
+        margin-left: var(--spaceXSmall);
+        align-self: flex-end;
+    }
+
+    .hobby {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: var(--spaceMedium);
+    }
+
+    .hobbyCheckbox {
+        display: flex;
+
+        align-items: center;
+        gap: var(--spaceXSmall);
+    }
+
+    .redirect {
+        display: flex;
+        justify-content: space-between;   
+    }

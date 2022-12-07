@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indstillinger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleIndstillinger.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Friends to Meet</a>
+        <a href="index.html">Forside</a>
+        <a href="profil.html">Profil</a>
+        <div class="dropdown">
+            <button class="dropbtn">Forums
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="lokale_forum.html">-Lokale forums</a>
+                <a href="#">-Regionale forums</a>
+                <a href="#">-Landsdækkende forums</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Grupper
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">-Lokale grupper</a>
+                <a href="#">-Regionale grupper</a>
+                <a href="#">-Landsdækkende grupper</a>
+            </div>
+        </div>
+        <a href="#about">Events</a>
+        <a href="#about">Find nye venner</a>
+        <a href="indstillinger.html">Indstillinger</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script src="main.js"></script>
+
+
+    <section class="settingPage">
+        <section class="settings">
+
+            <h1 class="header">Instillinger</h1>
+            <label class="toggle">
+                <span class="toggle-label">Notifikationer</span>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">Nyhedsbreve</span>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">Face ID</span>
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">Mørktilstand</span>
+                <input class="toggle-checkbox" type="checkbox" checked>
+                <div class="toggle-switch"></div>
+            </label>
+
+            <label class="toggle">
+                <span class="toggle-label">Region</span>
+                <img class="rightarrow" src="images/rightarrow.png" alt="">
+            </label>
+
+        </section>
+
+        <section class="buttons">
+            <form action="loginpage.html">
+                <button class="buttons__button__logout">
+                    Log ud
+                </button>
+            </form>
+
+            <form action="#">
+                <button class="buttons__button__disable">
+                    Deaktivere kontoen
+                </button>
+            </form>
+        </section>
+
+    </section>
+</body>
+
+</html>

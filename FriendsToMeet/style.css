@@ -1,18 +1,332 @@
+:root {
+    /* Farver */
+    --font-color: black;
+    --secondary-color: #D8F3DC;
+    --button-color: #007474;
+    --background-color: #E2C9C1;
+    --section-color: #fafffb94;
+
+    /* Font Size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1rem;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
+
+    /* Spacing */
+    --spaceXSmall: calc(var(--spaceMedium)/2);
+    --spaceSmall: calc(var(--spaceMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--spaceMedium)*1.5);
+    --spaceXLarge: calc(var(--spaceMedium)*2.5); 
+}
 body {
-    background-color: rgb(226, 201, 193);
+    background-color: var(--background-color);
 }
 img {
     max-width: 100%;
 }
 
 
+/*Navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    border-bottom: 1px solid #E2E8F0;
+    background-color: rgb(226, 201, 193);
+    padding: 1rem;
+    border: solid rgb(226, 201, 193) 2px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--font-color);
+}
+.nav-link:hover{
+    color: #767193;
+}
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: rgb(49, 161, 66);
+}@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: rgb(193, 218, 226);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(193, 218, 226);
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--font-color);
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: var(--fontSizeXLarge);
+}
+/* Add an active class to highlight the current page */
+.active {
+    background-color: rgb(193, 218, 226);
+    color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: var(--fontSizeXLarge);
+    border: none;
+    outline: none;
+    color: var(--font-color);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(193, 218, 226);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(193, 218, 226);
+    color: black;
+}
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(193, 218, 226);
+    color: black;
+}
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+}
+
+
+/*Forside*/
+/* Close button */
+.closebtn {
+    justify-self: end;
+    padding-right: 2rem;
+    top: 5px;
+    right: 15px;
+    color: var(--font-color);
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Change color on mouse-over */
+.closebtn:hover {
+    color: lightgrey;
+}
+
+
+.event__popup {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 2.5rem;
+    border-radius: 25px;
+    border: solid green 1px;
+}
+.event__popupImg {
+    width: 75%;
+    padding: 1rem;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row: span 3;
+}
+.event__popupHeader {
+    padding-top: 2rem;
+    font-size: var(--fontSizeLarge);
+}
+.event__popupSecondHeader {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: flex-end;
+    font-size: var(--fontSizeMedium);
+}
+.event__popupText {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    font-size: var(--fontSizeMedium);
+}
+.event__popupButton {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--secondary-color);
+    border: none;
+    text-decoration: none;
+}
+
+.forsideInfo {
+    background-color: var(--section-color);
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 15px;
+}
+.ForsideInfo__img {
+    width: 50%;
+}
+.forsideInfo__header {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    font-size: var(--fontSizeLarge);
+}
+.forsideInfo__text {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    font-size: var(--fontSizeMedium);
+}
+.forsideInfo__text2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    font-size: var(--fontSizeMedium);
+}
+.ForsideInfo__img {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row: span 3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Profil*/
-.profilHeader {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 28px;
-    font-weight: bold;
+.headerText {
     text-align: center;
+    font-size: var(--fontSizeXLarge);
+    margin-top: 1rem;
+}
+.headerText2 {
+    font-size: var(--fontSizeLarge);
 }
 .profil {
     margin: 1rem;
@@ -22,6 +336,7 @@ img {
     max-width: 50%;
     border-radius: 15%;
     border: solid black 1px;
+    margin-bottom: .5rem;
     /*Centreing af billedet*/
     display: block;
     margin-left: auto;
@@ -34,50 +349,50 @@ img {
     margin-right: auto;
 }
 .profil__info {
-    background-color: rgba(250, 255, 251, 0.463);
-    border-radius: 30px;
+    background-color: var(--section-color);
+    border-radius: 25px;
+    margin-top: .5rem;
+}
+.profil__infoHeader {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
 }
 .profil__infoText {
     padding: 1.5rem;
+    font-size: var(--fontSizeLarge);
 }
 .friends {
     margin: 1rem;
 }
-.friendsHeader {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
 .friends__img {
-    max-width: 15%;
     border-radius: 50%;
-    padding: 1rem;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.friends__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 /*Chat*/
 /*https://www.w3schools.com/howto/howto_css_chat.asp*/
 .container {
-    border: 2px solid #dedede;
-    background-color: rgba(250, 255, 251, 0.463);
+    background-color: var(--section-color);
     border-radius: 5px;
-    padding: 10px;
+    padding: 2rem;
     margin: 10px 0;
 }
-  
-/* Darker chat container */
-.darker {
-    border-color: #ccc;
-    background-color: rgba(250, 255, 251, 0.463);
+.container__chatText {
+    font-size: var(--fontSizeLarge);
 }
-  
 /* Clear floats */
 .container::after {
     content: "";
     clear: both;
     display: table;
 }
-  
 /* Style images */
 .container img {
     float: left;
@@ -86,29 +401,90 @@ img {
     margin-right: 20px;
     border-radius: 50%;
 }
-  
 /* Style the right image */
 .container img.right {
     float: right;
     margin-left: 20px;
     margin-right:0;
 }
-  
 /* Style time text */
 .time-right {
-    float: right;
+    /*float: right;*/
     color: rgb(148, 148, 148);
 }
-  
 /* Style time text */
 .time-left {
     float: left;
     color: rgb(148, 148, 148);
 }
-
 /*Tastertur*/
 /*https://www.youtube.com/watch?v=DN0gXtYGR2o*/
-.chat__input:active {
-    /*Prøver at få den til ikke at zoom ind*/
-    zoom: 0%;
+.chat__input {
+    font-size: var(--fontSizeXLarge);
+}
+.chat__label {
+    font-size: var(--fontSizeLarge);
+}
+
+/*Forums*/
+.forums {
+    background-color: var(--section-color);
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.forums__img {
+    max-width: 15%;
+}
+
+
+/*Find nye venner*/
+.findNewFriends {
+    margin-top: 1rem;
+}
+.findFriend {
+    width: 70%;
+    border-radius: 50%;
+    border: solid white 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+.newFriend__knapper {
+    display: flex;
+    justify-content: center;
+}
+.likeKnap {
+    width: 15%;
+    margin: .5rem;
+}
+.chatKnap {
+    width: 15%;
+    margin: .5rem;
+}
+.newFriend__info {
+    background-color: var(--section-color);
+    border-radius: 25px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.newFriend__infoText {
+    font-size: var(--fontSizeLarge);
+}
+.movable {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: .5fr 5fr .5fr;
+}
+.arrow__Left {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    align-self: center;
+}
+.arrow__Right {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    align-self: center;
 }

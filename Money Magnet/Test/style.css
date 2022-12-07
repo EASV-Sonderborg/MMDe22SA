@@ -1,0 +1,575 @@
+/*- - - - - - - Custom Propperties - - - - - - - */
+:root{
+  --fontSizeXLarge:calc(var(--fontsizeDefault)*1.5);
+  --fontSizeLarge: calc(var(--fontsizeDefault)*1.2) ;
+  --fontsizeDefault:1rem;
+  --fontSizeSmall:calc(var(--fontsizeDefault)*0.6);
+  
+   
+  --spacingMini: calc(var(--spacingDefault)*0.5);
+  --spacingSmall: calc(var(--spacingDefault)*0.8);
+  --spacingDefault:(1rem);
+  --spacingLarge: calc(var(--spacingDefault)*1.2);
+  --spacingXLarge: calc(var(--spacingDefault)*1.5);
+  --spacingXLarge: calc(var(--spacingDefault)*2);
+   
+  
+  
+  --maincolor: #CED8E2;
+  --secondarycolor:#92C347;
+  --tetriarycolor: #fbe896;
+  
+  
+  --borderRadiusSmall:5px;
+  --borderRadiusMedium: 10px;
+
+    
+
+/* Settings Styler */ 
+    
+
+
+}
+
+/*- - - - - - - End Custom Propperties - - - - - - - */
+html {
+    scroll-behavior: smooth;
+  }
+body{
+  background-color: #FAF9F6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Mukta', sans-serif; 
+}
+
+  /*- - - - - - - Sign-up Site - - - - - - - */
+.sign-up{
+    height: 100vh;
+}
+.sign-up__box{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    border-radius: 10px;
+    align-content:center ;
+}
+
+/*- - - - - - Ends sign-up site - - - - - - - */
+
+
+
+/* - - - - - -  Login site - - - - - */ 
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    text-align: center;
+    align-content: space-between;
+}  
+
+.login__form{
+margin-top: 50px;
+}
+
+
+.login__topline{
+    margin-bottom: 6vh;
+}
+
+.login-signup__switch{
+    padding: 1rem;
+    text-align: center;
+}
+
+/* - - - - - -  End Login site  - - - - - */ 
+
+/* - - - - - -  Settings site  - - - - - */ 
+.settings{
+display: grid;
+grid-auto-columns: 1fr; 
+grid-template-columns: 0.3fr 1.5fr; 
+
+align-items: center;
+justify-items: center;
+
+border: 1px solid black;
+margin-bottom: var(--spacingDefoult);
+
+}
+
+.settings__text{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0;
+    text-align: left;
+    
+}
+.settings__icon{
+ 
+}
+
+.settings__headtext{
+
+}
+
+.settings__subtext{
+
+}
+
+
+
+/* - - - - - -  End Settings site  - - - - - */   
+  /*- - - - - -  style  style style   - - - - - - */ 
+  
+  body{
+    background-color: #FAF9F6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:  'Mukta', sans-serif; 
+  
+  }
+  #date{
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    }
+  
+  /*  Magnus  welcome text på toppen*/
+  .name--text{
+    font-size: var(--fontSizeLarge);
+    font-weight: 200;
+    margin: 0;
+  
+    }
+  
+  
+  .bottomline--text {
+    font-size: var(--fontsizeMedium);
+    font-weight: 100;
+  }
+  
+  
+  .login__logo{
+   max-width: 32%;
+   align-self: center;
+   margin-bottom: 5vh ;
+    }
+  
+    .login-signup__button{
+      padding: 0.5rem;
+      border-radius: 8px;
+      background-color:#92C347;
+      margin: 1.2rem;
+      width:25vh;
+      align-self: center;
+      font-weight: 800;
+      border-width: 1px;
+     
+      
+  }
+  
+  .login-signup__button:hover{
+      box-shadow: rgba(0, 0, 0, .4) 2px 8px 8px -5px;
+    
+    }
+    .login-signup__button:active {
+  background-color:  #FBE869;
+    }
+  
+  
+  .login__input{
+      padding: 0.5rem;
+      border-radius: 8px;
+      background: #CED8E2;
+      margin-bottom:2rem;
+      width:35vh;
+      align-self: center;
+      margin-top: .2rem;
+      border-style:solid ;
+      border-color:#CED8E2;
+    
+  }
+  
+  
+  
+  
+  /*- - - - - - - Sign-up Site starts - - - - - - - */
+  .sign-up{
+      height: 100vh;
+  }
+  .sign-up__box{
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column ;
+      text-align: center;
+      border-radius: 10px;
+      align-content:center ;
+  }
+  
+  /*- - - - - -sign-up site  ends - - - - - - - */
+  
+  
+  
+  
+  /* - - - - - -  Login site starts - - - - - */ 
+  .username{
+    margin-bottom: 0;
+  }
+  .login{
+    height: 100vh;
+  }  
+  
+  .login__form{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+    border-radius: 10px;
+    align-content:center ;
+  }
+  
+  .login__topline{
+      margin-bottom: 6vh;
+  }
+  
+  .login-signup__switch{
+      padding: 1rem;
+      text-align: center;
+      margin-top:6vh ;
+  }
+  /* - - - - - -  LOGIN SITES ENDS - - - - - */ 
+  
+  
+  
+  
+  /*- - - - - - LANDING PAGE STARTS - - - - - */
+  .landing{
+    max-height:100vh;
+  
+  }
+  
+  
+  .landing__list {
+    margin-top: 2px auto;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 100;
+    font-size:small;
+    display:inline-flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: center;
+    width: 100vw;
+    padding-left: 0;
+  }
+  
+  
+  .li{
+    place-self: center;
+  }
+  
+  p{
+    margin-top: 0%;
+  }
+  .info__app{
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+  
+  } 
+  .landing__info__box{
+    margin-top: 0;
+    margin-right: 0;
+  
+  }
+  .landing__down{
+    display: grid;
+    grid-template-columns:45% 1fr;
+    grid-template-rows: 5 1fr;
+  }
+  .women{
+    grid-area: 2/1/6/2;
+  }
+  
+  img.logo__main{
+  max-width:26%;
+  align-self: center;
+  margin-top:4vh ;
+  
+  
+  }
+  /*h1 - -money magnet  titel*/ 
+  
+  .landing__tagline{    
+  margin-top:2vh;
+  margin-bottom: auto;
+  padding: bottom 30px; ;
+  align-self:center;
+  font-size: 26px;
+  border-bottom:solid  #92C347 ;
+  font-family: 'Mukta', sans-serif;
+  
+  }
+  
+  
+  .landing__p {
+  margin-bottom: 0;
+  margin-top: 17px;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  
+  }
+  
+  .landing__p__haveaccount{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  
+  
+  }
+  .landing__signup--botton{
+    padding:1rem;
+    border-radius:15px;
+    background-color:#FBE869;
+    margin:  2 .5rem;
+    margin-bottom: 16px;
+    margin-top: 3px ;
+    margin-left:6.8vh ;
+    width:18vh;
+    align-self: center;
+    font-weight: 800;
+    border-width: 1px;
+    
+  }
+  .landing__login--botton{
+    padding:1rem;
+    border-radius: 15px;
+    background-color:#92C347;
+    margin-top: 3px ;
+    margin-left:6.8vh ;
+    width:18vh;
+    align-self: center;
+    font-weight: 800;
+    border-width: 1px;
+  
+  }
+  
+  .landing_down--bottons{
+    grid-area: 1/2/4/3;}
+  
+  
+  h4{
+    margin-top: 2px;
+    font-weight: 100;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .landingunderskrift__text{
+    text-align: center;
+    font-size: 2.5vh;
+    margin-bottom:0%;
+    margin-top:  1vh;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .landing__header{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2px;
+  }
+  
+  
+  .women{
+  width:300px;
+  }
+  
+  
+  
+  /* - - - - - - - - - - - -ACCOUNT SITE STARTS - - - - - - - - -*/
+  .underaccount__text{
+  border-radius: 5px;
+   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  fill: currentcolor;
+   font-size: 18px;
+    font-size:var(--fontsizeMedium);
+    font-weight: 100;
+    text-align: center;
+    background-color: #8AB5E3;
+    padding-top: 1rem;
+    
+  
+  
+  } 
+  
+  
+  .balanceaccount{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  
+  }
+  .overskrift__account{
+    color: #8AB5E3;
+    font-weight: 400;
+    font-size:var(--fontSizeXLarge);
+    margin-top: 1.75rem;
+  
+  }
+  .overskrift{
+  text-align: center;
+  }
+  .balanceaccount__welcome--text{
+    text-align: center;
+  
+  }
+  .label{
+    font-weight: 100;
+  }
+  .input--nbr{
+    align-items: center;
+    background: #F6F9FE;
+    border-radius: 24px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #3880b8;
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    fill: currentcolor;
+   font-size: 18px;
+    font-weight: 500;
+    height: 44px;
+    letter-spacing: .25px;
+    line-height: normal;
+    padding: 2px 24px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+  }
+  
+  .label__inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2m;
+  }
+  
+  .input__nbr:active{
+    background-color: var(--maincolor);
+  }
+  
+  .balance--nbr--txt{
+  font-size: xx-large;
+  font-weight: 500;
+  margin: 1rem auto 3rem;
+  border-radius: var(--borderRadiusSmall); 
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  
+  }
+  
+  .goto-monthlyexpences{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    font-weight: 100;
+  }
+  
+  .arrows{
+    position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom:.5rem;
+  margin-top: 3rem;
+  
+  }
+  
+  .arrow__p{
+  margin-top: .5rem;
+  font-size: 15px;
+  margin-bottom: 0%;
+  font-weight: 100;
+  
+  }
+  
+  
+  /* - - - - - - - ACCOUNT ENDS  - - - - - - - - - - - - - - */
+  
+  
+  /* - - - - - - - - - - - - ACCOUNT ENDS  - - - - - - - - - - - - - - */
+  
+  /* - - - - - - - - - - - -  MONTHLY EXPENCES STARTS  - - - - - - - - - - - - - - */
+  
+  .overskrift__expences{
+    color: rgba(255, 0, 0, 0.859);
+    font-weight: 200;
+  }
+  .chart{
+    margin:1.5rem;
+    margin-top: .5rem;
+    width: 80%;
+   align-self: center;
+  }
+  
+  
+  
+  /* - - - - - - - - - - - - EXPENCES  MONTHLY ENDS  - - - - - - - - - - - - - - */
+
+/* - - - - - -  Bottom Navbar - - - - - */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: rgba(0, 0, 0, 0.144) 2px solid;
+    z-index: 99999;
+    background-color: var(--maincolor);
+    
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    height: auto;
+    
+
+}
+
+.nav__items{
+       
+}
+
+.nav__items-icon{
+    text-decoration: none;
+    color: var(--navcolor);
+}
+.nav__items-icon::content{
+    color: var(--navcolor-active);
+}
+   
+    
+
+
+.nav__list-img{
+    max-width: 65%;
+
+}
+
+
+
+
+/* - - - - - -  Bottom Navbar End - - - - - */ 

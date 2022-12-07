@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Create an Account</title>
+</head>
+<body>
+
+<section class="login__frontpage">
+    <h1 class="friendsToMeetHeader">Friends to Meet</h1>
+
+        <section class="signUp__header">
+            <h2 class="signUp--h2">Sign up</h2>
+        </section>
+
+        <section class="signUp__picture">
+            <img class="signUp--pfp" src="images/cat.png" alt="">
+                <label for="avatar" class="signUp__addpicture">
+                    <img class="signUp--camera"  src="images/camera.png" alt="black camera logo">
+                    <input type="file"
+                    id="avatar" name="avatar"
+                    accept="image/*">
+                </label>
+        </section>
+
+        <section class="signUp">
+            <section class="signUp__labels">
+                <label class="signUp__text" for="firstName">Fornavn</label>
+                <input class="signUp__input" name="firstNamw" id="firstName" type="text">
+            </section>
+
+            <section class="signUp__labels">
+                <label class="signUp__text" for="lastName">Efternavn</label>
+                <input class="signUp__input" name="lastName" id="lastName" type="text">
+            </section>
+
+            <section class="signUp__labels">
+                <label class="signUp__text" for="emailAddress">Email Addresse</label>
+                <input class="signUp__input" name="emailAddress" id="emailAddress" type="text">
+            </section>
+
+            <section class="signUp__labels">
+                <label class="signUp__text" for="location">By</label>
+                <input class="signUp__input" name="location" id="location" type="text">
+            </section>
+
+            <section class="signUp__labels">
+                <label class="signUp__text" for="password">Password</label>
+                <input class="signUp__input" name="password" id="password" type="password" minlength="8">
+                <p class="signUp--minreq">mininum 8 tegn</p>
+            </section>
+
+            <section class="signUp__labels">
+                <label class="signUp__text" for="confirmPassword">Bekræft Password</label>
+                <input class="signUp__input" name="confirmPassword" id="confirmPassword" type="password" minlength="8">
+            </section>
+
+            <section class="signUp__check">
+                <section class="signUp__agree">
+                    <input class="signUp__checkbox" type="checkbox" name="marketing" id="marketing" value="marketing">
+                    <label for="marketing" class="signUp__checktext">Jeg bekræfter I må sende mig 
+                        markedsførings mails</label>
+                </section>
+                <section class="signUp__agree">
+                    <input class="signUp__checkbox" type="checkbox" name="ToS" value="ToS" id="ToS">
+                    <label for="ToS" class="signUp__checktext">Jeg bekræfter, at jeg har læst og 
+                    forstået <a class="signUp--ToSlink" href="#">Terms of Service</a></label>
+                </section>
+            </section>
+
+            <article class="signUp__redirect">
+                <a class="signUp__back signUp--link" href="loginpage.html">Tilbage
+                    <img class="signUp--arrow" src="images/thinLeftArrow.png" alt="">
+                </a>
+            
+                <a class="signUp__forward signUp--link" href="hobby.html">Videre
+                    <img class="signUp--arrow" src="images/whiteRightArrow.png" alt="">
+                </a>
+            </article>
+
+        </section>
+</section>
+</body>
+</html>
