@@ -37,7 +37,48 @@ body {
     width: 2.75rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Send side */
 .bodySend {
     background-color: var(--backgroundSend-color);
+}
+.goToPickup__button {
+    background-color: var(--backgroundPickup-color);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 25%;
+}
+.sendPackage {
+    display: flex;
+    flex-direction: column;
+}
+.sendPackage__truck {
+    max-width: 50%;
+    justify-self: center;
+}
+.sendPackage__startButton {
+    background-color: white;
+    border: none;
+    padding: 16px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+.sendPackage__link {
+    color: white;
+    text-align: center;
+}
+
+
+/* Registre */
+.bodyRegistrer {
+    background-color: var(--background-color);
+}
+.goBackArrow {
+    max-width: 5%;
 }
