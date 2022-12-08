@@ -164,7 +164,7 @@ h1,h3{
     /** FORRBINDELSEN SIDE ENDS HERE!!!  */
 
 
-    /** FEJL SIDE NR 2 -FLYT DIG STARTS HERE :) */
+    /** FLYT DIG STARTS HERE :) */
     
     .lilleMenneske{
  max-width: 120%;
@@ -178,6 +178,53 @@ h1,h3{
 .pakkeBoksNummer--billede{
   max-width: 65%;
 }
-    
+  /** FORBINDELSEN FEJL SIDE ENDS HERE!!! */  
 
+
+/** RING SIDE - STARTS HERE :) */
+.pageWrapper--Ring{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+img.support{
+max-width: 15vh;
+}
+
+
+.button--telefon{
+  display: inline-block;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  outline: 0;
+  padding: 12px 48px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button--telefon:hover,
+.button--telefon:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button--telefon:active {
+  opacity: .5;
+}
     
