@@ -133,7 +133,7 @@ h1,h3{
       text-align: center;
       z-index: 0;
       text-transform: uppercase;
-      color: rgb(9, 186, 50);
+      color:white;
     }
     
     .loader--connected:before,
@@ -160,6 +160,20 @@ h1,h3{
       z-index: 2;
       -webkit-animation: gogoloader 2s infinite;
     }
+
+    /** FORRBINDELSEN SIDE ENDS HERE!!!  */
+
+
+    /** FEJL SIDE NR 2 -FLYT DIG STARTS HERE :) */
+    
+    .lilleMenneske{
+ max-width: 120%;
+ align-self: center;
+    }
+     /** FEJL SIDE NR 2 -FLYT DIG Ends  HERE!!! */
+
+     
+
     
 
     
