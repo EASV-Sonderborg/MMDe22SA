@@ -186,6 +186,31 @@ a {
     margin-bottom: var(--spaceMedium);
 }
 
+/* Hent side*/
+.bodyHent {
+    background-color: var(--backgroundPickup-color);
+}
+.goToDeliver__button {
+    background-color: var(--backgroundSend-color);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 25%;
+}
+.pickupPackage {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.pickupPackage__guy {
+    max-width: 50%;
+}
+.pickupPackage__header {
+    color: white;
+    font-size: var(--fontSizeXLarge);
+    font-weight: bold;
+}
+
+
 
 
 /* Send side */
