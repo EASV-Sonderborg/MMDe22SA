@@ -1,0 +1,100 @@
+@import url(style.css); 
+
+.logo {
+    width: 90vw;
+    height: 54px;
+    padding-top: 6rem;
+}
+
+body {
+    padding: 1rem;
+}
+
+
+.overskrift {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    color: var(--colorElements);
+    text-align: center;
+    
+    
+
+}
+
+/*-----Welcome Page ----- */ 
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacingMedium);
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonMain {
+    color: var(--colorElements);
+    border-radius: var(--buttonBorderRadius);
+    font-size: var(--overskrift);
+    font-weight: bold;
+    width: 323px;
+    height: 72px;
+    
+}
+
+.buttons__opretProfil {
+    background-color: var(--colorButtonMain);
+    margin-top: 184px;
+    border: none; 
+
+}
+
+.buttons__logPaa {
+    background-color: #83C5F0;
+    border: 1px solid black;
+}
+
+
+
+
+/* ----- Opret Profil ----- */ 
+
+.inputFelt__indhold {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 323px;
+    height: 71px;
+    
+
+}
+
+.inputFelt__overskrift {
+    margin: 0;
+    padding: 0;
+}
+
+.nbBetingelser {
+    margin-top: 1.5rem;
+}
+
+.oprettelse__radioButton {
+    margin: 0;
+    font-family:;
+    
+}
+
+.oprettelse__label {
+    font-family: Roboto Slab;
+
+}
+
+.oprettelse__aktiveringslinkInformation {
+    font-family: Roboto Slab;
+}
+
+.overskrift__opretProfil {
+    margin-top: ?
+}
+
+.arrow {
+    color: white; 
+    font-size: 1.5rem;
+}
