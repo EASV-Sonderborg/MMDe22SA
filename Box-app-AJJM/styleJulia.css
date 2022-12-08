@@ -32,7 +32,7 @@ h1,h3{
       width: 100%;
       height: 100%;
       border-radius: 100px;
-      border: 5px solid rgb(106, 224, 106);
+      border: 5px solid rgb(30, 183, 210);
       box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
     }
     
@@ -85,7 +85,43 @@ h1,h3{
    
 /**  FORBINDELSE FEJL 1  STARTS HERE */
 
-
+.loader--fejl {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color:rgb(239, 66, 66);;
+    }
+    
+    .loader--fejl:before,
+    .loader-fejl:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(239, 66, 66);
+      box-shadow: 0 0 50px rgb(223, 137, 137), inset 0 0 50px rgb(250, 79, 79);
+    }
+    
+    .loader--fejl:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--fejl:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
 
 
 
