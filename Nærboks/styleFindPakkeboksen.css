@@ -1,0 +1,31 @@
+.youPackageBox_header {
+    font-size: var(--fontSizeXLarge);
+    margin-bottom: var(--spaceLarge);
+}
+
+.locationoftheBox {
+    font-size: var(--fontSizeMediumfont);
+}
+
+.address_Text {
+    font-size: var(--fontSizeSmall);
+    margin-top: var(--spaceMedium);
+}
+
+.imageSlider {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    margin-top: var(--spaceLarge);
+}
+
+.imageSlider_img {
+    width: 100%;
+}
+
+.buttonSearching {
+    margin-top: var(--spaceMedium);
+    display: flex;
+
+}

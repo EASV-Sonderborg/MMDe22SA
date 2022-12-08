@@ -1,7 +1,7 @@
 :root {
     /* Farver */
-    --font-color: Black;
-    --background-color: rgb(237, 237, 237);
+    --font-color: #58595B;
+    --background-color: #EDEDED;
     --backgroundSend-color: rgb(224, 152, 154);
     --backgroundPickup-color: rgb(200, 219, 188);
     --button-color: white;
@@ -261,6 +261,74 @@ a {
 .bodyRegistrer {
     background-color: var(--background-color);
 }
+.registrer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 .goBackArrow {
     max-width: 5%;
+    margin: 1.5rem;
+}
+.registrer__package {
+    max-width: 75%;
+    margin-top: 8rem;
+    justify-self: center;
+    border: solid #E0E0E0 4px;
+}
+.registrer__number {
+    text-align: center;
+    font-size: var(--fontSizeLarge);
+    color: var(--font-color);
+    text-decoration: underline;
+    margin-top: 16rem;
+}
+.registrerInput {
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+.registrerInput__label {
+    text-align: center;
+    color: var(--font-color);
+}
+.registrerInput__input {
+    padding: 8px 64px;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: var(--fontSizeXLarge);
+    margin-top: var(--spaceXLarge);
+    margin-bottom: var(--spaceXLarge);
+}
+.registrer__vidre {
+    text-align: center;
+    font-size: var(--fontSizeLarge);
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+/* Størrelse */
+.registrer__whiteBackground {
+    background-color: var(--sections-color);
+    margin: 1.5rem;
+    border: solid #CFE5E2 2px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.registrer__sizeImg {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: span 2;
+    padding-bottom: 4rem;
+}
+.registrer__sizeLabel {
+    text-align: end;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+.registrer__sizeInput {
+    font-size: var(--fontSizeXLarge);
 }
