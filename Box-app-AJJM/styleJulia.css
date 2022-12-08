@@ -167,17 +167,27 @@ h1,h3{
     /** FLYT DIG STARTS HERE :) */
     
     .lilleMenneske{
- max-width: 120%;
- align-self: center;
-    }
+    max-width: 120%;
+    align-self: center;
+  }
 
 /** FEJL SIDE NR 2 -FLYT DIG ENDS  HERE!!! */
 
 
-/** FORBINDELSEN FEJL SIDE STARTS HERE :) */
-.pakkeBoksNummer--billede{
-  max-width: 65%;
+/** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
+
+.pageWrapper--boksNummer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+img.nummer{
+  max-width: 28vh;
+}
+
+
+
   /** FORBINDELSEN FEJL SIDE ENDS HERE!!! */  
 
 
