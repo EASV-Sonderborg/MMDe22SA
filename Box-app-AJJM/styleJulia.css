@@ -6,7 +6,6 @@ h1,h3{
 }
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
-
 /**  ANIMATION STARTS  */
 .loader {
       width: 150px;
@@ -72,8 +71,6 @@ h1,h3{
   .mobileBillede{
       max-width:120%;
       align-self: center;
-    
-
      }
 
      .pakkeBoksBillede{
@@ -123,6 +120,46 @@ h1,h3{
       -webkit-animation: gogoloader 2s infinite;
     }
 
+/**  FORBINDELSENS FEJL ENDS HERE !!!  */
 
+/**  FORBINDELSEN ETABLERET START :)  */
+.loader--connected {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color: rgb(9, 186, 50);
+    }
+    
+    .loader--connected:before,
+    .loader--connected:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(9, 186, 50);;
+      box-shadow: 0 0 50px rgb(57, 165, 24), inset 0 0 50px rgb(77, 198, 36);
+    }
+    
+    .loader--connected:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--connected:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+    
 
     
