@@ -63,7 +63,7 @@ h1,h3{
      .pageWrapper{
       height: 100vh;
      }
-     .mainOpratterforbindelse{
+     .mainOpratterForbindelse{
     display: grid;
     grid-template-columns: 25% 30% 45% ;
     }
@@ -170,10 +170,14 @@ h1,h3{
  max-width: 120%;
  align-self: center;
     }
-     /** FEJL SIDE NR 2 -FLYT DIG Ends  HERE!!! */
 
-     
+/** FEJL SIDE NR 2 -FLYT DIG ENDS  HERE!!! */
 
+
+/** FORBINDELSEN FEJL SIDE STARTS HERE :) */
+.pakkeBoksNummer--billede{
+  max-width: 65%;
+}
     
 
     
