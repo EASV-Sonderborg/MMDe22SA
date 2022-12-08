@@ -5,8 +5,6 @@ h1,h3{
        color: #fff;
 }
 
-h1{
-}
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 
 /**  ANIMATION STARTS  */
@@ -62,6 +60,7 @@ h1{
       }
     }
      /** ANIMATION ENDS */
+
      .pageWrapper{
       height: 100vh;
      }
@@ -84,10 +83,7 @@ h1{
 
 
    
-
-
-
-
+/**  FORBINDELSE FEJL 1  STARTS HERE */
 
 
     
