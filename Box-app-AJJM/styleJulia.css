@@ -361,7 +361,7 @@ label a {
 }
 p.frontPageUnderskrift{
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 50%;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
