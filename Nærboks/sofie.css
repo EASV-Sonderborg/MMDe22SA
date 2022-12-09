@@ -8,11 +8,6 @@
     align-items: center;
 }
 
-.searchingForPackage__header {
-    place-self: start;
-    margin-bottom: var(--spaceLarge);
-}
-
 .searchingForPackage__subheader {
     text-align: center;
     margin-top: var(--spaceMedium);
