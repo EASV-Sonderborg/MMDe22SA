@@ -192,6 +192,9 @@ a {
     margin-top: var(--spaceXLarge);
     margin-bottom: var(--spaceMedium);
 }
+.card__button:hover {
+    background-color: var(--buttonHover-color);
+}
 
 /* Hent side*/
 .bodyHent {
@@ -225,9 +228,13 @@ a {
     background-color: var(--backgroundSend-color);
 }
 .goToPickup__button {
+    display: flex;
+    justify-content: end;
+}
+.goToPickup__img {
+    width: 6rem;
+    height: 6rem;
     background-color: var(--backgroundPickup-color);
-    width: 4rem;
-    height: 4rem;
     border-radius: 25%;
 }
 .sendPackage {
@@ -255,6 +262,9 @@ a {
     font-weight: bold;
     margin-top: var(--spaceXLarge);
     margin-bottom: var(--spaceXLarge);
+}
+.sendPackage__startButton:hover {
+    background-color: var(--buttonHover-color);
 }
 .sendPackage__link {
     color: white;
@@ -307,6 +317,7 @@ a {
     font-size: var(--fontSizeXLarge);
     margin-top: var(--spaceXLarge);
     margin-bottom: var(--spaceXLarge);
+    border: solid #CFE5E2 2px;
 }
 .registrer__vidre {
     text-align: center;
@@ -339,8 +350,52 @@ a {
 }
 .registrer__sizeInput {
     font-size: var(--fontSizeXLarge);
+    text-decoration: none;
+    border: solid #CFE5E2 1px;
 }
 .baxSize__button {
-    text-align: center;
-    padding: 1rem;
+    background-color: white;
+    border: none;
+    padding: 8px 64px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    color: var(--font-color);
+    font-size: var(--fontSizeLarge);
+    margin-top: var(--spaceMedium);
+    margin-bottom: var(--spaceMedium);
+    border: solid #CFE5E2 2px;
+}
+.baxSize__button:hover {
+    background-color: var(--buttonHover-color);
+}
+.registrer__packageBoxSection {
+    background-color: var(--sections-color);
+    margin: 1rem;
+    border: solid #CFE5E2 2px;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
+.packageBoxSection__p1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.packageBoxSection__p2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+.packageBoxSection__img {
+    max-width: 90%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: end;
+}
+.packageBoxSection__imgRight {
+    max-width: 75%;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: end;
 }
