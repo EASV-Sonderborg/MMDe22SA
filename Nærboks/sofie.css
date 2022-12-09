@@ -1,11 +1,11 @@
-/* Searching for package */
+/* - - - - - - - - Searching for package - - - - - - - - */
+
 .searchingForPackage {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .searchingForPackage__header {
@@ -19,18 +19,14 @@
 }
 
 .loading__circles {
-    /* left: 10%;
-    top: 25%;
-    position: relative; */
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     background: transparent;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid var(--package-box);
-    border-bottom: 6px solid var(--package-box);
-    border-top: 6px solid var(--package-box);
+    border-top: 6px solid #8ABBD4;
+    border-bottom: 6px solid #8ABBD4;
     align-self: center;
 }
 
@@ -49,6 +45,46 @@
     }
 }
 
-.help {
+.help__question {
+    align-self: flex-start;
+}
+
+.help__questionImage {
     width: 2.75rem;
 }
+
+/* - - - - - - - - Opening Locker... - - - - - - - - - - */
+#close {
+    color: var(--secondary-border-color);
+    font-weight: bolder;
+    font-size: var(--fontXLarge);
+    border: none;
+}
+
+.help__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spaceLarge);
+}
+.arrow__right {
+    width: 22px;
+}
+
+.arrow__right:active {
+    transform: rotate(90deg);
+}
+
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  summary {
+    margin-bottom: var(--spaceXSmall);
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+  }
