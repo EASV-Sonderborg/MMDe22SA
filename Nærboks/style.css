@@ -65,7 +65,8 @@ h6 {
 
 .button {
     background-color: var(--button-color);
-    border-style: 3px var(--buttonBorder-color);
-    width: 2.75rem;
+    border-style: 3px solid var(--buttonBorder-color);
+    width: 5rem;
+    border-radius: 30px;
 }
 
