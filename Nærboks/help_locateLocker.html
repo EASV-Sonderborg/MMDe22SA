@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sofie.css">
-    <link rel="stylesheet" href="main.js">
     <title>Help</title>
 </head>
 <body>
@@ -19,7 +18,7 @@
     <article class="help">
         <section class="help__flex">
            <h1>Hjælp</h1>
-           <button onclick="history.back()" id="close">X</button>
+           <button onclick="history.back()" class="close">X</button>
         </section>
 
          <details>
@@ -49,11 +48,12 @@
             </p>
          </details>
 
-        <section class="help__flex">
-            <p>Afspil en lyd, når min telefon 
+        <label class="toggle">
+            <p class="toggle-label">Afspil en lyd, når min telefon 
                 er tæt på boksen</p>
-            <!-- Toggle her -->
-        </section>
+            <input class="toggle-checkbox" type="checkbox">
+            <div class="toggle-switch"></div>
+        </label>
 
     </article>
 </body>
