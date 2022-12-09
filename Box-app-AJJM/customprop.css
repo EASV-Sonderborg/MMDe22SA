@@ -16,6 +16,7 @@
    --tekstKnapper:var(--overskrift*0.875);
    --klikbarTekst:var(--overskrift*0.5);
 
+
    /* spacing */
     --spaceingXSmall: var(--spaceingMedium*0.5) ;
     --spaceingSmall: var(--spaceingMedium*0.8) ;
@@ -36,13 +37,14 @@ body{
 
 h1{
     font-family: Robotoslab ;
-    font-size: ;
-    color: #ffffff
+    font-size: var(--overskrift);
+    color: #ffffff;
 }
 
 h2{
     font-family: ;
     font-size: ;
+
 }
 
 h3{
@@ -69,5 +71,9 @@ header{
     font-family: ;
     font-size: ;
     font-weight: ;
+    
+}
+.arrow--back{
+    font-size: var(--overskrift);
     
 }

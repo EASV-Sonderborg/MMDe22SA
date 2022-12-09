@@ -2,7 +2,6 @@
 
 h1,h3{
        text-align: center;
-       color: #fff;
 }
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
@@ -214,7 +213,6 @@ max-width: 15vh;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-
   font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
   font-size: 16px;
   font-weight: 800;
