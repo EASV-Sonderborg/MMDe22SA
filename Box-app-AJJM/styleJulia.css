@@ -237,6 +237,9 @@ max-width: 15vh;
 }
     
 /**  MENU SIDE  START HERE:)  ------------------------------------ */
+.pageWrapper{
+  height: 100vh;
+ }
 *, *:before, *:after 
 { box-sizing: border-box; }
 
@@ -346,7 +349,7 @@ label a {
   text-decoration: none;
   
 }
-
+/** in case I need 
 .frontPageOverskrift {
   font-size: 2.5rem;
   position: absolute;
@@ -365,4 +368,11 @@ p.frontPageUnderskrift{
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 80%;
-}
+}*/
+
+.frontpageBillede{
+  max-width: 100%;
+  position: absolute;
+  top: 30%;
+
+ }
