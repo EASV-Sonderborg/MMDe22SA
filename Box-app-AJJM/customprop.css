@@ -75,5 +75,6 @@ header{
 }
 .arrow--back{
     font-size: var(--overskrift);
+    color:var(--colorElements);
     
 }
