@@ -1,5 +1,11 @@
 @import url("customprop.css");
 
+.pageWrapper{display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
@@ -167,7 +173,7 @@
     align-self: center;
   }
 
-/** FEJL SIDE NR 2 -FLYT DIG ENDS  HERE!!! */
+    /** FLYT DIG  SIDE ENDS  HERE!!! */
 
 
 /** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
@@ -201,11 +207,8 @@ max-width: 15vh;
 
 .button--telefon{
   display: inline-block;
-  text-align: center;
-  padding: 1rem 2rem;
   background: #FF4742;
   border: 1px solid #FF4742;
-  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
   color: #FFFFFF;
@@ -219,7 +222,10 @@ max-width: 15vh;
   text-rendering: geometricprecision;
   text-transform: none;
   touch-action: manipulation;
-  vertical-align: middle;
+
+  padding: var(--buttonHight) var(--buttonWidth); 
+  font-size:var(--tekstKnapper) ;
+  border-radius: var(--buttonborderradius);
 }
 
 .button--telefon:hover,
@@ -268,7 +274,6 @@ label .menu {
 }
 
 label .hamburger {
-  
   position: absolute;
   top: 140px;
   left: 70px;
@@ -330,7 +335,7 @@ label input:checked + .menu + ul { opacity: 1; }
 label ul {
   z-index: 200;
   position: absolute;
-  top: 20%;
+  top: 35%;
   left: 50%; /**   */
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -339,13 +344,26 @@ label ul {
   transition: .25s 0s ease-in-out;
 }
 
-label a {
-  margin-bottom: .75rem;
+label .menu__a {
+  margin-bottom: 1rem;
   display: block;
   color: #fff; /** menu a color */
   text-decoration: none;
+  border-style: solid;
   
 }
+
+
+
+.menu__a{
+  padding: .3rem 3.5rem;
+  background-repeat: initial;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+
 /** in case I need 
 .frontPageOverskrift {
   font-size: 2.5rem;
@@ -375,3 +393,5 @@ p.frontPageUnderskrift{
 
 
  }
+
+ 
