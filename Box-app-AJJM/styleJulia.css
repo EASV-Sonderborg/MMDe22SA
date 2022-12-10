@@ -371,8 +371,9 @@ p.frontPageUnderskrift{
 }*/
 
 .frontpageBillede{
-  max-width: 99%;
+  max-width: 95%;
   position: absolute;
   top: 30%;
+margin-left: 1.25rem;
 
  }
