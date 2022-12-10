@@ -1,8 +1,5 @@
 @import url("customprop.css");
 
-h1,h3{
-       text-align: center;
-}
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
@@ -374,6 +371,7 @@ p.frontPageUnderskrift{
   max-width: 95%;
   position: absolute;
   top: 30%;
-margin-left: 1.25rem;
+  margin-left: .5rem;
+
 
  }

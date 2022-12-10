@@ -8,7 +8,8 @@
 
    /* Knapper */
     --buttonborderradius: 25px ;
-    
+    --buttonWidth:6rem;
+    --buttonHight:1rem;
 
    /* Text mod */    
    --overskrift: 2rem;
@@ -23,8 +24,9 @@
     --spaceingMedium: 1rem ;
     --spaceingLarge: var(--spaceingMedium*1.4) ;
     --spaceingXLarge: var(--spaceingMedium*2) ;
-
+    --spaceingXXLarge: var(--spaceingMedium*4) ;
    
+
 }
 
 
@@ -39,6 +41,10 @@ h1{
     font-family: Robotoslab ;
     font-size: var(--overskrift);
     color: #ffffff;
+    margin-top: 0;
+    margin-bottom: var(--spaceingSmall);
+
+
 }
 
 h2{
@@ -51,30 +57,50 @@ h3{
     font-family: ;
     font-size: ;
     color: #707070;
-}
+    margin-top: 0%;
+    margin-bottom: var(--spaceingMedium);}
 
 p{
     font-family: ;
     font-size: ;
     color: #707070;
 }
+h1,h2,h3{
+    padding-left:var(--spaceingMedium) ;
+}
 
 header{ 
-    width: 100vw;
     display: flex;
+    width: 100vw;
 
 }
 
-.knap{
-    padding: ;
-    border-radius: 25px;
+.button
+{padding: var(--buttonHight) var(--buttonWidth); 
+    font-size:var(--tekstKnapper) ;
+    border-radius: var(--buttonborderradius);
+    border-style: none;
+    filter: brightness(.94);
+    color: #ffffff;
     font-family: ;
-    font-size: ;
-    font-weight: ;
+    font-weight: 400;
+}
+.button--prøv{
+    background:var(--colorBottonSecond);
+}
+
+
+.button--prøv:active{
+filter: drop-shadow(0 0 0.7rem #E9722D);
+
+
     
 }
 .arrow--back{
     font-size: var(--overskrift);
     color:var(--colorElements);
+    padding-left: var(--spaceingMedium);
+    padding-top: var(--spaceingMedium);
+
     
 }
