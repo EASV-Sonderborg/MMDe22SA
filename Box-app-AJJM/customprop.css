@@ -67,12 +67,11 @@ p{
 }
 h1,h2,h3{
 text-align: center;
-}
+} 
 
-header{ 
+.navbar{ 
     display: flex;
     width: 100vw;
-    margin-bottom: 3rem;
 
 }
 
@@ -103,6 +102,7 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
     color:var(--colorElements);
     padding-left: var(--spaceingMedium);
     padding-top: var(--spaceingMedium);
+  
 
 }
 
