@@ -1,14 +1,13 @@
 
 
-.menu {
-  flex-wrap: wrap;
- align-items: flex-end;
- justify-content: end;
-}
+   
+
+
+
 
 
 body {
- 
+
     background-color:#075574 ;
     font-family: 'Roboto', sans-serif;
     
@@ -29,8 +28,9 @@ body {
     height: 100%;
     width: 100%;
 }
-.container h1 {
-    color: white;
+p {
+    color: white
+  
     
 }
 .button__log {
@@ -44,7 +44,7 @@ body {
     
 }
 
-.button__log h1 {
+.button__log p {
 font-size: 2rem;
 color: white;
 position: absolute;
