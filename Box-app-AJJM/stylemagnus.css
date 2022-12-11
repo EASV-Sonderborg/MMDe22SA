@@ -35,12 +35,20 @@ text-align: left;
     display: flex;
     width: 100%;
     justify-content: center;
-    
+    padding: 1rem;
 }
 
-.maps-link{
+.map-link{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
     
 
+}
+
+.map-link__icon{
+    color: black;
+    padding: 0.5rem;
 }
 
 .next-page{

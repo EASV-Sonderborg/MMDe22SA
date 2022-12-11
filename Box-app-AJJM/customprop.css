@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
     /* Farver*/
     --colorBottonMain: #00c608;
@@ -38,7 +40,7 @@ body{
 }
 
 h1{
-    font-family: Robotoslab ;
+    font-family:'Roboto', sans-serif;
     font-size: var(--overskrift);
     color: #ffffff;
     margin-top: 0;
@@ -48,22 +50,23 @@ h1{
 }
 
 h2{
-    font-family: var(--undertekst);
+    font-family: 'Roboto', sans-serif;
     font-size: ;
 
 }
 
 h3{
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
     font-size: ;
-    color: #707070;
-    margin-top: 0%;
+    color: black;
+    margin: 0;
    }
 
 p{
-    font-family: ;
+    font-family: 'Roboto', sans-serif ;
     font-size: ;
-    color: #707070;
+    color: black;
+    margin: 0;
 }
 h1,h2,h3{
 text-align: center;
