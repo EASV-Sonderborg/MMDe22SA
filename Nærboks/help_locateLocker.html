@@ -6,11 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sofie.css">
     <title>Help</title>
 </head>
 <body>
     
+    <article class="help">
+        <section class="help__flex">
+           <h1>Hjælp</h1>
+           <button onclick="history.back()" class="close">X</button>
+        </section>
+
+         <details>
+             <summary class="help__flex">Den vil ikke virke
+                <img class="arrow__right" src="images/right.png" alt="right arrow sign">
+            </summary>
+            <p>Sørg for at bluetooth er tilsluttet og at du står 
+                tæt nok på
+            </p>
+        </details>
+
+        <details>
+            <summary class="help__flex">Boksen lukkede i inden jeg nåede at tage min pakke
+                <img class="arrow__right" src="images/right.png" alt="right arrow sign">
+            </summary>
+            <p>Sørg for at bluetooth er tilsluttet og at du står 
+                tæt nok på
+            </p>
+        </details>
+
+        <details>
+            <summary class="help__flex">Jeg tror ikke dette er akkurat
+                <img class="arrow__right" src="images/right.png" alt="right arrow sign">
+            </summary>
+            <p>Sørg for at bluetooth er tilsluttet og at du står 
+                tæt nok på
+            </p>
+         </details>
+
+        <label class="toggle">
+            <p class="toggle-label">Afspil en lyd, når min telefon 
+                er tæt på boksen</p>
+            <input class="toggle-checkbox" type="checkbox">
+            <div class="toggle-switch"></div>
+        </label>
+
+    </article>
 </body>
 </html>

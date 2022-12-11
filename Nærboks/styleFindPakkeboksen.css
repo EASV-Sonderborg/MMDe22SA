@@ -26,6 +26,8 @@
 
 .buttonSearching {
     margin-top: var(--spaceMedium);
-    display: flex;
-
+    height: 40px;
+    width: 50%;
+    border-radius: 2.5rem;
+    border-color: rgb(156, 216, 100);
 }
