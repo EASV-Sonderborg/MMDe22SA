@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nathalie.css">
-    <title>Afhent</title>
+    <title>Registrer</title>
 </head>
-<body>
+<body class="bodyRegistrer">
 
     <header class="header">
         <nav class="navbar">
@@ -44,20 +42,15 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <h1 class="header__whatPage">Nærboks</h1>
+            <h1 class="header__whatPage">Registrer Pakke</h1>
         </nav>
     </header>
     <!--Menu-->
     
-    <section class="cards">
-        <article class="card card__green">
-            <img class="card__img" src="images/deliveryguy.png" alt="Postbud med pakke">
-            <a href="hent.html"><button class="card__button">Hent</button></a>
-        </article>
-        <article class="card card__red">
-            <img class="card__img" src="images/deliverytruck.png" alt="Postbil">
-            <a href="send.html"><button class="card__button">Send</button></a>
-        </article>
+    <section class="registrer">
+        <a href="send.html"><img class="goBackArrow" src="images/arrow-back.PNG" alt="Gå tilbage pil"></a>
+        <img class="registrer__package" src="images/package-with-label.jpg" alt="Pakke fra kamera">
+        <a class="registrer__number" href="registrer_packagenr.html">Jeg vil hellere indtaste pakke nr.</a>
     </section>
     <script src="main.js"></script>
 </body>
