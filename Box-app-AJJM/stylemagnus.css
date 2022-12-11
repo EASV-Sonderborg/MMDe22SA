@@ -1,2 +1,51 @@
 @import url("customprop.css");
 
+body{
+    padding: var(--spaceingMedium);
+    width: 100vw;
+}
+
+h1{
+text-align: left;
+
+}
+
+h2{
+text-align: left;
+}
+
+h3{
+text-align: left;
+}
+
+.placement-images{
+    
+    
+}
+.placement-images__img1{
+    width: 100%;
+    height: auto;
+}
+.placement-images__img2{
+    width: 100%;
+    height: auto;
+}
+
+.map{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.maps-link{
+    
+
+}
+
+.next-page{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
