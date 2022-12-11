@@ -23,8 +23,9 @@ body {
 
 /*-----Welcome Page ----- */ 
 .buttons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: var(--spacingMedium);
     justify-content: center;
     align-items: center;
@@ -42,8 +43,8 @@ body {
 
 .buttons__opretProfil {
     background-color: var(--colorButtonMain);
-    margin-top: 184px;
     border: none; 
+    grid-area: 5 / 2; 
 
 }
 
@@ -98,3 +99,22 @@ body {
     color: white; 
     font-size: 1.5rem;
 }
+
+.button__sendAktiveringslink {
+    margin-top: 30rem;
+    color: var(--colorElements);
+    background-color: var(--colorButtonMain);
+    font-size: var(--textButton);
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+
+
+
+/* ............................. */ 
+
+
+
