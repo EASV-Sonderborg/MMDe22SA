@@ -16,7 +16,7 @@
 
 .pakkeBoksBillede{
   padding-right: var(--spaceingXSmall);
-  max-width: 88%;
+  max-width: 100%;
   }
 
 
@@ -27,11 +27,6 @@
   flex-direction: column;
   align-items: center;
 }
-img.nummer{
-  max-width: 28vh;
-}
-
-
 
 /** RING SIDE - STARTS HERE :) */
 .pageWrapper--Ring{
