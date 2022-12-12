@@ -183,3 +183,21 @@ label .menu__a {
   align-items: center;
   
 }
+
+.next-site{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  --colorButtonMain: #00c608;
+  --buttonBorderRadius: 25px ;
+  align-items: center;
+}
+
+.afslutknap{  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  --colorButtonMain: #00c608;
+  --buttonBorderRadius: 25px ;
+  align-items: center;}
