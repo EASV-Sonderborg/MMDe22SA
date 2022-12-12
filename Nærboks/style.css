@@ -40,7 +40,7 @@ h1 {
     color: var(--font-color);
     font-family: 'Lato', sans-serif;
     font-size: var(--fontSizeXLarge);
-    margin-bottom: var(--spaceLarge);
+    margin-bottom: var(--spaceSmall);
 }
 
 h2 {
@@ -68,7 +68,6 @@ h6 {
 .button {
     background-color: var(--button-color);
     border-style: 3px solid var(--buttonBorder-color);
-    width: 5rem;
     border-radius: 30px;
 }
 
