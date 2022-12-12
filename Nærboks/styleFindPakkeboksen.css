@@ -25,9 +25,14 @@
 }
 
 .buttonSearching {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonOpen {
     margin-top: var(--spaceMedium);
     height: 40px;
     width: 50%;
     border-radius: 2.5rem;
-    border-color: rgb(156, 216, 100);
+    border-color: #9CD877;
 }
