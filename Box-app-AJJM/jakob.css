@@ -184,5 +184,6 @@ label .menu__a {
   justify-content: center;
   justify-items: end;
   --colorButtonMain: #00c608;
+  --buttonBorderRadius: 25px ;
   
 }
