@@ -24,7 +24,7 @@
     --spaceingXSmall: var(--spaceingMedium*0.5) ;
     --spaceingSmall: var(--spaceingMedium*0.8) ;
     --spaceingMedium: 1rem ;
-    --spaceingLarge: var(--spaceingMedium*1.4) ;
+    --spaceingLarge:calc(var(--spaceingMedium*1.4) ) ;
     --spaceingXLarge: var(--spaceingMedium*2) ;
     --spaceingXXLarge: var(--spaceingMedium*4) ;
    
