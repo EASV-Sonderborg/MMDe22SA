@@ -45,7 +45,7 @@ justify-content: center;
   margin-top: 2rem;
  }
 
- 
+
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
 .loader {
@@ -277,6 +277,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   overflow-x: hidden;
+  font-family: roboto;
 }
 span.menu{
   margin-right: 1rem;
@@ -328,7 +329,7 @@ label .hamburger:before { top: -10px; }
 label .hamburger:after { bottom: -10px; }
 
 label input { display: none; }
-/** menu field expand after */
+/** menu field expands after */
 label input:checked + .menu {
   box-shadow: 0 0 0 100vw #fa6900, 0 0 0 100vh #fa6900;
   border-radius: 0;
@@ -375,6 +376,7 @@ label .menu__a {
   color: #fff; /** menu a color */
   text-decoration: none;
   border-style: solid;
+  border-width: .5px;
   
 }
 
@@ -443,4 +445,3 @@ label .menu__a {
       text-shadow: 0 0 10em #F24C81;
     }
   }
-}
