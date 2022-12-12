@@ -171,7 +171,6 @@ label .menu__a {
 }
 
 
-
 .menu__a{
   padding: .3rem 3.5rem;
   background-repeat: initial;
@@ -184,6 +183,6 @@ label .menu__a {
   width: 100%;
   justify-content: center;
   justify-items: end;
-  color: green;
+  --colorButtonMain: #00c608;
   
 }
