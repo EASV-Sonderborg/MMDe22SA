@@ -1,10 +1,10 @@
 @import url("customprop.css");
 
 .container{
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -14,25 +14,38 @@
   height: 100vh;
   width: 100vw;
 }
-.pageWrapper{
+main{
 display: flex;
 flex-direction: column;
 align-items: center;
 overflow-y: scroll;
+margin-bottom: 0%;
 }
+
 
 nav{
-  height: 80px;
-  margin-bottom: 1.5rem;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: 100%;
+
 }
 
+.footer{display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.abnLåge{
+  margin-top:2rem ;
+}
 .mainOpratterForbindelse{
+  display: grid;
+  grid-template-columns: 25% 30% 45% ;
   margin-top: 2rem;
-}
+ }
 
-
-
+ 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
 .loader {
@@ -88,11 +101,7 @@ nav{
     }
      /** ANIMATION ENDS */
 
-    .mainOpratterForbindelse{
-     display: grid;
-     grid-template-columns: 25% 30% 45% ;
-    }
-
+  
   .mobileBillede{
       max-width:120%;
       align-self: center;
@@ -201,11 +210,11 @@ nav{
 
 /** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
 img.nummer{
-  margin: top 3rem;
-  max-width: 28vh;
+  margin-top: .75rem;
+max-width: 22vh;
 }
 
-  /** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
+/** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
 
 
 /** RING SIDE - STARTS HERE :) */
@@ -379,28 +388,6 @@ label .menu__a {
 }
 
 
-
-/** in case I need 
-.frontPageOverskrift {
-  font-size: 2.5rem;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
-}
-p.frontPageUnderskrift{
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 80%;
-}*/
-
 .frontpageBillede{
   max-width: 95%;
   position: absolute;
@@ -410,4 +397,50 @@ p.frontPageUnderskrift{
 
  }
 
+ /**  Åbn LÅGE KNAP  - START HERE  */
+/**  ANIMATION  BUTTON   */
+
+
+.loader--åbnKnap{
+  line-height: 150px;
+  margin: 100px auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: x-large;
+  font-family: Roboto;
+  z-index: 0;
+  text-transform: uppercase;
+  color:#fff;
+  background-color:#00C608;
+  height: 150px;  
+  width: 150px;
+  border-radius: 50%;}
+
+.loader--åbnKnap:before,
+.loader-åbnKnap:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content: "\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 3px solid#fff;
+  box-shadow: 0 0 50px #FFFFFF, inset 0 0 50px #fff;
  
+}
+ .loader--åbnKnap:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;}
+
+  .loader--åbnKnap @keyframes shadoww {
+    0% {
+      text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
+    } 100% {
+      text-shadow: 0 0 10em #F24C81;
+    }
+  }
+}
