@@ -132,6 +132,7 @@ body {
 }
 span.menu{
   margin-right: 1rem;
+  
 }
 
 label .menu {
@@ -148,6 +149,8 @@ label .menu {
   box-shadow: 0 0 0 0 #fa6900, 0 0 0 0 #fa6900;
   cursor: pointer;
   
+  
+  
 }
 
 label .hamburger {
@@ -158,6 +161,7 @@ label .hamburger {
   height: 2px;
   background: #fff; /** middle block menu */
   display: block;
+  
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-transition: .5s ease-in-out;
@@ -219,6 +223,7 @@ label ul {
   opacity: 0;
   -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
+  list-style: none;
 }
 
 label .menu__a {
@@ -227,6 +232,9 @@ label .menu__a {
   color: #fff; /** menu a color */
   text-decoration: none;
   border-style: solid;
+  font-family:'Roboto', sans-serif ;
+  font-size: var(--tekstKnapper);
+  
   
 }
 
@@ -235,6 +243,7 @@ label .menu__a {
   background-repeat: initial;
   border-radius: 10px;
   margin-bottom: 1rem;
+  
 }
 
 .frontpageBillede{
