@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jakob.css">
+    <title>Denne låge åbner</title>
+</head>
+
+<body>
+     <header> 
+        <section >
+            <a href="Start-Side.html">
+                <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon></a>
+        </section>
+
+        <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li> <a class="menu__a" href="OpretterForbindelse.html">Hent pakke</a> </li>
+              <li> <a  class="menu__a" href="#">Send pakke</a> </li>
+              <li> <a class="menu__a" href="#"> Hvor er min pakkeboks</a> </li>
+              <li> <a  class="menu__a" href="#">Min konto</a> </li>
+              <li> <a class="menu__a" href="Ring.html">Kontakt</a> </li>
+              <li> <a class="menu__a" href="#"> Anmeldelser</a> </li>
+            </ul>
+        </label>
+        </header>
+        
+ 
+    <script>
+        setTimeout(function(){
+            window.location.href = 'lukboksen.html';
+        }, 8000);
+    </script>
+
+
+
+    <section class="pageWrapper">
+        <h1 class="dennelågeskrift" > Denne låge vil åbne </h1>
+   
+        <main class="HvilkenBoks">
+            <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
+        </main>
+    </section>
+
+    <section class="openbox">
+        <button class="button"><a href="lukboksen.html"></a>Åben låge</button>
+    </section>
+</body>
+
+</html>
