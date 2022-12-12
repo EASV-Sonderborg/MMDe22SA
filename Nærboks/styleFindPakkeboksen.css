@@ -33,8 +33,8 @@
 
 .buttonOpen {
     margin-top: var(--spaceMedium);
-    height: 40px;
-    width: 50%;
+    height: 50px;
+    width: 90%;
     border-radius: 2.5rem;
     border-color: #9CD877;
 }
