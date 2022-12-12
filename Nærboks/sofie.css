@@ -92,11 +92,12 @@
 details > summary {
     list-style: none;
   }
+
   details > summary::-webkit-details-marker {
     display: none;
   }
 
-  summary {
+summary {
     margin-bottom: var(--spaceXSmall);
     color: var(--font-color);
     font-family: 'Lato', sans-serif;
@@ -104,7 +105,7 @@ details > summary {
   }
 
   /* toggle */
-  .toggle {
+.toggle {
     cursor: pointer;
     display: inline-block;
     display: flex;
@@ -161,4 +162,90 @@ details > summary {
     position: relative;
     top: 2px;
     font-weight: 900;
+}
+
+/* Opening Locker */
+.located__locker {
+    margin-bottom: var(--spaceLarge);
+}
+.located__locker--header {
+    margin-bottom: var(--spaceSmall);
+}
+
+.opening__locker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spaceSmall);
+    margin-bottom: var(--spaceLarge);
+}
+
+.opening__locker--small {
+    width: 170px;
+    height: 40px;
+    background-color: var(--package-box);
+}
+.opening__locker--medium {
+    width: 100%;
+    height: 100px;
+    background-color: var(--package-box);
+}
+
+.opening__locker--large{
+    grid-row-start: 4;
+    width: 100%;
+    height: 160px;
+    background-color: var(--package-box);
+}
+
+.opening__locker--largeBlue {
+    width: 100%;
+    height: 160px;
+    background-color: #8ABBD4;
+    animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+
+    }
+      15% {
+        transform: rotateZ(-15deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      20% {
+        transform: rotateZ(10deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      30% {
+        transform: rotateZ(6deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+} 
+
+.opening__lockerButton--link {
+    background-color: #8ABBD4;
+    text-decoration: none;
+    color: var(--font-color);
+    border: 3px solid var(--buttonBorder-color);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 9rem;
+    height: 2.5rem;
 }
