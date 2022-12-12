@@ -1,14 +1,13 @@
 
 
-.menu {
-  flex-wrap: wrap;
- align-items: flex-end;
- justify-content: end;
-}
+   
+
+
+
 
 
 body {
- 
+
     background-color:#075574 ;
     font-family: 'Roboto', sans-serif;
     
@@ -24,17 +23,39 @@ body {
     margin: 10%;
     align-items: center;
     grid-area: 20%;
-    
 }
 .container img {
     height: 100%;
     width: 100%;
 }
-.container1 h1 {
-font-size: 3rem;
+p {
+    color: white
+  
+    
+}
+.button__log {
+ 
+    width:30%; 
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+  
+    
+}
+
+.button__log p {
+font-size: 2rem;
 color: white;
 position: absolute;
+text-align: center;
+justify-content: center;
 top: 50%;
 left: 50%;
+transform: translate(-50%, -50%);
 
+}
+.button__log img {
+    height: 100%;
+    width: 100%;
 }
