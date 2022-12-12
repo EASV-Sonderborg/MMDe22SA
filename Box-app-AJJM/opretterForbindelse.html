@@ -10,12 +10,11 @@
 </head>
 
 <body>
-     <header> 
-        <section >
-            <a href="Start-Side.html">
-                <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon></a>
-        </section>
-
+<section class="container" >
+    <nav>
+        <a href="Start-Side.html">
+            <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
+        </a>
         <label>
             <input type="checkbox">
             <span class="menu"> <span class="hamburger"></span> </span>
@@ -28,30 +27,28 @@
               <li> <a class="menu__a" href="#"> Anmeldelser</a> </li>
             </ul>
         </label>
-        </header>
-        
- 
+    </nav>
+
+    <main class="pageWrapper">
+        <h1>Opretter forbindelse</h1>
+        <h3 class="forbindelseUnderskrift" > Det kan tage et par sekunder... </h3>
+   
+        <section class="mainOpratterForbindelse">
+            <img class="mobileBillede" src="imgs/handy.png" alt="mobile billede">
+            <div class="loader">Søger</div>
+            <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
+        </section>
+    </main>
+
     <script>
         setTimeout(function(){
             window.location.href = 'Forbindelse-Etableret.html';
         }, 5000);
     </script>
 
-
-    <section class="pageWrapper">
-       
-        <h1>Opretter forbindelse</h1>
-        <h3 class="forbindelseUnderskrift" > Det kan tage et par sekunder... </h3>
-   
-        <main class="mainOpratterForbindelse">
-            <img class="mobileBillede" src="imgs/handy.png" alt="mobile billede">
-            <div class="loader">Søger</div>
-            <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
-        </main>
-
-    </section>
-
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</section>
+    
 </body>
 
 </html>

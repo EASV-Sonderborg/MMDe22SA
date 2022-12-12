@@ -1,10 +1,35 @@
 @import url("customprop.css");
 
-.pageWrapper{display: flex;
-flex-direction: column;
-align-items: center;
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
 }
 
+.startSide{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.pageWrapper{
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: scroll;
+}
+
+nav{
+  height: 80px;
+  margin-bottom: 1.5rem;
+  justify-content: flex-start;
+}
+
+.mainOpratterForbindelse{
+  margin-top: 2rem;
+}
 
 
 
@@ -63,12 +88,9 @@ align-items: center;
     }
      /** ANIMATION ENDS */
 
-     .pageWrapper{
-      height: 100vh;
-     }
-     .mainOpratterForbindelse{
-    display: grid;
-    grid-template-columns: 25% 30% 45% ;
+    .mainOpratterForbindelse{
+     display: grid;
+     grid-template-columns: 25% 30% 45% ;
     }
 
   .mobileBillede{
@@ -123,7 +145,7 @@ align-items: center;
       -webkit-animation: gogoloader 2s infinite;
     }
 
-/**  FORBINDELSENS FEJL ENDS HERE !!!  */
+/**  FORBINDELSENS FEJL1 ENDS HERE !!!  */
 
 /**  FORBINDELSEN ETABLERET START :)  */
 .loader--connected {
@@ -178,24 +200,17 @@ align-items: center;
 
 
 /** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
-
-.pageWrapper--boksNummer{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 img.nummer{
+  margin: top 3rem;
   max-width: 28vh;
 }
 
-
-
-  /** FORBINDELSEN FEJL SIDE ENDS HERE!!! */  
+  /** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
 
 
 /** RING SIDE - STARTS HERE :) */
 .pageWrapper--Ring{
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,6 +218,8 @@ img.nummer{
 }
 img.support{
 max-width: 15vh;
+margin-top: 3.5rem;
+margin-bottom:1rem;
 }
 
 
@@ -241,9 +258,7 @@ max-width: 15vh;
 }
     
 /**  MENU SIDE  START HERE:)  ------------------------------------ */
-.pageWrapper{
-  height: 100vh;
- }
+
 *, *:before, *:after 
 { box-sizing: border-box; }
 

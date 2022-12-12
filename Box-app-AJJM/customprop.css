@@ -14,7 +14,7 @@
     --buttonHight:1rem;
 
    /* Text mod */    
-   --overskrift: 2rem;
+   --overskrift: 1.75rem;
    --undertekst:var(--overskrift*0.75);
    --tekstKnapper:var(--overskrift*0.875);
    --klikbarTekst:var(--overskrift*0.5);
@@ -68,6 +68,7 @@ p{
     color: black;
     margin: 0;
 }
+
 h1,h2,h3{
 text-align: center;
 } 
@@ -77,6 +78,7 @@ text-align: center;
     width: 100vw;
 
 }
+
 
 .button
 {padding: var(--buttonHight) var(--buttonWidth); 
@@ -89,6 +91,8 @@ text-align: center;
     font-weight: ;
     text-align: center;
     background-color: var(--colorBottonMain);
+    margin-bottom: var(--spaceingMedium);
+
 
 }
 .button--prøv{
@@ -106,7 +110,6 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
     color:var(--colorElements);
     padding-left: var(--spaceingMedium);
     padding-top: var(--spaceingMedium);
-  
 
 }
 
