@@ -1,10 +1,12 @@
-@import url("customprop.css");
+@import url(customprop.css);
 
-
+h1{
+  font-size: 1.5rem;
+}
 
 body{
   margin: 0;
-  padding: var(--spacingMedium);
+  padding: 1rem;
   box-sizing: border-box;
 
  }
@@ -28,6 +30,7 @@ flex-direction: column;
 align-items: center;
 overflow-y: scroll;
 margin-bottom: 0%;
+flex-grow: 1;
 }
 
 
@@ -111,13 +114,13 @@ justify-content: center;
 
   
   .mobileBillede{
-      max-width:120%;
+      max-width:100%;
       align-self: center;
      }
 
      .pakkeBoksBillede{
       padding-right: var(--spaceingXSmall);
-      max-width: 88%;
+      max-width: 70%;
      }
 
 
@@ -209,7 +212,7 @@ justify-content: center;
     /** FLYT DIG STARTS HERE :) */
     
     .lilleMenneske{
-    max-width: 120%;
+    max-width: 100%;
     align-self: center;
   }
 
@@ -219,7 +222,8 @@ justify-content: center;
 /** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
 img.nummer{
   margin-top: .75rem;
-max-width: 22vh;
+  max-width: 22vh;
+
 }
 
 /** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
@@ -278,14 +282,12 @@ margin-bottom:1rem;
 
 
 span.menu{
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 label .menu { /**   circle orange */
   position: absolute;
   margin-top:10px;
-  margin-right:10px;
-  right: 0px;
   top: 0px;
   z-index: 100;
   width: 55px;
@@ -392,7 +394,7 @@ label .menu__a {
 
 
 .frontpageBillede{
-  max-width:90%;
+  max-width:80%;
   position: absolute;
   top: 30%;
  }
@@ -439,7 +441,8 @@ label .menu__a {
   .loader--åbnKnap @keyframes shadoww {
     0% {
       text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
-    } 100% {
+    } 100% 
+    {
       text-shadow: 0 0 10em #F24C81;
     }
   }

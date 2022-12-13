@@ -15,19 +15,21 @@
 
    /* Text mod */    
    --overskrift: 1.75rem;
-   --undertekst:var(--overskrift*0.75);
-   --tekstKnapper:var(--overskrift*0.875);
-   --klikbarTekst:var(--overskrift*0.5);
+   --undertekst:calc(var(--overskrift)*0.75);
+   --tekstKnapper:calc(var(--overskrift)*0.875);
+   --klikbarTekst:calc(var(--overskrift)*0.5);
+   
 
 
    /* spacing */
-    --spacingXSmall: var(--spacingMedium*0.5) ;
-    --spacingSmall: var(--spacingMedium*0.8) ;
     --spacingMedium: 1rem ;
-    --spacingLarge:calc(var(--spacingMedium*1.4) ) ;
-    --spacingXLarge: var(--spacingMedium*2) ;
-    --spacingXXLarge: var(--spacingMedium*4) ;
+    --spacingXSmall:calc(var(--spacingMedium)*0.5);
+    --spacingSmall:calc(var(--spacingMedium)*0.8);
+    --spacingLarge:calc(var(--spacingMedium)*1.4);
+    --spacingXLarge:calc(var(--spacingMedium)*2);
+    --spacingXXLarge:calc(var(--spacingMedium)*4);
    
+  
 
 }
 
@@ -122,7 +124,7 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
 
 
 span.menu{
-  margin-right: 0;
+  margin-right:10;
 }
 
 label .menu { /**   circle orange */
