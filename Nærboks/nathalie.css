@@ -521,7 +521,6 @@ a {
 }
 .chooseLocker__button {
     background-color: white;
-    border: none;
     padding: 8px 64px;
     text-decoration: none;
     display: inline-block;
@@ -568,4 +567,47 @@ a {
     justify-self: end;
     grid-column-start: 2;
     grid-row-start: 3;
+}
+
+.lockerImg {
+    max-width: 95%;
+    display: block;
+    margin: auto;
+}
+.lockerOpen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lockerOpen__help {
+    max-width: 15%;
+}
+.lockerOpen__button {
+    background-color: white;
+    padding: 8px 64px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    color: var(--font-color);
+    font-size: var(--fontSizeLarge);
+    margin-top: var(--spaceMedium);
+    margin-bottom: var(--spaceMedium);
+    border: solid #CFE5E2 2px;
+}
+.lockerOpen__button:hover {
+    background-color: var(--buttonHover-color);
+}
+.lockerOpend {
+    background-color: #e2e2e2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20rem;
+    padding: .5rem;
+}
+.lockerOpend__info {
+    max-width: 25%;
+}
+.lockerOpend__infoText {
+    font-size: var(--fontSizeLarge);
 }
