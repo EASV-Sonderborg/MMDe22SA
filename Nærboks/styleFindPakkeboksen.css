@@ -1,3 +1,5 @@
+/* Find you packagebox */
+
 .youPackageBox_header {
     font-size: var(--fontSizeXLarge);
     margin-bottom: var(--spaceLarge);
@@ -22,12 +24,18 @@
 
 .imageSlider_img {
     width: 100%;
+    height: 100%;
 }
 
 .buttonSearching {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonOpen {
     margin-top: var(--spaceMedium);
-    height: 40px;
-    width: 50%;
+    height: 50px;
+    width: 90%;
     border-radius: 2.5rem;
-    border-color: rgb(156, 216, 100);
+    border-color: #9CD877;
 }
