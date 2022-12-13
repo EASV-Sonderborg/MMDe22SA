@@ -51,20 +51,18 @@ h1{
 
 h2{
     font-family: 'Roboto', sans-serif;
-    font-size: ;
-
+   
 }
 
 h3{
     font-family: 'Roboto', sans-serif;
-    font-size: ;
+    
     color: black;
     margin: 0;
    }
 
 p{
     font-family: 'Roboto', sans-serif ;
-    font-size: ;
     color: black;
     margin: 0;
 }
@@ -89,8 +87,6 @@ nav{
     border-style: none;
     filter: brightness(.94);
     color: #ffffff;
-    font-family: ;
-    font-weight: ;
     text-align: center;
     background-color: var(--colorButtonMain);
     margin-bottom: var(--spacingMedium);
