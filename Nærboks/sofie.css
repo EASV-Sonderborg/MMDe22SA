@@ -262,6 +262,22 @@ summary {
 .yay__youGotIt__image {
     width: 100%;
     margin-top: 15rem;
+    animation: jump 1s linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-1rem);
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: translateY(.5);
+        transform: rotateZ(15deg);
+    }
+    100% {
+        transform: translateY(1rem);
+        transform: rotateZ(0);
+    }
 }
 
 .info {
@@ -273,6 +289,7 @@ summary {
     padding: var(--spaceMedium);
     width: 40%;
     gap: .5rem;
+
 }
 
 .info__image {
@@ -283,4 +300,38 @@ summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* - - - - - - - - Rate us - - - - - - - -   */
+form {
+    margin: 0;
+}
+
+.rate {
+    height: 100vh;
+}
+
+.rate__us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75%;
+}
+
+.rate__us--button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rate__us--smallText {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: var(--spaceSmall);
+}
+
+.rate__box
+.rate__box--img {
+    width: 44px;
 }
