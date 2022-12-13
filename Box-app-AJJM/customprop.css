@@ -14,7 +14,7 @@
     --buttonHight:1rem;
 
    /* Text mod */    
-   --overskrift: 1.75rem;
+   --overskrift:1.75rem;
    --underTekst:calc(var(--overskrift)*0.75);
    --tekstKnapper:calc(var(--overskrift)*0.875);
    --klikbarTekst:calc(var(--overskrift)*0.5);
@@ -22,13 +22,12 @@
 
 
    /* spacing */
-    --spacingMedium: 1rem ;
+    --spacingMedium:1rem ;
     --spacingXSmall:calc(var(--spacingMedium)*0.5);
     --spacingSmall:calc(var(--spacingMedium)*0.8);
     --spacingLarge:calc(var(--spacingMedium)*1.4);
     --spacingXLarge:calc(var(--spacingMedium)*2);
-    --spacingXXLarge:calc(var(--spacingMedium)*4);
-
+    --spacingXXLarge:calc(var(--spacingMedium)*3);
   }
 
 
