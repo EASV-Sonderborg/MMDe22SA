@@ -15,7 +15,7 @@
 
    /* Text mod */    
    --overskrift: 1.75rem;
-   --undertekst:calc(var(--overskrift)*0.75);
+   --underTekst:calc(var(--overskrift)*0.75);
    --tekstKnapper:calc(var(--overskrift)*0.875);
    --klikbarTekst:calc(var(--overskrift)*0.5);
    
@@ -28,7 +28,7 @@
     --spacingLarge:calc(var(--spacingMedium)*1.4);
     --spacingXLarge:calc(var(--spacingMedium)*2);
     --spacingXXLarge:calc(var(--spacingMedium)*4);
-  
+
   }
 
 
