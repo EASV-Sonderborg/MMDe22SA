@@ -1,0 +1,447 @@
+@import url("customprop.css");
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startSide{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+overflow-y: scroll;
+margin-bottom: 0%;
+}
+
+
+nav{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  width: 100%;
+
+}
+
+.footer{display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.abnLåge{
+  margin-top:2rem ;
+}
+.mainOpratterForbindelse{
+  display: grid;
+  grid-template-columns: 25% 30% 45% ;
+  margin-top: 2rem;
+ }
+
+
+/**   OPRETTER FORBINDELSE STARTS HERE  */
+/**  ANIMATION STARTS  */
+.loader {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color: aliceblue;
+    }
+    
+    .loader:before,
+    .loader:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 5px solid rgb(30, 183, 210);
+      box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
+    }
+    
+    .loader:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+    
+    @-webkit-keyframes gogoloader {
+      0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+      }
+    }
+     /** ANIMATION ENDS */
+
+  
+  .mobileBillede{
+      max-width:120%;
+      align-self: center;
+     }
+
+     .pakkeBoksBillede{
+      padding-right: var(--spaceingXSmall);
+      max-width: 88%;
+     }
+
+
+   
+/**  FORBINDELSE FEJL 1  STARTS HERE */
+
+.loader--fejl {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color:rgb(239, 66, 66);;
+    }
+    
+    .loader--fejl:before,
+    .loader-fejl:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(239, 66, 66);
+      box-shadow: 0 0 50px rgb(223, 137, 137), inset 0 0 50px rgb(250, 79, 79);
+    }
+    
+    .loader--fejl:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--fejl:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+
+/**  FORBINDELSENS FEJL1 ENDS HERE !!!  */
+
+/**  FORBINDELSEN ETABLERET START :)  */
+.loader--connected {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color:white;
+    }
+    
+    .loader--connected:before,
+    .loader--connected:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(9, 186, 50);;
+      box-shadow: 0 0 50px rgb(57, 165, 24), inset 0 0 50px rgb(77, 198, 36);
+    }
+    
+    .loader--connected:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--connected:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+
+    /** FORRBINDELSEN SIDE ENDS HERE!!!  */
+
+
+    /** FLYT DIG STARTS HERE :) */
+    
+    .lilleMenneske{
+    max-width: 120%;
+    align-self: center;
+  }
+
+    /** FLYT DIG  SIDE ENDS  HERE!!! */
+
+
+/** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
+img.nummer{
+  margin-top: .75rem;
+max-width: 22vh;
+}
+
+/** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
+
+
+/** RING SIDE - STARTS HERE :) */
+.pageWrapper--Ring{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+img.support{
+max-width: 15vh;
+margin-top: 3.5rem;
+margin-bottom:1rem;
+}
+
+
+.button--telefon{
+  display: inline-block;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  outline: 0;
+  padding: 12px 48px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  touch-action: manipulation;
+
+  padding: var(--buttonHight) var(--buttonWidth); 
+  font-size:var(--tekstKnapper) ;
+  border-radius: var(--buttonborderradius);
+}
+
+.button--telefon:hover,
+.button--telefon:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button--telefon:active {
+  opacity: .5;
+}
+    
+/**  MENU SIDE  START HERE:)  ------------------------------------ */
+
+*, *:before, *:after 
+{ box-sizing: border-box; }
+
+
+body {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-family: roboto;
+}
+span.menu{
+  margin-right: 1rem;
+}
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #fa6900; /**  menu bakground piece*/
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #fa6900, 0 0 0 0 #fa6900;
+  cursor: pointer;
+  
+}
+
+label .hamburger {
+  position: absolute;
+  top: 140px;
+  left: 70px;
+  width: 30px;
+  height: 2px;
+  background: #fff; /** middle block menu */
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff; /** two top&bottom menu blocks */
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+/** menu field expands after */
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #fa6900, 0 0 0 100vh #fa6900;
+  border-radius: 0;
+  
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+  
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+  
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 35%;
+  left: 50%; /**   */
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label .menu__a {
+  margin-bottom: 1rem;
+  display: block;
+  color: #fff; /** menu a color */
+  text-decoration: none;
+  border-style: solid;
+  border-width: .5px;
+  
+}
+
+
+
+.menu__a{
+  padding: .3rem 3.5rem;
+  background-repeat: initial;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.frontpageBillede{
+  max-width: 95%;
+  position: absolute;
+  top: 30%;
+  margin-left: .5rem;
+
+
+ }
+
+ /**  Åbn LÅGE KNAP  - START HERE  */
+/**  ANIMATION  BUTTON   */
+
+
+.loader--åbnKnap{
+  line-height: 150px;
+  margin: 100px auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: x-large;
+  font-family: Roboto;
+  z-index: 0;
+  text-transform: uppercase;
+  color:#fff;
+  background-color:#00C608;
+  height: 150px;  
+  width: 150px;
+  border-radius: 50%;}
+
+.loader--åbnKnap:before,
+.loader-åbnKnap:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content: "\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 3px solid#fff;
+  box-shadow: 0 0 50px #FFFFFF, inset 0 0 50px #fff;
+ 
+}
+ .loader--åbnKnap:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;}
+
+  .loader--åbnKnap @keyframes shadoww {
+    0% {
+      text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
+    } 100% {
+      text-shadow: 0 0 10em #F24C81;
+    }
+  }

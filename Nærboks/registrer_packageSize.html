@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nathalie.css">
-    <title>Send</title>
+    <title>Størrelse</title>
 </head>
-<body class="bodySend">
-
+<body>
     <header class="header">
         <nav class="navbar">
             <ul class="nav-menu">
@@ -42,22 +41,25 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <h1 class="header__whatPage">Send Pakke</h1>
+            <h1 class="header__whatPage">Pakke Størrelse</h1>
         </nav>
     </header>
     <!--Menu-->
     
-        <section class="goToPickup__button">
-            <a href="hent.html"><img class="goToPickup__img" src="images/deliveryguy.png" alt="Postbud med en pakke"></a>
+    <section class="registrer">
+        <a href="registrer_barcode.html"><img class="goBackArrow" src="images/arrow-back.PNG" alt="Gå tilbage pil"></a>
+        <section class="registrer__whiteBackground">
+            <img class="registrer__sizeImg" src="images/box-size-info.PNG" alt="">
+            <label class="registrer__sizeLabel" for="number">Bredte i m.m.:</label>
+            <input class="registrer__sizeInput" type="number" id="number" name="number">
+            <label class="registrer__sizeLabel" for="number">Dybde i m.m.:</label>
+            <input class="registrer__sizeInput" type="number" id="number" name="number">
+            <label class="registrer__sizeLabel" for="number">Højde i m.m.:</label>
+            <input class="registrer__sizeInput" type="number" id="number" name="number">
         </section>
-    <main class="sendPackage">
-        <img class="sendPackage__truck" src="images/deliverytruck.png" alt="Postbil">
-        <h2 class="sendPackage__header">Send pakker</h2>
-        <a href="registrer_barcode.html"><button class="sendPackage__startButton">Start</button></a>
-        <a class="sendPackage__link" href="#">Se historik</a>
-        <a class="sendPackage__link" href="registrer_send.html">Aflever registret pakke</a>
-    </main>
-    
+        <a class="baxSize__buttonNext" href="registrer_packageBox.html"><button class="baxSize__button">Vælg pakkeboks</button></a>
+        <a class="baxSize__buttonNext" href="registrer_choosePackageSize.html"><button class="baxSize__button">Rum størrelser</button></a>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleJulia.css">
+    <title>Opretter-Forbindelse</title>
+</head>
+
+<body>
+<section class="container" >
+    <nav>
+        <a href="Start-Side.html">
+            <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
+        </a>
+        <label>
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul>
+              <li> <a class="menu__a" href="OpretterForbindelse.html">Hent pakke</a> </li>
+              <li> <a  class="menu__a" href="#">Send pakke</a> </li>
+              <li> <a class="menu__a" href="#"> Hvor er min pakkeboks?</a> </li>
+              <li> <a  class="menu__a" href="#">Min konto</a> </li>
+              <li> <a class="menu__a" href="#">Notifikationer</a> </li>
+              <li> <a class="menu__a" href="Ring.html">Kontakt</a> </li>
+              <li> <a class="menu__a" href="#"> Anmeldelser</a> </li>
+            </ul>
+        </label>
+    </nav>
+
+    <main>
+        <h1>Opretter forbindelse</h1>
+        <h3 class="forbindelseUnderskrift" > Det kan tage et par sekunder... </h3>
+   
+        <section class="mainOpratterForbindelse">
+            <img class="mobileBillede" src="imgs/handy.png" alt="mobile billede">
+            <div class="loader">Søger</div>
+            <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
+        </section>
+    </main>
+
+    <script>
+        setTimeout(function(){
+            window.location.href = 'Forbindelse-Etableret.html';
+        }, 5000);
+    </script>
+
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</section>
+    
+</body>
+
+</html>

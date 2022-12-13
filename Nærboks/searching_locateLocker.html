@@ -11,18 +11,22 @@
     <link rel="stylesheet" href="sofie.css">
     <title>Søger...</title>
 </head>
-<body class="center_alignment">
-    <h1 class="searchingForPackage__header">Hent din pakke fra 
-        Nærboks Lidl, Sønderborg</h1>
+<body>
+    <article class="searchingForPackage">
+        <h1>Hent din pakke fra Nærboks Lidl</h1>
 
-    <section class="loading__circles fade">
-        <section class="loading_circlesMiddle fade">
-            <section class="loading__circlesMain">
-                <h2>Søger...</h2>
+            <section>
+                <section class="loading__circles animation"></section>
+                <h2 class="searchingForPackage__subheader">Søger efter pakke...</h2>
             </section>
-        </section>
-    </section>
 
-    <!-- <img class="help" src="images/help.png" alt="circle with a question mark; help"> -->
+            <section class="searchingForPackage__bottom">
+                <a class="help__question" href="help_locateLocker.html">
+                    <img class="help__questionImage" src="images/help.png" alt="round pink circle with a help question sign"></a>
+                    <form action="open_locateLocker.html">
+                        <button class="button button--link" type="submit" value="Go to...">Success gå videre</button>
+                    </form>
+            </section>
+    </article>
 </body>
 </html>

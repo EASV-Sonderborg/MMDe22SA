@@ -1,0 +1,61 @@
+
+
+   
+
+
+
+
+
+body {
+
+    background-color:#075574 ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.logo {align-items: center;
+      size: 10px;
+
+ }
+   
+
+.container  {width: 50%;
+            height: 50%;
+    margin: 10%;
+    align-items: center;
+    grid-area: 20%;
+}
+.container img {
+    height: 100%;
+    width: 100%;
+}
+p {
+    color: white
+  
+    
+}
+.button__log {
+ 
+    width:30%; 
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+  
+    
+}
+
+.button__log p {
+font-size: 2rem;
+color: white;
+position: absolute;
+text-align: center;
+justify-content: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.button__log img {
+    height: 100%;
+    width: 100%;
+}

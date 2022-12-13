@@ -1,0 +1,170 @@
+@import url(style.css); 
+
+.logo {
+    width: 90vw;
+    height: 54px;
+    padding-top: 6rem;
+}
+
+body {
+    padding: 1rem;
+}
+
+
+.overskrift {
+    font-family: Roboto Slab;
+    font-weight: bold;
+    color: var(--colorElements);
+    text-align: center;
+    margin-top: 5rem;
+    
+    
+
+}
+
+
+
+/*-----Welcome Page ----- */ 
+.buttons {
+   text-align: center;
+
+   
+
+
+    
+}
+
+.buttonMain {
+    color: var(--colorElements);
+    border-radius: var(--buttonBorderRadius);
+    font-size: var(--overskrift);
+    font-weight: bold;
+    width: 323px;
+    height: 72px;
+    
+}
+
+.buttons__opretProfil {
+    background-color: var(--colorButtonMain);
+    border: none; 
+    margin-top: 10rem; 
+    margin-bottom: 1rem;
+    
+ 
+   
+
+}
+
+.buttons__logPaa {
+    background-color: #83C5F0;
+    border: 1px solid black;
+}
+
+
+
+
+/* ----- Opret Profil ----- */ 
+
+.inputFelt__indhold {
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 323px;
+    height: 50px;
+    font-family: Roboto Slab;
+    font-size: 1rem;
+    
+
+}
+
+.inputFelt {
+    display: grid;
+    
+    
+}
+
+.inputFelt__overskrift {
+    margin-top: 4rem;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.nbBetingelser {
+    margin-top: 1.5rem;
+}
+
+.oprettelse__radioButton {
+    margin: 0;
+    font-family:;
+    
+}
+
+.oprettelse__label {
+    font-family: Roboto Slab;
+
+}
+
+.oprettelse__aktiveringslinkInformation {
+    font-family: Roboto Slab;
+  
+}
+
+.overskrift__opretProfil {
+    margin-top: 5rem;
+}
+
+.arrow {
+    color: white; 
+    font-size: 1.5rem;
+}
+
+.button__sendAktiveringslink {
+    margin-top: 22rem;
+    color: var(--colorElements);
+    background-color: var(--colorButtonMain);
+    font-size: var(--textButton);
+    align-content: center;
+    justify-content: center;
+
+}
+
+.button__aktiveringslink {
+    text-align: center;
+}
+
+
+
+
+
+/* ............................. */ 
+
+
+
+/* ----- LOG PÅ ----- */ 
+
+.pinkode {
+   display: flex;
+   gap: .5rem;
+   justify-content: center;
+}
+
+.login {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.pinkode__square {
+    width: 50px;
+    height: 50px;
+}
+
+.undertekst {
+    font-size: var(--undertekst);
+    text-align: center;
+}
+
+img {
+    margin-top: 8rem;
+}
+
+
