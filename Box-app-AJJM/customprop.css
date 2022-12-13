@@ -21,12 +21,12 @@
 
 
    /* spacing */
-    --spacingXSmall: var(--spaceingMedium*0.5) ;
-    --spacingSmall: var(--spaceingMedium*0.8) ;
+    --spacingXSmall: var(--spacingMedium*0.5) ;
+    --spacingSmall: var(--spacingMedium*0.8) ;
     --spacingMedium: 1rem ;
-    --spacingLarge:calc(var(--spaceingMedium*1.4) ) ;
-    --spacingXLarge: var(--spaceingMedium*2) ;
-    --spacingXXLarge: var(--spaceingMedium*4) ;
+    --spacingLarge:calc(var(--spacingMedium*1.4) ) ;
+    --spacingXLarge: var(--spacingMedium*2) ;
+    --spacingXXLarge: var(--spacingMedium*4) ;
    
 
 }
