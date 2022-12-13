@@ -3,7 +3,7 @@
 
 body{
   margin: 0;
-  padding: 1rem;
+  padding: var(--spacingMedium);
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
@@ -38,7 +38,7 @@ align-items: center;
 justify-content: center;
 }
 .abnLaage{
-  margin-top:2rem ;
+  margin-top:var(--spacingXLarge) ;
 }
 .mainOpratterForbindelse{
   display: grid;
