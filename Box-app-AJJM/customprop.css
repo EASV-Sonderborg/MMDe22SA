@@ -2,8 +2,8 @@
 
 :root{
     /* Farver*/
-    --colorBottonMain: #00c608;
-    --colorBottonSecond: #ebd071;
+    --colorButtonMain: #00c608;
+    --colorButtonSecond: #ebd071;
     --colorTekstInfo: #000000;
     --colorTekstAttention: #DC5956;
     --colorElements: #ffffff;
@@ -21,12 +21,12 @@
 
 
    /* spacing */
-    --spaceingXSmall: var(--spaceingMedium*0.5) ;
-    --spaceingSmall: var(--spaceingMedium*0.8) ;
-    --spaceingMedium: 1rem ;
-    --spaceingLarge:calc(var(--spaceingMedium*1.4) ) ;
-    --spaceingXLarge: var(--spaceingMedium*2) ;
-    --spaceingXXLarge: var(--spaceingMedium*4) ;
+    --spacingXSmall: var(--spaceingMedium*0.5) ;
+    --spacingSmall: var(--spaceingMedium*0.8) ;
+    --spacingMedium: 1rem ;
+    --spacingLarge:calc(var(--spaceingMedium*1.4) ) ;
+    --spacingXLarge: var(--spaceingMedium*2) ;
+    --spacingXXLarge: var(--spaceingMedium*4) ;
    
 
 }

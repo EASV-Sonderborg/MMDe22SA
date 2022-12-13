@@ -27,11 +27,6 @@ body {
 /*-----Welcome Page ----- */ 
 .buttons {
    text-align: center;
-
-   
-
-
-    
 }
 
 .buttonMain {
@@ -41,7 +36,6 @@ body {
     font-weight: bold;
     width: 323px;
     height: 72px;
-    
 }
 
 .buttons__opretProfil {
@@ -49,10 +43,6 @@ body {
     border: none; 
     margin-top: 10rem; 
     margin-bottom: 1rem;
-    
- 
-   
-
 }
 
 .buttons__logPaa {
@@ -72,14 +62,10 @@ body {
     height: 50px;
     font-family: Roboto Slab;
     font-size: 1rem;
-    
-
 }
 
 .inputFelt {
     display: grid;
-    
-    
 }
 
 .inputFelt__overskrift {
@@ -96,12 +82,10 @@ body {
 .oprettelse__radioButton {
     margin: 0;
     font-family:;
-    
 }
 
 .oprettelse__label {
     font-family: Roboto Slab;
-
 }
 
 .oprettelse__aktiveringslinkInformation {
@@ -125,7 +109,6 @@ body {
     font-size: var(--textButton);
     align-content: center;
     justify-content: center;
-
 }
 
 .button__aktiveringslink {
