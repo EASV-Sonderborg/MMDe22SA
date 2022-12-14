@@ -74,7 +74,7 @@ text-align: left;
 nav{
     display: flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: var(--spacingXXLarge);
     width: 100%;
   
 }
