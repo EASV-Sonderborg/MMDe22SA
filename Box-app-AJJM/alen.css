@@ -65,6 +65,8 @@ body {
     font-family: Roboto Slab;
     font-size: 1rem;
     margin-bottom: var(--spacingSmall);
+    margin: var(--spacingLarge);
+
 }
 
 .inputFelt {
@@ -84,7 +86,6 @@ body {
 
 .oprettelse__radioButton {
     margin: 0;
-    
 }
 
 .oprettelse__label {
@@ -132,11 +133,14 @@ body {
    display: flex;
    gap: .5rem;
    justify-content: center;
+   padding: 0;
+   
 }
 
 .login {
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: var(--spacingLarge);
+    
 }
 
 .pinkode__square {

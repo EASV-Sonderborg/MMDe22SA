@@ -106,7 +106,6 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
 .arrow--back{
     font-size: var(--overskrift);
     color:var(--colorElements);
-    padding-left: var(--spacingDefault);
     padding-top: var(--spacingSmall);
 
 }
@@ -122,7 +121,7 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
 
 
 span.menu{
-  margin-right:10;
+  margin-right:10px;
 }
 
 label .menu { /**   circle orange */
@@ -205,7 +204,7 @@ label input:checked + .menu + ul { opacity: 1; }
 label ul {
   z-index: 200;
   position: absolute;
-  top: 35%;
+  top: 45%;
   left: 50%; /**   */
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -213,6 +212,9 @@ label ul {
   -webkit-transition: .25s 0s ease-in-out;
   transition: .25s 0s ease-in-out;
   list-style: none;
+  width: 100vw;
+  text-align: center;
+  padding: 0;
 }
 
 label .menu__a {
@@ -220,10 +222,11 @@ label .menu__a {
   display: block;
   color: #fff; /** menu a color */
   text-decoration: none;
-  border-style: solid;
-  border-width: .5px;
-  font-size: 1rem;
+  font-size: var(--tekstKnapper);
   font-family: roboto;
+  gap: var(--spacingXSmall);
+  padding: var(--spacingSmall);
+  
 }
 
 
