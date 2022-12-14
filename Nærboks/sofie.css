@@ -40,7 +40,7 @@
     }
 }
 
-.searchingForPackage__bottom {
+.helpAndForward__bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -75,34 +75,30 @@
     border: none;
 }
 
-.help__flex {
+.help__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: var(--spaceLarge);
 }
-.arrow__right {
-    width: 22px;
-}
 
-.arrow__right:active {
-    transform: rotate(90deg);
-}
-
-details > summary {
-    list-style: none;
-  }
-
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-
-summary {
-    margin-bottom: var(--spaceXSmall);
+.help__questions {
+    margin-bottom: var(--spaceLarge);
+    cursor: pointer;
     color: var(--font-color);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-  }
+}
+
+.help__answers {
+    margin-top: var(--spaceXSmall);
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+
 
   /* - - - - - - - -  toggle - - - - - - - -  */
 .toggle {
@@ -261,7 +257,7 @@ summary {
 
 .yay__youGotIt__image {
     width: 100%;
-    margin-top: 15rem;
+    margin: auto;
     animation: jump 1s linear infinite;
 }
 
