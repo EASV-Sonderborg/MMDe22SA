@@ -66,16 +66,16 @@ body {
   overflow-x: hidden;
 }
 span.menu{
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 
-label .menu {
+label .menu { /**   circle orange */
   position: absolute;
-  right: -100px;
-  top: -100px;
+  margin-top:10px;
+  top: 0px;
   z-index: 100;
-  width: 200px;
-  height: 200px;
+  width: 55px;
+  height: 55px;
   background: #fa6900; /**  menu bakground piece*/
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
@@ -85,10 +85,10 @@ label .menu {
   
 }
 
-label .hamburger {
+label .hamburger {  /** burgers  meat  :) */
   position: absolute;
-  top: 140px;
-  left: 70px;
+  top: 26px;
+  left: 12px;
   width: 30px;
   height: 2px;
   background: #fff; /** middle block menu */
@@ -111,7 +111,6 @@ label .hamburger:after, label .hamburger:before {
 }
 
 label .hamburger:before { top: -10px; }
-
 label .hamburger:after { bottom: -10px; }
 
 label input { display: none; }
