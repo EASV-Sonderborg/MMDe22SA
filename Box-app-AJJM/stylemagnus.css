@@ -1,7 +1,7 @@
 @import url("customprop.css");
 
 body{
-    padding: var(--spacingMedium);
+   
     width: 100vw;
 }
 
