@@ -55,7 +55,7 @@
     width: 2.75rem;
 }
 
-.button--link {
+/* .button--link {
     text-decoration: none;
     color: var(--font-color);
     border: 3px solid var(--buttonBorder-color);
@@ -65,7 +65,7 @@
     justify-content: center;
     padding: var(--spaceSmall);
     width: 9rem;
-  }
+  } */
 
 /* - - - - - - - - Help Locker... - - - - - - - - - - */
 .close {
@@ -233,19 +233,6 @@
       }
 } 
 
-.opening__lockerButton--link {
-    background-color: #8ABBD4;
-    text-decoration: none;
-    color: var(--font-color);
-    border: 3px solid var(--buttonBorder-color);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    width: 9rem;
-    height: 2.5rem;
-}
-
 /* - - - - - - - - You got it page - - - - - - - -   */
 
 .yay__youGotIt {
@@ -283,7 +270,7 @@
     background-color: #E6E7E8;
     border-radius: var(--spaceXLarge);
     padding: var(--spaceMedium);
-    width: 40%;
+    width: 10rem;
     gap: .5rem;
 
 }
