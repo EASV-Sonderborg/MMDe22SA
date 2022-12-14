@@ -106,7 +106,6 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
 .arrow--back{
     font-size: var(--overskrift);
     color:var(--colorElements);
-    padding-left: var(--spacingDefault);
     padding-top: var(--spacingSmall);
 
 }
