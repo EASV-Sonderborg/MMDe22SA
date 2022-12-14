@@ -18,14 +18,25 @@ body{
 
 }
 
-
 .mainContent{
 display: flex;
 flex-direction: column;
-align-items: center;
-overflow-y: scroll;
-
+ align-items: center;
 }
+
+.frontpageBillede{
+  max-width:80%;
+  position: absolute;
+  top: 30%;
+
+
+ }
+.opratterForbindelse{
+  display: grid;
+  grid-template-columns: 25% 30% 45% ;
+  margin-top: var(--spacingXLarge);
+  align-items: center;
+ }
 
 nav{
   display: flex;
@@ -40,14 +51,6 @@ nav{
  
 }
 
-.abnLaage{
-  margin-top:var(--spacingXLarge) ;
-}
-.opratterForbindelse{
-  display: grid;
-  grid-template-columns: 25% 30% 45% ;
-  margin-top: var(--spacingXLarge);
- }
 
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
@@ -262,16 +265,7 @@ margin-bottom:var(--spacingMedium);
 }
 
 
-    
-
-
-.frontpageBillede{
-  max-width:80%;
-  position: absolute;
-  top: 30%;
- }
-
- /**  Åbn LÅGE KNAP  - START HERE  */
+/**  Åbn LÅGE KNAP  - START HERE  */
 /**  ANIMATION  BUTTON   */
 
 
