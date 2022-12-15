@@ -200,21 +200,6 @@ label .menu__a {
     margin-bottom: var(--spacingDefault);
     width: 323px;
     height: 73px;
+
   }
 
-.next-site{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  --colorButtonMain: #00c608;
-  --buttonBorderRadius: 25px ;
-  align-items: center;
-}
-
-.afslutknap{  display: flex;
-  width: 100%;
-  justify-content: center;
-  --colorButtonMain: #00c608;
-  --buttonBorderRadius: 25px ;
-  align-items: center;}
