@@ -1,10 +1,5 @@
 @import url("customprop.css");
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body{
   padding: var(--spacingMedium);
   height: 100vh;
@@ -25,7 +20,7 @@ flex-direction: column;
 }
 
 .frontpageBillede{
-  max-width:80%;
+  max-width:70%;
   position: absolute;
   top: 30%;
 
@@ -33,9 +28,10 @@ flex-direction: column;
  }
 .opratterForbindelse{
   display: grid;
-  grid-template-columns: 25% 30% 45% ;
+  grid-template-columns: 35% 30% 35% ;
   margin-top: var(--spacingXLarge);
   align-items: center;
+ flex-grow: 1;
  }
 
 nav{
@@ -48,9 +44,16 @@ nav{
 
 .button--prøv{
  align-items: center;
- 
-}
 
+
+}
+.button--position{
+display: flexbox;
+flex-direction: column;
+bottom: 0;
+margin-bottom: var(--spacingMedium);
+position: fixed;
+} 
 
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
@@ -66,6 +69,7 @@ nav{
       z-index: 0;
       text-transform: uppercase;
       color: aliceblue;
+      font-family: Roboto;
     }
     
     .loader:before,
@@ -116,7 +120,8 @@ nav{
 
  .pakkeBoksBillede{
       padding-right: var(--spaceingXSmall);
-      max-width:60%;
+      max-width:75%;
+    
      }
 
 
@@ -219,7 +224,6 @@ nav{
 img.nummer{
   margin-top: var(--spacingSmall);
   max-width: 28vh;
-  align-items: center;
 
 
 }
