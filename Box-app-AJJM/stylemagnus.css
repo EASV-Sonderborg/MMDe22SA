@@ -5,18 +5,10 @@ body{
     width: 100vw;
 }
 
-h1{
-text-align: left;
-
+.placement{
+    text-align: left;
 }
 
-h2{
-text-align: left;
-}
-
-h3{
-text-align: left;
-}
 .placement-images{
     margin-top: var(--spacingSmall);
 }
