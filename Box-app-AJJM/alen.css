@@ -44,7 +44,7 @@ body {
     background-color: var(--colorButtonMain);
     border: none; 
     margin-top: 10rem; 
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacingSmall);
 }
 
 .buttons__logPaa {
@@ -158,10 +158,7 @@ body {
     text-align: center;
 }
 
-img {
-    position: fixed;
-    bottom: 0;
-}
+
 
 .login__h3--centreret {
     text-align: center;
@@ -191,5 +188,7 @@ img {
 
 .keypadImage {
     margin-top: 18rem;
+    position: fixed;
+    bottom: 0;
 
 }
