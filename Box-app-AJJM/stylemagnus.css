@@ -5,9 +5,7 @@ body{
     width: 100vw;
 }
 
-.placement{
-    text-align: left;
-}
+
 
 .placement-images{
     margin-top: var(--spacingSmall);
