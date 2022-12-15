@@ -40,7 +40,7 @@
     }
 }
 
-.searchingForPackage__bottom {
+.helpAndForward__bottom {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -55,18 +55,6 @@
     width: 2.75rem;
 }
 
-.button--link {
-    text-decoration: none;
-    color: var(--font-color);
-    border: 3px solid var(--buttonBorder-color);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    padding: var(--spaceSmall);
-    width: 9rem;
-  }
-
 /* - - - - - - - - Help Locker... - - - - - - - - - - */
 .close {
     color: var(--secondary-border-color);
@@ -75,34 +63,30 @@
     border: none;
 }
 
-.help__flex {
+.help__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: var(--spaceLarge);
 }
-.arrow__right {
-    width: 22px;
-}
 
-.arrow__right:active {
-    transform: rotate(90deg);
-}
-
-details > summary {
-    list-style: none;
-  }
-
-  details > summary::-webkit-details-marker {
-    display: none;
-  }
-
-summary {
-    margin-bottom: var(--spaceXSmall);
+.help__questions {
+    margin-bottom: var(--spaceLarge);
+    cursor: pointer;
     color: var(--font-color);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-  }
+}
+
+.help__answers {
+    margin-top: var(--spaceXSmall);
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+
 
   /* - - - - - - - -  toggle - - - - - - - -  */
 .toggle {
@@ -237,19 +221,6 @@ summary {
       }
 } 
 
-.opening__lockerButton--link {
-    background-color: #8ABBD4;
-    text-decoration: none;
-    color: var(--font-color);
-    border: 3px solid var(--buttonBorder-color);
-    display: flex;
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    width: 9rem;
-    height: 2.5rem;
-}
-
 /* - - - - - - - - You got it page - - - - - - - -   */
 
 .yay__youGotIt {
@@ -261,7 +232,7 @@ summary {
 
 .yay__youGotIt__image {
     width: 100%;
-    margin-top: 15rem;
+    margin: auto;
     animation: jump 1s linear infinite;
 }
 
@@ -287,7 +258,7 @@ summary {
     background-color: #E6E7E8;
     border-radius: var(--spaceXLarge);
     padding: var(--spaceMedium);
-    width: 40%;
+    width: 10rem;
     gap: .5rem;
 
 }
@@ -328,10 +299,18 @@ form {
     margin: 0;
     color: var(--font-color);
     font-family: 'Lato', sans-serif;
+    margin-top: var(--spaceXSmall);
+}
+
+.rate__box {
+    background: white;
+    border-radius: 16px;
+    border: 3px solid var(--buttonBorder-color);
+    padding: var(--spaceXSmall);
+    text-align: center;
     margin-bottom: var(--spaceSmall);
 }
 
-.rate__box
 .rate__box--img {
     width: 44px;
 }

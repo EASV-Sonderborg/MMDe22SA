@@ -14,51 +14,57 @@
 </head>
 
 <body>
-    <nav>
-        <a href="Forbindelse-Etableret.html">
-            <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
-        </a>
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-                <li> <a class="menu__a" href="OpretterForbindelse.html">Hent pakke</a> </li>
-                <li> <a class="menu__a" href="#">Send pakke</a> </li>
-                <li> <a class="menu__a" href="#"> Hvor er min pakkeboks?</a> </li>
-                <li> <a class="menu__a" href="#">Min konto</a> </li>
-                <li> <a class="menu__a" href="#">Notifikationer</a> </li>
-                <li> <a class="menu__a" href="Ring.html">Kontakt</a> </li>
-                <li> <a class="menu__a" href="#"> Anmeldelser</a> </li>
-            </ul>
-        </label>
-    </nav>
+    <header>
+        <nav>
+            <a href="#" onclick="history.go(-1)">
+                <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
+            </a>
+            <label>
+                <input type="checkbox">
+                <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                    <li> <a class="menu__a" href="OpretterForbindelse.html"> Dine Pakker</a> </li>
+                    <li> <a class="menu__a" href="#"> Send pakke retur</a> </li>
+                    <li> <a class="menu__a" href="#"> Historik</a> </li>
+                    <li> <a class="menu__a" href="#"> Kontakt Kundeservice </a> </li>
+                    <li> <a class="menu__a" href="#"> Sådan virker det</a> </li>
+                    <li> <a class="menu__a" href="#"> Slet min konto</a> </li>
+                    <li> <a class="menu__a" href="#"> Log af</a> </li>
+                </ul>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <h1>Hvor er din pakke</h1>
+        <section class="placement">
+            <h3 class="placement__adress">Alsion 1, 6400 Sønderborg</h3>
+            <p class="placement__info">Boksen er placeret ved indgangen til togstationen.</p>
+            <p class="placement__info">Den er placeret op ad den gule væg, henne ved cykle parkeringen.</p>
+            <img class="placement__imgs" src="images/box-placement-img1.jpg" alt="Billed af Boksen">
+            <img class="placement__imgs" src="images/box-placement-img2.jpg" alt="Billed af Boksen">
+        </section>
 
 
-    <section class="toptext">
-        <h1 class="toptext__headline">Hvor er din pakke</h1>
-        <h3 class="toptext__adress">Alsion 1, 6400 Sønderborg</h3>
-        <p class="toptext__info">Boksen er placeret ved indgangen til togstationen</p>
-    </section>
 
-    <section class="placement-images">
-        <img class="placement-images__img1" src="images/box-placement-img1.jpg" alt="Billed af Boksen">
-        <img class="placement-images__img2" src="images/box-placement-img2.jpg" alt="Billed af Boksen">
-    </section>
+        </section>
 
-    <section class="map">
-        <a class="map-link" href="https://goo.gl/maps/2LjpL8TS5zf7D8C27">
-            <p class="map-link__text">
-                Klick her for vejledning
-            </p>
-            <ion-icon class="map-link__icon" name="map-outline"></ion-icon>
-        </a>
-    </section>
+        <section class="map">
+            <a class="map-link" href="https://goo.gl/maps/2LjpL8TS5zf7D8C27">
+                <p class="map-link__text">
+                    Klick her for vejledning
+                </p>
+                <ion-icon class="map-link__icon" name="map-outline"></ion-icon>
+            </a>
+        </section>
 
-    <section class="next-page">
-        <button class="button">Videre</button>
-    </section>
+        <section class="next-page">
+            <button class="button">Videre</button>
+        </section>
+    </main>
+
 
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

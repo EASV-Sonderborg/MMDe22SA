@@ -69,5 +69,14 @@ h6 {
     background-color: var(--button-color);
     border-style: 3px solid var(--buttonBorder-color);
     border-radius: 30px;
+    text-decoration: none;
+    color: var(--font-color);
+    border: 3px solid var(--buttonBorder-color);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    padding: var(--spaceSmall);
+    width: 9rem;
 }
 

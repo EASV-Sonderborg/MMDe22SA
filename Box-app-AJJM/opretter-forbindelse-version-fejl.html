@@ -6,15 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleJulia.css">
-    <title>Forbindelse-Etableret</title>
+    <title>Opretter-Forbindelse</title>
 </head>
 
 <body>
     <section class="container">
         <nav>
             <a href="Start-Side.html">
-                <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
-            </a>
+                <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon></a>
             <label>
                 <input type="checkbox">
                 <span class="menu"> <span class="hamburger"></span> </span>
@@ -31,19 +30,21 @@
         </nav>
 
 
-        <h1>Forbindelsen etableret.</h1>
-        <h3>Pakkeboksen er klar </h3>
+        <h1>Opretter forbindelse</h1>
+        <h3> Det kan tage et par sekunder... </h3>
         <section class="opratterForbindelse">
-            <img class="mobileBillede" src="imgs/handy.png" alt="mobile i hånden billede">
-            <div class="loader--connected">Ready</div>
-            <img class="pakkeBoksBillede" src="imgs/NærBoksGreen.png" alt="pakkeboks billede">
+            <img class="mobileBillede" src="imgs/handy.png" alt="mobile billede">
+            <div class="loader">Søger</div>
+            <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
         </section>
-
-        <script> setTimeout(function () { window.location.href = 'Forbindelse-ÅbenKnap.html'; }, 3000); 
+        <script>
+            setTimeout(function () {
+                window.location.href = 'Forbindelse-Fejl1.html';
+            }, 5000);
         </script>
         <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-
     </section>
+
 </body>
 
 </html>
