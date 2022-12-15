@@ -17,15 +17,15 @@ text-align: left;
 h3{
 text-align: left;
 }
+.placement-images{
+    margin-top: var(--spacingSmall);
+}
 
-.placement-images__img1{
+.placement-images__img{
     width: 100%;
     height: auto;
 }
-.placement-images__img2{
-    width: 100%;
-    height: auto;
-}
+
 
 .map{
     display: flex;
