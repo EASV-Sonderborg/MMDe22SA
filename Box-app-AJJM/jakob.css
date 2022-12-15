@@ -180,13 +180,14 @@ label .menu__a {
 
 
 .button--position{
-  display: flexbox;
-  flex-direction: column;
-  bottom: 0;
-  margin-bottom: var(--spacingMedium);
-  position: fixed;
-  
+    display: flexbox;
+    flex-direction: column;
+    bottom: 0;
+    margin-bottom: var(--spacingMedium);
+    position: fixed;
   } 
+  
+   
 
   .button
 {padding: var(--buttonHight) var(--buttonWidth); 
