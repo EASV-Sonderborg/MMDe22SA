@@ -1,21 +1,18 @@
 @import url("customprop.css");
 
 body{
-   
     width: 100vw;
 }
 
-
-
-.placement-images{
-    margin-top: var(--spacingSmall);
+.placement{
+    margin-bottom: var(--spacingMedium);
 }
 
-.placement-images__img{
+.placement__imgs{
+    margin-top: var(--spacingSmall);
     width: 100%;
     height: auto;
 }
-
 
 .map{
     display: flex;
