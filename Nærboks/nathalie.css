@@ -5,7 +5,7 @@
     --backgroundSend-color: rgb(224, 152, 154);
     --backgroundPickup-color: rgb(200, 219, 188);
     --button-color: white;
-    --buttonBorder-color: rgb(207, 229, 226);
+    --buttonBorder-color: solid rgb(207, 229, 226) 2px;
     --buttonHover-color: rgb(200, 219, 188);
     --sections-color: white;
     --package-box: #A7A9AC;
@@ -164,7 +164,7 @@ a {
 }
 .card {
     border-radius: 25px;
-    margin: .5rem;
+    margin: var(--spaceSmall);
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -178,7 +178,7 @@ a {
 .card__img {
     max-width: 50%;
     padding-bottom: 8rem;
-    padding-top: 2rem;
+    padding-top: var(--spaceXLarge);
 }
 .card__button {
     background-color: white;
@@ -223,15 +223,15 @@ a {
     color: white;
     font-size: var(--fontSizeXLarge);
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: var(--spaceXLarge);
 }
 .openSection {
     background-color: var(--sections-color);
-    border: solid #CFE5E2 2px;
-    padding: 1rem;
+    border: var(--buttonBorder-color);
+    padding: var(--spaceMedium);
+    margin: var(--spaceMedium);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1rem;
 }
 .openSection__h3 {
     grid-column-start: 1;
@@ -270,7 +270,7 @@ a {
     font-size: var(--fontSizeLarge);
     margin-top: var(--spaceMedium);
     margin-bottom: var(--spaceMedium);
-    border: solid #CFE5E2 2px;
+    border: var(--buttonBorder-color);
 }
 .openSection__findText {
     grid-column-start: 2;
@@ -287,11 +287,11 @@ a {
 
 .closedSection {
     background-color: var(--sections-color);
-    border: solid #CFE5E2 2px;
-    padding: 1rem;
+    border: var(--buttonBorder-color);
+    padding: var(--spaceMedium);
+    margin: var(--spaceMedium);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 1rem;
 }
 .closedSection__h3 {
     grid-column-start: 1;
@@ -346,7 +346,7 @@ a {
     color: white;
     font-size: var(--fontSizeXLarge);
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: var(--spaceXLarge);
 }
 .sendPackage__startButton {
     background-color: white;
@@ -366,7 +366,7 @@ a {
 }
 .sendPackage__link {
     color: white;
-    margin-top: 1rem;
+    margin-top: var(--spaceMedium);
     font-size: var(--fontSizeLarge);
     font-weight: bold;
     text-decoration: underline;
@@ -383,7 +383,7 @@ a {
 }
 .goBackArrow {
     max-width: 5%;
-    margin: 1.5rem;
+    margin: var(--spaceLarge);
 }
 .registrer__package {
     max-width: 75%;
@@ -416,7 +416,7 @@ a {
     font-size: var(--fontSizeXLarge);
     margin-top: var(--spaceXLarge);
     margin-bottom: var(--spaceXLarge);
-    border: solid #CFE5E2 2px;
+    border: var(--buttonBorder-color);
 }
 .registrer__vidre {
     text-align: center;
@@ -428,8 +428,8 @@ a {
 /* Størrelse */
 .registrer__whiteBackground {
     background-color: var(--sections-color);
-    margin: 1.5rem;
-    border: solid #CFE5E2 2px;
+    margin: var(--spaceLarge);
+    border: var(--buttonBorder-color);
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -444,8 +444,8 @@ a {
 }
 .registrer__sizeLabel {
     text-align: end;
-    padding-right: 1rem;
-    padding-bottom: 2rem;
+    padding-right: var(--spaceMedium);
+    padding-bottom: var(--spaceXLarge);
 }
 .registrer__sizeInput {
     font-size: var(--fontSizeXLarge);
@@ -457,7 +457,6 @@ a {
 }
 .baxSize__button {
     background-color: white;
-    border: none;
     padding: 8px 64px;
     text-decoration: none;
     display: inline-block;
@@ -466,16 +465,16 @@ a {
     font-size: var(--fontSizeLarge);
     margin-top: var(--spaceMedium);
     margin-bottom: var(--spaceMedium);
-    border: solid #CFE5E2 2px;
+    border: var(--buttonBorder-color);
 }
 .baxSize__button:hover {
     background-color: var(--buttonHover-color);
 }
 .registrer__packageBoxSection {
     background-color: var(--sections-color);
-    margin: 1rem;
-    border: solid #CFE5E2 2px;
-    padding: 2rem;
+    margin: var(--spaceMedium);
+    padding: var(--spaceXLarge);
+    border: var(--buttonBorder-color);
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
 }
@@ -509,11 +508,11 @@ a {
     max-width: 75%;
     display: block;
     margin: auto;
-    padding-bottom: 2rem;
+    padding-bottom: var(--spaceXLarge);
 }
 .choosenLocker__info {
     text-align: center;
-    padding: .5rem;
+    padding: var(--spaceSmall);
     font-size: var(--fontSizeLarge);
 }
 .locker__buttonNext {
@@ -529,16 +528,16 @@ a {
     font-size: var(--fontSizeLarge);
     margin-top: var(--spaceMedium);
     margin-bottom: var(--spaceMedium);
-    border: solid #CFE5E2 2px;
+    border: var(--buttonBorder-color);
 }
 .chooseLocker__button:hover {
     background-color: var(--buttonHover-color);
 }
 .sendRegistreret {
     background-color: var(--sections-color);
-    margin: 2rem;
-    padding: 1rem;
-    border: solid #CFE5E2 2px;
+    margin: var(--spaceXLarge);
+    padding: var(--spaceMedium);
+    border: var(--buttonBorder-color);
     display: grid;
     grid-template-columns: 6fr 1fr;
 }
@@ -592,7 +591,7 @@ a {
     font-size: var(--fontSizeLarge);
     margin-top: var(--spaceMedium);
     margin-bottom: var(--spaceMedium);
-    border: solid #CFE5E2 2px;
+    border: var(--buttonBorder-color);
 }
 .lockerOpen__button:hover {
     background-color: var(--buttonHover-color);
@@ -603,7 +602,7 @@ a {
     display: flex;
     flex-direction: row;
     margin-right: 20rem;
-    padding: .5rem;
+    padding: var(--spaceSmall);
 }
 .lockerOpend__info {
     max-width: 25%;

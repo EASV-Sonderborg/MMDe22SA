@@ -1,28 +1,15 @@
 @import url("customprop.css");
 
 body{
-   
     width: 100vw;
 }
 
-h1{
-text-align: left;
-
+.placement{
+    margin-bottom: var(--spacingMedium);
 }
 
-h2{
-text-align: left;
-}
-
-h3{
-text-align: left;
-}
-
-.placement-images__img1{
-    width: 100%;
-    height: auto;
-}
-.placement-images__img2{
+.placement__imgs{
+    margin-top: var(--spacingSmall);
     width: 100%;
     height: auto;
 }
