@@ -1,10 +1,12 @@
 @import url("customprop.css");
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body{
-  margin: 0;
   padding: var(--spacingMedium);
-  box-sizing: border-box;
   height: 100vh;
   width: 100vw;
 
@@ -13,38 +15,50 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
+}
 
 .mainContent{
 display: flex;
 flex-direction: column;
-align-items: center;
-overflow-y: scroll;
+ align-items: center;
 }
+
+.frontpageBillede{
+  max-width:70%;
+  position: absolute;
+  top: 30%;
+
+
+ }
+.opratterForbindelse{
+  display: grid;
+  grid-template-columns: 35% 30% 35% ;
+  margin-top: var(--spacingXLarge);
+  align-items: center;
+flex-grow: 1;
+ }
 
 nav{
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
+  margin-bottom: var(--spacingXLarge);
   width: 100%;
 
 }
 
-.footer
-{display: flex;
+.button--prøv{
+ align-items: center;
+
+
+}
+.button--position{
+display: flexbox;
 flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-.abnLaage{
-  margin-top:var(--spacingXLarge) ;
-}
-.mainOpratterForbindelse{
-  display: grid;
-  grid-template-columns: 25% 30% 45% ;
-  margin-top: 2rem;
- }
+bottom: 0;
+margin-bottom: var(--spacingMedium);
+position: fixed;
+} 
 
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
@@ -104,13 +118,14 @@ justify-content: center;
 
   
   .mobileBillede{
-      max-width:120%;
+      max-width:100%;
       align-self: center;
      }
 
  .pakkeBoksBillede{
       padding-right: var(--spaceingXSmall);
-      max-width: 70%;
+      max-width:75%;
+    
      }
 
 
@@ -202,7 +217,7 @@ justify-content: center;
     /** FLYT DIG STARTS HERE :) */
     
     .lilleMenneske{
-    max-width: 100%;
+    max-width:80%;
     align-self: center;
   }
 
@@ -211,9 +226,8 @@ justify-content: center;
 
 /** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
 img.nummer{
-  margin-top: .75rem;
+  margin-top: var(--spacingSmall);
   max-width: 28vh;
-  align-items: center;
 
 
 }
@@ -232,7 +246,7 @@ img.nummer{
 img.support{
 max-width: 15vh;
 margin-top: 3.5rem;
-margin-bottom:1rem;
+margin-bottom:var(--spacingMedium);
 }
 
 
@@ -259,16 +273,7 @@ margin-bottom:1rem;
 }
 
 
-    
-
-
-.frontpageBillede{
-  max-width:80%;
-  position: absolute;
-  top: 30%;
- }
-
- /**  Åbn LÅGE KNAP  - START HERE  */
+/**  Åbn LÅGE KNAP  - START HERE  */
 /**  ANIMATION  BUTTON   */
 
 
