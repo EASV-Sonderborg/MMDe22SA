@@ -94,11 +94,11 @@ body {
 }
 
 .oprettelse__label {
-    font-family: Roboto Slab;
+    font-family: 'Roboto', sans-serif;
 }
 
 .oprettelse__aktiveringslinkInformation {
-    font-family: Roboto Slab;
+    font-family: 'Roboto', sans-serif;
   
 }
 
@@ -112,16 +112,18 @@ body {
 }
 
 .button__sendAktiveringslink {
-    margin-top: 22rem;
+    margin-top: 15rem;
     color: var(--colorElements);
     background-color: var(--colorButtonMain);
     font-size: var(--textButton);
     align-content: center;
     justify-content: center;
+    font-family:'Roboto', sans-serif;
 }
 
 .button__aktiveringslink {
     text-align: center;
+    
 }
 
 
