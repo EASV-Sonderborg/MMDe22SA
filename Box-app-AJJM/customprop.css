@@ -56,9 +56,8 @@ h2{
 
 h3{
     font-family: 'Roboto', sans-serif;
-    
     color: black;
-    margin: 0;
+    margin-bottom: var(--spacingSmall);
    }
 
 p{
@@ -90,6 +89,8 @@ nav{
     text-align: center;
     background-color: var(--colorButtonMain);
     margin-bottom: var(--spacingDefault);
+    width: 323px;
+    height: 73px;
 
 
 }
