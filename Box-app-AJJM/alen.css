@@ -13,8 +13,8 @@ body {
 }
 
 
-.overskrift {
-    font-family: Roboto Slab;
+.overskrift--centreret {
+    font-family: Roboto;
     font-weight: bold;
     color: var(--colorElements);
     text-align: center;
@@ -44,7 +44,7 @@ body {
     background-color: var(--colorButtonMain);
     border: none; 
     margin-top: 10rem; 
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacingSmall);
 }
 
 .buttons__logPaa {
@@ -65,12 +65,17 @@ body {
     font-family: Roboto Slab;
     font-size: 1rem;
     margin-bottom: var(--spacingSmall);
-    margin: var(--spacingLarge);
+  
 
+}
+
+.oprettelse {
+    margin-bottom: var(--spacingMedium);
 }
 
 .inputFelt {
     display: grid;
+
 }
 
 .inputFelt__overskrift {
@@ -153,8 +158,37 @@ body {
     text-align: center;
 }
 
-img {
-    margin-top: 8rem;
+
+
+.login__h3--centreret {
+    text-align: center;
+
 }
 
 
+
+
+
+/* ----- Choose Password ----- */ 
+
+.choosePassword {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+   
+}
+
+.choosePassword__pinkode {
+    margin-bottom: var(--spacingXLarge);
+}
+
+.choosePassword__text {
+    text-align: center;
+}
+
+.keypadImage {
+    margin-top: 18rem;
+    position: fixed;
+    bottom: 0;
+
+}
