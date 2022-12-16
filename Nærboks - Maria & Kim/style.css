@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    background-size: 100vw;
+    background-size: cover;
+    width: 100vw;
+}
+
+.header {
+    background-color: #7AD8E7;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    width: 100vw;
+    z-index: 3;
+   
+
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #7AD8E7;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header ul a:hover {
+    background-color: white;
+    color: #7AD8E7;
+}
+
+/* header- logo */
+
+.header .img-logo {
+    
+   
+   color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: auto;
+    padding-top: 30px;
+    display: block;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* header- hamburger-menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: left;
+    cursor: pointer;
+
+}
+
+/* header- hamburger- menu/ stregerne */
+
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+/* chek-box væk */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 300px;
+}
+
+/* header- hamburger- menu animation- så det bliver til et kryds/ stregerne */
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+
+.newpackageone{
+    border-style: solid;
+    border-color: lightgreen;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: palegreen;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.newpackagetwo{
+    border-style: solid;
+    border-color: lightgreen;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: lightgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+
+.afhent{
+    background-color: palegreen;
+    border-radius: 10px;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.overdrag{
+    background-color: darksalmon;
+    border-radius: 10px;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.hent{
+    background-color: palegreen;
+    border-style: none;
+    font-size: 1.5rem;
+    color: white;
+    border-end-start-radius: 30px;
+    border-start-start-radius: 30px;
+    padding: 20px;
+    padding-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.aflever{
+    background-color: darksalmon;
+    border-style: none;
+    font-size: 1.5rem;
+    color: white;
+    border-end-end-radius: 30px;
+    border-start-end-radius: 30px;
+    padding: 20px;
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.adress{
+    margin-left: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.multibutton{
+    padding: 50px;
+}
+.udløb{
+    color: red;
+}
+.yourbox{
+    text-align: center;
+    margin: 20px;
+}
+.åben{
+    background-color: palegreen;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.5rem;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   color: white;
+}
+
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .login{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 30px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .loading{
+    text-align: center;
+  }
+  .loginb{
+    background-image: url(square-baggrund.svg);
+    margin: 0;
+    padding: 0;
+    background-size: 100vw;
+    background-size: cover;
+    width: 100vw;
+  }
+ 
+.findboks{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
