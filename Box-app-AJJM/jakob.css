@@ -1,0 +1,70 @@
+@import url("customprop.css");
+
+
+.pageWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luklågeskrift{
+  color: #FF4742;
+}
+
+.dennelågeskrift{ 
+  color:#fff
+}
+
+.pakkeBoksBillede{
+  padding-right: var(--spaceingXSmall);
+  max-width: 100%;
+  }
+
+
+
+.pageWrapper--boksNummer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** RING SIDE - STARTS HERE :) */
+.pageWrapper--Ring{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+img.support{
+max-width: 15vh;
+}
+
+
+.button--telefon:hover,
+.button--telefon:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button--telefon:active {
+  opacity: .5;
+}
+    
+
+.buthole{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+
+
+
+
+  
+   
+
+

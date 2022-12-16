@@ -73,8 +73,6 @@ body{
     align-content:center ;
 }
 
-
-p{ text-align: center;}
 /*- - - - - - Ends sign-up site - - - - - - - */
 
 
@@ -138,8 +136,6 @@ margin-bottom: var(--spacingDefoult);
 .settings__subtext{
 
 }
-
-
 
 
 

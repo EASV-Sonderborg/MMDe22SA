@@ -1,0 +1,82 @@
+:root {
+    /* Farver */
+    --font-color: #58595B;
+    --background-color: #EDEDED;
+    --backgroundSend-color: rgb(224, 152, 154);
+    --backgroundPickup-color: rgb(200, 219, 188);
+    --button-color: white;
+    --buttonBorder-color: rgb(207, 229, 226);
+    --buttonHover-color: rgb(200, 219, 188);
+    --sections-color: white;
+    --package-box: #A7A9AC;
+    --secondary-border-color: #F1ABAB;
+
+    /* Font size */
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1rem;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+
+    /* Spacing */
+    --spaceXSmall: calc(var(--fontSizeMedium)/2);
+    --spaceSmall: calc(var(--fontSizeMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--fontSizeMedium)*1.5);
+    --spaceXLarge: calc(var(--fontSizeMedium)*2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: var(--spaceMedium);
+    background-color: var(--background-color);
+}
+
+h1 {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--fontSizeXLarge);
+    margin-bottom: var(--spaceSmall);
+}
+
+h2 {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--fontSizeLarge);
+    margin-bottom: var(--spaceLarge);
+}
+
+p {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--fontSizeMedium);
+}
+
+h6 {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-size: var(--fontSizeSmall);
+}
+
+.button {
+    background-color: var(--button-color);
+    border-style: 3px solid var(--buttonBorder-color);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--font-color);
+    border: 3px solid var(--buttonBorder-color);
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    padding: var(--spaceSmall);
+    width: 9rem;
+}
+

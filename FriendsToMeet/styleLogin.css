@@ -2,30 +2,41 @@
     /* Farver */
     --font-clr: black;
     --secondary-clr: #D8F3DC;
-    --third-clr: #007474;
+    --button-clr: #007474;
     --bgd-clr: #E2C9C1;
     --section-clr: #fafffb94;
 
     /* Font Size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
-    --fontSizeSmall: calc(var(--fontSizeMedium)/1.1);
-    --fontSizeMedium: 16px;
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: 1rem;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*2.5);    
+
+    /* Spacing */
+    --spaceXSmall: calc(var(--spaceMedium)/2);
+    --spaceSmall: calc(var(--spaceMedium)/1.5);
+    --spaceMedium: 1rem;
+    --spaceLarge: calc(var(--spaceMedium)*1.5);
+    --spaceXLarge: calc(var(--spaceMedium)*2.5); 
 }
+
 
 * {
     box-sizing: border-box;
 }
 
-h1 {
-    margin: .5rem;
+/* test forsøg på spacing */
+h1 { 
+    margin: 0 0 var(--spaceXSmall) 0;
     font-size: var(--fontSizeXLarge);
 }
 
+/* - - - - -  */
+
 h2 {
     font-size: var(--fontSizeLarge);
-    margin: 0 .5rem;
+    margin: 0;
 }
 
 p, label {
@@ -38,13 +49,13 @@ p, label {
 body {
     background-color: var(--bgd-clr);
     font-family: 'Times New Roman', Times, serif;
-    padding: 1rem;
+    padding: var(--spaceMedium);
     margin: 0;
 }
 
 .friendsToMeetHeader {
     font-family: 'Pacifico', cursive;
-    color: var(--third-clr);
+    color: var(--button-clr);
     text-shadow: 1px 1px 3px whitesmoke;
     font-size: var(--fontSizeXLarge);
     text-align: center;
@@ -99,7 +110,7 @@ body {
         padding: 1rem;
         text-align: center;
         box-shadow: 3px 3px 1rem rgb(118, 118, 118);
-        background-color: var(--third-clr);
+        background-color: var(--button-clr);
         color: white;
         margin-bottom: 1rem;
         text-decoration: none;
@@ -113,14 +124,14 @@ body {
     .loginForgottenPassword--link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--third-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
     .login__link {
         text-decoration: none;
         color: var(--font-clr);
-        border-bottom: double var(--third-clr);
+        border-bottom: double var(--button-clr) 2px;
         font-weight: bold;
     }
 
@@ -141,11 +152,10 @@ body {
     /* Sign up page */
 
     .signUp__header {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: 1rem;
+        margin-bottom: var(--spaceMedium);
+        padding: var(--spaceMedium);
         background-color: var(--section-clr);
-        border-radius: 1rem;
+        border-radius: var(--spaceMedium);
     }
 
     .signUp--h2 {
@@ -157,16 +167,16 @@ body {
         background-color: var(--section-clr);
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: var(--spaceMedium);
         margin: auto;
         width: 100%;
+        padding: var(--spaceSmall);
     }
 
     .signUp__labels {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin: .5rem 1rem;
     }
 
     input {
@@ -180,9 +190,9 @@ body {
 
     .signUp__input {
         margin: 0;
-        padding: .5rem;
-        border-bottom: solid var(--third-clr);
-        border-left: solid var(--third-clr);
+        padding: var(--spaceXSmall);
+        border-bottom: solid var(--button-clr);
+        border-left: solid var(--button-clr);
         width: 100%;
         height: 100%;
     }
@@ -198,15 +208,15 @@ body {
         background-color: var(--section-clr);
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: var(--spaceMedium);
         border-radius: 12px;
     }
 
     .signUp--pfp {
-        margin-top: 1rem;
+        margin-top: var(--spaceXSmall);
         width: 40%;
         border-radius: 15%;
-        border: var(--third-clr) 6px double;
+        border: var(--button-clr) 6px double;
         align-self: center;
     }
 
@@ -214,7 +224,7 @@ body {
         display: flex;
         align-self: center;
         gap: .5rem;
-        margin: .5rem;
+        padding: var(--spaceXSmall);
     }
 
     .signUp__text {
@@ -224,8 +234,19 @@ body {
         font-weight: bold;
      }
     
+    .signUp--cameraText {
+        align-self: center;
+        margin: 0;
+    }
+
     .signUp--camera {
-        width: 24px;
+        width: 2rem;
+        background-color: transparent;
+    }
+
+    #avatar {
+        width: 86px;
+        background-color: transparent;
     }
 
     .signUp__agree {
@@ -252,7 +273,7 @@ body {
     }
 
     .signUp__forward {
-        background-color: var(--third-clr);
+        background-color: var(--button-clr);
         border-radius: 12px;
         text-align: right;
         align-self: center;
@@ -261,10 +282,10 @@ body {
         justify-self: center;
         margin: .5rem;
         width: 150px;
+        border: solid var(--button-clr) 2px;
     }
 
     .signUp__back {
-        background-color: var(--third-clr);
         border-radius: 12px;
         display: flex;
         flex-direction: row-reverse; 
@@ -272,8 +293,9 @@ body {
         justify-self: center;
         width: 150px; 
         margin: .5rem;
+        border: solid var(--button-clr) 2px;
+        color: var(--font-clr);
     }
-
    
     .signUp__redirect {
         display: flex;
@@ -281,6 +303,13 @@ body {
 
     }
    
+    .signUp--ToSlink {
+        text-decoration: none;
+        color: var(--font-clr);
+        border-bottom: double var(--button-clr) 2px;
+        font-weight: bold;
+
+    }
 
     /* Pick your interests page */
 
@@ -290,38 +319,39 @@ body {
         display: flex;
         flex-direction: column;
         margin: auto;
+        padding: var(--spaceSmall);
     }
 
     .hobby__section {
         display: flex;
         align-items: center;
-        margin: .5rem;
+        margin-bottom: var(--spaceXSmall);
     }
 
     .hobby__section--icon {
-        width: 44px;
+        width: 2rem;
+    }
+
+    .hobbyHeader {
+        margin-bottom: var(--fontSizeSmall);
+    }
+
+    .hobbyH2Header {
+        margin-left: var(--spaceXSmall);
+        align-self: flex-end;
     }
 
     .hobby {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: var(--spaceMedium);
     }
-
-    .hobbyHeader {
-        margin-bottom: 1rem;
-    }
-
 
     .hobbyCheckbox {
         display: flex;
-        margin: .5rem .5rem;
-        align-items: center;
-        gap: .5rem;
-    }
 
-    input[type=checkbox] {
-        background-color: #007474;
+        align-items: center;
+        gap: var(--spaceXSmall);
     }
 
     .redirect {

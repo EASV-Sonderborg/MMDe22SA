@@ -99,7 +99,13 @@ body {
 }
 
 .header {
+    font-size: var(--fontSizeXLarge);
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.rightarrow {
+    width: 44px;
 }
 
 .buttons {
@@ -115,8 +121,8 @@ body {
     border-radius: 30px;
     font-size: 15px;
     background-color: var(--third-clr);
-    width: 19.5vh;
     color: black;
+    width: 160px;
 }
 
 .buttons__button__disable {

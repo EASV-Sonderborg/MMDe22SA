@@ -1,0 +1,155 @@
+/* Custom Properties */
+:root {
+    --spacingDefault: 1.5rem;
+    
+    
+    --spacingSmall: calc(var(--spacingDefault) * 0.5);
+    --spacingMedium: var(--spacingDefault);
+    --spacingLarge: calc(var(--spacingDefault) * 2.5);
+    --spacingXLarge: calc(var(--spacingDefault) * 3.5);
+    
+    
+    --fontSizeSmall: 1rem;
+    --fontSizeMedium: 1.5rem;
+    --fontSizeLarge: 2.5rem;
+    
+    --brandColor: teal;
+    --backgroundColor: #f9f9f9;
+    --surface: #fff;
+    --highlight: #d4d4d4;
+  
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#075574 ;
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    padding: var(--spacingMedium);
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacingLarge);
+}
+.head__pic {
+    width: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+.logo {
+    margin-bottom: var(--spacingLarge);
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacingLarge);
+}
+.login__tel, .login__pin {
+    margin-bottom: var(--spacingMedium);
+    height: 30px;
+}
+
+.forgotPin {
+    text-align: center;
+    display: block;
+}
+
+/* Styling button  */
+/* Ref: https://www.bestcssbuttongenerator.com/ */
+.login__btn {
+	box-shadow: 3px 4px 0px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:5px;
+	border:1px solid #18ab29;            
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.login__btn:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.login__btn:active {
+	position:relative;
+	top:1px;
+}
+/* end of styling button */
+
+
+
+
+
+/*header { display: block;
+    position: relative;
+    right: 0px;
+}
+
+
+body {
+
+    background-color:#075574 ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.logo {align-items: center;
+      size: 10px;
+
+ }
+   
+
+.container  {width: 50%;
+            height: 50%;
+    margin: 10%;
+    align-items: center;
+    grid-area: 20%;
+}
+.container img {
+    height: 100%;
+    width: 100%;
+}
+p {
+    color: white
+  
+    
+}
+.button__log {
+ 
+    width:30%; 
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+  
+    
+}
+
+.button__log h2 {
+font-size: 2rem;
+color: white;
+position: absolute;
+text-align: center;
+justify-content: center;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+.button__log img {
+    height: 100%;
+    width: 100%;
+}

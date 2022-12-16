@@ -1,0 +1,318 @@
+@import url("customprop.css");
+
+body{
+  padding: var(--spacingMedium);
+  height: 100vh;
+  width: 100vw;
+
+ }
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.mainContent{
+display: flex;
+flex-direction: column;
+ align-items: center;
+}
+
+.frontpageBillede{
+  max-width:70%;
+  position: absolute;
+  top: 30%;
+
+
+ }
+.opratterForbindelse{
+  display: grid;
+  grid-template-columns: 35% 30% 35% ;
+  margin-top: var(--spacingXLarge);
+  align-items: center;
+ flex-grow: 1;
+ }
+
+nav{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacingXLarge);
+  width: 100%;
+
+}
+
+.button--prøv{
+ align-items: center;
+
+
+}
+.button--position{
+display: flexbox;
+flex-direction: column;
+bottom: 0;
+margin-bottom: var(--spacingMedium);
+position: fixed;
+} 
+
+
+/**   OPRETTER FORBINDELSE STARTS HERE  */
+/**  ANIMATION STARTS  */
+.loader {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color: aliceblue;
+      font-family: Roboto;
+    }
+    
+    .loader:before,
+    .loader:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 5px solid rgb(30, 183, 210);
+      box-shadow: 0 0 50px #fff, inset 0 0 50px #fff;
+    }
+    
+    .loader:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+    
+    @-webkit-keyframes gogoloader {
+      0% {
+        -webkit-transform: scale(0);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0;
+      }
+    }
+     /** ANIMATION ENDS */
+
+  
+  .mobileBillede{
+      max-width:100%;
+      align-self: center;
+     }
+
+ .pakkeBoksBillede{
+      padding-right: var(--spaceingXSmall);
+      max-width:75%;
+    
+     }
+
+
+   
+/**  FORBINDELSE FEJL 1  STARTS HERE */
+
+.loader--fejl {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color:rgb(239, 66, 66);;
+    }
+    
+    .loader--fejl:before,
+    .loader-fejl:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(239, 66, 66);
+      box-shadow: 0 0 50px rgb(223, 137, 137), inset 0 0 50px rgb(250, 79, 79);
+    }
+    
+    .loader--fejl:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--fejl:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+
+/**  FORBINDELSENS FEJL1 ENDS HERE !!!  */
+
+/**  FORBINDELSEN ETABLERET START :)  */
+.loader--connected {
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      margin: 100px auto;
+      position: relative;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 0;
+      text-transform: uppercase;
+      color:white;
+    }
+    
+    .loader--connected:before,
+    .loader--connected:after {
+      opacity: 0;
+      box-sizing: border-box;
+      content: "\0020";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      border: 3px solid rgb(9, 186, 50);;
+      box-shadow: 0 0 50px rgb(57, 165, 24), inset 0 0 50px rgb(77, 198, 36);
+    }
+    
+    .loader--connected:after {
+      z-index: 1;
+      -webkit-animation: gogoloader 2s infinite 1s;
+    }
+    
+    .loader--connected:before {
+      z-index: 2;
+      -webkit-animation: gogoloader 2s infinite;
+    }
+
+    /** FORRBINDELSEN SIDE ENDS HERE!!!  */
+
+
+    /** FLYT DIG STARTS HERE :) */
+    
+    .lilleMenneske{
+    max-width:80%;
+    align-self: center;
+  }
+
+    /** FLYT DIG  SIDE ENDS  HERE!!! */
+
+
+/** FEJL SIDE NR 3 FIND BOKSNUMMER STARTS HERE :) */
+img.nummer{
+  margin-top: var(--spacingSmall);
+  max-width: 28vh;
+
+
+}
+
+/** FORBINDELSEN FEJL SIDE 3 ENDS HERE!!! */  
+
+
+/** RING SIDE - STARTS HERE :) */
+.pageWrapper--Ring{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+img.support{
+max-width: 15vh;
+margin-top: 3.5rem;
+margin-bottom:var(--spacingMedium);
+}
+
+
+.button--telefon{
+  display: inline-block;
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 12px 48px;
+  text-align: center;
+  padding: var(--buttonHight) var(--buttonWidth); 
+  font-size:var(--tekstKnapper) ;
+  border-radius: var(--buttonborderradius);
+}
+
+.button--telefon:hover,
+.button--telefon:active {
+  background-color: initial;
+  color: #FF4742;
+}
+
+
+/**  Åbn LÅGE KNAP  - START HERE  */
+/**  ANIMATION  BUTTON   */
+
+
+.loader--åbnKnap{
+  line-height: 150px;
+  margin: 100px auto;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: x-large;
+  font-family: Roboto;
+  z-index: 0;
+  text-transform: uppercase;
+  color:#fff;
+  background-color:#00C608;
+  height: 150px;  
+  width: 150px;
+  border-radius: 50%;}
+
+.loader--åbnKnap:before,
+.loader-åbnKnap:after {
+  opacity: 0;
+  box-sizing: border-box;
+  content: "\0020";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  border: 3px solid#fff;
+  box-shadow: 0 0 50px #FFFFFF, inset 0 0 50px #fff;
+ 
+}
+ .loader--åbnKnap:before {
+  z-index: 2;
+  -webkit-animation: gogoloader 2s infinite;}
+
+  .loader--åbnKnap @keyframes shadoww {
+    0% {
+      text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
+    } 100% 
+    {
+      text-shadow: 0 0 10em #F24C81;
+    }
+  }

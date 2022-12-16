@@ -1,0 +1,316 @@
+/* - - - - - - - - Searching for package - - - - - - - - */
+
+.searchingForPackage {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchingForPackage__subheader {
+    text-align: center;
+    margin-top: var(--spaceMedium);
+}
+
+.loading__circles {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: transparent;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #8ABBD4;
+    border-bottom: 6px solid #8ABBD4;
+    align-self: center;
+}
+
+.animation {
+    animation: rotate 6s linear infinite normal;
+    margin: auto;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.helpAndForward__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.help__question {
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.help__questionImage {
+    width: 2.75rem;
+}
+
+/* - - - - - - - - Help Locker... - - - - - - - - - - */
+.close {
+    color: var(--secondary-border-color);
+    font-weight: bolder;
+    font-size: var(--fontXLarge);
+    border: none;
+}
+
+.help__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--spaceLarge);
+}
+
+.help__questions {
+    margin-bottom: var(--spaceLarge);
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.help__answers {
+    margin-top: var(--spaceXSmall);
+    cursor: pointer;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+
+
+  /* - - - - - - - -  toggle - - - - - - - -  */
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-color);
+    margin-top: var(--spaceLarge);
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: var(--backgroundSend-color);
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: all .4s ease;
+
+}
+
+.toggle-switch:before,
+.toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: whitesmoke;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+    border: none;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background: var(--backgroundPickup-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch:before {
+    left: 30px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label {
+    position: relative;
+    top: 2px;
+    font-weight: 900;
+}
+
+/* Opening Locker */
+.located__locker {
+    margin-bottom: var(--spaceLarge);
+}
+.located__locker--header {
+    margin-bottom: var(--spaceSmall);
+}
+
+.opening__locker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spaceSmall);
+    margin-bottom: var(--spaceLarge);
+}
+
+.opening__locker--small {
+    width: 170px;
+    height: 40px;
+    background-color: var(--package-box);
+}
+.opening__locker--medium {
+    width: 100%;
+    height: 100px;
+    background-color: var(--package-box);
+}
+
+.opening__locker--large{
+    grid-row-start: 4;
+    width: 100%;
+    height: 160px;
+    background-color: var(--package-box);
+}
+
+.opening__locker--largeBlue {
+    width: 100%;
+    height: 160px;
+    background-color: #8ABBD4;
+    animation: wiggle 2s linear infinite;
+}
+
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+
+    }
+      15% {
+        transform: rotateZ(-15deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      20% {
+        transform: rotateZ(10deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      25% {
+        transform: rotateZ(-10deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      30% {
+        transform: rotateZ(6deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      35% {
+        transform: rotateZ(-4deg);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+      40%, 100% {
+        transform: rotateZ(0);
+        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+      }
+} 
+
+/* - - - - - - - - You got it page - - - - - - - -   */
+
+.yay__youGotIt {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.yay__youGotIt__image {
+    width: 100%;
+    margin: auto;
+    animation: jump 1s linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-1rem);
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: translateY(.5);
+        transform: rotateZ(15deg);
+    }
+    100% {
+        transform: translateY(1rem);
+        transform: rotateZ(0);
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E6E7E8;
+    border-radius: var(--spaceXLarge);
+    padding: var(--spaceMedium);
+    width: 10rem;
+    gap: .5rem;
+
+}
+
+.info__image {
+    width: 2rem;
+}
+
+.gotIt_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* - - - - - - - - Rate us - - - - - - - -   */
+form {
+    margin: 0;
+}
+
+.rate {
+    height: 100vh;
+}
+
+.rate__us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75%;
+}
+
+.rate__us--button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rate__us--smallText {
+    margin: 0;
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+    margin-top: var(--spaceXSmall);
+}
+
+.rate__box {
+    background: white;
+    border-radius: 16px;
+    border: 3px solid var(--buttonBorder-color);
+    padding: var(--spaceXSmall);
+    text-align: center;
+    margin-bottom: var(--spaceSmall);
+}
+
+.rate__box--img {
+    width: 44px;
+}

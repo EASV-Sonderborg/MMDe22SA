@@ -1,0 +1,70 @@
+.header{
+    background-color: darkolivegreen;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ min-height: 60px;
+}
+.header h1{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(246, 238, 227);
+    text-align: center;
+    
+}
+
+.button__campingideas{
+    text-align: center;
+    border-radius: 12px;
+    background-color: darkolivegreen;
+    color: rgb(255, 255, 255);
+    border-style: none;
+
+}
+.button__campingactivity{
+    text-align: center;
+    border-radius: 12px;
+    background-color: darkolivegreen;
+    color: rgb(255, 255, 255);
+    border-style: none;
+
+}
+
+.header .search__bar{
+   border-radius: 12px;
+}
+
+.footer{
+    background-color: rgb(40, 84, 50);
+    display: grid;
+    grid-template-areas: 
+    "map alert sos camp weather";
+    
+}
+
+.map__button{
+
+    border-style: solid;
+    grid-area: map;
+}
+.alert__button{
+    border-style: solid;
+    grid-area: alert;
+}
+
+.sos__button{
+    border-style: solid;
+    grid-area: sos;
+}
+
+.camp__button{
+  border-style: solid;
+  grid-area: camp;
+}
+
+.weather__button{
+    border-style: solid;
+    grid-area: weather;
+}
