@@ -37,5 +37,5 @@
     height: 50px;
     width: 90%;
     border-radius: 2.5rem;
-    border-color: #9CD877;
+    border-color: var(var(--buttonBorder-color));
 }
