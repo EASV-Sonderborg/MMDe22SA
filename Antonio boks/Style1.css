@@ -8,7 +8,7 @@
     --spacingLarge: calc(var(--spacingDefault) * 2.5);
     --spacingXLarge: calc(var(--spacingDefault) * 3.5);
     
-      color: white;
+    color: white;
     --fontSizeSmall: 1rem;
     --fontSizeMedium: 1.5rem;
     --fontSizeLarge: 2.5rem;
@@ -44,9 +44,7 @@ body {
 img {
     max-width: 100%;
 }
-.logo {
-    margin-bottom: var(--spacingLarge);
-}
+
 .login {
     display: flex;
     flex-direction: column;
@@ -64,7 +62,7 @@ img {
 
 /* Styling button  */
 /* Ref: https://www.bestcssbuttongenerator.com/ */
-.login__btn {
+.sendkode__btn {
 	box-shadow: 3px 4px 0px 0px #3dc21b;
 	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
 	background-color:#44c767;
@@ -80,11 +78,11 @@ img {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
-.login__btn:hover {
+.sendkode__btn:hover {
 	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
 	background-color:#5cbf2a;
 }
-.login__btn:active {
+.sendkoden__btn:active {
 	position:relative;
 	top:1px;
 }
