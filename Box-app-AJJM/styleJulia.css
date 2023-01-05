@@ -47,7 +47,7 @@ nav{
 
 
 }
-.button--position{
+.buttonPosition{
 display: flexbox;
 flex-direction: column;
 bottom: 0;
