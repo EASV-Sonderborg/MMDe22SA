@@ -45,11 +45,12 @@ body {
     border: none; 
     margin-top: 10rem; 
     margin-bottom: var(--spacingSmall);
+   
 }
 
 .buttons__logPaa {
     background-color: #83C5F0;
-    border: 1px solid black;
+    
 }
 
 
