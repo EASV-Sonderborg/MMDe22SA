@@ -54,15 +54,12 @@ h1{
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin-bottom: var(--spacingSmall);
    
 }
 
-h3{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    margin-bottom: var(--spacingSmall);
-}
 
 p{
     font-family: 'Roboto', sans-serif ;

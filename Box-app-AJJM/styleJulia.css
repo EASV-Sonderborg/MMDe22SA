@@ -303,11 +303,11 @@ margin-bottom:var(--spacingMedium);
   box-shadow: 0 0 50px #FFFFFF, inset 0 0 50px #fff;
  
 }
- .loader--åbnKnap:before {
+ .loader--aabnKnap:before {
   z-index: 2;
   -webkit-animation: gogoloader 2s infinite;}
 
-  .loader--åbnKnap @keyframes shadoww {
+  .loader--aabnKnap @keyframes shadoww {
     0% {
       text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
     } 100% 
