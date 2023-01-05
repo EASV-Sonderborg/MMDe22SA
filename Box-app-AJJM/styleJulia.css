@@ -55,9 +55,13 @@ margin-bottom: var(--spacingMedium);
 position: fixed;
 } 
 
+/* loader code  kilde fra https://codepen.io/frippz/pen/vmdpqP */ 
+
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
+
+
 .loader {
       width: 150px;
       height: 150px;
