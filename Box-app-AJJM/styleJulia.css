@@ -233,7 +233,7 @@ img.nummer{
 
 /** RING SIDE - STARTS HERE :) */
 .pageWrapper--Ring{
-  margin-top: 1.5rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,7 +273,7 @@ margin-bottom:var(--spacingMedium);
 /**  ANIMATION  BUTTON   */
 
 
-.loader--åbnKnap{
+.loader--aabnKnap{
   line-height: 150px;
   margin: 100px auto;
   position: relative;
@@ -289,8 +289,8 @@ margin-bottom:var(--spacingMedium);
   width: 150px;
   border-radius: 50%;}
 
-.loader--åbnKnap:before,
-.loader-åbnKnap:after {
+.loader--aabnKnap:before,
+.loader-aabnKnap:after {
   opacity: 0;
   box-sizing: border-box;
   content: "\0020";

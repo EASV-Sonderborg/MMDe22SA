@@ -98,12 +98,12 @@ nav{
 
 
 }
-.button--prøv{
+.button--prov{
     background:var(--colorButtonSecond);
 }
 
 
-.button--prøv:active{
+.button--prov:active{
 filter: drop-shadow(0 0 0.7rem #E9722D);
 
 }
