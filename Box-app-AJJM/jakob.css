@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.luklågeskrift{
+.closeText{
   color: #FF4742;
 }
 
-.dennelågeskrift{ 
+.boxText{ 
   color:#fff
 }
 
@@ -53,7 +53,7 @@ max-width: 15vh;
 }
     
 
-.buthole{
+.boxButton{
   display: flex;
   justify-content: center;
   width: 100%;

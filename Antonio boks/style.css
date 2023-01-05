@@ -8,7 +8,7 @@
     --spacingLarge: calc(var(--spacingDefault) * 2.5);
     --spacingXLarge: calc(var(--spacingDefault) * 3.5);
     
-    
+      color: white;
     --fontSizeSmall: 1rem;
     --fontSizeMedium: 1.5rem;
     --fontSizeLarge: 2.5rem;
