@@ -88,7 +88,7 @@
 
 
 
-  /* - - - - - - - -  toggle - - - - - - - -  */
+/* - - - - - - - -  toggle - - - - - - - -  */
 .toggle {
     cursor: pointer;
     display: inline-block;
@@ -152,6 +152,7 @@
 .located__locker {
     margin-bottom: var(--spaceLarge);
 }
+
 .located__locker--header {
     margin-bottom: var(--spaceSmall);
 }
@@ -168,13 +169,14 @@
     height: 40px;
     background-color: var(--package-box);
 }
+
 .opening__locker--medium {
     width: 100%;
     height: 100px;
     background-color: var(--package-box);
 }
 
-.opening__locker--large{
+.opening__locker--large {
     grid-row-start: 4;
     width: 100%;
     height: 160px;
@@ -190,36 +192,45 @@
 
 
 @keyframes wiggle {
-    0%, 7% {
+
+    0%,
+    7% {
         transform: rotateZ(0);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
 
     }
-      15% {
+
+    15% {
         transform: rotateZ(-15deg);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-      20% {
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+
+    20% {
         transform: rotateZ(10deg);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-      25% {
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+
+    25% {
         transform: rotateZ(-10deg);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-      30% {
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+
+    30% {
         transform: rotateZ(6deg);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-      35% {
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+
+    35% {
         transform: rotateZ(-4deg);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-      40%, 100% {
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+
+    40%,
+    100% {
         transform: rotateZ(0);
-        box-shadow: 2px 12px 41px 5px rgba(138,132,132,0.75);
-      }
-} 
+        box-shadow: 2px 12px 41px 5px rgba(138, 132, 132, 0.75);
+    }
+}
 
 /* - - - - - - - - You got it page - - - - - - - -   */
 
@@ -241,10 +252,12 @@
         transform: translateY(-1rem);
         transform: rotateZ(0);
     }
+
     50% {
         transform: translateY(.5);
         transform: rotateZ(15deg);
     }
+
     100% {
         transform: translateY(1rem);
         transform: rotateZ(0);
@@ -290,7 +303,7 @@ form {
     margin-top: 75%;
 }
 
-.rate__us--button{
+.rate__us--button {
     display: flex;
     justify-content: flex-end;
 }
