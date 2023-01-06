@@ -12,7 +12,7 @@ body {
 }
 
 
-.overskrift--centreret {
+.overskrift{
     font-family: Roboto;
     font-weight: bold;
     color: var(--colorElements);
@@ -65,6 +65,8 @@ body {
     font-family: Roboto Slab;
     font-size: 1rem;
     margin-bottom: var(--spacingSmall);
+    padding: 1rem;
+    
   
 
 }
