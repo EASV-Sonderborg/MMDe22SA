@@ -66,17 +66,22 @@ body {
     font-size: 1rem;
     margin-bottom: var(--spacingSmall);
     padding: 1rem;
+    text-align: center;
     
   
 
 }
 
 .oprettelse {
+    display: flex;
+    place-content: center;
     margin-bottom: var(--spacingMedium);
+
 }
 
 .inputFelt {
-    display: grid;
+    display: flex;
+    place-content: center;
 
 }
 
@@ -101,6 +106,7 @@ body {
 
 .oprettelse__aktiveringslinkInformation {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
   
 }
 
