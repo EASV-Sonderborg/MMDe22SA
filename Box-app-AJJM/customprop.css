@@ -99,12 +99,9 @@ nav{
     background:var(--colorButtonSecond);
 }
 
-
-.button--prov:active{
-filter: drop-shadow(0 0 0.7rem #E9722D);
-
+.button--ring{
+  background-color: var(--colorTekstAttention);
 }
-
 .arrow--back{
     font-size: var(--overskrift);
     color:var(--colorElements);

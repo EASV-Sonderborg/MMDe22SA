@@ -236,7 +236,7 @@ img.nummer{
 
 
 /** RING SIDE - STARTS HERE :) */
-.pageWrapper--Ring{
+.pageWrapperRing{
   display: flex;
   flex-direction: column;
   align-items: center;
