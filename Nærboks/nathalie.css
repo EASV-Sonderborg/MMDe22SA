@@ -165,9 +165,11 @@ a {
 .card {
     border-radius: 25px;
     margin: var(--spaceSmall);
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 .card__green {
     background-color: var(--backgroundPickup-color);
@@ -418,11 +420,22 @@ a {
     margin-bottom: var(--spaceXLarge);
     border: var(--buttonBorder-color);
 }
+.vidre__button {
+    justify-self: center;
+    border: none;
+}
 .registrer__vidre {
-    text-align: center;
-    font-size: var(--fontSizeLarge);
+    background-color: white;
+    padding: 8px 64px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
     color: var(--font-color);
-    text-decoration: underline;
+    font-size: var(--fontSizeLarge);
+    margin-top: var(--spaceMedium);
+    margin-bottom: var(--spaceMedium);
+    border: var(--buttonBorder-color);
+    text-align: center;
 }
 
 /* Størrelse */
