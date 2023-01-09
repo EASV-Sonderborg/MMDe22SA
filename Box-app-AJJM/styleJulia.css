@@ -48,7 +48,7 @@ nav{
 
 }
 .buttonPosition{
-display: flexbox;
+display: flex;
 flex-direction: column;
 bottom: 0;
 margin-bottom: var(--spacingMedium);
@@ -311,11 +311,4 @@ margin-bottom:var(--spacingMedium);
   z-index: 2;
   -webkit-animation: gogoloader 2s infinite;}
 
-  .loader--aabnKnap @keyframes shadoww {
-    0% {
-      text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
-    } 100% 
-    {
-      text-shadow: 0 0 10em #F24C81;
-    }
-  }
+ 
