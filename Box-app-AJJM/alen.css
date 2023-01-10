@@ -1,5 +1,10 @@
 @import url("customprop.css"); 
 
+
+main {
+    min-height: 77vh;
+}
+
 .logo {
     width: 90vw;
     padding-top: 6rem;
@@ -120,7 +125,6 @@ body {
 }
 
 .button__sendAktiveringslink {
-    margin-top: 15rem;
     color: var(--colorElements);
     background-color: var(--colorButtonMain);
     font-size: var(--textButton);
