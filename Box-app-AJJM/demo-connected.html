@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styleJulia.css">
-  <title>Opretter-Forbindelse</title>
+  <title>Søger forbindelse</title>
 </head>
 
 <body>
   <section class="container">
     <nav>
-      <a href="Start-Side.html">
+      <a href="#">
         <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
       </a>
 
@@ -33,24 +33,26 @@
 
 
     <h1>Opretter forbindelse</h1>
-    <h3 class="forbindelseUnderskrift"> Det kan tage et par sekunder... </h3>
+    <h2 class="forbindelseUnderskrift"> Det kan tage et par sekunder... </h2>
 
     <section class="opratterForbindelse">
       <img class="mobileBillede" src="imgs/handy.png" alt="mobile billede">
-      <div class="loader">Søger</div>
-      <img class="pakkeBoksBillede" src="imgs/NærB.png" alt="pakkeboks billede">
+      <figure class="loader">Søger</figure>
+      <img class="pakkeBoksBillede" src="imgs/NaerB.png" alt="pakkeboks billede">
     </section>
 
 
     <script>
       setTimeout(function () {
-        window.location.href = 'Forbindelse-Etableret.html';
+        window.location.href = 'connected.html';
       }, 5000);
     </script>
 
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-  </section>
 
+
+
+  </section>
+  <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 </body>
 
 </html>

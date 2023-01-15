@@ -7,11 +7,11 @@
   align-items: center;
 }
 
-.luklågeskrift{
+.closeText{
   color: #FF4742;
 }
 
-.dennelågeskrift{ 
+.boxText{ 
   color:#fff
 }
 
@@ -53,14 +53,14 @@ max-width: 15vh;
 }
     
 
-.buthole{
+.boxButton{
   display: flex;
   justify-content: center;
   width: 100%;
   
 }
 
-
+/* inspiration kilde Burger Menu fra: https://codepen.io/FreddyG87/pen/LYPeyao * Morphing Fullscreen Hamburger Menu Demo*/ 
 
 
 

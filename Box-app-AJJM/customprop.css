@@ -54,15 +54,12 @@ h1{
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  margin-bottom: var(--spacingSmall);
    
 }
 
-h3{
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    margin-bottom: var(--spacingSmall);
-}
 
 p{
     font-family: 'Roboto', sans-serif ;
@@ -98,16 +95,13 @@ nav{
 
 
 }
-.button--prøv{
+.button--prov{
     background:var(--colorButtonSecond);
 }
 
-
-.button--prøv:active{
-filter: drop-shadow(0 0 0.7rem #E9722D);
-
+.button--ring{
+  background-color: var(--colorTekstAttention);
 }
-
 .arrow--back{
     font-size: var(--overskrift);
     color:var(--colorElements);
@@ -120,7 +114,7 @@ filter: drop-shadow(0 0 0.7rem #E9722D);
 
 
 
-
+/* inspiration kilde Burger Menu fra: https://codepen.io/FreddyG87/pen/LYPeyao * Morphing Fullscreen Hamburger Menu Demo*/ 
 
 span.menu{
   margin-right:10px;

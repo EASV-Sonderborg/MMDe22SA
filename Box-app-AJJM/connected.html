@@ -6,15 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleJulia.css">
-    <title>ÅbnKnap
-    </title>
+    <title>Bluetooth connected</title>
 </head>
 
 <body>
-
     <section class="container">
         <nav>
-            <a href="Forbindelse-Etableret.html">
+            <a  href="#">
                 <ion-icon class="arrow--back" name="arrow-back-outline"></ion-icon>
             </a>
             <label>
@@ -33,19 +31,19 @@
         </nav>
 
 
-        <h1>Åbn Låge</h1>
-        <h3>Pakke ID: 123456874 <br>Hent pakken </h3>
-        <section class="loader--åbnKnap"> Tryk</section>
-        <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+        <h1>Forbindelsen etableret.</h1>
+        <h2>Pakkeboksen er klar </h2>
+        <section class="opratterForbindelse">
+            <img class="mobileBillede" src="imgs/handy.png" alt="mobile i hånden billede og Bluetoothbølger for etablere forbindelse med boksen">
+            <figure class="loader--connected">Ready</figure>
+            <img class="pakkeBoksBillede" src="imgs/NaerBoksGreen.png" alt="pakkeboks billede">
+        </section>
 
-
+        <script> setTimeout(function () { window.location.href = 'button-open.html'; }, 3000); 
+        </script>
 
     </section>
-    <script>
-        setTimeout(function () {
-            window.location.href = 'denne-boks.html';
-        }, 3000);
-    </script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
 
 </body>
 

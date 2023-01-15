@@ -47,17 +47,21 @@ nav{
 
 
 }
-.button--position{
-display: flexbox;
+.buttonPosition{
+display: flex;
 flex-direction: column;
 bottom: 0;
 margin-bottom: var(--spacingMedium);
 position: fixed;
 } 
 
+/*  inspiration til loader kod fra https://codepen.io/aprilang/pen/bjvbKb */ 
+
 
 /**   OPRETTER FORBINDELSE STARTS HERE  */
 /**  ANIMATION STARTS  */
+
+
 .loader {
       width: 150px;
       height: 150px;
@@ -232,8 +236,7 @@ img.nummer{
 
 
 /** RING SIDE - STARTS HERE :) */
-.pageWrapper--Ring{
-  margin-top: 1.5rem;
+.pageWrapperRing{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -273,7 +276,7 @@ margin-bottom:var(--spacingMedium);
 /**  ANIMATION  BUTTON   */
 
 
-.loader--åbnKnap{
+.loader--aabnKnap{
   line-height: 150px;
   margin: 100px auto;
   position: relative;
@@ -289,8 +292,8 @@ margin-bottom:var(--spacingMedium);
   width: 150px;
   border-radius: 50%;}
 
-.loader--åbnKnap:before,
-.loader-åbnKnap:after {
+.loader--aabnKnap:before,
+.loader-aabnKnap:after {
   opacity: 0;
   box-sizing: border-box;
   content: "\0020";
@@ -304,15 +307,8 @@ margin-bottom:var(--spacingMedium);
   box-shadow: 0 0 50px #FFFFFF, inset 0 0 50px #fff;
  
 }
- .loader--åbnKnap:before {
+ .loader--aabnKnap:before {
   z-index: 2;
   -webkit-animation: gogoloader 2s infinite;}
 
-  .loader--åbnKnap @keyframes shadoww {
-    0% {
-      text-shadow: 0 1px #F24C81, 0 -1px #F24C81, 1px 0 #F24C81, -1px 0 #F24C81;
-    } 100% 
-    {
-      text-shadow: 0 0 10em #F24C81;
-    }
-  }
+ 

@@ -1,8 +1,12 @@
 @import url("customprop.css"); 
 
+
+main {
+    min-height: 77vh;
+}
+
 .logo {
     width: 90vw;
-    height: 54px;
     padding-top: 6rem;
 }
 
@@ -13,7 +17,7 @@ body {
 }
 
 
-.overskrift--centreret {
+.overskrift{
     font-family: Roboto;
     font-weight: bold;
     color: var(--colorElements);
@@ -45,11 +49,12 @@ body {
     border: none; 
     margin-top: 10rem; 
     margin-bottom: var(--spacingSmall);
+   
 }
 
 .buttons__logPaa {
     background-color: #83C5F0;
-    border: 1px solid black;
+    
 }
 
 
@@ -65,16 +70,23 @@ body {
     font-family: Roboto Slab;
     font-size: 1rem;
     margin-bottom: var(--spacingSmall);
+    padding: 1rem;
+    text-align: center;
+    
   
 
 }
 
 .oprettelse {
+    display: flex;
+    place-content: center;
     margin-bottom: var(--spacingMedium);
+
 }
 
 .inputFelt {
-    display: grid;
+    display: flex;
+    place-content: center;
 
 }
 
@@ -99,6 +111,7 @@ body {
 
 .oprettelse__aktiveringslinkInformation {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
   
 }
 
@@ -112,7 +125,6 @@ body {
 }
 
 .button__sendAktiveringslink {
-    margin-top: 15rem;
     color: var(--colorElements);
     background-color: var(--colorButtonMain);
     font-size: var(--textButton);
