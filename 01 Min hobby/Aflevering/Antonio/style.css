@@ -86,11 +86,20 @@ body {
     grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
 }
+.paris  {display: flex;
+  justify-content: center;
+  gap: 2rem;
+  grid-template: auto;
+ 
+  max-width: 100%;
+}
+
+    
 
 
 #newyork{ image: resolution 50px; ;
     
-}
+
 
 #newyork {
     
