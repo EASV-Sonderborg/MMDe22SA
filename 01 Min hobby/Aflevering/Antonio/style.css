@@ -1,39 +1,32 @@
-
-header{
+ *p{
+      font: 1em sans-serif;
+      color:white;
+    text-align: justify;
+      }
+ header{
     font:  sans-serif;
     color:white;
- 
-  
-}
+     }
 img {
    
-    max-width: 40%;
-    justify-content: center;
+      max-width: 40%;
+      justify-content: center;
 
-   }
-
- p{
-    font: 1em sans-serif;
-        color: white;
-    }
-    h1,h2, h3 {
-    color:white;
-    padding: 15px; ;
-    text-align: center;
-    border: 0ch;
-
-    } 
+      }
+  h1,h2, h3 {
+        color:white;
+        padding: 15px; ;
+        text-align: center;
+        border: 0ch;
+      } 
 h1 {margin: 10px;;
+      }
 
-}
 body {
    
    grid-template-columns: max-content;
-
-    
-    background-color: hsl(287, 91%, 14%);
+  background-color: hsl(287, 91%, 14%);
     margin: 1rem;
-    
       }
       .navegacion{
         width: 1000px;
@@ -54,54 +47,66 @@ body {
         text-decoration:none;
         color: rgb(239, 230, 230);
       }
-      .menu :hover{
+.menu :hover{
         color: rgb(231, 86, 13);
         transition: all .3s;
-
       }
-       
-        .introphotos {
-       
+      
+      
+ .introphotos {
           display: flex;
           gap: 2rem;
           flex-direction;
           max-width: 100%;
-      }
-          
-      
-      
-      
-      #container{ 
+              }
+#container{ 
         width: 100%;
        text-align:center ;
         border: 10px white;
-        
-      }
-        
-
+        text-decoration: ;
+        font: 1em sans-serif;
+        color:white;
+        }
+.london__text {
+          padding-left: 10%;
+         padding-right: 10%;
+         font: 1,2em sans-serif;
+        color:white;
+                }
+a :hover{
+          color: rgb(231, 86, 13);
+          transition: all .3s;  
+        }
 
 .profil {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: 1fr 1fr;
+          margin-top: 2rem;
 }
-.paris  {display: flex;
-  justify-content: center;
-  gap: 2rem;
-  grid-template: auto;
- 
-  max-width: 100%;
-}
-
-    
-
-
-#newyork{ image: resolution 50px; ;
-    
-
-
+.paris  {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          grid-template: auto;
+        
+          max-width: 100%;
+          }
+#newyork{ 
+          justify-content: center;
+          gap: 2rem;
+        
+          max-width: 100%;
+        }
 #newyork {
     
 
-}
+        }
+       @media(max-width:700px)
+      {
+        .introphotos {
+          display: block;
+          gap: 2rem;
+          flex-direction;
+          max-width: 100%;
+      }
