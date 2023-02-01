@@ -1,8 +1,8 @@
- *p{
-      font: 1em sans-serif;
+ */*p{
+      font: 2em sans-serif;
       color:white;
     text-align: justify;
-      }
+      }*/
  header{
     font:  sans-serif;
     color:white;
@@ -30,11 +30,13 @@ body {
       }
       .navegacion{
         width: 1000px;
-        margin: 10px auto;
+        margin: 10px 10px;
        background-color:rgba(198, 233, 215, 0.384) ;
+       
       }
       .navegacion ul{
         list-style: none;
+       
       }
       .menu >li{
         position: relative;
@@ -42,48 +44,59 @@ body {
       }
       .menu >li > a{
         display: block;
-        padding: 0px 18px;
-        font-family: open sans-serif;
+        padding: 10px 10px; 
+        font: 1,2em sans-serif;
+      
         text-decoration:none;
         color: rgb(239, 230, 230);
+        
       }
 .menu :hover{
         color: rgb(231, 86, 13);
         transition: all .3s;
       }
-      
+      a :hover{
+        color: rgb(231, 86, 13);
+        transition: all .3s;  
+      }
       
  .introphotos {
           display: flex;
           gap: 2rem;
           flex-direction;
           max-width: 100%;
+        
               }
-#container{ 
-        width: 100%;
-       text-align:center ;
-        border: 10px white;
-        text-decoration: ;
-        font: 1em sans-serif;
-        color:white;
-        }
-.london__text {
-          padding-left: 10%;
-         padding-right: 10%;
-         font: 1,2em sans-serif;
-        color:white;
-                }
-a :hover{
-          color: rgb(231, 86, 13);
-          transition: all .3s;  
-        }
+ .intro__text {
+                  padding-left: 10%;
+                  padding-right: 10%;
+                  font: 1em sans-serif;
+                color:white;
+              }
 
-.profil {
-          display: grid;
-          gap: 1rem;
-          grid-template-columns: 1fr 1fr;
-          margin-top: 2rem;
-}
+#container{ 
+            width: 100%;
+            text-align:center ;
+            border: 10px white;
+            text-decoration: ;
+            font: 1em sans-serif;
+            color:white;
+            }
+.london { color: white;
+               }
+
+.photo__london { 
+  min-width: 60%; 
+          }
+ .london__text {
+                padding-left: 10%;
+                padding-right: 10%;
+                font: 1em sans-serif;
+              color:white;
+                }
+
+
+
 .paris  {
           display: flex;
           justify-content: center;
@@ -92,21 +105,49 @@ a :hover{
         
           max-width: 100%;
           }
+ .paris__text{
+            padding-left: 10%;
+            padding-right: 10%;
+            font: 1em sans-serif;
+          color:white;
+  }
 #newyork{ 
           justify-content: center;
           gap: 2rem;
         
           max-width: 100%;
         }
-#newyork {
-    
+.newyork__text {
+          padding-left: 10%;
+          padding-right: 10%;
+          font: 1em sans-serif;
+        color:white;
+                  }
+.photo__copenhagen{ 
+  min-width: 60%;
+}
 
-        }
+.copenhaguen__text { 
+        padding-left: 10%;
+        padding-right: 10%;
+        font: 1em sans-serif;
+      color:white;
+          }
+
        @media(max-width:700px)
       {
         .introphotos {
           display: block;
           gap: 2rem;
-          flex-direction;
+        
           max-width: 100%;
       }
+      .menu >li{
+        position: relative;
+        display: block;
+        color:white;
+    }
+    .intro__text {
+      padding-left: 2%;
+      padding-right: 2%;
+  }
