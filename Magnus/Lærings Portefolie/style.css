@@ -1,6 +1,29 @@
-header{
+body{
 
 }
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: antiquewhite;
+    
+}
+.left{
+    display: flex;
+
+}
+.right{
+ display: flex;
+
+}
+
 main{
     
 }
+.icon{
+    font-size: 2rem;
+}
+.left__logo{
+    width: 140px;
+
+}
+
