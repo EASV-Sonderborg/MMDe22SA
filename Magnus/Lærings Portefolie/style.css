@@ -5,15 +5,23 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: antiquewhite;
-    
+
 }
 .left{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: flex-start;
+
+}
+.left__icon{
+    font-size: 3rem;
 
 }
 .right{
- display: flex;
-
+    display: flex;
+    justify-content: center;
 }
 
 main{
