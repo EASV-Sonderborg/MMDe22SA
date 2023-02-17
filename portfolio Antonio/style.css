@@ -1,0 +1,23 @@
+*main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 240px;
+}
+img {  
+    max-width: 50%; 
+}
+h2 {
+    min-width: 200px;
+}
+.mutante{size: 10%;
+
+}
+h1 {
+    margin: 20px 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: azure;
+    color: black;
+   
+
+}
