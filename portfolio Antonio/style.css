@@ -1,3 +1,34 @@
+.navegacion {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: aliceblue;
+    }
+    .navegacion ul {
+        list-style: none;
+        }
+    .menu li{
+        position:relative;
+        display: inline-block;
+    }
+    .menu >li a{
+       display: block;
+       padding:0px 18px;
+       font-family: open sans-serif;
+        text-decoration: none;
+        color: rgb(31, 29, 29);
+        background-color: rgb (18, 18, 23);
+        }
+        .menu :hover {
+         color: rgb(231,86,13); 
+         transition: all.3s;  
+        }
+        .introphotos {
+            display: flex;
+            gap: 2rem;
+            flex-direction;
+            max-width: 100%;}
+
+
 *main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -9,7 +40,7 @@ img {
 h2 {
     min-width: 200px;
 }
-.mutante{size: 10%;
+.mutante {flex: auto;
 
 }
 h1 {
@@ -21,3 +52,24 @@ h1 {
    
 
 }
+body {
+        grid-template-columns: max-content;
+        background-color: blueviolet;
+        margin: 1rem;
+}
+
+.intro__text {
+                padding-left: 10%;
+                padding-right: 10%;
+                font: 1em sans-serif;
+              color:white;
+            }
+
+#container{ 
+          width: 100%;
+          text-align:center ;
+          border: 10px white;
+          text-decoration:none ;
+          font: 1em sans-serif;
+          color:white;
+          }
