@@ -1,0 +1,34 @@
+.introphoto{
+    mask-size: auto;
+    .navegacion{
+        width: 1000px;
+        margin: 10px 10px;
+     
+       
+      }
+      .navegacion ul{
+        list-style: none;
+       
+      }
+      .menu >li{
+        position: relative;
+        display: inline-block;
+      }
+      .menu >li > a{
+        display: block;
+        padding: 10px 10px; 
+        font: 1,2em sans-serif;
+      
+        text-decoration:none;
+        color: rgb(239, 230, 230);
+        
+      }
+.menu :hover{
+        color: rgb(231, 86, 13);
+        transition: all .3s;
+      }
+      a :hover{
+        color: rgb(231, 86, 13);
+        transition: all .3s;  
+      }
+}
