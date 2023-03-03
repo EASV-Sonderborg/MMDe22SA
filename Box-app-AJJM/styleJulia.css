@@ -186,8 +186,7 @@ position: fixed;
       color:white;
     }
     
-    .loader--connected:before,
-    .loader--connected:after {
+    .loader--connected:before,.loader--connected:after {
       opacity: 0;
       box-sizing: border-box;
       content: "\0020";
