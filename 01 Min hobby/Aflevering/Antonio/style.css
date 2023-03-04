@@ -1,97 +1,112 @@
-
-header{
+ *p{
+      font: 1em sans-serif;
+      color:white;
+    text-align: justify;
+      }
+ header{
     font:  sans-serif;
     color:white;
- 
-  
-}
+     }
 img {
    
-    max-width: 30%;
-    justify-content: center;
-    
+      max-width: 40%;
+      justify-content: center;
 
-   }
+      }
+  h1,h2, h3 {
+        color:white;
+        padding: 15px; ;
+        text-align: center;
+        border: 0ch;
+      } 
+h1 {margin: 10px;;
+      }
 
- p{
-    font: 1em sans-serif;
-        color: white;
-    }
-    h2, h3 {
-      margin: 10px;
-    color:white;
-    padding: 5px; ;
-    text-align: center;
-    border: 0ch;
-
-    } 
-h1 {margin: 10px;
-  color: blueviolet;
-  padding: 5px; ;
-  text-align: center;
-  border: 0ch;
-
-
-}
 body {
    
    grid-template-columns: max-content;
-
-    
-    background-color: hsl(287, 91%, 14%);
+  background-color: hsl(287, 91%, 14%);
     margin: 1rem;
-    
       }
       .navegacion{
         width: 1000px;
         margin: 10px auto;
-       background-color:rgba(198, 233, 215, 0.384)) ;
+       background-color:rgba(198, 233, 215, 0.384) ;
       }
       .navegacion ul{
         list-style: none;
       }
-      .menu li{
+      .menu >li{
         position: relative;
         display: inline-block;
       }
-      .menu >li a{
+      .menu >li > a{
         display: block;
         padding: 0px 18px;
         font-family: open sans-serif;
         text-decoration:none;
         color: rgb(239, 230, 230);
-        background-color: rgb(18, 18, 23);
       }
-      .menu :hover{
-        color: rgb(231, 86, ;
+.menu :hover{
+        color: rgb(231, 86, 13);
         transition: all .3s;
-
       }
-      .firstfoto { flex: auto;
-
-      }
-      #container{ 
+      
+      
+ .introphotos {
+          display: flex;
+          gap: 2rem;
+          flex-direction;
+          max-width: 100%;
+              }
+#container{ 
         width: 100%;
        text-align:center ;
         border: 10px white;
-        color: rgb(28, 29, 33);
+        text-decoration: ;
+        font: 1em sans-serif;
+        color:white;
+        }
+.london__text {
+          padding-left: 10%;
+         padding-right: 10%;
+         font: 1,2em sans-serif;
+        color:white;
+                }
+a :hover{
+          color: rgb(231, 86, 13);
+          transition: all .3s;  
+        }
+
+.profil {
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: 1fr 1fr;
+          margin-top: 2rem;
+}
+.paris  {
+          display: flex;
+          justify-content: center;
+          gap: 2rem;
+          grid-template: auto;
+        
+          max-width: 100%;
+          }
+#newyork{ 
+          justify-content: center;
+          gap: 2rem;
+        
+          max-width: 100%;
+        }
+#newyork {
+    
+
+        }
+       @media(max-width:700px)
+      {
+        .introphotos {
+          display: block;
+          gap: 2rem;
+          flex-direction;
+          max-width: 100%;
       }
-       
-
-
-     .drum {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 2rem;
-}
-
-#newyork{ image: resolution 50px; ;
-    
-}
-
-#container {  
-  padding: 10px;
-}
-    
-
