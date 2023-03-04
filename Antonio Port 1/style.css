@@ -1,6 +1,6 @@
 .introphoto{
-    mask-size: auto;
-    .navegacion{
+    background-image: ;
+   
         width: 1000px;
         margin: 10px 10px;
      
@@ -14,7 +14,7 @@
         position: relative;
         display: inline-block;
       }
-      .menu >li > a{
+      .menu >li > a{ 
         display: block;
         padding: 10px 10px; 
         font: 1,2em sans-serif;
@@ -31,4 +31,23 @@
         color: rgb(231, 86, 13);
         transition: all .3s;  
       }
-}
+      .introphoto {
+        background-image: ;
+  
+      /* Image is centered vertically and horizontally at all times */
+      background-position: center center;
+      
+      /* Image doesn't repeat */
+      background-repeat: no-repeat;
+      
+      /* Makes the image fixed in the viewport so that it doesn't move when 
+         the content height is greater than the image height */
+      background-attachment: fixed;
+      
+      /* This is what makes the background image rescale based on its container's size */
+      background-size: cover;
+      
+      /* Pick a solid background color that will be displayed while the background image is loading */
+      background-color:#464646;
+      }
+      
