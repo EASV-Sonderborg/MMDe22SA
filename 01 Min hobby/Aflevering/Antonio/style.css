@@ -7,8 +7,9 @@ header{
 }
 img {
    
-    max-width: 40%;
+    max-width: 30%;
     justify-content: center;
+    
 
    }
 
@@ -16,14 +17,20 @@ img {
     font: 1em sans-serif;
         color: white;
     }
-    h1,h2, h3 {
+    h2, h3 {
+      margin: 10px;
     color:white;
     padding: 5px; ;
     text-align: center;
     border: 0ch;
 
     } 
-h1 {margin: 10px;;
+h1 {margin: 10px;
+  color: blueviolet;
+  padding: 5px; ;
+  text-align: center;
+  border: 0ch;
+
 
 }
 body {
@@ -43,30 +50,36 @@ body {
       .navegacion ul{
         list-style: none;
       }
-      .menu >li{
+      .menu li{
         position: relative;
         display: inline-block;
       }
-      .menu >li > a{
+      .menu >li a{
         display: block;
         padding: 0px 18px;
         font-family: open sans-serif;
         text-decoration:none;
         color: rgb(239, 230, 230);
+        background-color: rgb(18, 18, 23);
       }
       .menu :hover{
-        color: rgb(231, 86, 13);
+        color: rgb(231, 86, ;
         transition: all .3s;
+
+      }
+      .firstfoto { flex: auto;
 
       }
       #container{ 
         width: 100%;
        text-align:center ;
         border: 10px white;
-        
+        color: rgb(28, 29, 33);
+      }
+       
 
 
-.profil {
+     .drum {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
@@ -77,8 +90,8 @@ body {
     
 }
 
-#newyork{
+#container {  
+  padding: 10px;
+}
     
 
-}
-}
