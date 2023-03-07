@@ -1,73 +1,55 @@
+
 .navegacion {
     width: 1000px;
     margin: 10px auto;
+   
+    
     
     }
     .navegacion ul {
         list-style: none;
+        color: white;
         }
-    .menu li{
-        position:relative;
-        display: inline-block;
+    
+        
     }
     .menu >li a{
        display: block;
        padding:0px 18px;
        font-family: open sans-serif;
         text-decoration: none;
-        color: rgb(31, 29, 29);
-        background-color: rgb (18, 18, 23);
+        color: w;
+       
+   
         }
         .menu :hover {
-         color: rgb(231,86,13); 
+         color: rgb(245, 240, 238); 
          transition: all.3s;  
         }
-        .introphotos {
-            display: flex;
-            gap: 2rem;
-            flex-direction;
-            max-width: 100%;}
-
-
-*main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 240px;
+body {
+    background-image: url(cover__photo.jpg);
+    background-repeat: no-repeat;
+    background-size: 375px 667px; /*Ifhone SE Size*/
+    background-attachment: fixed;
+    size:375px 667px ;
 }
-img {  
-    max-width: 50%; 
-}
-h2 {
-    min-width: 200px;
-}
-.mutante {flex: auto;
-
-}
-h1 {
-    margin: 20px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: azure;
-    color: black;
+    h1{
+        color: white;
+    font-family: roboto;
+    padding-left: 70px;
    
 
-}
-body {
-        
+    }
+
+ h2,h3 {
+    color: white;
+    font-family: roboto;
+
+padding-left: 40px;
+padding-top: 50px;
+
+   
+    
 }
 
-.intro__text {
-                padding-left: 10%;
-                padding-right: 10%;
-                font: 1em sans-serif;
-              color:white;
-            }
 
-#container{ 
-          width: 100%;
-          text-align:center ;
-          border: 10px white;
-          text-decoration:none ;
-          font: 1em sans-serif;
-          color:white;
-          }
