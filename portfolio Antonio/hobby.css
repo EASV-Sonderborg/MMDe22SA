@@ -1,27 +1,28 @@
 
-.navegacion {
-    width: 1000px;
-    margin: 10px auto;
+
+   
    
     
     
-    }
+    
     .navegacion ul {
         list-style: none;
-        color: white;
+       
         }
     
         
-    }
+    
     .menu >li a{
-       display: block;
-       padding:0px 18px;
+      
+      
        font-family: open sans-serif;
         text-decoration: none;
-        color: w;
+        color: yellow;
+    }
+     
        
    
-        }
+        
         .menu :hover {
          color: rgb(245, 240, 238); 
          transition: all.3s;  
@@ -37,6 +38,8 @@ body {
         color: white;
     font-family: roboto;
     padding-left: 70px;
+  
+   
    
 
     }
