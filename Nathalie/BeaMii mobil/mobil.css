@@ -1,0 +1,99 @@
+.top_info_img {
+    max-width: 100%;
+}
+
+
+
+.image_section {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.phone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    z-index: 1;
+}
+
+.image_frontpage {
+    position: absolute;
+    width: 30%;
+    top: 0rem;
+    left: 0rem;
+    z-index: 0;
+}
+.image_place {
+    position: absolute;
+    width: 22%;
+    top: 3rem;
+    left: 3.17rem;
+    z-index: 0;
+}
+.image_local {
+    position: absolute;
+    width: 22%;
+    top: 3rem;
+    left: 3.17rem;
+    z-index: 0;
+}
+.image_border {
+    position: absolute;
+    width: 22%;
+    top: 3rem;
+    left: 3.17rem;
+    z-index: 0;
+}
+.image_scan {
+    position: absolute;
+    width: 22%;
+    top: 3rem;
+    left: 3.17rem;
+    z-index: 0;
+}
+
+.btnAndImages {
+    position: relative;
+}
+.button_section {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.btn_frontpage {
+    position: absolute;
+    top: 5rem;
+    left: 3.3rem;
+    width: 4rem;
+    height: 2rem;
+    opacity: 0.1;
+}
+.btn_place {
+    position: absolute;
+    top: 14.5rem;
+    left: 4rem;
+}
+.btn_local {
+    position: absolute;
+    top: 20rem;
+    left: 4rem;
+}
+.btn_border {
+    position: absolute;
+    top: 25.5rem;
+    left: 4rem;
+}
+.btn_scan {
+    position: absolute;
+    top: 31rem;
+    left: 4rem;
+}
+
+.theBtns {
+    width: 15rem;
+    height: 4rem;
+    opacity: 0.1;
+}
