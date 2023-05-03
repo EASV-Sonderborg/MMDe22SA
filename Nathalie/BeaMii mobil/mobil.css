@@ -14,41 +14,39 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
     z-index: 1;
 }
 
 .image_frontpage {
     position: absolute;
-    width: 30%;
     top: 0rem;
     left: 0rem;
     z-index: 0;
 }
 .image_place {
     position: absolute;
-    width: 22%;
+    max-width: 17.5rem;
     top: 3rem;
     left: 3.17rem;
     z-index: 0;
 }
 .image_local {
     position: absolute;
-    width: 22%;
+    max-width: 17.5rem;
     top: 3rem;
     left: 3.17rem;
     z-index: 0;
 }
 .image_border {
     position: absolute;
-    width: 22%;
+    max-width: 17.5rem;
     top: 3rem;
     left: 3.17rem;
     z-index: 0;
 }
 .image_scan {
     position: absolute;
-    width: 22%;
+    max-width: 17.5rem;
     top: 3rem;
     left: 3.17rem;
     z-index: 0;
@@ -56,6 +54,8 @@
 
 .btnAndImages {
     position: relative;
+    width: 30rem;
+    height: 60rem;
 }
 .button_section {
     position: relative;
@@ -69,7 +69,7 @@
     left: 3.3rem;
     width: 4rem;
     height: 2rem;
-    opacity: 0.1;
+    opacity: 0.3;
 }
 .btn_place {
     position: absolute;
@@ -95,5 +95,9 @@
 .theBtns {
     width: 15rem;
     height: 4rem;
-    opacity: 0.1;
+    opacity: 0.3;
+}
+
+.video {
+    max-width: 25%;
 }
