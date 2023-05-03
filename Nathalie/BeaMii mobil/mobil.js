@@ -40,7 +40,7 @@ frontpageButton.addEventListener("click", function() {
         scan: -1
     };
     updateZIndex();
-    scanImage.pause();
+    // scanImage.pause();
 });
 
 placeButton.addEventListener("click", function() {
