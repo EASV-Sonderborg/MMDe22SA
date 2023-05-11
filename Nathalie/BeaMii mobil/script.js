@@ -1,57 +1,89 @@
-/*const btnSteder = document.querySelector('.steder');
-btnSteder.addEventListener('click', /** move image/video forward on layers *//*);
+// Get the HTML elements
+const frontpageButton = document.querySelector(".btn_frontpage");
+const placeButton = document.querySelector(".btn_place");
+const localButton = document.querySelector(".btn_local");
+const borderButton = document.querySelector(".btn_border");
+const scanButton = document.querySelector(".btn_scan");
 
-/*const btnViewSteder = document.querySelector('.allStudents');
+const phoneImage = document.querySelector(".phone");
+const frontpageImage = document.querySelector(".image_frontpage");
+const placeImage = document.querySelector(".image_place");
+const localImage = document.querySelector(".image_local");
+const borderImage = document.querySelector(".image_border");
+const scanImage = document.querySelector(".image_scan");
 
-function viewSteder() {
-    for(i in btnViewSteder){
-        console.log(btnViewSteder);
-        
-    }
+// Set initial z-index values
+let zIndexValues = {
+    frontpage: 0,
+    place: -1,
+    local: -1,
+    border: -1,
+    scan: -1
+};
+
+// Function to update z-index values
+function updateZIndex() {
+    frontpageImage.style.zIndex = zIndexValues.frontpage;
+    placeImage.style.zIndex = zIndexValues.place;
+    localImage.style.zIndex = zIndexValues.local;
+    borderImage.style.zIndex = zIndexValues.border;
+    scanImage.style.zIndex = zIndexValues.scan;
 }
-//????????????????????????????????????????????
 
+// Button click event listeners
+frontpageButton.addEventListener("click", function() {
+    zIndexValues = {
+        frontpage: 0,
+        place: -1,
+        local: -1,
+        border: -1,
+        scan: -1
+    };
+    updateZIndex();
+    // scanImage.pause();
+});
 
+placeButton.addEventListener("click", function() {
+    zIndexValues = {
+        frontpage: -1,
+        place: 0,
+        local: -1,
+        border: -1,
+        scan: -1
+    };
+    updateZIndex();
+});
 
-/**
- * function viewSteder() {
-    for(i in students){
-        console.log(students[i].name);
-        const newLi = document.createElement('li');
-        newLi.textContent = students[i].name;
-        list.appendChild(newLi);
-    }
-}
-phoneImages
- */
+localButton.addEventListener("click", function() {
+    zIndexValues = {
+        frontpage: -1,
+        place: -1,
+        local: 0,
+        border: -1,
+        scan: -1
+    };
+    updateZIndex();
+});
 
+borderButton.addEventListener("click", function() {
+    zIndexValues = {
+        frontpage: -1,
+        place: -1,
+        local: -1,
+        border: 0,
+        scan: -1
+    };
+    updateZIndex();
+});
 
-const toggleButtons = document.querySelectorAll(".toggleImages");
-const localImages = document.querySelectorAll(".image_local");
-const forsideImages = document.querySelectorAll(".forside");
-
-//Fortæller om phone billedet er i front
-let isLocalImageFront = true;
-
-//addEventListener der toggler billedet alt efter hvad der er front
-toggleButtons.forEach(function(toggleButton) {
-  toggleButton.addEventListener("click", function() {
-    if (isLocalImageFront) {
-      localImages.forEach(function(localImage) {
-        localImage.style.zIndex = 0;
-      });
-      forsideImages.forEach(function(forsideImage) {
-        forsideImage.style.zIndex = 1;
-      });
-    } else {
-      localImages.forEach(function(localImage) {
-        localImage.style.zIndex = 1;
-      });
-      forsideImages.forEach(function(forsideImage) {
-        forsideImage.style.zIndex = 0;
-      });
-    }
-
-    isLocalImageFront = !isLocalImageFront;
-  });
+scanButton.addEventListener("click", function() {
+    zIndexValues = {
+        frontpage: -1,
+        place: -1,
+        local: -1,
+        border: -1,
+        scan: 0
+    };
+    updateZIndex();
+    scanImage.play();
 });

@@ -1,128 +1,99 @@
 .top_info_img {
     max-width: 100%;
 }
-.mobil_interation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.buttons {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    gap: 1rem;
-}
 
 
 
-
-/* Container needed to position the button. Adjust the width as needed */
-.mobile_section {
-    position: relative;
-    width: 50%;
-}
-  
-/* Make the image responsive */
 .image_section {
     position: relative;
     top: 0;
     left: 0;
 }
+
 .phone {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    z-index: 1; /* default z-index for the image */
+    width: 100%;
+    z-index: 1;
 }
-.forside {
+
+.image_frontpage {
     position: absolute;
-    width: 30%;
-    z-index: 0; /* default z-index for the image */
+    width: 100%;
+    z-index: 0;
+}
+.image_place {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
 }
 .image_local {
     position: absolute;
-    width: 22%;
-    top: 3rem;
-    left: 3.17rem;
+    width: 100%;
+    z-index: 0;
 }
 .image_border {
     position: absolute;
-    width: 22%;
-    top: 3rem;
-    left: 3.17rem;
+    width: 100%;
+    z-index: 0;
 }
 .image_scan {
     position: absolute;
-    width: 22%;
-    top: 3rem;
-    left: 3.17rem;
+    max-width: 75%;
+    top: 2.8rem;
+    left: 2.8rem;
+    border-radius: 9%;
+    z-index: 0;
 }
 
-
-.phone_btn {
+.btnAndImages {
+    position: relative;
+    width: 22rem;
+    height: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button_section {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.btn_frontpage {
     position: absolute;
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    top: 4.6rem;
+    left: 3rem;
+    width: 4rem;
+    height: 2rem;
+    opacity: 0;
 }
-/* Style the button and place it in the middle of the container/image */
-.mobile_btn {
+.btn_place {
     position: absolute;
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    top: 13.3rem;
+    left: 3.5rem;
 }
-.mobile_btn:hover {
-    background-color: black;
-}
-.toggleImages {
+.btn_local {
     position: absolute;
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    top: 0rem;
-    left: 25rem;
+    top: 18.4rem;
+    left: 3.5rem;
 }
-.toggleImages:hover {
-    background-color: black;
+.btn_border {
+    position: absolute;
+    top: 23.5rem;
+    left: 3.5rem;
+}
+.btn_scan {
+    position: absolute;
+    top: 28.7rem;
+    left: 3.5rem;
 }
 
+.theBtns {
+    width: 15rem;
+    height: 4.8rem;
+    opacity: 0;
+}
 
-.steder {
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.local {
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.border {
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.scan {
-    top: 78%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.video {
+    max-width: 25%;
 }
