@@ -40,6 +40,7 @@ frontpageButton.addEventListener("click", function() {
         scan: -1
     };
     updateZIndex();
+    // To get the video to pause when button is pressed
     // scanImage.pause();
 });
 
@@ -85,5 +86,6 @@ scanButton.addEventListener("click", function() {
         scan: 0
     };
     updateZIndex();
+    // To get the video to play when button is pressed
     scanImage.play();
 });
