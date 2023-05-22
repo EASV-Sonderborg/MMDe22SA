@@ -1,0 +1,22 @@
+:root {
+    /*color*/
+    --color-bad: /*red*/;
+    --color-notGood: /*yellow*/;
+    --color-good: /*green*/;
+    --background-color: /**/;
+    --font-color: /**/;
+
+    /*text*/
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
+    --fontSizeMedium: /**/;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+
+    /*spacing*/
+    --spaceXSmall: calc(var(--fontSizeMedium)/2);
+    --spaceSmall: calc(var(--fontSizeMedium)/1.5);
+    --spaceMedium: /**/;
+    --spaceLarge: calc(var(--fontSizeMedium)*1.5);
+    --spaceXLarge: calc(var(--fontSizeMedium)*2);
+}
