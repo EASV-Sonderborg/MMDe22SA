@@ -1,8 +1,8 @@
 :root {
     /*color*/
-    --color-bad: /*red*/;
-    --color-notGood: /*yellow*/;
-    --color-good: /*green*/;
+    --color-bad: #FB3F3F;
+    --color-notGood: #F1F449;
+    --color-good: #56DF64;
     --background-color: /**/;
     --font-color: /**/;
 
