@@ -3,25 +3,27 @@
     --color-bad: #FB3F3F;
     --color-medium: #F1F449;
     --color-good: #56DF64;
-    --background-bad: #FF7364;
+    --background-bad: #9F2B2C;
     --background-medium: #E48F36;
     --background-good: #339966;
-    --background-color: /**/;
-    --font-color: /**/;
+    --background-color: #FBF7F5;
+    --primary-font-color: #000000;
+    --secondary-font-color: #FFFFFF;
 
     /*text*/
-    --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
-    --fontSizeSmall: calc(var(--fontSizeMedium)/1.5);
-    --fontSizeMedium: /**/;
-    --fontSizeLarge: calc(var(--fontSizeMedium)*1.5);
-    --fontSizeXLarge: calc(var(--fontSizeMedium)*2);
+    --fontSizeXSmall: calc(var(--fontSizeMedium)/1.6);
+    --fontSizeSmall: calc(var(--fontSizeMedium)/1.15);
+    --fontSizeMedium: 10;
+    --fontSizeLarge: calc(var(--fontSizeMedium)*1.15);
+    --fontSizeXLarge: calc(var(--fontSizeMedium)*1.6);
 
     /*spacing*/
-    --spaceXSmall: calc(var(--fontSizeMedium)/2);
-    --spaceSmall: calc(var(--fontSizeMedium)/1.5);
-    --spaceMedium: /**/;
-    --spaceLarge: calc(var(--fontSizeMedium)*1.5);
-    --spaceXLarge: calc(var(--fontSizeMedium)*2);
+    --spaceXXSmal: calc(var(--fontSizeMedium)/2.5);
+    --spaceXSmall: calc(var(--fontSizeMedium)/1.6);
+    --spaceSmall: calc(var(--fontSizeMedium)/1.15);
+    --spaceMedium: 10;
+    --spaceLarge: calc(var(--fontSizeMedium)*1.15);
+    --spaceXLarge: calc(var(--fontSizeMedium)*1.6);
 }
 
 
@@ -30,73 +32,34 @@
 /* Skærmen */
 .pause {
     position: relative;
-    background-color: var(--color-good);
-    /*
-    position: relative;
-    background-color: var(--color-medium);
-    */
-    /*
-    position: relative;
-    background-color: var(--color-bad);
-    */
 }
 
 /* billede */
+.pauseImg {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 115px;
+    top: 75px;
+}
 .goodImg {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 40px;
-    top: 40px;
-    /*
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 40px;
-    top: 40px;
-    background: url(danger.png);
-    */
-    /*
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: 40px;
-    top: 40px;
-    background: url(close(1).png);
-    */
+    display: none;
+}
+.mediumImg {
+    display: none;
+}
+.badImg {
+    display: none;
 }
 
 /* knappen */
-.good {
+.pauseBtn {
     position: absolute;
     width: 138px;
     height: 138px;
     left: 91px;
     top: 51px;
-    background-color: var(--color-good);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px #63FF73;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px rgba(255, 255, 255, 0.25);
     border-radius: 30px;
     border: none;
-    /*
-    position: absolute;
-    width: 138px;
-    height: 138px;
-    left: 91px;
-    top: 51px;
-    background-color: var(--color-medium);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px #FDFF7C;
-    border-radius: 30px;
-    border: none;
-    */
-    /*
-    position: absolute;
-    width: 138px;
-    height: 138px;
-    left: 91px;
-    top: 51px;
-    background-color: var(--color-bad);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px #FF5353;
-    border-radius: 30px;
-    border: none;
-    */
 }
