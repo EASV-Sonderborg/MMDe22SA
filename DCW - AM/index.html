@@ -10,7 +10,7 @@
 <body class="body">
     <header class="header">
         <nav class="menu">
-
+            <ion-icon name="menu-outline"></ion-icon>
 
 
         </nav>
@@ -19,14 +19,31 @@
 
 
     <main class="main">
-        <section class="dosering">
+        <section class="dosage">
+            <section class="dosageBar">
 
+            </section>
+            <section class="dosageValue">
+                <button>
+                    <p class="dosageValue__now"></p>
+                    <p class="dosageValue__want"> </p>
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </button>
+
+            </section>
         </section>
+
         <section class="status">
             <section class="statusFacility">
+                <h1 class="status__headline">Anlæg</h1>
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <h2 class="statusInfo"></h2>
 
             </section>
             <section class="statusPump">
+                <h1 class="status__headline">Pumpe</h1>
+                <ion-icon name="checkmark-outline"></ion-icon>
+                <h2 class="statusInfo"></h2>
 
             </section>
 
@@ -38,6 +55,8 @@
 
 
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
