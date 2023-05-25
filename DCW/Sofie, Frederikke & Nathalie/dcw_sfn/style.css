@@ -4,7 +4,7 @@
     --color-medium: #F1F449;
     --color-good: #56DF64;
     --background-bad: #9F2B2C;
-    --background-medium: #E48F36;
+    --background-medium: #E07400;
     --background-good: #339966;
     --background-color: #FBF7F5;
     --primary-font-color: #000000;
@@ -13,19 +13,22 @@
     /*text*/
     --fontSizeXSmall: calc(var(--fontSizeMedium)/1.6);
     --fontSizeSmall: calc(var(--fontSizeMedium)/1.15);
-    --fontSizeMedium: 10;
+    --fontSizeMedium: 10px;
     --fontSizeLarge: calc(var(--fontSizeMedium)*1.15);
     --fontSizeXLarge: calc(var(--fontSizeMedium)*1.6);
+    --fontSizeXXLarge: calc(var(--fontSizeMedium)*1.9);
 
     /*spacing*/
     --spaceXXSmal: calc(var(--fontSizeMedium)/2.5);
     --spaceXSmall: calc(var(--fontSizeMedium)/1.6);
     --spaceSmall: calc(var(--fontSizeMedium)/1.15);
-    --spaceMedium: 10;
+    --spaceMedium: 10px;
     --spaceLarge: calc(var(--fontSizeMedium)*1.15);
     --spaceXLarge: calc(var(--fontSizeMedium)*1.6);
 }
-
+* {
+    margin: 0;
+}
 
 /* ---- ---- ---- ---- Pause skærmen ---- ---- ---- ---- */
 
@@ -62,4 +65,54 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px rgba(255, 255, 255, 0.25);
     border-radius: 30px;
     border: none;
+}
+
+
+
+/* ---- ---- ---- ---- Dift skærmen ---- ---- ---- ---- */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #496D69;
+    margin: 0;
+}
+.header_screen {
+    font-size: var(--fontSizeXXLarge);
+    text-align: center;
+    color: var(--secondary-font-color);
+    grid-column-start: 2;
+    padding: 2px;
+}
+.navbar {
+    display: flex;
+    justify-content: right;
+    padding: 3px;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 16px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
