@@ -76,6 +76,9 @@
     background-color: #496D69;
     margin: 0;
 }
+.header_back {
+    width: 20px;
+}
 .header_screen {
     font-size: var(--fontSizeXXLarge);
     text-align: center;
@@ -115,4 +118,22 @@
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+
+/* ---- ---- ---- ---- Menu skærm ---- ---- ---- ---- */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 4px;
+}
+.menu_btn {
+    width: 304px;
+    height: 40px;
+    margin: 4px;
+    background: #809996;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: var(--primary-font-color);
 }
