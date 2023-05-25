@@ -1,31 +1,42 @@
 :root {
     /*color*/
-    --color-bad: #FB3F3F;
-    --color-medium: #F1F449;
-    --color-good: #56DF64;
-    --background-bad: #9F2B2C;
-    --background-medium: #E07400;
-    --background-good: #339966;
-    --background-color: #FBF7F5;
-    --primary-font-color: #000000;
-    --secondary-font-color: #FFFFFF;
-
+    --stop: #FB3F3F;
+    --start: #56DF64;
+    
+    --default-status: #339966 ;
+    --warning-status: #E07400 ;
+    --error-status: #9F2B2C ;
+    
+    --primary-font: #282828;
+    --secondary-font: #fefefe;
+    
+    --header-background: #496D69;
+    --menu-items: #809996;  
+    
+    --error-message-status: #9F2B2C;
+    --error-steps: #6D8A87; 
+    
     /*text*/
-    --fontSizeXSmall: calc(var(--fontSizeMedium)/1.6);
-    --fontSizeSmall: calc(var(--fontSizeMedium)/1.15);
-    --fontSizeMedium: 10px;
-    --fontSizeLarge: calc(var(--fontSizeMedium)*1.15);
-    --fontSizeXLarge: calc(var(--fontSizeMedium)*1.6);
-    --fontSizeXXLarge: calc(var(--fontSizeMedium)*1.9);
-
+    --fontSizeXSmall: 10px;
+    --fontSizeSmall: 11px;
+    --fontSizeMedium: 12px;
+    --fontSizeLarge: 16px;
+    --fontSizeXLarge: 18px;
+    --fontSizeXXLarge: 24px;
+    
     /*spacing*/
-    --spaceXXSmal: calc(var(--fontSizeMedium)/2.5);
-    --spaceXSmall: calc(var(--fontSizeMedium)/1.6);
-    --spaceSmall: calc(var(--fontSizeMedium)/1.15);
+    --spaceXSmall: 6px;
+    --spaceSmall: 8px;
     --spaceMedium: 10px;
-    --spaceLarge: calc(var(--fontSizeMedium)*1.15);
-    --spaceXLarge: calc(var(--fontSizeMedium)*1.6);
+    --spaceLarge: 12px;
 }
+    
+/*font*/
+H1, H2, H3, H6, P {
+    font-family: 'Roboto', sans-serif;
+}
+    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 * {
     margin: 0;
 }
@@ -62,26 +73,33 @@
     height: 138px;
     left: 91px;
     top: 51px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px rgba(255, 255, 255, 0.25);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px rgba(255, 255, 255, 0.15);
     border-radius: 30px;
     border: none;
 }
 
 
-
-/* ---- ---- ---- ---- Dift skærmen ---- ---- ---- ---- */
+/* ---- ---- ---- ---- Menu bar ---- ---- ---- ---- */
 .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #496D69;
-    margin: 0;
+    background-color:  var(--header-background);
+    height: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.header_back {
+    width: 20px;
+    padding-top: 6px;
 }
 .header_screen {
-    font-size: var(--fontSizeXXLarge);
-    text-align: center;
-    color: var(--secondary-font-color);
+    font-size: var(--fontSizeXLarge);
+    color: var(--secondary-font);
     grid-column-start: 2;
-    padding: 2px;
+    grid-row-start: span 2;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navbar {
     display: flex;
@@ -93,26 +111,50 @@
 }
 .bar {
     display: block;
-    width: 16px;
-    height: 2px;
-    margin: 3px auto;
-    background-color: #ffffff;
+    width: 20px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: var(--secondary-font);
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
-@media only screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
+
+/* ---- ---- ---- ---- Drift skærm ---- ---- ---- ---- */
+
+
+
+/* ---- ---- ---- ---- Menu skærm ---- ---- ---- ---- */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 4px;
+}
+.menu_btn {
+    width: 304px;
+    height: 40px;
+    margin: 4px;
+    background: var(--menu-items);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: var(--primary-font);
+    font-weight: bold;
+    font-size: var(--fontSizeLarge);
+}
+.menu_btn:active {
+    box-shadow: none;
 }
