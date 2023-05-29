@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+/* Custom Prop */
+:root{
+    /* Color */
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+
+    
+
+}
+  /* Body styles */
+  .body {
+    font-family: Lato, sans-serif;
+    background-color: var(--primary);
+    margin: 1rem;
+    width: 320px;
+    height: 240px;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu ion-icon {
+    margin-right: 10px;
+    color: var(--primaryText);
+  }
+  
+  /* Main styles */
+  .main {
+    padding: 20px;
+  }
+  
+  
+/* Dosage styles */
+.dosage {
+    margin-bottom: 20px;
+    width: 112px;
+    height: 96px;
+    background-color: var(--green);
+  }
+  
+  .dosageBar {
+    background-color: #f9f9f9;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .dosageValue button {
+    background-color: var(--primaryBtn);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 192;
+    height: 32px;
+  }
+  .dosageValue__icon{
+
+  }
+  
+  .dosageValue__now,
+  .dosageValue__want {
+    margin-bottom: 10px;
+  }
+
+  
+  /* Guide section styles */
+  .guide {
+    margin-bottom: 20px;
+  }
+  
+  .guideExplainer {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .guide__text {
+    margin-bottom: 10px;
+  }
+  
+  .guideStep {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .guideStep .guide__text {
+    margin-bottom: 0;
+  }
+  
+  .btn {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .btn.start {
+    background-color: #0f0;
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .paginationBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .left {
+    margin-right: 10px;
+  }
+  
+  .end {
+    background-color: #f00;
+  }
+  
+  
