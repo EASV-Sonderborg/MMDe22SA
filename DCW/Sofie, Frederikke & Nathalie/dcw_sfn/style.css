@@ -23,13 +23,20 @@
     --btn-border: #4E6764;
 
     /*text*/
-    --fontSizeXXSmall: 10px; /* H6 */
-    --fontSizeXSmall: 11px; /* H5 */
-    --fontSizeSmall: 12px; /* Paragraf */
-    --fontSizeMedium: 13px; /* H4 */
-    --fontSizeLarge: 14px; /* H3 */
-    --fontSizeXLarge: 16px;/* H2 */
-    --fontSizeXXLarge: 22px; /* H1 */
+    --fontSizeXXSmall: 10px;
+    /* H6 */
+    --fontSizeXSmall: 11px;
+    /* H5 */
+    --fontSizeSmall: 12px;
+    /* Paragraf */
+    --fontSizeMedium: 13px;
+    /* H4 */
+    --fontSizeLarge: 14px;
+    /* H3 */
+    --fontSizeXLarge: 16px;
+    /* H2 */
+    --fontSizeXXLarge: 22px;
+    /* H1 */
 
     /*spacing*/
     --spaceXXSmall: 4px;
@@ -295,15 +302,19 @@ button {
     height: 41px;
     width: 304px;
     margin-bottom: var(--spaceSmall);
+    display: flex;
+    align-items: center;
 }
 
 .errorNotice__img {
     height: 20px;
     width: 20px;
+    margin-left: var(--spaceXXSmall);
 }
 
 .errorNotice__info {
     color: var(--secondary-font);
+    margin-left: var(--spaceXSmall);
 }
 
 .errorNotice__exit {
