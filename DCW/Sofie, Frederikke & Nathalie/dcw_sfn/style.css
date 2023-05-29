@@ -155,7 +155,11 @@ H1, H2, H3, H6, P {
     color: var(--primary-font);
     font-weight: bold;
     font-size: var(--fontSizeLarge);
+    text-align: left;
 }
 .menu_btn:active {
     box-shadow: none;
+}
+.menuImg {
+    width: 44px;
 }
