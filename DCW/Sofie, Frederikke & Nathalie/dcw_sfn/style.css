@@ -32,6 +32,7 @@
     --fontSizeXXLarge: 22px; /* H1 */
 
     /*spacing*/
+    --spaceXXSmall: 4px;
     --spaceXSmall: 6px;
     --spaceSmall: 8px;
     --spaceMedium: 10px;
@@ -45,6 +46,39 @@ H3,
 H6,
 P {
     font-family: 'Roboto', sans-serif;
+}
+
+h6 {
+    font-size: var(--fontSizeXXSmall);
+}
+
+h5 {
+    font-size: var(--fontSizeXSmall);
+}
+
+p {
+    font-size: var(--fontSizeSmall);
+
+}
+
+h4 {
+    font-size: var(--fontSizeMedium);
+}
+
+h3 {
+    font-size: var(--fontSizeLarge);
+}
+
+h2 {
+    font-size: var(--fontSizeXLarge);
+}
+
+h1 {
+    font-size: var(--fontSizeXXLarge);
+}
+
+main {
+    margin: var(--spaceSmall)
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
@@ -93,6 +127,12 @@ button {
     width: 304px;
     height: 40px;
 
+}
+
+.--xxlarge {
+    background-color: var(--error-steps);
+    height: 30px;
+    width: 304px;
 }
 
 .--inactive {
@@ -160,6 +200,7 @@ button {
     height: 32px;
     padding-left: 8px;
     padding-right: 8px;
+    margin-bottom: var(--spaceMedium);
 }
 
 .header_back {
@@ -265,20 +306,32 @@ button {
     color: var(--secondary-font);
 }
 
+.errorNotice__exit {
+    position: relative;
+    float: right;
+}
+
 .steps {
-    background-color: var(--error-steps);
     margin-bottom: var(--spaceXSmall);
-    height: 30px;
-    width: 304px;
     display: flex;
+    align-items: center;
 }
 
 .steps__nr {
     color: var(--primary-font);
     font-weight: bold;
+    margin-left: var(--spaceXXSmall);
+
 }
 
 .steps__info {
     color: var(--primary-font);
     font-weight: bold;
+
+    margin-left: var(--spaceXXSmall);
+}
+
+.steps__btn {
+    position: absolute;
+    left: 252px;
 }
