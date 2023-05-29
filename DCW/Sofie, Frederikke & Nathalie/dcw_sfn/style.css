@@ -23,12 +23,13 @@
     --btn-border: #4E6764;
 
     /*text*/
-    --fontSizeXSmall: 10px;
-    --fontSizeSmall: 11px;
-    --fontSizeMedium: 12px;
-    --fontSizeLarge: 14px;
-    --fontSizeXLarge: 20px;
-    --fontSizeXXLarge: 22px;
+    --fontSizeXXSmall: 10px; /* H6 */
+    --fontSizeXSmall: 11px; /* H5 */
+    --fontSizeSmall: 12px; /* Paragraf */
+    --fontSizeMedium: 13px; /* H4 */
+    --fontSizeLarge: 14px; /* H3 */
+    --fontSizeXLarge: 16px;/* H2 */
+    --fontSizeXXLarge: 22px; /* H1 */
 
     /*spacing*/
     --spaceXSmall: 6px;
