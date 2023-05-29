@@ -90,18 +90,18 @@ button {
 }
 
 .--inactive {
-    color: var(--inactive);
+    background-color: var(--inactive);
     border-color: var(--inactive-border);
 
 }
 
 .--activeStop {
-    color: var(--stop);
+    background-color: var(--stop);
     border-color: var(--stop-border);
 }
 
 .--activeStart {
-    color: var(--start);
+    background-color: var(--start);
     border-color: var(--start-border);
 }
 
