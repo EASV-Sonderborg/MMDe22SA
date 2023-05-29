@@ -269,11 +269,15 @@ button {
     margin-bottom: var(--spaceXSmall);
     height: 30px;
     width: 304px;
-<<<<<<< Updated upstream
+    display: flex;
 }
 
 .steps__nr {
     color: var(--primary-font);
-=======
->>>>>>> Stashed changes
+    font-weight: bold;
+}
+
+.steps__info {
+    color: var(--primary-font);
+    font-weight: bold;
 }
