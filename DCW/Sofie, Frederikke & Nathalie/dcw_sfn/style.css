@@ -314,6 +314,7 @@ button {
 
 .errorNotice__info {
     color: var(--secondary-font);
+    font-weight: bold;
     margin-left: var(--spaceXSmall);
 }
 
