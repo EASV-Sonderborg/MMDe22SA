@@ -1,0 +1,27 @@
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .sub-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
