@@ -88,6 +88,10 @@ main {
     margin: var(--spaceSmall)
 }
 
+a {
+    text-decoration: none
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
@@ -113,7 +117,6 @@ button:active {
 .--xsmall {
     width: 60px;
     height: 30px;
-
 }
 
 .--small {
@@ -155,11 +158,17 @@ button:active {
 .--activeStop {
     background-color: var(--stop);
     border-color: var(--stop-border);
+
+    height: 30px;
+    width: 60px;
 }
 
 .--activeStart {
     background-color: var(--start);
     border-color: var(--start-border);
+
+    height: 30px;
+    width: 60px;
 }
 
 /* ---- ---- ---- ---- Pause skærmen ---- ---- ---- ---- */
@@ -270,16 +279,15 @@ button:active {
 /* ---- ---- ---- ---- Drift skærm ---- ---- ---- ---- */
 .value {
     width: 196px;
-    height: 50px;
+    height: 46px;
     background-color: var(--inactive);
-    margin: 0 auto;
+    margin: 8px auto;
 }
 
 .value__header {
     padding-left: var(--spaceXSmall);
     padding-top: var(--spaceXSmall);
     color: var(--primary-font);
-    padding-bottom: var(--spaceXXSmall);
 }
 
 .value__status {
@@ -326,6 +334,7 @@ button:active {
     height: 138px;
     background-color: var(--primary-font);
     display: flex;
+    gap: var(--spaceXSmall);
 }
 
 .status__area {
@@ -339,7 +348,7 @@ button:active {
 }
 
 .status__info {
-    width: 150px;
+    width: 100%;
     height: 30px;
     background-color: #074B29;
     display: flex;
@@ -353,11 +362,20 @@ button:active {
 
 .status__proces {
     background-color: var(--inactive);
-    position: absolute;
-    bottom: 10px;
-    width: 150px;
-    height: 38px;
-    margin: 0 auto;
+    border: var(--inactive-border) 2px solid;
+    
+    max-width: 100%;
+    height: 40px; 
+
+    padding-left: var(--spaceXXSmall);
+    padding-right: var(--spaceXXSmall);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: 40%;
 }
 
 /* ---- ---- ---- ---- Menu skærm ---- ---- ---- ---- */
