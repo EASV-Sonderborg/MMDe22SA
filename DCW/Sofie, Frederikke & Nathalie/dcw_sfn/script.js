@@ -23,3 +23,4 @@ if (amountORP >= 450) {
     pauseButton.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue('--error-status');
     badImage.style.display = 'block';
 }
+

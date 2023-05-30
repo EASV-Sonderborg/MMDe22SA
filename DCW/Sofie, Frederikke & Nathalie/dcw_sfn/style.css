@@ -190,6 +190,20 @@ button:active {
     width: 60px;
 }
 
+/* ---- ---- ---- ---- Status tilstande ---- ---- ---- ---- */
+
+.--default {
+    background-color: var(--default-status);
+}
+
+.--warning {
+    background-color: var(--warning-status);
+}
+
+.--error {
+    background-color: var(--error-status);
+}
+
 /* ---- ---- ---- ---- Pause skærmen ---- ---- ---- ---- */
 
 /* Skærmen */
@@ -314,7 +328,6 @@ button:active {
     height: 22px;
     width: 180px;
     margin: 0 auto;
-    background-color: #2EB73C;
     display: flex;
     align-items: center;
     justify-content: center;

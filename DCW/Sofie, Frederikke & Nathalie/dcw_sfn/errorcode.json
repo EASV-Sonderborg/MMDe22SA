@@ -1,5 +1,5 @@
 {
-    "error codes": [
+    "errorcodes": [
         {
             "status": "Proces ok",
             "explanation": "Processen er stoppet af brugeren. Der er intet, der hindrer, at processen startes.",
