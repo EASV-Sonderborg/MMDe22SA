@@ -11,6 +11,9 @@
     --warning-status: #E07400;
     --error-status: #9F2B2C;
 
+    --default-notice: #074B29;
+    --warning-notice: #282828;
+
     --primary-font: #282828;
     --secondary-font: #fefefe;
 
@@ -21,6 +24,9 @@
 
     --btn-primary: #809996;
     --btn-border: #4E6764;
+
+    --primary-color: #282828;
+    --secondary-color: #fefefe;
 
     /*text*/
     --fontSizeXXSmall: 10px;
@@ -348,16 +354,46 @@ button:active {
 }
 
 .status__info {
+    color: var(--secondary-font);
+
     width: 100%;
     height: 30px;
-    background-color: #074B29;
-    display: flex;
-    color: var(--secondary-font);
+
+    display: grid;
+    grid-template-columns: .5fr 2fr .5fr; 
+    align-items: center;
+    gap: var(--spaceXXSmall);
+}
+
+.--default {
+    background-color: var(--default-notice);
+}
+
+.--notice {
+    background-color: var(--warning-notice);
 }
 
 .status__infoImg {
+    margin: var(--spaceXXSmall);
+
     height: 22px;
     width: 22px;
+
+    display: grid;
+    grid-column-start: 1;
+    align-items: center;
+}
+
+.status__infoText{
+    grid-column-start: 2;
+    display: grid;
+    align-items: center;
+}
+
+.status__arrowImg {
+    display: grid;
+    align-items: center;
+    grid-column-start: 3;
 }
 
 .status__proces {
@@ -375,8 +411,26 @@ button:active {
     justify-content: space-between;
 
     position: relative;
-    top: 40%;
+    bottom: 10px;
 }
+
+.statusImg {
+    width: 20%;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* .--defaultImg {
+    position: relative;
+}
+
+.--warningImg {
+    position: relative;
+}
+
+.--errorImg {
+    position: relative;
+} */
 
 /* ---- ---- ---- ---- Menu skærm ---- ---- ---- ---- */
 .menu {
