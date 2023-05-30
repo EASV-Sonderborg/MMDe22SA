@@ -12,6 +12,19 @@
     --red: #E03C32 ; 
     --dark:var(--primaryText);
 
+
+    /* menu buttons */ 
+    --menuButtonWidth: 64px; 
+    --menuButtonHeight: 88px; 
+    --menuButtonRadius: 4px; 
+
+    /* Text size */ 
+   --largeText: 12px; 
+   --mediumText: 10px; 
+   --smallText: 8px;
+
+   
+    
     
 
 }
@@ -21,43 +34,95 @@
     font-family: Lato;
     background-color: var(--primary);
     margin: 0;
+    width: 320px;
+    height: 240px;
+    border: 1px solid black;
+    
    
 
   }
   
+
+
   /* Header styles */
-  .header {
+  header {
     background-color: transparent;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   
+  /* Navigations opsætning */ 
+
   .nav{
+    width: 100%;
+    height: 100;
+  
 
   }
+
+  .navLink{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    width: var(--menuButtonWidth);
+    height: var(--menuButtonHeight);
+    font-size: 8px;
+    background-color: var(--primaryBtn);
+    
+    color: white; 
+    border-radius: var(--menuButtonRadius);
+    cursor: pointer; 
+    
+    
+  }
+
+  .navMenu {
+    display: none; 
+ 
+    
+    
+    
+  }
+
+.navMenu.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+  
+  
+    
+}
+
+
+
+  .navItem {
+   
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+  text-decoration: none;
+  
+  }
+
   .navIcon {
     margin-right: 10px;
     color: var(--primaryText);
     
   }
-  .mobileMenu {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+ 
 
-.mobileMenu.active {
-    display: block;
-}
 
-.menuTile {
-    padding: 10px;
-    background-color: #ccc;
-    margin-bottom: 5px;
-}
+
+
 
   
   /* Main styles */

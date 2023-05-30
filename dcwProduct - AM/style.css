@@ -1,0 +1,88 @@
+/* Custom Prop */
+:root{
+    /* Color */
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+    --dark:var(--primaryText);
+
+
+    /* menu buttons */ 
+    --menuButtonWidth: 64px; 
+    --menuButtonHeight: 88px; 
+    --menuButtonRadius: 4px; 
+
+    /* Text size */ 
+   --largeText: 12px; 
+   --mediumText: 10px; 
+   --smallText: 8px;
+}
+
+
+
+body {
+    padding: 16px;
+    width: 320px;
+    height: 240px;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.inputfelt {
+
+}
+
+.doseringsValue {
+    height: 192px;
+    height: 32px;
+    display: grid;
+    border: 1px solid black;
+    text-align: center;
+  
+}
+
+h2, h3{
+    margin: 0;
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.status__facility {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 3px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.status__pump {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 3px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.statusImg {
+    width: 50px;
+    height: 50px;
+}
+
+.checkmark {
+    border-radius: 20rem; 
+    border: 5px solid #0f5a3a;
+    color: var(--primary);
+    
+}
+

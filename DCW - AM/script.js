@@ -1,6 +1,6 @@
 
 function toggleMenu() {
-    var mobileMenu = document.querySelector('.mobileMenu');
-    mobileMenu.classList.toggle('active');
+    var navMenu = document.querySelector('.navMenu');
+    navMenu.classList.toggle('active');
 }
 
