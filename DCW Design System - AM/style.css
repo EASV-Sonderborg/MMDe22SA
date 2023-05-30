@@ -1,5 +1,35 @@
 :root{
+    /* Color */
     
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+    
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+    --dark:var(--primaryText);
+    
+    /* menu buttons */ 
+    
+    --menuButtonWidth: 88px; 
+    --menuButtonHeight: 64px; 
+    --menuButtonRadius: 4px; 
+    
+    
+    /* button-sizes */ 
+    
+    --menuButtonWidth: 88px;
+    --menuButtonHeight: 24px;
+    --menuButtonBigHeight: 35px;
+    
+    /* Text size */ 
+    
+    --largeText: 12px; 
+    --mediumText: 10px; 
+    --smallText: 8px;
+    
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
@@ -12,7 +42,7 @@ body{
 
 }
 .subheading{
-
+    
 }
 
 .header{
@@ -52,50 +82,4 @@ text-align: center;
 h2 {
     font-weight: 400;
 }
-
-
-
-/*Buttons */
-.btn{
-
-}
-
-.startSmallBtn{
-
-}
-
-.stopSmallBtn{
-
-}
-
-.startBtn{
-
-}
-
-.stopBtn{
-
-}
-
-.resetSmallBtn{
-
-}
-
-.resetMediumBtn{
-
-}
-
-.resetBigBtn{
-
-}
-
-.actionbtn{
-
-}
-
-.alert{
-
-}
-
-end
-
 
