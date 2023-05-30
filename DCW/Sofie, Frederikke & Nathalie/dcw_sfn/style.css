@@ -365,11 +365,11 @@ button:active {
     gap: var(--spaceXXSmall);
 }
 
-.--default {
+.--defaultNotice {
     background-color: var(--default-notice);
 }
 
-.--notice {
+.--warningNotice {
     background-color: var(--warning-notice);
 }
 
@@ -416,7 +416,6 @@ button:active {
 
 .statusImg {
     width: 20%;
-    position: relative;
     margin: 0 auto;
 }
 
