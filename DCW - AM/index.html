@@ -10,24 +10,32 @@
 <body class="body">
     <header class="header">
         <nav class="nav">
-            <ion-icon class="navIcon" name="menu-outline"></ion-icon>
-
-
+            <button class="navBtn" onclick="toggleMenu()"><ion-icon class="navIcon"
+                    name="menu-outline"></ion-icon></button>
+            <ul class="mobileMenu">
+                <li class="menuTile">Tile 1</li>
+                <li class="menuTile">Tile 2</li>
+                <li class="menuTile">Tile 3</li>
+                <li class="menuTile">Tile 4</li>
+                <li class="menuTile">Tile 5</li>
+                <li class="menuTile">Tile 6</li>
+            </ul>
         </nav>
     </header>
 
 
 
-    <main class="main">
+    <!--  <main class="main">
         <section class="dosage">
             <section class="dosageBar">
 
             </section>
             <section class="dosageValue">
-                <button class="editButton">
+                <p class="displayValue"></p>
+                <button class="dosageValue__btn">
                     <ion-icon class="dosageValue__icon" name="pencil-outline"></ion-icon>
                 </button>
-                <p class="displayValue"></p>
+
             </section>
         </section>
 
@@ -50,7 +58,7 @@
     <footer class="footer">
 
     </footer>
-
+-->
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
