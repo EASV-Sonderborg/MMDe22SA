@@ -18,11 +18,10 @@
 
   /* Body styles */
   .body {
-    font-family: Lato, sans-serif;
+    font-family: Lato;
     background-color: var(--primary);
     margin: 0;
-    width: 320px;
-    height: 240px;
+   
 
   }
   
@@ -41,6 +40,7 @@
   .navIcon {
     margin-right: 10px;
     color: var(--primaryText);
+    
   }
   
   /* Main styles */
@@ -51,11 +51,14 @@
   
 /* Dosage styles */
 .dosage {
-    margin-bottom: 20px;
-    width: 112px;
-    height: 96px;
-    background-color: ;
-    border: 1px solid var(--dark);
+  display: flex;
+  
+  margin-bottom: 20px;
+  width: 192px;
+  height: 32px;
+  background-color: ;
+  border: 1px solid var(--dark);
+  
   }
   
   .dosageBar {
@@ -63,7 +66,9 @@
     height: 20px;
     margin-bottom: 10px;
   }
-  
+  .inputValue{
+    border: none;
+  }
   .dosageValue button {
     background-color: var(--primaryBtn);
     color: #fff;
@@ -74,7 +79,7 @@
     height: 32px;
   }
   .dosageValue__icon{
-
+    font-size: 16px;
   }
   
   .dosageValue__now,
