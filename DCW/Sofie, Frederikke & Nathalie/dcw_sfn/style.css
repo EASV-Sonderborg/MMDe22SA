@@ -321,6 +321,8 @@ button {
 .errorNotice__exit {
     position: relative;
     float: right;
+    font-weight: bold;
+    color: var(--primary-font);
 }
 
 .steps {
@@ -346,4 +348,6 @@ button {
 .steps__btn {
     position: absolute;
     left: 252px;
+    font-weight: bold;
+    color: var(--primary-font);
 }
