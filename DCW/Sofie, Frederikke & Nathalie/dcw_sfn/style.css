@@ -31,20 +31,13 @@
     --secondary-color: #fefefe;
 
     /*text*/
-    --fontSizeXXSmall: 10px;
-    /* H6 */
-    --fontSizeXSmall: 11px;
-    /* H5 */
-    --fontSizeSmall: 12px;
-    /* Paragraf */
-    --fontSizeMedium: 13px;
-    /* H4 */
-    --fontSizeLarge: 14px;
-    /* H3 */
-    --fontSizeXLarge: 16px;
-    /* H2 */
-    --fontSizeXXLarge: 22px;
-    /* H1 */
+    --fontSizeXXSmall: 10px; /* H6 */
+    --fontSizeXSmall: 11px; /* H5 */
+    --fontSizeSmall: 12px; /* Paragraf */
+    --fontSizeMedium: 13px; /* H4 */
+    --fontSizeLarge: 14px;/* H3 */
+    --fontSizeXLarge: 16px; /* H2 */
+    --fontSizeXXLarge: 22px; /* H1 */
 
     /*spacing*/
     --spaceXXSmall: 4px;
@@ -52,6 +45,20 @@
     --spaceSmall: 8px;
     --spaceMedium: 10px;
     --spaceLarge: 12px;
+
+    /* Button width */
+    --smallWidth-button: 60px;
+    --mediumWidth-button: 76px;
+    --largeWidth-button: 152px;
+    --xlargeWidth-button: 304px;
+
+    /* Button height */
+    --smallHeight-button: 30px;
+    --mediumHeight-button: 40px;
+    --largeHeight-button: 60px;
+    --xlargeHeight-button: 80px;
+    --xxlargeHeight-button: 120px;
+
 }
 
 * {
@@ -131,38 +138,34 @@ button:active {
 }
 
 .--xsmall {
-    width: 60px;
-    height: 30px;
+    width: var(--smallWidth-button);
+    height: var(--smallHeight-button);
 }
 
 .--small {
-    width: 76px;
-    height: 30px;
-
+    width: var(--mediumWidth-button);
+    height: var(--smallHeight-button);
 }
 
 .--medium {
-    width: 76px;
-    height: 40px;
-
+    width: var(--mediumWidth-button);
+    height: var(--mediumlHeight-button);
 }
 
 .--large {
-    width: 152px;
-    height: 40px;
-
+    width: var(--largeWidth-button);
+    height: var(--mediumlHeight-button);
 }
 
 .--xlarge {
-    width: 304px;
-    height: 40px;
-
+    width: var(--xlargeWidth-button);
+    height: var(--smallHeight-button);
 }
 
 .--xxlarge {
-    background-color: var(--error-steps);
-    height: 30px;
-    width: 304px;
+    width: var(--xlargeWidth-button);
+    height: var(--mediumHeight-button);
+
 }
 
 .--inactive {
@@ -511,6 +514,7 @@ button:active {
 }
 
 .steps {
+    background-color: var(--error-steps);
     margin-bottom: var(--spaceXSmall);
     display: flex;
     align-items: center;

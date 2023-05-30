@@ -12,7 +12,7 @@ body{
 
 }
 .subheading{
-    
+
 }
 
 .header{
@@ -52,4 +52,50 @@ text-align: center;
 h2 {
     font-weight: 400;
 }
+
+
+
+/*Buttons */
+.btn{
+
+}
+
+.startSmallBtn{
+
+}
+
+.stopSmallBtn{
+
+}
+
+.startBtn{
+
+}
+
+.stopBtn{
+
+}
+
+.resetSmallBtn{
+
+}
+
+.resetMediumBtn{
+
+}
+
+.resetBigBtn{
+
+}
+
+.actionbtn{
+
+}
+
+.alert{
+
+}
+
+end
+
 
