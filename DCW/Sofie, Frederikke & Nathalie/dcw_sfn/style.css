@@ -446,7 +446,8 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    margin-top: 4px;
+
+    margin: 0 auto;
 }
 
 .menu_btn {
@@ -472,6 +473,13 @@ button:active {
 
 /* ---- ---- ---- ---- Fejlmeddelser ---- ---- ---- ---- */
 .errorNotice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorNotice__description {
     background-color: var(--error-message-status);
     height: 41px;
     width: 304px;
@@ -491,10 +499,13 @@ button:active {
     font-weight: bold;
     margin-left: var(--spaceXSmall);
 }
-
+/* idk hvordan jeg får dette til højre... */
 .errorNotice__exit {
-    position: relative;
-    float: right;
+    display: flex;
+    justify-content: right;
+}
+
+.errorNotice__exitBtn {
     font-weight: bold;
     color: var(--primary-font);
 }
@@ -521,7 +532,7 @@ button:active {
 
 .steps__btn {
     position: absolute;
-    left: 252px;
+    right: 352px;
     font-weight: bold;
     color: var(--primary-font);
 }
