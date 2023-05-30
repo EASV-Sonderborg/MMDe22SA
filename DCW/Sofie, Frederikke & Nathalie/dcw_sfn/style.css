@@ -343,6 +343,7 @@ button:active {
     height: 30px;
     background-color: #074B29;
     display: flex;
+    color: var(--secondary-font);
 }
 
 .status__infoImg {
