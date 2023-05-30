@@ -25,7 +25,6 @@
             "severity": "Notice"
         },
         {
-            "color": "yellow",
             "status": "Genstart efter tryksvigt - vent venligst",
             "explanation": "Vandtanken er tom. Produktion genoptages, når den er fyldt.",
             "type": "dosering",
@@ -38,7 +37,6 @@
             "severity": "Notice"
         },
         {
-            "color": "yellow",
             "status": "Brinepumpen kræver service",
             "explanation": "Det er tid til at efterse brinepumpen.",
             "type": "drift",
