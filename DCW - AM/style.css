@@ -42,22 +42,41 @@
     color: var(--primaryText);
     
   }
+  .mobileMenu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileMenu.active {
+    display: block;
+}
+
+.menuTile {
+    padding: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+
   
   /* Main styles */
   .main {
     padding: 20px;
   }
   
+
   
 /* Dosage styles */
 .dosage {
   display: flex;
-  
+  flex-direction: row;
   margin-bottom: 20px;
   width: 192px;
   height: 32px;
   background-color: ;
   border: 1px solid var(--dark);
+  overflow: hidden;
   
   }
   
@@ -66,18 +85,20 @@
     height: 20px;
     margin-bottom: 10px;
   }
-  .inputValue{
-    border: none;
-  }
-  .dosageValue button {
+  .dosageValue__btn{
     background-color: var(--primaryBtn);
-    color: #fff;
+    color: var(--primary);
     border: none;
-    border-radius: 5px;
-    padding: 10px;
-    width: 192;
-    height: 32px;
+    border-radius: 4px 4px 4px 4px;
   }
+  .dosageValue__input {
+    display: none;
+  }
+  
+  .dosageValue__input.active {
+    display: inline-block;
+  }
+  
   .dosageValue__icon{
     font-size: 16px;
   }
