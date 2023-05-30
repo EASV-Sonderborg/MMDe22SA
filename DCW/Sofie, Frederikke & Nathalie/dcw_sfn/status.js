@@ -21,6 +21,10 @@ fetchPromise
         const orpStatus = document.querySelector('.value__status'); 
         const orpValue = document.querySelector('.value__orp')
 
+        //Notice bokse
+        const noticeBox = document.querySelectorAll('.status__info')
+        const status = document.querySelectorAll('.status')
+
         if (result[2].severity === 'Good') {
             orpStatus.classList.add('--default');
             orpValue.textContent = '550';
