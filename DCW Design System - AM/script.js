@@ -1,12 +1,14 @@
-const menuItems = document.querySelectorAll('.menu-item');
+const subMenus = document.querySelectorAll('.sub-menu');
 
-// Toggle sub-menu
-function toggleSubMenu(event) {
-  const subMenu = event.currentTarget.querySelector('.sub-menu');
-  subMenu.classList.toggle('active');
-}
+subMenus.forEach(function (subMenu) {
+    const link = subMenu.querySelector('a');
+    const ul = subMenu.querySelector('ul');
+    
 
-// Attach event listener to each menu item
-menuItems.forEach(menuItem => {
-  menuItem.addEventListener('click', toggleSubMenu);
+    ul.style.display = 'none';
+
+    link.addEventListener('click', function () {
+        ul.style.display = (ul.style.display === 'none') ? 'block' : 'none';
+        
+    });
 });

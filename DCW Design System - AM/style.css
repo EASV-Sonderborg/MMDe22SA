@@ -1,27 +1,50 @@
-.sidebar {
-    width: 200px;
-    background-color: #f1f1f1;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-  }
-  
-  .menu-item {
-    position: relative;
-  }
-  
-  .sub-menu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  .content {
-    margin-left: 200px;
-    padding: 20px;
-  }
-  
+@import url();
+body {
+	background-color: #fff;
+	font-size: 14px;
+    margin: 0;
+}
+nav {
+	position: relative;
+	
+	width: 360px;
+    
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+  /* Sub Menu */
+}
+nav ul li a {
+	display: block;
+	background: #ebebeb;
+	padding: 10px 15px;
+	color: #333;
+	text-decoration: none;
+	
+}
+nav ul li a:hover {
+	background: #f8f8f8;
+	color: #515151;
+}
+nav ul li a .fa {
+	width: 16px;
+	text-align: center;
+	margin-right: 5px;
+	float:right;
+}
+nav ul ul {
+	background-color:#ebebeb;
+}
+nav ul li ul li a {
+	background: #f8f8f8;
+	border-left: 4px solid transparent;
+	padding: 10px 20px;
+}
+nav ul li ul li a:hover {
+	background: #ebebeb;
+	border-left: 4px solid #3498db;
+}
