@@ -18,10 +18,14 @@
     
     
     /* button-sizes */ 
+    --buttonHeight: 24px; 
+    --buttonSmallHeight: 16px;
+    --buttonBigHeight: 32px;
     
-    --menuButtonWidth: 88px;
-    --menuButtonHeight: 24px;
-    --menuButtonBigHeight: 35px;
+    --buttonWidth: 32px;
+    --buttonMediumWidth: 48px;
+    --buttonLongWidth: 80px;
+    
     
     /* Text size */ 
     
@@ -29,6 +33,13 @@
     --mediumText: 10px; 
     --smallText: 8px;
     
+    /* plc screensaver*/
+    --screenSaverHeadline: 64px;
+    --screenSaverStatus: 24px;
+
+    /* PLC SCREEN SIZE*/
+    --plcWidth: 320px;
+    --plcHeigth: 240px;
 
 }
 
@@ -54,6 +65,11 @@ body{
 }
 .subheading{
     
+}
+
+.headlinesSlogan{
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .header{
@@ -88,9 +104,173 @@ text-align: center;
 }
 
 
-/* Colors */ 
 
-h2 {
-    font-weight: 400;
+
+
+
+
+
+.btn{
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonHeight);
+    font-size: var(--smallText);
+    
+}
+.buttonsShowCase{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
+.buttonsShowCaseInfo{
+margin: 0;
+}
+
+.startStopShow{
+
+}
+
+
+
+
+
+
+.startSmallBtn{
+    background-color: var(--green);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    
+
+}
+
+.stopSmallBtn{
+    background-color: var(--red);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+
+}
+
+.startBtn{
+ background-color: var(--green);
+   
+
+}
+
+.stopBtn{
+ background-color: var(--red);
+ 
+
+}
+
+
+    
+.resetSmallBtn{
+    background-color: var(--dark);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonSmallHeight);
+
+}
+
+.resetMediumBtn{
+    background-color: var(--dark);
+
+}
+
+.resetBigBtn{
+    background-color: var(--dark);
+    height: var(--buttonBigHeight);
+}
+
+.actionBtn{
+    width: var(--buttonWidth);
+}
+
+.redBtn{
+    background-color: var(--red);
+}
+
+.endBtn{
+    width: var(--buttonLongWidth);
+}
+
+.acceptBtn{
+    background-color: var(--green);
+    font-size: var(--largeText);
+
+}
+
+
+
+
+/* Alerts */
+   
+.notification{
+
+}
+.notifications{
+    width: var(--plcWidth);
+    height: var(--plcHeigth);
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
+    
+}
+ /* DCW and status Styler*/
+    .notificationDCW{
+        font-size: var(--screenSaverHeadline);
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .notificationStatus{
+        font-size: var(--screenSaverStatus);
+        color: var(--primary);
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+.notificationOkay{
+    background-color: var(--green);
+    
+}
+
+.notificationAttention{
+    background-color: var(--yellow);
+}
+
+.notificationAlert{
+    background-color: var(--red);
+}
+
+.pumpFacility{
+
+}
+
+.pumpFacilityRefresh{
+    display: flex;
+    align-items: center;
+
+}
+.pumpFacilityRefreshBtn{
+
+}
+
+.status{
+    height: 96px;
+    width: 112px;
+}
+
+.pumpStatus{
+
+}
+
+.facilityStatus{
+
+}

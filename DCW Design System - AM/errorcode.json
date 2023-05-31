@@ -1,0 +1,35 @@
+{
+    "errorcodes": [
+        {
+            "status": "Proces ok",
+            "type": "drift",
+            "severity": "Ok"
+        },
+        {
+            "status": "Proces ok",
+            "type": "dosering",
+            "severity": "OK"
+        },
+        {
+            "status": "Fejl",
+            "type": "drift",
+            "severity": "Notice"
+        },
+        {
+            "status": "Fejl",
+            "type": "dosering",
+            "severity": "Notice"
+        },
+        {
+            "status": "Problem",
+            "type": "dosering",
+            "severity": "Warning"
+        },
+        {
+            "status": "Problem",
+            "type": "dosering",
+            "severity": "Warning"
+        }
+    
+    ]
+}
