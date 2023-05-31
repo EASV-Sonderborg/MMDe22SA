@@ -106,12 +106,13 @@ h2 {
 }
 .startSmallBtn{
     background-color: var(--green);
+    
 
-/* Colors */ 
 }
 
 .stopSmallBtn{
     background-color: var(--red);
+
 }
 
 .startBtn{
