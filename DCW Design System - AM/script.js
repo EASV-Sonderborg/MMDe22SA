@@ -48,13 +48,13 @@ fetchPromise
         const driftIndex = Math.floor(Math.random() * result.length);
         const doseringIndex = Math.floor(Math.random() * result.length);
 
-        // viser tilfældige anlæg data 
+        // viser det tilfældig valgte anlægs data 
         const driftData = result[driftIndex];
         const facilityStatus = document.querySelector('.facilityStatus');
         const facilityErrorStatus = facilityStatus.querySelector('.errorcode');
         facilityErrorStatus.textContent = `Status: ${driftData.status}`;
 
-        // viser tilfældig pumpe data
+        // viser det tilfældig valgte pumpe data 
         const doseringData = result[doseringIndex];
         const pumpStatus = document.querySelector('.pumpStatus');
         const pumpErrorStatus = pumpStatus.querySelector('.errorcode');
