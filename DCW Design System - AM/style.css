@@ -94,3 +94,52 @@ h2 {
     font-weight: 400;
 }
 
+.btn{
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    height: var(--menuButtonHeight);
+    width: var(--menuButtonWidth);
+    font-size: var(--smallText);
+    
+}
+.startSmallBtn{
+    background-color: var(--green);
+
+/* Colors */ 
+}
+
+.stopSmallBtn{
+    background-color: var(--red);
+}
+
+.startBtn{
+ background-color: var(--green);
+}
+
+.stopBtn{
+ background-color: var(--red);
+}
+
+
+    
+.resetSmallBtn{
+    background-color: var(--dark);
+}
+
+.resetMediumBtn{
+    background-color: var(--dark);
+}
+
+.resetBigBtn{
+    background-color: var(--dark);
+}
+
+.actionBtn{
+
+}
+
+.redBtn{
+    background-color: var(--red);
+}
