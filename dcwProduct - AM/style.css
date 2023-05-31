@@ -12,8 +12,8 @@
 
 
     /* menu buttons */ 
-    --menuButtonWidth: 64px; 
-    --menuButtonHeight: 88px; 
+    --menuButtonWidth: 88px; 
+    --menuButtonHeight: 64px; 
     --menuButtonRadius: 4px; 
 
     /* Text size */ 
@@ -57,6 +57,8 @@ h2, h3{
 .status {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .status__facility {
@@ -89,3 +91,22 @@ h2, h3{
     
 }
 
+
+
+/* Design af buttons i menu */ 
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.menu__button {
+    width: var(--menuButtonWidth);
+    height: var(--menuButtonHeight);
+    border-radius: var(--menuButtonRadius);
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    font-size: var(--largeText);
+}
