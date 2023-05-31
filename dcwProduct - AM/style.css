@@ -60,21 +60,16 @@ a{
     justify-content: center;
     align-items: center;
     height: 32px;
-    width: 192px;
+    width: 197px;
     border: 1px solid black; 
     margin-bottom: 1rem;
     margin-inline: auto;
 
- 
-    
-    
-    
-  
 }
 
 h2, h3{
     margin: 0;
-    color: var(--primary);
+    color: black; 
 }
 
 .status {
@@ -150,6 +145,7 @@ h2, h3{
     margin-inline: auto; /* Distribute all remaining space equally on both sides, thus centering the element */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
     
   }
   .pagination__button {
@@ -195,7 +191,7 @@ h2, h3{
     padding: 16px;
     border-bottom: 1px solid black; 
     align-items: center;
-  
+
 }
 
 .stopMachinary {
@@ -204,16 +200,88 @@ h2, h3{
    
 }
 
+.buttonStart {
+    width: 48px;
+    height: 24px; 
+    background-color: var(--green);
+    border: none; 
+    filter: var(--dropshadow);
+    color: var(--primary);
+
+}
+
+.guideGrid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
 .buttonStop {
     width: 48px;
     height: 24px; 
     background-color: var(--red);
     color: var(--primary);
     border: none;
-    filter: var(--dropshadow);
+    
 }
 
 .guideButton {
     border-radius: var(--menuButtonRadius);
     margin-left: 3rem;
+}
+
+.finishButton {
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    border: none; 
+    border-radius: var(--menuButtonRadius);
+    filter: var(--dropshadow);
+}
+
+
+
+
+/* Design af screens i menuen */ 
+
+img {
+    width: 240px;
+    height: 200
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.progress {
+    position: relative;
+    width: 197px;
+    height: 35px; 
+    background: #9cbab4;
+    overflow: hidden; 
+    border: 1px solid black; 
+    border-radius: 3px; 
+}
+
+.progress__fill {
+    width: 91%; 
+    height: 100%; 
+    background: var(--green);
+    transition: all 0.2s;
+}
+
+.progress__text {
+    position: absolute; 
+    top: 50%; 
+    right: 5px; 
+    transform: translateY(-50%);
+   font: bold 14px 'Quicksand', sans-serif; 
+   color: white; 
+}
+
+.progression {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 5px; 
+
 }
