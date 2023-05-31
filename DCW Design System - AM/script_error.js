@@ -10,7 +10,7 @@ fetchPromise
     })
     .then(json => {
         const result = json.errorcodes; // API'et returnerer JSON data og vi lægger det i result
-        console.log(result); // result er et array med 12 elementer
+        console.log(result); // result er et array
         for(const el of result){ // for...of loop af arrayet
             console.log(el); // her kan man se alle elementer i arrayet
         }

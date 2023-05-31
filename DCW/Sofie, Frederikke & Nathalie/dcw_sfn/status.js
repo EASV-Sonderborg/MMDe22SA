@@ -19,23 +19,72 @@ fetchPromise
         // Add text content to h2: Skifter status-farve i orp processen 
         //Status - Orp værdi + status 
         const orpStatus = document.querySelector('.value__status'); 
-        const orpValue = document.querySelector('.value__orp')
+        const orpValue = document.querySelector('.value__orp');
+        // Status kasser
+        const statusBox = document.querySelectorAll('.status__area');
 
-        //Notice bokse
-        const noticeBox = document.querySelectorAll('.status__info')
-        const status = document.querySelectorAll('.status')
+        // Notice info kasse
+        const noticeBox = document.querySelectorAll('.status__info');
+        
+        //Notice info tekst
+        const noticeInfoDosering = document.querySelector('.dosering');
+        const noticeInfoDrift = document.querySelector('.drift')
+        //const noticeInfo = document.querySelectorAll('.status__info')
 
-        if (result[2].severity === 'Good') {
+        // Get a random element from the result array:
+        const randomNumber = Math.floor(Math.random()* result.length);
+        console.log(randomNumber);
+
+
+        //Conditional statement 
+        if (result[randomNumber].severity === 'Good') {
             orpStatus.classList.add('--default');
             orpValue.textContent = '550';
-        } else if (result[2].severity === 'Notice') {
+
+                statusBox.forEach(statusBox => {
+                    statusBox.classList.add('--default');
+                });
+
+                noticeBox.forEach(noticeBox => {
+                    noticeBox.classList.add('--defaultNotice')
+                });
+
+            noticeInfoDrift.textContent = `${result[randomNumber].status}`;
+            noticeInfoDosering.textContent = `${result[randomNumber].status}`;
+
+        } else if (result[randomNumber].severity === 'Notice') {
             orpStatus.classList.add('--warning');
             orpValue.textContent = '250';
-        } else if (result[2].severity === 'Warning') {
+
+            statusBox.forEach(statusBox => {
+                statusBox.classList.add('--warning');
+            });
+
+            noticeBox.forEach(noticeBox => {
+                noticeBox.classList.add('--warningNotice')
+            })
+
+            noticeInfoDrift.textContent = `${result[randomNumber].status}`;
+            noticeInfoDosering.textContent = `${result[randomNumber].status}`;
+            
+        } else if (result[randomNumber].severity === 'Warning') {
             orpStatus.classList.add('--error');
             orpValue.textContent = '99';
-        } 
+
+            statusBox.forEach(statusBox => {
+                statusBox.classList.add('--error');
+            });
+
+            noticeBox.forEach(noticeBox => {
+                noticeBox.classList.add('--warningNotice')
+            })
+
+            noticeInfoDrift.textContent = `${result[randomNumber].status}`;
+            noticeInfoDosering.textContent = `${result[randomNumber].status}`;
     
+        } 
+
+        
     })
     .catch(error => {
         console.error(`Could not get products: ${error}`);
