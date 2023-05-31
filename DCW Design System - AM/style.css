@@ -18,10 +18,14 @@
     
     
     /* button-sizes */ 
+    --buttonHeight: 24px; 
+    --buttonSmallHeight: 16px;
+    --buttonBigHeight: 32px;
     
-    --menuButtonWidth: 88px;
-    --menuButtonHeight: 24px;
-    --menuButtonBigHeight: 35px;
+    --buttonWidth: 32px;
+    --buttonMediumWidth: 48px;
+    --buttonLongWidth: 80px;
+    
     
     /* Text size */ 
     
@@ -99,48 +103,71 @@ h2 {
     border: none;
     background-color: var(--primaryBtn);
     color: var(--primary);
-    height: var(--menuButtonHeight);
-    width: var(--menuButtonWidth);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonHeight);
     font-size: var(--smallText);
     
 }
 .startSmallBtn{
     background-color: var(--green);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
     
 
 }
 
 .stopSmallBtn{
     background-color: var(--red);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
 
 }
 
 .startBtn{
  background-color: var(--green);
+   
+
 }
 
 .stopBtn{
  background-color: var(--red);
+ 
+
 }
 
 
     
 .resetSmallBtn{
     background-color: var(--dark);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonSmallHeight);
+
 }
 
 .resetMediumBtn{
     background-color: var(--dark);
+
 }
 
 .resetBigBtn{
     background-color: var(--dark);
+    height: var(--buttonBigHeight);
 }
 
 .actionBtn{
-
+    width: var(--buttonWidth);
 }
 
 .redBtn{
     background-color: var(--red);
+}
+
+.endBtn{
+    width: var(--buttonLongWidth);
+}
+
+.acceptBtn{
+    background-color: var(--green);
+    font-size: var(--largeText);
+    
 }
