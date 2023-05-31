@@ -15,6 +15,7 @@
     --menuButtonWidth: 88px; 
     --menuButtonHeight: 64px; 
     --menuButtonRadius: 4px; 
+    --dropshadow: drop-shadow(2px 2px 2px black); 
 
     /* Text size */ 
    --largeText: 12px; 
@@ -52,6 +53,7 @@ body {
 
 h2, h3{
     margin: 0;
+    color: var(--primary);
 }
 
 .status {
@@ -79,6 +81,10 @@ h2, h3{
     text-align: center;
 }
 
+.doseringsValue-text {
+    color: black; 
+}
+
 .statusImg {
     width: 50px;
     height: 50px;
@@ -90,6 +96,8 @@ h2, h3{
     color: var(--primary);
     
 }
+
+
 
 
 
@@ -109,4 +117,6 @@ h2, h3{
     background-color: var(--primaryBtn);
     color: var(--primary);
     font-size: var(--largeText);
+    border: none; 
+    filter: var(--dropshadow);
 }
