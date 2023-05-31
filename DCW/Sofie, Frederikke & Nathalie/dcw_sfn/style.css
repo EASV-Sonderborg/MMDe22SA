@@ -424,6 +424,7 @@ button:active {
 }
 
 .status__infoText{
+    font-size: var(--fontSizeXXSmall);
     grid-column-start: 2;
     display: grid;
     align-items: center;
