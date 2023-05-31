@@ -130,6 +130,8 @@ text-align: center;
 
 .buttonsShowCaseInfo{
 margin: 0;
+margin-right: 1rem;
+width: auto;
 }
 
 .startStopShow{
