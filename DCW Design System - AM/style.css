@@ -249,3 +249,28 @@ margin: 0;
     background-color: var(--red);
 }
 
+.pumpFacility{
+
+}
+
+.pumpFacilityRefresh{
+    display: flex;
+    align-items: center;
+
+}
+.pumpFacilityRefreshBtn{
+
+}
+
+.status{
+    height: 96px;
+    width: 112px;
+}
+
+.pumpStatus{
+
+}
+
+.facilityStatus{
+
+}
