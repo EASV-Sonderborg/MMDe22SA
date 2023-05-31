@@ -1,0 +1,188 @@
+:root{
+    /* Color */
+    
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+    
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+    --dark:var(--primaryText);
+    
+    /* menu buttons */ 
+    
+    --menuButtonWidth: 88px; 
+    --menuButtonHeight: 64px; 
+    --menuButtonRadius: 4px; 
+    
+    
+    /* button-sizes */ 
+    --buttonHeight: 24px; 
+    --buttonSmallHeight: 16px;
+    --buttonBigHeight: 32px;
+    
+    --buttonWidth: 32px;
+    --buttonMediumWidth: 48px;
+    --buttonLongWidth: 80px;
+    
+    
+    /* Text size */ 
+    
+    --largeText: 12px; 
+    --mediumText: 10px; 
+    --smallText: 8px;
+    
+
+    /* PLC SCREEN SIZE*/
+    --plcWidth: 320px;
+    --plcHeigth
+
+}
+
+p {
+    margin-bottom: 5rem;
+    width: 500px;
+    
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 16px;
+}
+
+.headlines{
+
+}
+.subheading{
+    
+}
+
+.header{
+    border-bottom: 1px solid black;
+}
+.nav{
+
+}
+.navList{
+display: flex;
+justify-content: space-evenly;
+
+}
+.navList__item{
+list-style: none;
+
+}
+
+.landing{
+    padding: 1rem;
+}
+.landingHeadline{
+text-align: center;
+}
+
+.landingLogo{
+
+}
+
+.color{
+
+}
+
+
+/* Colors */ 
+
+h2 {
+    font-weight: 400;
+}
+
+.btn{
+    border-radius: 4px;
+    border: none;
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonHeight);
+    font-size: var(--smallText);
+    
+}
+.startSmallBtn{
+    background-color: var(--green);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    
+
+}
+
+.stopSmallBtn{
+    background-color: var(--red);
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+
+}
+
+.startBtn{
+ background-color: var(--green);
+   
+
+}
+
+.stopBtn{
+ background-color: var(--red);
+ 
+
+}
+
+
+    
+.resetSmallBtn{
+    background-color: var(--dark);
+    width: var(--buttonMediumWidth);
+    height: var(--buttonSmallHeight);
+
+}
+
+.resetMediumBtn{
+    background-color: var(--dark);
+
+}
+
+.resetBigBtn{
+    background-color: var(--dark);
+    height: var(--buttonBigHeight);
+}
+
+.actionBtn{
+    width: var(--buttonWidth);
+}
+
+.redBtn{
+    background-color: var(--red);
+}
+
+.endBtn{
+    width: var(--buttonLongWidth);
+}
+
+.acceptBtn{
+    background-color: var(--green);
+    font-size: var(--largeText);
+
+}
+
+.btn:active{
+    background-color: rgba(, 0.5);
+}
+
+.notification{
+
+}
+.notificationOkay{
+    
+}

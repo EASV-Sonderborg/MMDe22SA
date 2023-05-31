@@ -1,0 +1,122 @@
+/* Custom Prop */
+:root{
+    /* Color */
+    --primary: #F8F8F8;
+    --primaryText: #554E4E;
+    --primaryBtn: #0A82A8;
+
+    --green: #006B3D ;
+    --yellow: #EFC600 ;
+    --red: #E03C32 ; 
+    --dark:var(--primaryText);
+
+
+    /* menu buttons */ 
+    --menuButtonWidth: 88px; 
+    --menuButtonHeight: 64px; 
+    --menuButtonRadius: 4px; 
+    --dropshadow: drop-shadow(2px 2px 2px black); 
+
+    /* Text size */ 
+   --largeText: 12px; 
+   --mediumText: 10px; 
+   --smallText: 8px;
+
+   /* font-style */ 
+   
+}
+
+
+
+body {
+    padding: 16px;
+    width: 320px;
+    height: 240px;
+}
+
+.header {
+    margin-bottom: 16px;
+}
+
+.inputfelt {
+
+}
+
+.doseringsValue {
+    height: 192px;
+    height: 32px;
+    display: grid;
+    border: 1px solid black;
+    text-align: center;
+  
+}
+
+h2, h3{
+    margin: 0;
+    color: var(--primary);
+}
+
+.status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.status__facility {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 3px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.status__pump {
+    background-color: var(--green);
+    width: 112px;
+    height: 96px;
+    border-radius: 3px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.doseringsValue-text {
+    color: black; 
+}
+
+.statusImg {
+    width: 50px;
+    height: 50px;
+}
+
+.checkmark {
+    border-radius: 20rem; 
+    border: 5px solid #0f5a3a;
+    color: var(--primary);
+    
+}
+
+
+
+
+
+/* Design af buttons i menu */ 
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.menu__button {
+    width: var(--menuButtonWidth);
+    height: var(--menuButtonHeight);
+    border-radius: var(--menuButtonRadius);
+    background-color: var(--primaryBtn);
+    color: var(--primary);
+    font-size: var(--largeText);
+    border: none; 
+    filter: var(--dropshadow);
+}

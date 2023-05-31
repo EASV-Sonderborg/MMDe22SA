@@ -1,0 +1,58 @@
+
+
+   
+   
+    
+    
+    
+    .navegacion ul {
+        list-style: none;
+       
+        }
+    
+        
+    
+    .menu >li a{
+      
+      
+       font-family: open sans-serif;
+        text-decoration: none;
+        color: yellow;
+    }
+     
+       
+   
+        
+        .menu :hover {
+         color: rgb(245, 240, 238); 
+         transition: all.3s;  
+        }
+body {
+    background-image: url(guitar.jpg);
+    background-repeat: no-repeat;
+    background-size: 375px 667px; /*Ifhone SE Size*/
+    background-attachment: fixed;
+    size:375px 667px ;
+}
+    h1{
+        color: white;
+    font-family: roboto;
+    padding-left: 70px;
+  
+   
+   
+
+    }
+
+ h2,h3 {
+    color: white;
+    font-family: roboto;
+
+padding-left: 40px;
+padding-top: 50px;
+
+   
+    
+}
+
+
