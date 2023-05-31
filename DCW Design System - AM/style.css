@@ -224,6 +224,9 @@ width: auto;
 .notification{
 
 }
+.notificationShowcase{
+    display: flex;
+}
 .notifications{
     width: var(--plcWidth);
     height: var(--plcHeigth);
@@ -239,6 +242,8 @@ width: auto;
         font-size: var(--screenSaverHeadline);
         color: var(--primary);
         font-weight: 700;
+        margin:0 ;
+        padding: 4rem;
     }
 
     .notificationStatus{
