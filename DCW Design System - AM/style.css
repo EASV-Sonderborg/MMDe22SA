@@ -33,10 +33,13 @@
     --mediumText: 10px; 
     --smallText: 8px;
     
+    /* plc screensaver*/
+    --screenSaverHeadline: 64px;
+    --screenSaverStatus: 24px;
 
     /* PLC SCREEN SIZE*/
     --plcWidth: 320px;
-    --plcHeigth
+    --plcHeigth: 240px;
 
 }
 
@@ -96,11 +99,11 @@ text-align: center;
 }
 
 
-/* Colors */ 
 
-h2 {
-    font-weight: 400;
-}
+
+
+
+
 
 .btn{
     border-radius: 4px;
@@ -176,13 +179,48 @@ h2 {
 
 }
 
-.btn:active{
-    background-color: rgba(, 0.5);
-}
 
+
+
+/* Alerts */
+   
 .notification{
 
 }
-.notificationOkay{
+.notifications{
+    width: var(--plcWidth);
+    height: var(--plcHeigth);
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: center;
     
 }
+ /* DCW and status Styler*/
+    .notificationDCW{
+        font-size: var(--screenSaverHeadline);
+        color: var(--primary);
+        font-weight: 700;
+    }
+
+    .notificationStatus{
+        font-size: var(--screenSaverStatus);
+        color: var(--primary);
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+.notificationOkay{
+    background-color: var(--green);
+    
+}
+
+.notificationAttention{
+    background-color: var(--yellow);
+}
+
+.notificationAlert{
+    background-color: var(--red);
+}
+
