@@ -270,7 +270,28 @@ margin: 0;
 .pumpStatus{
 
 }
+.pumpStatusHeadline{
+    font-size: 12px;
+}
 
 .facilityStatus{
 
+}
+
+.facilityStatusHeadline{
+    font-size: 12px;
+}
+
+.ok{
+    background-color: var(--green);
+}
+.notice{
+background-color: var(--yellow);
+}
+.warning{
+background-color: var(--red);
+}
+
+.statusIcon{
+    color: var(--dark);
 }

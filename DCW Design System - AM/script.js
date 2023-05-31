@@ -31,32 +31,61 @@ refreshBtn.addEventListener('click', () => {
 });
 
 //Json indhold som skal bruges til at ændre alerts
-
 const fetchPromise = fetch('errorcode.json');
 
 fetchPromise
     .then(response => {
-        if (!response.ok) { // hvis der ikke kommer svar fra serveren, giver den en fejlmeddelelse
+        if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
         }
-        return response.json(); // hvis alt er ok, så fortsætter scriptet 
+        return response.json();
     })
     .then(json => {
-        const result = json.errorcodes; // API'et returnerer JSON data og vi lægger det i result
-        console.log(result); // result er et array med 12 elementer
-        for(const el of result){ // for...of loop af arrayet
-            console.log(el); // her kan man se alle elementer i arrayet
+        const result = json.errorcodes;
+        console.log(result);
+
+        // Random Resultat (mange tak GPT)
+        const driftIndex = Math.floor(Math.random() * result.length);
+        const doseringIndex = Math.floor(Math.random() * result.length);
+
+        // viser tilfældige anlæg data 
+        const driftData = result[driftIndex];
+        const facilityStatus = document.querySelector('.facilityStatus');
+        const facilityErrorStatus = facilityStatus.querySelector('.errorcode');
+        facilityErrorStatus.textContent = `Status: ${driftData.status}`;
+
+        // viser tilfældig pumpe data
+        const doseringData = result[doseringIndex];
+        const pumpStatus = document.querySelector('.pumpStatus');
+        const pumpErrorStatus = pumpStatus.querySelector('.errorcode');
+        pumpErrorStatus.textContent = `Status: ${doseringData.status}`;
+
+        // tilføjer baggrunds farve til anlæg
+        facilityStatus.classList.add(driftData.severity.toLowerCase());
+
+        // tilføjer baggrunds farve til pump 
+        pumpStatus.classList.add(doseringData.severity.toLowerCase());
+
+        // tilføjer icon til anlæg
+        const facilityIcon = facilityStatus.querySelector('ion-icon');
+        if (driftData.status === 'Ok') {
+            facilityIcon.setAttribute('name', 'checkmark-outline');
+        } else if (driftData.status === 'Fejl') {
+            facilityIcon.setAttribute('name', 'alert-outline');
+        } else if (driftData.status === 'Problem') {
+            facilityIcon.setAttribute('name', 'close-outline');
         }
 
-        // Add text content to h2: 
-        const errorStatus = document.querySelector('.errorcode__status');
-        errorStatus.textContent = `Status: ${result[2].status}`;
-        const section = document.querySelector('.errorcode');
-        if (result[2].severity === 'Good') {
-            section.classList.add('good');
+        // vælger icon und fra status 
+        const pumpIcon = pumpStatus.querySelector('ion-icon');
+        if (doseringData.status === 'Ok') {
+            pumpIcon.setAttribute('name', 'checkmark-outline');
+        } else if (doseringData.status === 'Fejl') {
+            pumpIcon.setAttribute('name', 'alert-outline');
+        } else if (doseringData.status === 'Problem') {
+            pumpIcon.setAttribute('name', 'close-outline');
         }
-            
     })
     .catch(error => {
-        console.error(`Could not get products: ${error}`);
+        console.error(`Could not get error codes: ${error}`);
     });
