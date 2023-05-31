@@ -130,6 +130,8 @@ text-align: center;
 
 .buttonsShowCaseInfo{
 margin: 0;
+margin-right: 1rem;
+width: auto;
 }
 
 .startStopShow{
@@ -222,6 +224,9 @@ margin: 0;
 .notification{
 
 }
+.notificationShowcase{
+    display: flex;
+}
 .notifications{
     width: var(--plcWidth);
     height: var(--plcHeigth);
@@ -237,6 +242,8 @@ margin: 0;
         font-size: var(--screenSaverHeadline);
         color: var(--primary);
         font-weight: 700;
+        margin:0 ;
+        padding: 4rem;
     }
 
     .notificationStatus{
