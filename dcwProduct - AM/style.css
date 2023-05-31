@@ -42,8 +42,17 @@ body {
     margin-bottom: 16px;
 }
 
+a{
+ cursor: pointer;
+}
+
 .inputfelt {
 
+}
+
+.pagination__Icon {
+    color: var(--primary);
+   
 }
 
 .doseringsValue {
@@ -141,6 +150,7 @@ h2, h3{
     margin-inline: auto; /* Distribute all remaining space equally on both sides, thus centering the element */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
   }
   .pagination__button {
     width: 50px;
@@ -158,9 +168,16 @@ h2, h3{
 
 .arrowButton {
     background-color: var(--primaryBtn);
+    border: none;
+    border-radius: var(--menuButtonRadius);
     color: var(--primary);
     width: 32px; 
     height: 24px;
+    filter: var(--dropshadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
