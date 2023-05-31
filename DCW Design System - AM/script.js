@@ -15,6 +15,21 @@ buttons.forEach(button => {
 });
 
 
+// Refresh Button til at hente nyt data
+const refreshBtn = document.querySelector('.pumpFacilityRefreshBtn');
+refreshBtn.addEventListener('click', () => {
+//Husker side positionen
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+//genindlæser siden
+    location.reload();
+
+//scroller til den huskede position
+    window.addEventListener('load', () => {
+        window.scrollTo(0, scrollPosition);
+    });
+});
+
 //Json indhold som skal bruges til at ændre alerts
 
 const fetchPromise = fetch('errorcode.json');
