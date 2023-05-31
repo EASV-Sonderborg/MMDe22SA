@@ -34,6 +34,10 @@
     --smallText: 8px;
     
 
+    /* PLC SCREEN SIZE*/
+    --plcWidth: 320px;
+    --plcHeigth
+
 }
 
 p {
@@ -169,5 +173,16 @@ h2 {
 .acceptBtn{
     background-color: var(--green);
     font-size: var(--largeText);
+
+}
+
+.btn:active{
+    background-color: rgba(, 0.5);
+}
+
+.notification{
+
+}
+.notificationOkay{
     
 }
