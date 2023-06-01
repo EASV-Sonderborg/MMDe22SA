@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+        <title>Drift1</title>
+</head>
+
+
+<body>
+
+        <header class="header-a">
+                <nav class="navbar --navbar-type-two">
+                        <ion-icon onclick="history.back()" class="arrow-back-left" name="arrow-back"></ion-icon>
+                        <a class="menu-link-corner"  href="index.html">  <p class="menu-link">Menu</p></a>
+                </nav>
+        </header>
+
+       <main class="drift-content" >
+                <section  class="drift-main" >
+                        <article class="status-field --dosage">
+                                <h1 class="headline-a">Dosering</h1>
+                                <h3 class="alert-text">Process stoppet -max niveau</h3>
+                      
+                        </article>
+                        <article class="status-field --pump">
+                                <h1 class="line-a">Pumpe</h1>
+                                <h3 class="alert-text">System slukket</h3>
+                        
+                        </article>
+
+                </section>
+
+                <article class="control-buttons-panel">
+                        <button type="button"  class="button --button-start --startOn --in-button-text"  id="try1" > start</button>
+                        
+                        <p class="--reminder" >Husk at stoppe maskinnen <br> før ændringer</p>
+
+                        <button type="button"  class="button --button-stop --stopOn --in-button-text " >stop</button>  
+                </article>
+        
+        </main>
+
+        <footer class="counter-orp">
+
+                <p class="orp-text" >ORP aktuel værdi = 600 </p>
+                <ion-icon id="icon--tool-orp"  name="build-sharp"></ion-icon>
+        
+        </footer>
+        
+       <script src="script-drift.js"></script>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
