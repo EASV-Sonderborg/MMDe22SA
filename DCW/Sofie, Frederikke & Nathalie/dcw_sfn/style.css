@@ -376,7 +376,7 @@ button:active {
 
 .status {
     width: 304px;
-    height: 138px;
+    height: 139px;
     background-color: var(--primary-font);
     display: flex;
     gap: var(--spaceXSmall);
@@ -451,12 +451,11 @@ button:active {
     justify-content: space-between;
 
     position: relative;
-    bottom: -7px;
 }
 
 .statusImg {
     width: 30px;
-    margin: 0 auto;
+    margin: var(--spaceXXSmall) auto;
 
     display: flex;
 }
@@ -565,7 +564,7 @@ button:active {
 
 .steps__btn {
     position: absolute;
-    right: 352px;
+    right: 317px;
     font-weight: bold;
     color: var(--primary-font);
 }
