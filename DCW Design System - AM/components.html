@@ -25,25 +25,47 @@
             <h2 class="headlines">Buttons</h2>
             <p class="headlinesSlogan">Der skal trykkes</p>
 
-            <button class="startSmallBtn btn">Start</button>
-            <button class="stopSmallBtn btn">Stop</button>
+            <p class="buttonsShowCaseInfo"> Her kan ses start og stop knapper </p>
+            <section class="buttonsShowCase startStopShow">
+                <button class="startSmallBtn btn">Start</button>
+                <button class="stopSmallBtn btn">Stop</button>
+                <button class="startBtn btn">Start</button>
+                <button class="stopBtn btn">Stop</button>
+            </section>
 
-            <button class="startBtn btn">Start</button>
-            <button class="stopBtn btn">Stop</button>
+            <p class="buttonsShowCaseInfo"> Her kan ses Reset knapper </p>
+            <section class="buttonsShowCase resetShow">
+                <button class="resetSmallBtn btn">Reset</button>
+                <button class="resetMediumBtn btn">Reset</button>
+                <button class="resetBigBtn btn">Reset</button>
+            </section>
 
-            <button class="resetSmallBtn btn">Reset</button>
-            <button class="resetMediumBtn btn">Reset</button>
-            <button class="resetBigBtn btn">Reset</button>
+            <p class="buttonsShowCaseInfo"> Her kan ses action knapper</p>
+            <section class="buttonsShowCase actionShow">
+                <button class="actionBtn btn">+</button>
+                <button class="actionBtn redBtm btn">-</button>
+                <button class="actionBtn btn"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+                <button class="actionBtn btn"><ion-icon name="arrow-back-outline"></ion-icon></button>
+            </section>
 
-            <button class="actionBtn btn">+</button>
-            <button class="actionBtn redBtm btn">-</button>
-            <button class="actionBtn btn"><ion-icon name="arrow-forward-outline"></ion-icon></button>
-            <button class="actionBtn btn"><ion-icon name="arrow-back-outline"></ion-icon></button>
+            <p class="buttonsShowCaseInfo"> Her kan ses afslut knappen</p>
+            <section class="buttonsShowCase endShow">
+                <button class="endBtn btn">Afslut</button>
+            </section>
 
-            <button class="endBtn btn">Afslut</button>
+            <p class="buttonsShowCaseInfo"> Her kan ses ja og nej knapper </p>
+            <section class="buttonsShowCase acceptShow">
+                <button class="acceptBtn btn">Ja</button>
+                <button class="acceptBtn btn">Nej</button>
+            </section>
 
-            <button class="acceptBtn btn">Ja</button>
-            <button class="acceptBtn btn">Nej</button>
+            <p class="buttonsShowCaseInfo"> Her kan ses vores menu knapper</p>
+            <section class="buttonsShowCase menuShow">
+                <button class="menuBtn btn">menu</button>
+                <button class="menuBtn btn">Eksemple på hvis den er over to linjer</button>
+                <button class="menuSpecialBtn btn">Eksemple på hvis den er over to linjer</button>
+
+            </section>
 
 
 
@@ -53,30 +75,46 @@
         <section class="notification">
             <h2 class="headlines">Notificationer</h2>
             <p class="headlinesSlogan">Det skal mærkes </p>
-
-            <section class="notificationOkay">
-                
+            <section class="notificationShowcase">
+                <section class="notificationOkay notifications">
+                    <h1 class="notificationDCW">DCW</h1>
+                    <p class="notificationStatus">Status: OK</p>
+                </section>
+                <section class="notificationAttention notifications ">
+                    <h1 class="notificationDCW">DCW</h1>
+                    <p class="notificationStatus">Status: Fejl</p>
+                </section>
+                <section class="notificationAlert notifications ">
+                    <h1 class="notificationDCW">DCW</h1>
+                    <p class="notificationStatus">Status: Problem</p>
+                </section>
             </section>
-            <section class="notificationAttention">
-                
-            </section>
-            <section class="notificationAlert">
-                
-            </section>
-
         </section>
 
-        <section class="status">
+        <section class="pumpFacility">
             <h2 class="headlines">Status</h2>
             <p class="headlinesSlogan">Det skal ses</p>
+            <section class="pumpFacilityRefresh">
+                <p class="buttonsShowCaseInfo"> Klick her for at trigger forskellige statusser</p>
+                <button class="pumpFacilityRefreshBtn btn"><ion-icon class="pumpFacilityRefreshBtnIcon"
+                        name="refresh-outline"></ion-icon></button>
+            </section>
+            <section class="statusShowcase">
+                <section class="pumpStatus status">
+                    <h3 class="pumpStatusHeadline">Pumpe</h3>
+                    <ion-icon class="statusIcon" name="checkmark-outline"></ion-icon>
+                    <p class="errorcode"></p>
+                </section>
+
+                <section class="facilityStatus status">
+                    <h3 class="facilityStatusHeadline">Anlæg</h3>
+                    <ion-icon class="statusIcon" name="checkmark-outline"></ion-icon>
+                    <p class="errorcode"></p>
+                </section>
+            </section>
 
         </section>
 
-        <section class="other">
-            <h2 class="headlines">Other</h2>
-            <p class="headlinesSlogan">Det kan være det hele</p>
-
-        </section>
 
     </main>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

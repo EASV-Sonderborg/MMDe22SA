@@ -158,12 +158,12 @@ button:active {
 }
 
 .--xlarge {
-    width: var(--xlargeWidth-button);
+    width: 100%;
     height: var(--smallHeight-button);
 }
 
 .--xxlarge {
-    width: var(--xlargeWidth-button);
+    width: 100%;
     height: var(--mediumHeight-button);
 
 }
@@ -224,8 +224,8 @@ button:active {
     position: absolute;
     width: 90px;
     height: 90px;
-    left: 115px;
-    top: 75px;
+    left: 130px;
+    top: 85px;
 }
 
 .goodImg {
@@ -245,8 +245,8 @@ button:active {
     position: absolute;
     width: 138px;
     height: 138px;
-    left: 91px;
-    top: 51px;
+    left: 105px;
+    top: 60px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -20px -20px 60px -5px rgba(255, 255, 255, 0.15);
     border-radius: 30px;
     border: none;
@@ -375,16 +375,16 @@ button:active {
 }
 
 .status {
-    width: 304px;
-    height: 138px;
+    width: 100%;
+    height: 160px;
     background-color: var(--primary-font);
     display: flex;
     gap: var(--spaceXSmall);
 }
 
 .status__area {
-    width: 150px;
-    height: 100px;
+    width: 50%;
+    height: 160px;
 }
 
 .status__header {
@@ -424,6 +424,7 @@ button:active {
 }
 
 .status__infoText{
+    font-size: var(--fontSizeXXSmall);
     grid-column-start: 2;
     display: grid;
     align-items: center;
@@ -450,12 +451,11 @@ button:active {
     justify-content: space-between;
 
     position: relative;
-    bottom: -7px;
 }
 
 .statusImg {
-    width: 30px;
-    margin: 0 auto;
+    width: 31%;
+    margin: var(--spaceXXSmall) auto;
 
     display: flex;
 }
@@ -477,19 +477,21 @@ button:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-
-    margin: 0 auto;
+    gap: var(--spaceSmall);
 }
 
 .menu_btn {
-    width: 148px;
+    width: 150px;
     height: 71px;
-    margin: 4px;
+    margin: var(--spaceXXSmall);
     border-radius: 6px;
     color: var(--primary-font);
     font-weight: bold;
     font-size: var(--fontSizeLarge);
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: var(--spaceXSmall);
 }
 
 .menu_btn:active {
@@ -512,8 +514,6 @@ button:active {
 
 .errorNotice__description {
     background-color: var(--error-message-status);
-    height: 41px;
-    width: 304px;
     margin-bottom: var(--spaceSmall);
     display: flex;
     align-items: center;
@@ -530,10 +530,12 @@ button:active {
     font-weight: bold;
     margin-left: var(--spaceXSmall);
 }
-/* idk hvordan jeg får dette til højre... */
 .errorNotice__exit {
+    width: 100%;    
+
     display: flex;
-    justify-content: right;
+    justify-content: end;
+
 }
 
 .errorNotice__exitBtn {
@@ -546,25 +548,20 @@ button:active {
     margin-bottom: var(--spaceXSmall);
     display: flex;
     align-items: center;
-}
-
-.steps__nr {
-    color: var(--primary-font);
-    font-weight: bold;
-    margin-left: var(--spaceXXSmall);
-
+    justify-content: space-between;
 }
 
 .steps__info {
     color: var(--primary-font);
     font-weight: bold;
 
+    display: flex;
+    gap: var(--spaceXXSmall);
+
     margin-left: var(--spaceXXSmall);
 }
 
 .steps__btn {
-    position: absolute;
-    right: 352px;
     font-weight: bold;
     color: var(--primary-font);
 }
