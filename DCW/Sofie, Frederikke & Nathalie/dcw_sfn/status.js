@@ -66,7 +66,7 @@ fetchPromise
                 SetupBox('--warning','250','--warningNotice',result.status,isDrift, './images/warning.png')
                 break
             case 'Warning':
-                SetupBox('--error','99','--warningNotice',result.status,isDrift, './images/error.png')
+                SetupBox('--error','100','--warningNotice',result.status,isDrift, './images/error.png')
                 break
         }
     }
