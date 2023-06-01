@@ -46,9 +46,7 @@ a{
  cursor: pointer;
 }
 
-.inputfelt {
 
-}
 
 .pagination__Icon {
     color: var(--primary);
@@ -69,6 +67,10 @@ a{
 
 h2, h3{
     margin: 0;
+    color: var(--primary);
+}
+
+.guide__text {
     color: black; 
 }
 
@@ -97,6 +99,8 @@ h2, h3{
     text-align: center;
 }
 
+
+
 .doseringsValue-text {
     color: black; 
 }
@@ -104,17 +108,35 @@ h2, h3{
 .statusImg {
     width: 50px;
     height: 50px;
+    
+}
+
+.icon-alert {
+    border-radius: 20rem;
+}
+
+.alert {
+   background: var(--yellow);
+   border-radius: 20rem;
+   border: 5px solid #ffd500;
+
 }
 
 .checkmark {
-    border-radius: 20rem; 
     border: 5px solid #0f5a3a;
+    border-radius: 20rem;
+    color: var(--primary); 
+}
+
+.icon {
+    border-radius: 20rem; 
     color: var(--primary);
     
 }
 
-
-
+.ej-ok {
+    background-color: var(--yellow);
+}
 
 
 /* Design af buttons i menu */ 
@@ -178,6 +200,8 @@ h2, h3{
 
 
 
+
+
 /* Kodning af fejlmeldings-vejledningen */ 
 
 .guideHeadline {
@@ -228,14 +252,18 @@ h2, h3{
     border-radius: var(--menuButtonRadius);
     margin-left: 3rem;
 }
-
 .finishButton {
     background-color: var(--primaryBtn);
     color: var(--primary);
     border: none; 
     border-radius: var(--menuButtonRadius);
     filter: var(--dropshadow);
+    display: none;
+    
 }
+
+
+
 
 
 
@@ -244,7 +272,10 @@ h2, h3{
 
 img {
     width: 240px;
-    height: 200
+    height: 200; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 h1 {

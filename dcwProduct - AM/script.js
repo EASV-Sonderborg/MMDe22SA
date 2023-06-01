@@ -9,9 +9,10 @@ stopBtn.addEventListener("click", ()=> {
 });
 
 
+const finishBtn = document.querySelector('.finishButton')
+const startBtn = document.querySelector('.buttonStart')
 
-function updateProgressBar(progressBar, value) {
-    value = Math.round(value);
-    progressBar.querySelector(".progress__fill").style.width = `${value}%`; 
-    progressBar.querySelector(".progress__text").textContent = `${value}%`; 
-}
+startBtn.addEventListener('click', function(){
+    finishBtn.style.display = 'block';
+});
+
