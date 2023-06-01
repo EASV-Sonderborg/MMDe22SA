@@ -23,7 +23,7 @@ fetchPromise
         const randomDoseringNumber = Math.floor(Math.random()* result[1].dosering.length)
 
         // Error message info
-        errorMessage.textContent = `${result[1].dosering[3].explanation}`;
+        errorMessage.textContent = `${result[1].dosering[2].explanation}`;
         
         
       
