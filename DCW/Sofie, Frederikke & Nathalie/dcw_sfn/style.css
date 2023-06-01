@@ -158,12 +158,12 @@ button:active {
 }
 
 .--xlarge {
-    width: var(--xlargeWidth-button);
+    width: 100%;
     height: var(--smallHeight-button);
 }
 
 .--xxlarge {
-    width: var(--xlargeWidth-button);
+    width: 100%;
     height: var(--mediumHeight-button);
 
 }
@@ -514,8 +514,6 @@ button:active {
 
 .errorNotice__description {
     background-color: var(--error-message-status);
-    height: 41px;
-    width: 304px;
     margin-bottom: var(--spaceSmall);
     display: flex;
     align-items: center;
@@ -532,10 +530,12 @@ button:active {
     font-weight: bold;
     margin-left: var(--spaceXSmall);
 }
-/* idk hvordan jeg får dette til højre... */
 .errorNotice__exit {
+    width: 100%;    
+
     display: flex;
-    justify-content: right;
+    justify-content: end;
+
 }
 
 .errorNotice__exitBtn {
@@ -548,25 +548,20 @@ button:active {
     margin-bottom: var(--spaceXSmall);
     display: flex;
     align-items: center;
-}
-
-.steps__nr {
-    color: var(--primary-font);
-    font-weight: bold;
-    margin-left: var(--spaceXXSmall);
-
+    justify-content: space-between;
 }
 
 .steps__info {
     color: var(--primary-font);
     font-weight: bold;
 
+    display: flex;
+    gap: var(--spaceXXSmall);
+
     margin-left: var(--spaceXXSmall);
 }
 
 .steps__btn {
-    position: absolute;
-    right: 317px;
     font-weight: bold;
     color: var(--primary-font);
 }

@@ -17,9 +17,6 @@ const noticeInfoDrift = document.querySelector('.drift')
 const imageBox = document.querySelectorAll('.statusImg');
 //const noticeInfo = document.querySelectorAll('.status__info')
 
-// Error message info
-const errorMessage = document.querySelector('.errorNotice__info');
-
 
 const fetchPromise = fetch('errorcode2.json');
 
@@ -45,8 +42,6 @@ fetchPromise
         checkStatus(result[0].drift[randomDriftNumber],true)
         checkStatus(result[1].dosering[randomDoseringNumber],false)
 
-        // Error message info
-        errorMessage.textContent = `${result.explanation}`;
         
         
       
