@@ -375,16 +375,16 @@ button:active {
 }
 
 .status {
-    width: 304px;
-    height: 139px;
+    width: 100%;
+    height: 160px;
     background-color: var(--primary-font);
     display: flex;
     gap: var(--spaceXSmall);
 }
 
 .status__area {
-    width: 150px;
-    height: 100px;
+    width: 50%;
+    height: 160px;
 }
 
 .status__header {
@@ -454,7 +454,7 @@ button:active {
 }
 
 .statusImg {
-    width: 30px;
+    width: 31%;
     margin: var(--spaceXXSmall) auto;
 
     display: flex;
