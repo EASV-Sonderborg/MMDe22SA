@@ -237,6 +237,7 @@ width: auto;
 }
 .notificationShowcase{
     display: flex;
+    flex-direction: row;
 }
 .notifications{
     width: var(--plcWidth);
@@ -354,5 +355,13 @@ background-color: var(--red);
     margin-bottom: 8px;
     font-size: 12px;
     font-weight: 700;
+
+}
+
+@media screen and (min-width: 600px) {
+   .notificationShowcase{
+    flex-direction: row ;
+    
+   }
 
 }
