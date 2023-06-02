@@ -23,6 +23,9 @@
    --mediumText: 10px; 
    --smallText: 8px;
 
+   /* Text weight */ 
+   --textWeight: 400; 
+
    /* font-style */ 
    
 }
@@ -40,6 +43,8 @@ body {
 
 .header {
     margin-bottom: 16px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 a{
@@ -68,10 +73,14 @@ a{
 h2, h3{
     margin: 0;
     color: var(--primary);
+    font-size: var(--xxlText);
+   
+    
 }
 
 .guide__text {
-    color: black; 
+    color: hsl(0, 0%, 0%); 
+     font-weight: var(--textWeight);
 }
 
 .status {
@@ -79,24 +88,30 @@ h2, h3{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.136);
 }
 
 .status__facility {
     background-color: var(--green);
     width: 112px;
     height: 96px;
-    border-radius: 3px;
+    border-radius: 8px;
     margin-top: 6px;
     text-align: center;
+    filter: var(--dropshadow);
+    
+
+    
 }
 
 .status__pump {
     background-color: var(--green);
     width: 112px;
     height: 96px;
-    border-radius: 3px;
+    border-radius: 8px;
     margin-top: 6px;
     text-align: center;
+    filter: var(--dropshadow);
 }
 
 
@@ -158,6 +173,7 @@ h2, h3{
     font-size: var(--largeText);
     border: none; 
     filter: var(--dropshadow);
+    
 }
 
 /* PAGINATION I MENU */ 
@@ -291,7 +307,7 @@ h1 {
     background: #9cbab4;
     overflow: hidden; 
     border: 1px solid black; 
-    border-radius: 3px; 
+    
 }
 
 .progress__fill {
