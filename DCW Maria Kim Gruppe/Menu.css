@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 38, 51);
+    font-family: Arial, sans-serif;
+  }
+  
+  .navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb( 40 ,46 , 101);
+    color: rgb( 235 , 235, 237);
+    height: 40px;
+    padding: 0 10px;
+  }
+  
+  .left-button img,
+  .right-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .page-title {
+    font-size: 18px;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: rgb( 162 , 167, 203);
+    padding: 20px;
+    text-align: center;
+  }
+  
