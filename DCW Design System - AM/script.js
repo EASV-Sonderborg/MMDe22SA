@@ -36,7 +36,7 @@ const fetchPromise = fetch('errorcode.json');
 fetchPromise
     .then(response => {
         if (!response.ok) {
-            throw new Error(`HTTP error: ${response.status}`);
+            throw ne    w Error(`HTTP error: ${response.status}`);
         }
         return response.json();
     })
