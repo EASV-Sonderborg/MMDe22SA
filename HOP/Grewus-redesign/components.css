@@ -1,0 +1,193 @@
+/* General rules for programming 
+
+    - Use classes instead if id (unless id is necessary)
+    - Use Snake Case for naming stuff (name_name)
+
+*/
+
+
+
+
+:root {
+    /* Colors*/
+
+    /* Primary */
+    --Color_primary_grewus: #009df7;
+    --Color_primary_haptic: #0365b1;
+    --Color_primary_acoustic: #ec008c;
+    --Color_primary_gradient: linear-gradient(to right, #0365b1 , #ec008c);
+    --Color_primary_font: #303437;
+    --Color_primary_background: #fafafa;
+    /* Secondary */
+    --Color_secondary_font: #f4f4f4;
+    --Color_secondary_background: #f4f4f4;
+    --haptic_secondary_color: #FEF3F9;
+    --acoustics_secondary_color: #CDE0EF;
+
+
+    
+    /* Desktop */
+    /* Fonts */
+    --D_header: 2rem;
+    --D_subheader: 1.5rem;
+    --D_cardheader: 1.25rem;
+    --D_nav: 1.25rem;
+    --D_sub__nav: 1.25rem;
+    --D_body: 1rem;
+    --D_button: 1rem;
+    --D_footer: 1rem;
+    /* Spacing */
+    --D_xsmall: 0.5rem;
+    --D_small: 1rem;
+    --D_medium: 1.5rem;
+    --D_large: 2rem;
+    --D_xlarge: 3rem;
+
+    /* Mobile */
+    /* Fonts */
+    --M_header: 1.5rem;
+    --M_subheader: 1.25rem;
+    --M_cardheader: 1.125rem;
+    --M_nav: 1.125rem;
+    --M_sub__nav: 1.125rem;
+    --M_body: 1rem;
+    --M_button: 1rem;
+    --M_footer: 1rem;
+    /*Spacing */
+    --M_xxsmall: 0.5rem;
+    --M_xsmall: 1rem;
+    --M_small: 1.5rem;
+    --M_medium_: 2rem;
+    --M_large: 2.5rem;
+    --M_xlarge: 3rem;
+    --M_xxlarge: 4rem;
+}
+
+/* Standard Setup */
+body {
+    background-color: var(--Color_primary_background);
+}
+h1, h2, h3, h4 {
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--Color_primary_font);
+}
+h5, h6, p {
+    font-family: 'Calibri';
+    font-weight: normal;
+    color: var(--Color_primary_font);
+}
+
+
+
+
+
+/* Style the navigation menu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+nav {
+    background-color: var(--Color_primary_grewus);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--Color_secondary_font);
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--D_medium);
+}
+.nav-item {
+    margin-right: var(--D_large);
+}
+.nav-link{
+    font-size: var(--D_nav);
+    color: var(--Color_secondary_font);
+}
+.nav-link:hover{
+    color: var(--Color_primary_font);
+}
+.nav-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #482FF7;
+}
+.nav-billede {
+    height: 4rem;
+    border-radius: 20%;
+}
+/* Navbar/burgermenu responsive skalering (Kopiert fra anden hjemmeside) */
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        flex-direction: column;
+        background-color: var(--Color_primary_grewus);
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-link {
+        font-size: var(--M_nav);
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
