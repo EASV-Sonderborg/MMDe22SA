@@ -191,3 +191,47 @@ nav {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Buttons styling */
+button {
+    border-radius: 4px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.--secondaryBtn {
+    color: var(--Color_secondary_font);
+    background-color: var(--Color_primary_grewus);
+
+    padding: 4px 8px;
+    border: none;
+}
+
+.--secondaryBtn:hover {
+    background-color: #007ec6;
+}
+
+.--secondaryBtn:active {
+    box-shadow: inset 2px 2px 12px #004f7c;
+    background-color: #007ec6;
+}
+
+.--acousticBtn {
+    border-image: url(images/bluesmoke.jpg) 30;
+    border-image-width: 0 0 3px 0;
+    border-bottom: 3px solid transparent;
+
+    padding: 4px;
+    background-color: transparent;
+}
+
+.--hapticBtn {
+    border-image: url(images/pinksmokes.jpg) 30;
+    border-image-width: 0 0 3px 0;
+    border-bottom: 3px solid transparent;
+
+    padding: 4px;
+    background-color: transparent;
+}
