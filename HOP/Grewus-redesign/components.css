@@ -268,3 +268,18 @@ button:hover{
     padding: 4px;
     background-color: transparent;
 }
+
+
+
+/* Footer */
+footer {
+    background-color: var(--Color_primary);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer_stuff {
+    color: var(--Color_secondary_font);
+}
+.some_chanels_linkedin {
+    max-width: 2rem;
+}
