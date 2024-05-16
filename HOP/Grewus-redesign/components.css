@@ -104,14 +104,13 @@ a {
     border-bottom: 1px solid #E2E8F0;
 }
 nav {
-    background-color: var(--Color_primary_grewus);
+    background-color: #0B5CAA;
 }
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
 }
+
+
 .hamburger {
     display: none;
 }
@@ -126,9 +125,8 @@ nav {
 }
 .nav-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: var(--D_medium);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
 }
 .nav-item {
     margin-right: var(--D_large);
@@ -141,13 +139,15 @@ nav {
     color: var(--Color_primary_font);
 }
 .nav-logo {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #482FF7;
+    padding: var(--D_small);
+    width: 100%;
+    display: inline-block;
+    background-image: url(images/bluesmoke.jpg);
+    background-size: 100%;
+    background-position: center;
 }
-.nav-billede {
-    height: 4rem;
-    border-radius: 20%;
+.nav-image {
+    height: 2rem;
 }
 /* Navbar/burgermenu responsive skalering (Kopiert fra anden hjemmeside) */
 @media only screen and (max-width: 768px) {
