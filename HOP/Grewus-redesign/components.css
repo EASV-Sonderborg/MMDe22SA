@@ -12,18 +12,21 @@
     /* Colors*/
 
     /* Primary */
-    --Color_primary_grewus: #009df7;
+    --Color_primary: #0B5CAA;
     --Color_primary_haptic: #0365b1;
     --Color_primary_acoustic: #ec008c;
     --Color_primary_gradient: linear-gradient(to right, #0365b1 , #ec008c);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
+
     /* Secondary */
     --Color_secondary_font: #f4f4f4;
     --Color_secondary_background: #f4f4f4;
     --haptic_secondary_color: #FEF3F9;
     --acoustics_secondary_color: #CDE0EF;
 
+    /* Hover */
+    --nav-hover: #003a71;
 
     
     /* Desktop */
@@ -91,7 +94,6 @@ h5, h6, p {
     box-sizing: border-box;
 }
 html {
-    font-size: 100%;
     font-family: 'Raleway', sans-serif;
 }
 li {
@@ -104,7 +106,7 @@ a {
     border-bottom: 1px solid #E2E8F0;
 }
 nav {
-    background-color: #0B5CAA;
+    background-color: var(--Color_primary);
 }
 .navbar {
     display: flex;
@@ -114,6 +116,7 @@ nav {
 .hamburger {
     display: none;
 }
+
 .bar {
     display: block;
     width: 25px;
@@ -125,27 +128,57 @@ nav {
 }
 .nav-menu {
     display: flex;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
+
+
+    height: 60px;
+    align-items: center;
+    padding-left: 1.5rem;
 }
-.nav-item {
+/* .nav-item {
     margin-right: var(--D_large);
-}
+} */
+
 .nav-link{
     font-size: var(--D_nav);
     color: var(--Color_secondary_font);
+
+    width: 100%;
+    height: 60px;
+    padding: 1rem 1.5rem;
+  
+    display: flex;
+    align-items: center;
 }
+
+.nav-menu:nth-child(1) {
+    padding: 0;
+}
+
+
 .nav-link:hover{
-    color: var(--Color_primary_font);
+    background-color: var(--nav-hover);
 }
 .nav-logo {
     padding: var(--D_small);
     width: 100%;
     display: inline-block;
-    background-image: url(images/bluesmoke.jpg);
+    
     background-size: 100%;
     background-position: center;
 }
+
+.--primary_nav_logo {
+    background-image: url(images/primarysmoke.png);
+}
+
+.--haptic_nav_logo {
+    background-image: url(images/pinksmokes.jpg);
+}
+
+.--acoustic_nav_logo {
+    background-image: url(images/bluesmoke.jpg);
+}
+
 .nav-image {
     height: 2rem;
 }
