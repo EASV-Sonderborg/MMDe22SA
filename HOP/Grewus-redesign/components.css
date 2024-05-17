@@ -5,9 +5,6 @@
 
 */
 
-
-
-
 :root {
     /* Colors*/
 
@@ -82,10 +79,6 @@ h5, h6, p {
     color: var(--Color_primary_font);
 }
 
-
-
-
-
 /* Style the navigation menu */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 * {
@@ -93,9 +86,11 @@ h5, h6, p {
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
+
 li {
     list-style: none;
 }
@@ -104,7 +99,11 @@ a {
 }
 .header{
     border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
+
 nav {
     background-color: var(--Color_primary);
 }
@@ -132,9 +131,6 @@ nav {
     align-items: center;
     padding-left: 1.5rem;
 }
-/* .nav-item {
-    margin-right: var(--D_large);
-} */
 
 .nav-link{
     font-size: var(--D_nav);
@@ -188,7 +184,7 @@ nav {
     }
 
     .nav-image {
-        padding-top: 60px;
+        padding-top: 1rem;
         width: 170px;
     }
 
@@ -198,7 +194,6 @@ nav {
         flex-direction: column;
         background-color: var(--Color_primary);
         width: 100%;
-        /* height: 600px; */
         border-radius: 10px;
         text-align: left;
         transition: 0.3s;
