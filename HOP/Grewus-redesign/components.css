@@ -1,16 +1,24 @@
-/* General rules for programming 
 
-    - Use classes instead if id (unless id is necessary)
+/*      --------------------      GENEREL RULES        --------------------      */
+/*
+    - Use classes instead of id
     - Use Snake Case for naming stuff (name_name)
-
 */
 
 
 
 
+
+
+
+
+
+
+
+/*      --------------------      ROOT        --------------------      */
+
 :root {
     /* Colors*/
-
     /* Primary */
     --Color_primary: #0B5CAA;
     --Color_primary_haptic: #0365b1;
@@ -18,16 +26,13 @@
     --Color_primary_gradient: linear-gradient(to right, #0365b1 , #ec008c);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
-
     /* Secondary */
     --Color_secondary_font: #f4f4f4;
     --Color_secondary_background: #f4f4f4;
     --haptic_secondary_color: #FEF3F9;
     --acoustics_secondary_color: #CDE0EF;
-
     /* Hover */
     --nav-hover: #003a71;
-
     
     /* Desktop */
     /* Fonts */
@@ -66,7 +71,25 @@
     --M_xxlarge: 4rem;
 }
 
-/* Standard Setup */
+
+
+
+
+
+
+
+
+
+/*      --------------------      GENEREL SETUP        --------------------      */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--Color_primary_background);
 }
@@ -86,16 +109,14 @@ h5, h6, p {
 
 
 
-/* Style the navigation menu */
+
+
+
+
+
+/*      --------------------      NAVIGATION        --------------------      */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-family: 'Raleway', sans-serif;
-}
 li {
     list-style: none;
 }
@@ -111,12 +132,9 @@ nav {
 .navbar {
     display: flex;
 }
-
-
 .hamburger {
     display: none;
 }
-
 .bar {
     display: block;
     width: 25px;
@@ -134,20 +152,14 @@ nav {
     align-items: center;
     padding-left: 1.5rem;
 }
-/* .nav-item {
-    margin-right: var(--D_large);
-} */
-
 .nav-link{
     font-family: 'Raleway';
     font-weight: bold;
     font-size: var(--D_nav);
     color: var(--Color_secondary_font);
-
-    width: 100%;
+    /* width: 100%; */
     height: 60px;
     padding: 1rem 1.5rem;
-  
     display: flex;
     align-items: center;
 }
@@ -156,12 +168,9 @@ nav {
     font-weight: normal;
     font-size: var(--D_nav);
 }
-
 .nav-menu:nth-child(1) {
     padding: 0;
 }
-
-
 .nav-link:hover{
     background-color: var(--nav-hover);
 }
@@ -173,25 +182,31 @@ nav {
     background-size: 100%;
     background-position: center;
 }
-
 .--primary_nav_logo {
     background-image: url(images/primarysmoke.png);
 }
-
 .--haptic_nav_logo {
     background-image: url(images/pinksmokes.jpg);
 }
-
 .--acoustic_nav_logo {
     background-image: url(images/bluesmoke.jpg);
 }
-
 .nav-image {
     height: 2rem;
 }
-/* Navbar/burgermenu responsive skalering (Kopiert fra anden hjemmeside) */
+
+/*      --------------------      Responsive Navbar        --------------------      */
+
 @media only screen and (max-width: 768px) {
-    .nav-menu {
+    .navbar{
+        justify-content: end;
+        padding: var(--M_xsmall) var(--M_small);
+    }
+    .nav-image {
+        padding-top: 1rem;
+        width: 170px;
+    }
+    .nav-menu { 
         position: fixed;
         left: -100%;
         top: 6rem;
@@ -203,18 +218,29 @@ nav {
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
+        gap: var(--M_small);
     }
     .nav-menu.active {
         left: 0;
     }
     .nav-item {
-        margin: 2.5rem 0;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
     }
-
+    .nav-menu:nth-child(1){
+        padding-top: 2rem;
+    }
     .nav-link {
         font-size: var(--M_nav);
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-
+    .nav-link:active{
+        background-color: var(--nav-hover);
+    }
     .hamburger {
         display: block;
         cursor: pointer;
@@ -232,15 +258,58 @@ nav {
     }
 }
 
-/* Buttons styling */
+
+
+
+
+
+
+
+
+/*      --------------------      DROPDOWN MENU        --------------------      */
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--Color_primary);
+    padding: .5rem 0rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--Color_secondary_font);
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--nav-hover);
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+/*      --------------------      BUTTON SETUP        --------------------      */
 button {
     border-radius: 4px;
 }
-
 button:hover{
     cursor: pointer;
 }
-
 .--secondaryBtn {
     color: var(--Color_secondary_font);
     background-color: var(--Color_primary_grewus);
@@ -248,37 +317,132 @@ button:hover{
     padding: 4px 8px;
     border: none;
 }
-
 .--secondaryBtn:hover {
     background-color: #007ec6;
 }
-
 .--secondaryBtn:active {
-    box-shadow: inset 2px 2px 12px #004f7c;
-    background-color: #007ec6;
+    box-shadow: inset 2px 2px 12px var(--nav-hover);
+    background-color: var(--Color_primary);
 }
-
+.--HeroContact {
+    background: none;
+    color: #f4f4f4;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    border: #f4f4f4 solid thin;
+}
 .--acousticBtn {
     border-image: url(images/bluesmoke.jpg) 30;
     border-image-width: 0 0 3px 0;
     border-bottom: 3px solid transparent;
-
     padding: 4px;
     background-color: transparent;
 }
-
 .--hapticBtn {
     border-image: url(images/pinksmokes.jpg) 30;
     border-image-width: 0 0 3px 0;
     border-bottom: 3px solid transparent;
-
     padding: 4px;
     background-color: transparent;
 }
 
 
 
-/* Footer */
+
+
+
+
+
+
+/*      --------------------      HERO SECTION        --------------------      */
+
+.hero {
+    position: relative;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: var(--D_xxlarge);
+}
+.heroImg {
+    height: 440px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.--overlay {
+    height: 440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.7); /* Black with 70% transparency */
+    z-index: -1; /* Ensure it's between the image and the content */
+}
+.hero_text {
+    padding-left: var(--D_xxlarge);
+}
+.hero_paragraph {
+    margin-bottom: var(--D_large);
+}
+.hero_header {
+    margin-bottom: var(--M_xxsmall);
+}
+.hero_secondary_header {
+    margin-bottom: var(--D_large);
+}
+.hero_contact_paragraph {
+    margin-bottom: var(--D_xsmall);
+}
+.hero_contact {
+    display: flex;
+    gap: var(--D_small);
+}
+.hero, p, h2 {
+    color: var(--Color_secondary_font);
+}
+.hero h1 {
+    color: var(--Color_primary_acoustic);
+    font-size: 64px;
+}
+.hero h2 {
+    font-size: 32px;
+}
+.hero_icon {
+    width: 44px;
+    transform: scaleX(-1);
+}
+.contact_information_location_info {
+    color: var(--Color_secondary_font);
+}
+
+
+
+
+
+
+
+
+
+/*      --------------------      MAIN        --------------------      */
+
+main {
+    margin: 4rem;
+}
+
+
+
+
+
+
+
+
+
+/*      --------------------      FOOTER        --------------------      */
+
 footer {
     background-color: var(--Color_primary);
     display: grid;
@@ -289,21 +453,15 @@ footer {
     color: var(--Color_secondary_font);
     padding: .5rem;
 }
-
-
 .legal_requirement {
     margin-left: 4rem;
 }
-
-
 .some_chanels_linkedin {
     max-width: 2rem;
 }
 .some_chanels {
     justify-self: center;
 }
-
-
 .contact_information {
     justify-self: center;
     margin-right: 4rem;
@@ -319,41 +477,3 @@ footer {
     justify-self: end;
     align-self: center;
 }
-.contact_information_location_info {
-    color: var(--Color_secondary_font);
-}
-
-
-
-
-
-
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--Color_primary);
-    padding: .5rem 0rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: var(--Color_secondary_font);
-    padding: .5rem 1.5rem;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: var(--nav-hover);
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
