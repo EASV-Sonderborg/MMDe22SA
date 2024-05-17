@@ -276,10 +276,38 @@ footer {
     background-color: var(--Color_primary);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 1.5rem;
 }
 .footer_stuff {
     color: var(--Color_secondary_font);
+    padding: .5rem;
 }
+
+
+.legal_requirement {
+    justify-self: center;
+}
+
+
 .some_chanels_linkedin {
     max-width: 2rem;
+}
+.some_chanels {
+    justify-self: center;
+}
+
+
+.contact_information {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact_information_header {
+    grid-column: span 2;
+    justify-self: center;
+}
+.contact_information_icon {
+    max-width: 1rem;
+    justify-self: end;
+    align-self: center;
 }
