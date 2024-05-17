@@ -139,6 +139,8 @@ nav {
 } */
 
 .nav-link{
+    font-family: 'Raleway';
+    font-weight: bold;
     font-size: var(--D_nav);
     color: var(--Color_secondary_font);
 
@@ -148,6 +150,11 @@ nav {
   
     display: flex;
     align-items: center;
+}
+.nav_dropdown {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: var(--D_nav);
 }
 
 .nav-menu:nth-child(1) {
@@ -285,7 +292,7 @@ footer {
 
 
 .legal_requirement {
-    justify-self: center;
+    margin-left: 4rem;
 }
 
 
@@ -299,8 +306,9 @@ footer {
 
 .contact_information {
     justify-self: center;
+    margin-right: 4rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 .contact_information_header {
     grid-column: span 2;
@@ -311,3 +319,41 @@ footer {
     justify-self: end;
     align-self: center;
 }
+.contact_information_location_info {
+    color: var(--Color_secondary_font);
+}
+
+
+
+
+
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--Color_primary);
+    padding: .5rem 0rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: var(--Color_secondary_font);
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: var(--nav-hover);
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
