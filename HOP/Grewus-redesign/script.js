@@ -15,10 +15,17 @@ function closeMenu() {
 
 
 
+
 const header = document.querySelector('header')
 const logo = document.querySelector('.nav-logo')
 const nav = document.querySelector('nav')
  
+
+const header = document.querySelector('header')
+const logo = document.querySelector('.nav-logo')
+const nav = document.querySelector('nav')
+
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         setTimeout(() => {
@@ -35,13 +42,13 @@ window.addEventListener('scroll', () => {
     } else {
         logo.style.display = 'block';
         nav.style.top = ''; // Reset the top position of the nav
- 
+
         // Display the logo smoothly
         setTimeout(() => {
             logo.style.transition = 'opacity 0.5s ease-in';
             logo.style.opacity = '1';
         }, 100);
- 
+
         // Reset the navbar position smoothly
         setTimeout(() => {
             nav.style.transition = 'top 0.5s ease-in';
