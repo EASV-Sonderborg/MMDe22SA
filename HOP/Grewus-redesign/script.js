@@ -21,11 +21,6 @@ const logo = document.querySelector('.nav-logo')
 const nav = document.querySelector('nav')
  
 
-const header = document.querySelector('header')
-const logo = document.querySelector('.nav-logo')
-const nav = document.querySelector('nav')
-
-
 window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
         setTimeout(() => {
