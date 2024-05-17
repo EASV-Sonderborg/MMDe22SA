@@ -10,8 +10,8 @@
 
     /* Primary */
     --Color_primary: #0B5CAA;
-    --Color_primary_haptic: #0365b1;
-    --Color_primary_acoustic: #ec008c;
+    --Color_primary_acoustic: #0365b1;
+    --Color_primary_haptic: #ec008c;
     --Color_primary_gradient: linear-gradient(to right, #0365b1 , #ec008c);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
@@ -106,7 +106,9 @@ a {
 
 nav {
     background-color: var(--Color_primary);
+   box-shadow: 2px 2px 10px 0px #010101; 
 }
+
 .navbar {
     display: flex;
 }
@@ -162,7 +164,7 @@ nav {
 }
 
 .--primary_nav_logo {
-    background-image: url(images/primarysmoke.png);
+    background-image: url(images/bluepinkcloud.jpg);
 }
 
 .--haptic_nav_logo {
@@ -289,8 +291,6 @@ button:hover{
     background-color: transparent;
 }
 
-
-
 /* Footer */
 footer {
     background-color: var(--Color_primary);
@@ -330,4 +330,45 @@ footer {
     max-width: 1rem;
     justify-self: end;
     align-self: center;
+}
+
+/* ---------------------------------------- HERO -------------------------------------------- */
+.hero {
+    height: 440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* position: static;
+    z-index: 999; */
+}
+
+.heroImg {
+    top: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: -999; 
+    
+    background-color: rgb(20, 20, 20, 0.7);
+}
+
+.hero, p, h2 {
+    color: var(--Color_secondary_font);
+}
+
+.hero h1 {
+    color: var(--Color_primary_acoustic);
+    font-size: 64px;
+
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero_icon {
+    width: 44px;
+    
+    transform: scaleX(-1);
 }
