@@ -1,5 +1,96 @@
+/*      --------------------      ROOT        --------------------      */
+
+:root {
+    /* Colors*/
+    /* Primary */
+    --Color_primary: #0B5CAA;
+    --Color_primary_acoustic: #0365b1;
+    --Color_primary_haptic: #e6007e;
+    --Color_primary_gradient: linear-gradient(to right, #0365b1 , #e6007e);
+    --Color_primary_font: #303437;
+    --Color_primary_background: #fafafa;
+    /* Secondary */
+    --Color_secondary_font: #f4f4f4;
+    --Color_secondary_background: #f4f4f4;
+    --haptic_secondary_color: #FEF3F9;
+    --acoustics_secondary_color: #CDE0EF;
+    /* Hover */
+    --nav-hover: #003a71;
+    /* Gradient */
+    --Color_header_gradient: linear-gradient( #f4f4f4 , #f4f4f400);
+    
+    /* Desktop */
+    /* Fonts */
+    --D_header: 2rem;
+    --D_subheader: 1.5rem;
+    --D_cardheader: 1.25rem;
+    --D_nav: 1.25rem;
+    --D_sub__nav: 1.25rem;
+    --D_body: 1rem;
+    --D_button: 1rem;
+    --D_footer: 1rem;
+    /* Spacing */
+    /* Spacing */
+    --D_xsmall: 0.5rem;
+    --D_small: 1rem;
+    --D_medium: 1.5rem;
+    --D_large: 2rem;
+    --D_xlarge: 3rem;
+    --D_xxlarge: 4rem;
+
+    /* Mobile */
+    /* Fonts */
+    --M_header: 1.5rem;
+    --M_subheader: 1.25rem;
+    --M_cardheader: 1.125rem;
+    --M_nav: 1.125rem;
+    --M_sub__nav: 1.125rem;
+    --M_body: 1rem;
+    --M_button: 1rem;
+    --M_footer: 1rem;
+    /*Spacing */
+    --M_xxsmall: 0.5rem;
+    --M_xsmall: 1rem;
+    --M_small: 1.5rem;
+    --M_medium_: 2rem;
+    --M_large: 2.5rem;
+    --M_xlarge: 3rem;
+    --M_xxlarge: 4rem;
+}
+
+
 /* ------------------------------------------ ABOUT GREWUS ------------------------------------------ */
-/* this is a test */
+
+.header_section {
+    background: var(--Color_header_gradient);
+    max-width: 100%;
+    padding: 4rem;
+}
+.header_section_header {
+    color: var(--Color_primary_font);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.header_section_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header_section_info_header {
+    color: var(--Color_primary_font);
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.header_section_info_text {
+    color: var(--Color_primary_font);
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.header_section_info_img {
+    height: 100%;
+    width: 97%;
+    grid-row: span 2;
+    margin-left: 1.5rem;
+}
 
 
 
