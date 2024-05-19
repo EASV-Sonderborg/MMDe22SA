@@ -70,17 +70,61 @@
             </div>
         </nav>
     </header>
+
     <main>
         <section class="header_section">
             <h1  class="header_section_header">About Grewus</h1>
             <section class="header_section_info">
-                <h2 class="header_section_info_header">Are you looking for a competitive advantages?</h2>
+                <h3 class="header_section_info_header">Are you looking for a competitive advantages?</h3>
                 <p class="header_section_info_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur error numquam velit vel quis quam necessitatibus expedita possimus debitis eius eos amet odit blanditiis laudantium corrupti nisi exercitationem, quia ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur error numquam velit vel quis quam necessitatibus expedita possimus debitis eius eos amet odit blanditiis laudantium corrupti nisi exercitationem, quia ad. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur error numquam velit vel quis quam necessitatibus expedita possimus debitis eius eos amet odit blanditiis laudantium corrupti nisi exercitationem, quia ad.</p>
                 <img class="header_section_info_img" src="images/placeholder.png" alt="">
             </section>
         </section>
-        
+        <section class="subheader_section">
+            <section class="subheader_section_image">
+                <img src="images/placeholder.png" alt="Our Mission Image">
+            </section>
+            <section class="subheader_section_content">
+                <h2>OUR MISSION</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis.</p>
+            </section>
+        </section>
+        <section class="contact_section">
+            <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+            <div class="container">
+                <form action="action_page.php">
+              
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name">
+                
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="Name of company">
+
+                    <label for="e-mail">E-mail address</label>
+                    <input type="text" id="e-mail" name="e-mail" placeholder="Your e-mail address">
+                
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="australia">Product information</option>
+                        <option value="canada">Product order</option>
+                        <option value="usa">Meeting</option>
+                        <option value="usa">Lead</option>
+                        <option value="usa">Other</option>
+                    </select>
+                
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Leave us a message..." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+              
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
         <section class="legal_requirement">
             <p class="footer_stuff legal_requirement_cookie">Cookie Policy</p>
@@ -88,11 +132,9 @@
             <p class="footer_stuff legal_requirement_privacy">Privacy Policy</p>
             <p class="footer_stuff legal_requirement_imprint">Imprint</p>
         </section>
-
         <section class="some_chanels">
             <img class="some_chanels_linkedin" src="images/LinkedinLogo.svg" alt="SoMe chanel, LinkedIn">
         </section>
-
         <section class="contact_information">
             <h4 class="footer_stuff contact_information_header">Contact</h4>
             <img class="contact_information_icon" src="images/locationMarker.svg" alt="Location icon">
@@ -104,13 +146,11 @@
                     <p class="contact_information_location_info">22335 Hamburg</p>
                 </article>
             </article>
-
             <img class="contact_information_icon" src="images/phoneIcon.svg" alt="Location icon">
             <article class="contact_information_phone">
                 <!-- class="contact_information_phone_icon" phone icon here -->
                 <p class="footer_stuff contact_information_phone_info">+49 00000000</p>
             </article>
-
             <img class="contact_information_icon" src="images/mailIcon.svg" alt="Location icon">
             <article class="contact_information_mail">
                 <!-- class="contact_information_mail_icon" mail icon here -->
@@ -118,6 +158,7 @@
             </article>
         </section>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
