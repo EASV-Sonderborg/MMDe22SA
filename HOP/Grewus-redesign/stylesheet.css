@@ -125,6 +125,7 @@ h5, h6, p {
     grid-row-start: 1;
     font-size: var(--D_subheader);
     margin-right: 1.5rem;
+    margin-bottom: .5rem;
 }
 .header_section_info_text {
     color: var(--Color_primary_font);
