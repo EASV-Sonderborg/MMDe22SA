@@ -24,7 +24,6 @@
     --Color_primary: #0B5CAA;
     --Color_primary_acoustic: #0365b1;
     --Color_primary_haptic: #e6007e;
-    --Color_primary_gradient: linear-gradient(to right, #0365b1 , #e6007e);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
     /* Secondary */
@@ -32,6 +31,10 @@
     --Color_secondary_background: #f4f4f4;
     --haptic_secondary_color: #FEF3F9;
     --acoustics_secondary_color: #E7EFF7;
+    /* Gradient */
+    --Color_header_gradient: linear-gradient( #f4f4f4 , #f4f4f400);
+    --Color_horizontal_gradient: linear-gradient(to right, #0365b1 , #e6007e);
+    --Color_vertical_gradient: linear-gradient( #0365b1 , #e6007e);
     /* Hover */
     --nav-hover: #003a71;
     
@@ -272,9 +275,9 @@ button:hover{
 }
 .--secondaryBtn {
     color: var(--Color_secondary_font);
-    background-color: var(--Color_primary_grewus);
+    background-color: var(--Color_primary);
 
-    padding: 4px 8px;
+    padding: 8px 16px;
     border: none;
 }
 .--secondaryBtn:hover {
@@ -416,6 +419,7 @@ button:hover{
 
 /*      --------------------      CARDS        --------------------      */
 .productsHeader{
+    padding-top: var(--D_xxlarge);
     text-align: center;
     margin-bottom: var(--D_large);
 }
@@ -424,20 +428,19 @@ button:hover{
     margin: 0 4rem 4rem;
     display: flex;
     gap: var(--D_medium);
-    /* flex-direction: column;
-    justify-content: center; */
+    row-gap: 2rem;
 
-
+    flex-flow: wrap;
 }
 
 .card-items {
     display: flex;
     gap: var(--D_medium);
+    width: 100%;
 }
 
 .card-item {
-    width: calc(100%/3);
-    background-color: var(--Color_secondary_background);
+    flex: 0 1 calc(33.333% - 1.5rem);
     box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
     border-radius: var(--D_xsmall);
 }
@@ -529,6 +532,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin-bottom: var(--D_xxlarge);
 }
 
 .demo_img{
@@ -539,16 +544,6 @@ button:hover{
     
 }
 
-/* .demo_buttons {
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-} */
-
-/* .demo_button:nth-child(1) {
-    position: fixed;
-    bottom: 50%;
-} */
 
 .demo_button {
     border-radius: 50%;
@@ -559,9 +554,9 @@ button:hover{
     border: none;
 }
 
-/* .demo_text {
-
-} */
+.demo_text {
+    margin-bottom: var(--D_small);
+}
 
 /* Positioning of the dang buttons on the demo :sob:  */
 .demo_automotive--1 {
@@ -569,6 +564,43 @@ button:hover{
     /* top: 40px; */
     bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+/* TECHNOLOGY */
+.--sectionBackground {
+    background: var(--Color_header_gradient);
+    padding-bottom: var(--D_xlarge);
+}
+.technology {
+    flex: 1 1 calc(33.333% - 1.5rem);
+}
+.technology_header {
+    display: flex;
+    align-items: center;
+    gap: var(--D_xsmall);
+
+    margin-bottom: var(--D_xsmall);
+}
+
+.technology_header_img{
+    width: var(--D_small);
+    height: var(--D_large);
+}
+
+/* .technology_header_img:nth-child(2) {
+    width: var(--D_xsmall);
+} */
+
+
+
+
 
 
 
@@ -747,6 +779,7 @@ footer {
         display: flex;
         flex-direction: column;
         gap: var(--D_medium);
+        
     }
 
     .card-items {
