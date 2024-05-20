@@ -31,7 +31,7 @@
     --Color_secondary_font: #f4f4f4;
     --Color_secondary_background: #f4f4f4;
     --haptic_secondary_color: #FEF3F9;
-    --acoustics_secondary_color: #CDE0EF;
+    --acoustics_secondary_color: #E7EFF7;
     /* Hover */
     --nav-hover: #003a71;
     
@@ -68,7 +68,7 @@
     --M_xxsmall: 0.5rem;
     --M_xsmall: 1rem;
     --M_small: 1.5rem;
-    --M_medium_: 2rem;
+    --M_medium: 2rem;
     --M_large: 2.5rem;
     --M_xlarge: 3rem;
     --M_xxlarge: 4rem;
@@ -114,9 +114,6 @@ h5, h6, p {
 
 
 
-
-
-
 /*      --------------------      NAVIGATION        --------------------      */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
@@ -139,7 +136,7 @@ a {
     text-decoration: none;
 }
 .header{
-    border-bottom: 1px solid #E2E8F0;
+    /* border-bottom: 1px solid #E2E8F0; */
     position: sticky;
     top: 0;
     z-index: 1;
@@ -147,11 +144,14 @@ a {
 
 nav {
     background-color: var(--Color_primary);
-    box-shadow: 2px 2px 10px 0px #010101;
+    box-shadow: 2px 12px 10px 0px rgb(48, 52, 55, .25);
+    width: 100%;
 }
 
 .navbar {
     display: flex;
+
+    transition: top 0.5s ease;
 }
 .hamburger {
     display: none;
@@ -175,7 +175,7 @@ nav {
 .nav-link{
     font-family: 'Raleway';
     font-weight: bold;
-    font-size: var(--D_nav);
+    font-size: var(--D_small);
     color: var(--Color_secondary_font);
     /* width: 100%; */
     height: 60px;
@@ -197,10 +197,12 @@ nav {
 .nav-logo {
     padding: var(--D_small);
     width: 100%;
-    display: inline-block;
+    /* display: inline-block; */
     
     background-size: 100%;
     background-position: center;
+
+    transition: opacity 0.5s ease;
 }
 .--primary_nav_logo {
     background-image: url(images/bluepinkcloud.jpg);
@@ -212,70 +214,9 @@ nav {
     background-image: url(images/bluesmoke.jpg);
 }
 .nav-image {
-    width: 200px;
+    width: 130px;
 }
 
-/*      --------------------      Responsive Navbar        --------------------      */
-
-@media only screen and (max-width: 768px) {
-    .navbar{
-        justify-content: end;
-        padding: var(--M_xsmall) var(--M_small);
-    }
-    .nav-image {
-        padding-top: 1rem;
-        width: 170px;
-    }
-    .nav-menu { 
-        position: fixed;
-        left: -100%;
-        flex-direction: column;
-        background-color: var(--Color_primary);
-        width: 100%;
-        border-radius: 10px;
-        text-align: left;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-        gap: var(--M_small);
-    }
-    .nav-menu.active {
-        left: 0;
-    }
-    .nav-item {
-        width: 100%;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-    .nav-menu:nth-child(1){
-        padding-top: 2rem;
-    }
-    .nav-link {
-        font-size: var(--M_nav);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .nav-link:active{
-        background-color: var(--nav-hover);
-    }
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
 
 
 
@@ -344,12 +285,18 @@ button:hover{
     background-color: var(--Color_primary);
 }
 .--HeroContact {
-    background: none;
+    transition: background-color 1.5s ease, border-color 2s ease;
+    background-color: rgb(11, 92, 170, 0);
     color: #f4f4f4;
     padding: .5rem 1rem;
     border-radius: .5rem;
-    border: #f4f4f4 solid thin;
+    border: var(--acoustics_secondary_color) solid thin;
 }
+.--HeroContact:hover {
+    border: var(--Color_primary) solid thin;
+    background-color: rgb(11, 92, 170, 1);
+}
+
 .--acousticBtn {
     border-image: url(images/bluesmoke.jpg) 30;
     border-image-width: 0 0 3px 0;
@@ -379,78 +326,73 @@ button:hover{
 .hero {
     position: relative;
     height: 440px;
- 
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
     margin-bottom: var(--D_xxlarge);
 }
+
 .heroImg {
     height: 440px;
     width: 100%;
-    
     position: absolute;
     top: 0;
     left: 0;
     z-index: -2;
 }
- 
+
 .--overlay {
-    height: 440px;
- 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(20, 20, 20, 0.7); /* Black with 70% transparency */
-    z-index: -1; /* Ensure it's between the image and the content */
+    background-color: rgba(20, 20, 20, 0.7);
+    z-index: -1;
 }
- 
+
 .hero_text {
     padding-left: var(--D_xxlarge);
 }
- 
+
 .hero_paragraph {
     margin-bottom: var(--D_large);
+    color: var(--Color_secondary_font);
 }
- 
- 
+
 .hero_header {
-    margin-bottom: var(--M_xxsmall);
+    margin-bottom: var(--D_xsmall);
+    font-size: var(--D_xxlarge);
 }
- 
+
+.--acoustics {
+    color: var(--Color_primary_acoustic);
+    
+}
+
+.--haptic {
+    color: var(--Color_primary_haptic);
+
+}
+
 .hero_secondary_header {
     margin-bottom: var(--D_large);
+    font-size: var(--D_large);
+    color: var(--Color_secondary_font);
 }
- 
+
 .hero_contact_paragraph {
     margin-bottom: var(--D_xsmall);
+    color: var(--Color_secondary_font);
 }
- 
+
 .hero_contact {
     display: flex;
     gap: var(--D_small);
 }
- 
-.hero, p, h2 {
-    color: var(--Color_secondary_font);
-}
- 
-.hero h1 {
-    color: var(--Color_primary_acoustic);
-    font-size: 64px;
- 
-}
- 
-.hero h2 {
-    font-size: 32px;
-}
- 
+
 .hero_icon {
     width: 44px;
-    
     transform: scaleX(-1);
 }
 
@@ -471,6 +413,165 @@ main {
 
 
 
+
+
+
+
+/*      --------------------      CARDS        --------------------      */
+.productsHeader{
+    text-align: center;
+    margin-bottom: var(--D_large);
+}
+
+.cards {
+    margin: 0 4rem 4rem;
+    display: flex;
+    gap: var(--D_medium);
+    /* flex-direction: column;
+    justify-content: center; */
+
+
+}
+
+.card-items {
+    display: flex;
+    gap: var(--D_medium);
+}
+
+.card-item {
+    width: calc(100%/3);
+    background-color: var(--Color_secondary_background);
+    box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
+    border-radius: var(--D_xsmall);
+}
+
+.card-itemImg {
+    width: 100%;
+    height: 200px;
+
+    border-top-left-radius: var(--D_xsmall);
+    border-top-right-radius: var(--D_xsmall);
+
+    object-fit: cover;
+}
+
+.card-item_text {
+    padding: var(--D_small);
+
+}
+
+.--cardheader {
+    text-align: center;
+    margin-bottom: var(--D_xsmall);
+}
+
+.card-item_body {
+    margin-bottom: var(--D_small);
+}
+
+
+
+
+
+
+
+
+
+
+/* Applications */
+.applications_gallery{
+    width: 100vw;
+    display: flex;
+    
+    overflow: scroll;
+
+    margin-bottom: var(--D_small);
+}
+.applications_galleryImg{
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+
+.applications_gallery_indicators {
+    display: flex;
+    gap: var(--D_small);
+    justify-content: center;
+    margin-bottom: var(--D_large);
+}
+
+.applications_gallery_dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.--activeDot {
+    background: url(images/pinksmokes.jpg);
+    background-position: 50%;
+    box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
+}
+
+.--inactiveDot {
+    background-color:  var(--haptic_secondary_color);
+    box-shadow: inset 2px 2px 16px -7px gray;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* TRENDS */
+.demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.demo_img{
+    padding: 0 var(--D_xxlarge);
+    width: 100%;
+    /* height: 400px; */
+    object-fit: cover;
+    
+}
+
+/* .demo_buttons {
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+} */
+
+/* .demo_button:nth-child(1) {
+    position: fixed;
+    bottom: 50%;
+} */
+
+.demo_button {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: var(--Color_secondary_background);
+    border: none;
+}
+
+/* .demo_text {
+
+} */
+
+/* Positioning of the dang buttons on the demo :sob:  */
+.demo_automotive--1 {
+    position: relative;
+    /* top: 40px; */
+    bottom: 0;
+}
 
 
 
@@ -514,84 +615,6 @@ footer {
     align-self: center;
 }
 
-/* ---------------------------------------- HERO -------------------------------------------- */
-.hero {
-    position: relative;
-    height: 440px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-bottom: var(--D_xxlarge);
-}
-.heroImg {
-    height: 440px;
-    width: 100%;
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-}
-
-.--overlay {
-    height: 440px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(20, 20, 20, 0.7); /* Black with 70% transparency */
-    z-index: -1; /* Ensure it's between the image and the content */
-}
-
-.hero_text {
-    padding-left: var(--D_xxlarge);
-}
-
-.hero_paragraph {
-    margin-bottom: var(--D_large);
-}
-
-
-.hero_header {
-    margin-bottom: var(--M_xxsmall);
-}
-
-.hero_secondary_header {
-    margin-bottom: var(--D_large);
-}
-
-.hero_contact_paragraph {
-    margin-bottom: var(--D_xsmall);
-}
-
-.hero_contact {
-    display: flex;
-    gap: var(--D_small);
-}
-
-.hero, p, h2 {
-    color: var(--Color_secondary_font);
-}
-
-.hero h1 {
-    color: var(--Color_primary_acoustic);
-    font-size: 64px;
-
-}
-
-.hero h2 {
-    font-size: 32px;
-}
-
-.hero_icon {
-    width: 44px;
-    
-    transform: scaleX(-1);
-}
 .contact_information_location_info {
     color: var(--Color_secondary_font);
 }
@@ -630,3 +653,138 @@ footer {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  @media only screen and (max-width: 768px) {
+    .navbar{
+        justify-content: end;
+        padding: var(--M_xsmall) var(--M_small);
+    }
+    .nav-image {
+        padding-top: 1rem;
+        width: 170px;
+    }
+    .nav-menu { 
+        position: fixed;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--Color_primary);
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+        gap: var(--M_small);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-menu:nth-child(1){
+        padding-top: 2rem;
+    }
+    .nav-link {
+        /* font-size: var(--M_small); */
+        font-size: var(--M_xsmall);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link:active{
+        background-color: var(--nav-hover);
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /*      --------------------      HERO SECTION        --------------------      */
+    .hero {
+        margin-bottom: var(--M_medium);
+    }
+    .hero_text {
+        padding-left: var(--M_small);
+    }
+    .hero_paragraph {
+        margin-bottom: var(--M_medium);
+    }
+    .hero_header {
+        font-size: var(--M_large);
+        margin-bottom: var(--M_xxsmall);
+    }
+    .hero_secondary_header {
+        margin-bottom: var(--M_medium);
+        font-size: var(--M_xsmall);
+    }
+    .hero_contact_paragraph {
+        margin-bottom: var(--M_xsmall);
+    }
+    .hero_contact {
+        gap: var(--M_xxsmall);
+    }
+
+    /*      --------------------      CARDS        --------------------      */
+    .productsHeader{
+        margin-bottom: var(--M_small);
+    }
+
+    .cards {
+        margin: 0 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: var(--D_medium);
+    }
+
+    .card-items {
+        display: flex;
+        gap: var(--D_medium);
+    }
+
+    .card-item {
+        width: 100%;
+        background-color: var(--Color_secondary_background);
+        box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
+        border-radius: var(--D_xsmall);
+    }
+
+    .card-itemImg {
+        width: 100%;
+        height: 200px;
+
+        border-top-left-radius: var(--D_xsmall);
+        border-top-right-radius: var(--D_xsmall);
+
+        object-fit: cover;
+    }
+
+    .card-item_text {
+        padding: var(--D_small);
+
+    }
+
+    .--cardheader {
+        text-align: center;
+        margin-bottom: var(--D_xsmall);
+    }
+
+    .card-item_body {
+        margin-bottom: var(--D_small);
+    }
+}
