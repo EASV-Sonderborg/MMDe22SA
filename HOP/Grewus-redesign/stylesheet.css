@@ -220,6 +220,7 @@ input[type=text], select, textarea {
     padding-top: .5rem; /* Some padding */
     padding-bottom: .5rem; /* Some padding */
     padding-left: 1rem;
+    padding-right: 1rem;
     border: none; /* To remove border, or a black border will appear */
     background-color: var(--Color_contact_background);
     border-radius: .5rem; /* Rounded borders */
