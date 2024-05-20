@@ -25,8 +25,6 @@
     --Color_primary: #0B5CAA;
     --Color_primary_acoustic: #0365b1;
     --Color_primary_haptic: #e6007e;
-    --Color_horizontal_gradient: linear-gradient(to right, #0365b1 , #e6007e);
-    --Color_vertical_gradient: linear-gradient( #0365b1 , #e6007e);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
     /* Secondary */
@@ -38,6 +36,8 @@
     --nav-hover: #003a71;
     /* Gradient */
     --Color_header_gradient: linear-gradient( #f4f4f4 , #f4f4f400);
+    --Color_horizontal_gradient: linear-gradient(to right, #0365b1 , #e6007e);
+    --Color_vertical_gradient: linear-gradient( #0365b1 , #e6007e);
     
     /* Desktop */
     /* Fonts */
