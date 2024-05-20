@@ -29,6 +29,7 @@
     --Color_vertical_gradient: linear-gradient( #0365b1 , #e6007e);
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
+    --Color_contact_background: #E7EFF7;
     /* Secondary */
     --Color_secondary_font: #f4f4f4;
     --Color_secondary_background: #f4f4f4;
@@ -177,39 +178,91 @@ h5, h6, p {
 
 
 
+
+
+
+
+
+.contact_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact_section_form_namefields {
+    display: flex;
+    gap: 2rem; /* Gap between firstname and lastname labels */
+}
+.contact_section_form_namefields .contact_section_form_formgroup {
+    flex: 1; /* Ensuring each field takes half the space */
+}
+.contact_section_form_label {
+    font-family: 'Calibri';
+    font-weight: normal;
+    font-size: var(--D_body);
+    color: var(--Color_primary_font);
+}
+.contact_section_form_section {
+    display: flex;
+    flex-direction: column;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
+    font-family: 'Calibri';
+    font-weight: normal;
+    font-size: var(--D_body);
+    color: #808081;
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    padding-top: .5rem; /* Some padding */
+    padding-bottom: .5rem; /* Some padding */
+    padding-left: 1rem;
+    border: none; /* To remove border, or a black border will appear */
+    background-color: var(--Color_contact_background);
+    border-radius: .5rem; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
+    margin-bottom: 1rem; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.contact_section_form_section_button {
     background-color: var(--Color_primary);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem; /* Afstand mellem ikon og tekst */
+    width: fit-content;
+    padding: 1rem;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  .contact_section_form_section_button:hover {
     background-color: var(--nav-hover);
   }
   
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  .contact_section_form_section_button .contact_section_form_section_icon {
+    width: 16px; /* Juster størrelsen på ikonet efter behov */
+    height: 16px;
+    transform: rotate(-15deg);
   }
+
+.contact_section_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_section_information_image {
+    max-width: 50%;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+
 
 
 
