@@ -26,11 +26,12 @@
     --Color_primary_haptic: #e6007e;
     --Color_primary_font: #303437;
     --Color_primary_background: #fafafa;
+    --Color_contact_background: #E7EFF7;
     /* Secondary */
     --Color_secondary_font: #f4f4f4;
     --Color_secondary_background: #f4f4f4;
     --haptic_secondary_color: #FEF3F9;
-    --acoustics_secondary_color: #E7EFF7;
+    --acoustics_secondary_color: #CDE0EF;
     /* Gradient */
     --Color_header_gradient: linear-gradient( #f4f4f4 , #f4f4f400);
     --Color_horizontal_gradient: linear-gradient(to right, #0365b1 , #e6007e);
@@ -576,7 +577,6 @@ button:hover{
 /* TECHNOLOGY */
 .--sectionBackground {
     background: var(--Color_header_gradient);
-    padding-bottom: var(--D_xlarge);
 }
 .technology {
     flex: 1 1 calc(33.333% - 1.5rem);
@@ -597,6 +597,30 @@ button:hover{
 /* .technology_header_img:nth-child(2) {
     width: var(--D_xsmall);
 } */
+
+
+
+
+
+
+
+
+
+
+/* Partner */
+.--partner {
+    background-color: var(--Color_contact_background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.--partnerImg {
+    padding: 1rem 1rem 0 1rem;
+    width: 80%;
+    object-fit: contain;
+}
 
 
 
