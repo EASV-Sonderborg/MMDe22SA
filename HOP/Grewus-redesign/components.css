@@ -419,7 +419,7 @@ button:hover{
 
 /*      --------------------      CARDS        --------------------      */
 .productsHeader{
-    margin-top: var(--D_xxlarge);
+    padding-top: var(--D_xxlarge);
     text-align: center;
     margin-bottom: var(--D_large);
 }
