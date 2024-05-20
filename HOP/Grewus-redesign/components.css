@@ -270,6 +270,7 @@ nav {
 /*      --------------------      BUTTON SETUP        --------------------      */
 button {
     border-radius: 4px;
+    width: fit-content;
 }
 button:hover{
     cursor: pointer;
@@ -441,7 +442,7 @@ button:hover{
 }
 
 .card-item {
-    flex: 0 1 calc(33.333% - 1.5rem);
+    flex: 0 1 calc(33.333% - 1rem);
     box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
     border-radius: var(--D_xsmall);
 }
@@ -608,12 +609,24 @@ button:hover{
 
 
 /* Partner */
-.--partner {
+.--partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--D_xxlarge);
+}
+.--partnerBlue {
     background-color: var(--Color_contact_background);
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.--partner {
+    display: flex;
+    justify-content: center;
+    
 }
 
 .--partnerImg {
@@ -622,8 +635,26 @@ button:hover{
     object-fit: contain;
 }
 
+.becomePartner{
+    /* padding: var(--D_xxlarge); */
+    display: flex;
+    gap: var(--D_medium);
+}
 
+.becomePartner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.becomePartner_header{
+    margin-bottom: var(--D_xsmall);
+}
+
+.becomePartner_body {
+    margin-bottom: var(--D_small);
+
+}
 
 
 
