@@ -619,8 +619,19 @@ button:hover{
 }
 .demo_text {
     margin-bottom: var(--D_small);
+    position: relative;
+    bottom: 300px;
+    left: 490px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 0;
 }
 /* Positioning of the dang buttons on the demo :sob:  */
+.demo_buttons {
+    height: 0;
+    width: 0;
+}
 .demo_automotive--1{
     position: relative;
     bottom: 320px;
@@ -630,6 +641,21 @@ button:hover{
     position: relative;
     bottom: 430px;
     left: 70px;
+}
+.demo_automotive--3{
+    position: relative;
+    bottom: 380px;
+    left: 20px;
+}
+.demo_automotive--4{
+    position: relative;
+    bottom: 380px;
+    right: 110px;
+}
+.demo_automotive--5{
+    position: relative;
+    bottom: 320px;
+    right: 50px;
 }
 
 
