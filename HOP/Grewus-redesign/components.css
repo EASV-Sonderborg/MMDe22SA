@@ -604,28 +604,32 @@ button:hover{
     margin-bottom: var(--D_xxlarge);
 }
 .demo_img{
-    /* padding: 0 var(--D_xxlarge); */
+    padding: 0 var(--D_xxlarge);
     width: 100%;
-    height: 50%;
     object-fit: cover;
     
 }
 .demo_button {
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    background-color: var(--Color_secondary_background);
+    background-color: var(--Color_primary_background);
     border: none;
 }
 .demo_text {
     margin-bottom: var(--D_small);
 }
 /* Positioning of the dang buttons on the demo :sob:  */
-.demo_automotive--1 {
+.demo_automotive--1{
     position: relative;
-    /* top: 40px; */
-    bottom: 0;
+    bottom: 320px;
+    left: 150px;
+}
+.demo_automotive--2{
+    position: relative;
+    bottom: 430px;
+    left: 70px;
 }
 
 
