@@ -37,3 +37,7 @@ window.addEventListener('scroll', () => {
         nav.style.height = ''; // Reset the height
     }
 });
+
+
+
+

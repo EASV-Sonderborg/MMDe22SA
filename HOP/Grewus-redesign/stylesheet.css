@@ -104,9 +104,112 @@ h5, h6, p {
 
 /* ------------------------------------------ ABOUT GREWUS ------------------------------------------ */
 
+.filter_search_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: var(--Color_secondary_background);
+  border-radius: 5px;
+  margin: 4rem;
+}
+.filter_search_section_filters {
+  display: flex;
+  align-items: center;
+}
+  
+.filter_button {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  border: 1px solid var(--Color_primary_font);
+  border-radius: 0;
+  background-color: white;
+  cursor: pointer;
+  font-size: var(--D_small);
+  color: var(--Color_primary_font);
+  margin-right: 2rem;
+}
+  
+.filter_button:hover {
+  background-color: #e6e6e6;
+}
 
+.filter_icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
 
+.search_input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  width: 200px;
+  height: 2rem;
+  background-color: white;
+}
+input[type=search] {
+  font-family: 'Calibri';
+  font-weight: normal;
+  font-size: var(--D_body);
+  color: #808081;
+  width: 24rem; /* Full width */
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none; /* To remove border, or a black border will appear */
+  background-color: white;
+  border-radius: .5rem; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+}
 
+.search_button {
+  background-color: var(--Color_primary);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  height: 2rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  align-items: center;
+}
+ 
+.search_button .search_icon {
+  width: 20px;
+  height: 20px;
+}
+/* .filter_section {
+    background-color: var(--Color_secondary_background);
+    margin: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filter_section_icon {
+    width: 2rem;
+    margin: 1.5rem;
+}
+.filter_section_filter {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.filter_section_filter_items_parent {
+    font-family: 'calibri';
+    font-size: var(--D_small);
+    color: var(--Color_primary_font);
+    padding: .5rem;
+    border: 1px solid var(--Color_primary_font);
+}
+
+.filter_section_search {
+    height: 2rem;
+} */
 
 
 
