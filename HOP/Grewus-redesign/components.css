@@ -334,7 +334,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: var(--D_xxlarge);
 }
 
 .heroImg {
