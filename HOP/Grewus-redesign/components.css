@@ -332,13 +332,13 @@ button:hover{
 
 .hero {
     position: relative;
-    height: 680px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .heroImg {
-    height: 680px;
+    height: 440px;
     width: 100%;
     position: absolute;
     top: 0;
