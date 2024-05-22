@@ -1075,6 +1075,74 @@ footer {
     }
 
 
+
+
+
+    /* --- DEMO --- */
+    .demo {
+        display: flex;
+    }
+
+    .demo_img{
+        padding: 0 var(--M_small);
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .demo_buttons {
+        display: flex;
+        gap: var(--D_xsmall);
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .demo_button {
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+    }
+
+    .demo_text {
+        margin-bottom: var(--D_small);
+        
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Positioning of the dang buttons on the demo :sob:  */
+
+    .demo_automotive--1{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .demo_automotive--2{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .demo_automotive--3{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .demo_automotive--4{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    .demo_automotive--5{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }   
+
+
+
     /* --- PARTNERS --- */
     .--partnerBlue {
         background-color: var(--Color_contact_background);
