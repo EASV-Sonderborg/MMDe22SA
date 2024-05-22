@@ -64,3 +64,4 @@ document.getElementById('subgroup_button').addEventListener('click', function() 
       selectedSubFilters.style.display = 'flex';
     }
 }
+
