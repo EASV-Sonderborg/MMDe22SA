@@ -52,7 +52,7 @@ document.getElementById('subgroup_button').addEventListener('click', function() 
     toggleSubFilters('subgroup_sub_filters');
 });
   
- function toggleSubFilters(id) {
+function toggleSubFilters(id) {
     const selectedSubFilters = document.getElementById(id);
     if (selectedSubFilters.style.display === 'flex') {
       selectedSubFilters.style.display = 'none';
@@ -65,3 +65,19 @@ document.getElementById('subgroup_button').addEventListener('click', function() 
     }
 }
 
+
+
+
+// Select all buttons with the class 'info-button'
+const buttons = document.querySelectorAll('.products_button');
+
+    // Add event listeners to each button
+    buttons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            if (index === 0) {
+              // Do something special for the first buttonalert('You clicked the first button!');
+            } else {
+              // Do something else for other buttonsalert(`You clicked button ${index + 1}`);
+            }
+        });
+    });

@@ -86,37 +86,299 @@
         </section>
 
         <!-- Products filter section -->
-        <section class="filter_search_section">
-            <section class="filter_search_section_filters">
-              <img src="images/filterIcon.svg" alt="Filter Icon" class="filter_icon">
-              <button class="filter_button" id="area_button">Area</button>
-              <button class="filter_button" id="group_button">Group</button>
-              <button class="filter_button" id="subgroup_button">Sub-group</button>
+        <section class="filter_search_box">
+            <section class="filter_search_section">
+                <section class="filter_search_section_filters">
+                    <img src="images/filterIcon.svg" alt="Filter Icon" class="filter_icon">
+                    <button class="filter_button" id="area_button">Area</button>
+                    <button class="filter_button" id="group_button">Group</button>
+                    <button class="filter_button" id="subgroup_button">Sub-group</button>
+                </section>
+                <section class="filter_search_section_search">
+                    <input type="search" placeholder="Search here..." class="search_input">
+                    <button class="search_button">
+                        <img src="images/searchIcon.svg" alt="Search Icon" class="search_icon">
+                    </button>
+                </section>
             </section>
-            <section class="filter_search_section_search">
-              <input type="search" placeholder="Search here..." class="search_input">
-              <button class="search_button">
-                <img src="images/searchIcon.svg" alt="Search Icon" class="search_icon">
-              </button>
+            <!-- Underpunkter sektioner -->
+            <section class="sub_filters" id="area_sub_filters">
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">All</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Acoustic</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Haptic</p>
+                </article>
             </section>
-          </section>
-          
-          <!-- Underpunkter sektioner -->
-          <section class="sub_filters" id="area_sub_filters">
-            <button class="sub_filter_button">Sub Area 1</button>
-            <button class="sub_filter_button">Sub Area 2</button>
-            <button class="sub_filter_button">Sub Area 3</button>
-          </section>
-          <section class="sub_filters" id="group_sub_filters">
-            <button class="sub_filter_button">Sub Group 1</button>
-            <button class="sub_filter_button">Sub Group 2</button>
-            <button class="sub_filter_button">Sub Group 3</button>
-          </section>
-          <section class="sub_filters" id="subgroup_sub_filters">
-            <button class="sub_filter_button">Sub Sub-group 1</button>
-            <button class="sub_filter_button">Sub Sub-group 2</button>
-            <button class="sub_filter_button">Sub Sub-group 3</button>
-          </section>
+            <section class="sub_filters" id="group_sub_filters">
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">All</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">AVAS</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Back-up alarm</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Buzzer (magnetic)</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Buzzer (piezo)</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Exciter</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Loudspearker</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Siren</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">ERM</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">LRA</p>
+                </article>
+            </section>
+            <section class="sub_filters" id="subgroup_sub_filters">
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">All</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Magnetic</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Loudspeaker</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Angular</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Round</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">Piezo</p>
+                </article>
+                <article class="sub_filter_button">
+                    <input type="checkbox" name="checkbox" value="checkbox">
+                    <p class="sub_filter_button_text">With housing</p>
+                </article>
+            </section>
+        </section>
+        
+        <!-- Product cards -->
+        <article class="products_cards">
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-avas-stecker.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">AVAS Sound System</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                        
+                        <li class="products_card_list_item_extended"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item_extended --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>    
+                    </ul>
+                    <button class="products_button">More information</button>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bme1205s02a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bme 1205s02a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bme8503s-04a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bme 8503s-04a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-bmi1606pwla.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bmi 1606pwla</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bpi2612p06a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bpi 2612p06a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-bus102c930vbw02a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bus102c930 vbw02a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-lra1003ca.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">lra 1003ca</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-avas-stecker.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">AVAS Sound System</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bme1205s02a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bme 1205s02a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bme8503s-04a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bme 8503s-04a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-bmi1606pwla.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bmi 1606pwla</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-bpi2612p06a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bpi 2612p06a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="akustisk">
+                <div class="ribbon">Acoustic</div>
+                <img class="products_card_itemImg" src="images/icon-bus102c930vbw02a.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">bus102c930 vbw02a</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+            <section class="products_card_item" data-type="haptisk">
+                <div class="ribbon">Haptic</div>
+                <img class="products_card_itemImg" src="images/icon-lra1003ca.jpg" alt="">
+                <section class="products_card_item_text">
+                    <h3 class="products_card_header">lra 1003ca</h3>
+                    <ul>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>SPL:</strong> 50 - 90 dBA</li>
+                        <li class="products_card_list_item"><strong>Operating voltage:</strong> 9 - 16V</li>
+                        <li class="products_card_list_item --dark_products_card_list_item"><strong>Dimensions:</strong> 77mm</li>
+                    </ul>
+                    <a href="#" class="products_btn">More information</a>
+                </section>
+            </section>
+        </article>
         
 
     </main>
