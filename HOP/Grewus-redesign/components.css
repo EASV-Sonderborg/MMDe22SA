@@ -286,7 +286,7 @@ button:hover{
     border: none;
 }
 .--secondaryBtn:hover {
-    background-color: var(--Color_primary);
+    background-color: var(--nav-hover);
 }
 .--secondaryBtn:active {
     box-shadow: inset 2px 2px 12px var(--nav-hover);
