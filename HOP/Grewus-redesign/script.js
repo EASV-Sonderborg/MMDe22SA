@@ -41,3 +41,26 @@ window.addEventListener('scroll', () => {
 
 
 
+// Filter section
+document.getElementById('area_button').addEventListener('click', function() {
+    toggleSubFilters('area_sub_filters');
+});
+document.getElementById('group_button').addEventListener('click', function() {
+    toggleSubFilters('group_sub_filters');
+});
+document.getElementById('subgroup_button').addEventListener('click', function() {
+    toggleSubFilters('subgroup_sub_filters');
+});
+  
+ function toggleSubFilters(id) {
+    const selectedSubFilters = document.getElementById(id);
+    if (selectedSubFilters.style.display === 'flex') {
+      selectedSubFilters.style.display = 'none';
+    } else {
+      const subFilters = document.getElementsByClassName('sub_filters');
+      for (let i = 0; i < subFilters.length; i++) {
+        subFilters[i].style.display = 'none';
+      }
+      selectedSubFilters.style.display = 'flex';
+    }
+}
