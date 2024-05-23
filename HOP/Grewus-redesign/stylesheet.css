@@ -380,23 +380,20 @@ input[type=search] {
 
 
 .employees_contact_section_image {
-  background-image: url(images/meetTheTeam.png);
+  background-image: url(images/blurredTeam.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 16rem;
+  height: 12rem;
+  align-content: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
 }
-/* .employees_contact_section_image_blurr {
-  background-image: url(images/blurr.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 16rem;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-} */
 .employees_contact_section_image_text {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: var(--D_header);
+  color: var(--Color_secondary_font);
 }
 
 
