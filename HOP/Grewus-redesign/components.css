@@ -309,6 +309,13 @@ button:hover{
     border: var(--Color_primary) solid thin;
     background-color: rgb(11, 92, 170, 1);
 }
+.--mainBtn {
+    border-image: var(--Color_horizontal_gradient) 30;
+    border-image-width: 0 0 3px 0;
+    border-bottom: 3px solid transparent;
+    padding: 4px;
+    background-color: transparent;
+}
 .--acousticBtn {
     border-image: url(images/bluesmoke.jpg) 30;
     border-image-width: 0 0 3px 0;
