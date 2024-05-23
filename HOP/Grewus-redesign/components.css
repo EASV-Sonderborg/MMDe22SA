@@ -613,7 +613,6 @@ button:hover{
 .gallery {
     display: flex;
     justify-content: center;
-    /* gap: var(--D_xxlarge); */
     gap: -30px;
     margin-bottom: var(--D_large);
 }
@@ -623,16 +622,11 @@ button:hover{
     object-fit: cover;
 }
 .--active {
-    /* margin: var(--D_xlarge) 0; */
-    /* transform: scale(1.25, 1.25); */
-    
     width: 800px;
     
     box-shadow: 2px 2px 16px 0px rgb(20, 20, 20, .5);
 }
 .--inactive {
-    /* transform: scale(1, 1) translate(20px, 20px); */
-
     filter: blur(3px);
     z-index: -1;
 }
@@ -1035,7 +1029,6 @@ footer {
 
 
 
-  /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: absolute;
@@ -1113,7 +1106,7 @@ footer {
         font-size: var(--M_xsmall);
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .nav-link:active{
         background-color: var(--nav-hover);
@@ -1133,6 +1126,18 @@ footer {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
+
+
+
+
+    /* Dropdown content */
+    /* .dropdown:hover .dropdown-content {
+        display: none;
+    }     */
+
+
+
 
 
     /*      --------------------      HERO SECTION        --------------------      */
@@ -1206,6 +1211,9 @@ footer {
     }
 
     /*      --------------------      CARDS        --------------------      */
+    .technology {
+        width: 100%;
+    }
     .technology_header_img {
         width: var(--M_xsmall);
         height: var(--M_small);
