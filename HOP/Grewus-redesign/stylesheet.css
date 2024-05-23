@@ -285,6 +285,7 @@ input[type=search] {
   height: 30px;
   background-color: var(--Color_primary);
   color: white;
+  font-family: 'calibri';
   text-align: center;
   line-height: 30px;
   transform: rotate(-45deg);
@@ -356,6 +357,50 @@ input[type=search] {
 
 
 
+.contact_information_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 4rem;
+}
+.contact_information_section_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_information_section_image {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-bottom: 1rem;
+}
+.contact_information_section_arrow {
+  width: 2rem;
+  margin-bottom: .5rem;
+}
+
+
+
+.employees_contact_section_image {
+  background-image: url(images/meetTheTeam.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+}
+/* .employees_contact_section_image_blurr {
+  background-image: url(images/blurr.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+} */
+.employees_contact_section_image_text {
+  text-align: center;
+}
+
+
+
 /* --------------------------------------------- PRODUCTS --------------------------------------------- */
 
 
@@ -364,13 +409,30 @@ input[type=search] {
 /* ---------------------------------------- PRODUCT: INDIVIDUAL ---------------------------------------- */
 
 .video_section {
-  background-color: var(--Color_header_gradient);
-  /* padding-left: 4rem;
+  background: var(--Color_header_gradient);
+  padding-left: 4rem;
   padding-right: 4rem;
-  padding-top: ; */
-  padding: 4rem;
+  padding-top: 4rem;
+  /* padding: 4rem; */
 }
 .video_section_video {
   width: 100%;
   height: 100%;
+}
+
+.learn_more_section {
+  margin: 4rem;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center
+}
+.learn_more_contact {
+  display: flex;
+  flex-direction: row;
+  gap: .25rem;
+}
+.learn_more_contact_link {
+  font-weight: bold;
+  text-decoration: underline;
 }
