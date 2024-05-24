@@ -695,9 +695,15 @@ button:hover{
     margin-bottom: var(--D_large);
 }
 .applications_gallery_dot {
+    border: none;
     width: 22px;
     height: 22px;
     border-radius: 50%;
+}
+.--inactiveDot:active{
+    background-color: rgb(230, 0, 126, .25);
+    /* box-shadow: inset 2px 2px 16px -7px grey,
+    -2px -2px 16px -4px var(--haptic_secondary_color); */
 }
 .--activeDot {
     background: url(images/pinksmokes.jpg);
@@ -707,7 +713,6 @@ button:hover{
 .--inactiveDot {
     background-color:  var(--haptic_secondary_color);
     box-shadow: inset 2px 2px 16px -7px gray;
-
 }
 
 /* Applications ACOUSTICS */

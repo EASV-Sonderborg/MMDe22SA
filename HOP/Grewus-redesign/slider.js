@@ -4,10 +4,13 @@ const nextButton = document.querySelector('.slide-arrow-next');
 const slider = document.querySelector('.gallery');
 const galleryImages = document.querySelectorAll('.galleryImg');
 
+const indicators = document.querySelectorAll('.applications_gallery_dot')
+
 let slide1 = galleryImages[0].src;
 let slide2 = galleryImages[1].src;
 let slide3 = galleryImages[2].src;
 let index = 0;
+
 
 nextButton.addEventListener('click', () => {
     const temp = slide1;
@@ -21,17 +24,39 @@ nextButton.addEventListener('click', () => {
     galleryImages[2].src = slide3;
 
     if (galleryImages[0].src === slide1) {
-        galleryImages[0].class.add = '--active';
-        galleryImages[0].class.remove = '--inactive';
+        galleryImages[0].classList.add = '--active';
+        galleryImages[0].classList.remove = '--inactive';
+        
     } else if(galleryImages[1].src === slide2) {
-        galleryImages[1].class.add = '--active';
-        galleryImages[1].class.remove = '--inactive';
+        galleryImages[1].classList.add = '--active';
+        galleryImages[1].classList.remove = '--inactive';
+        
+         
+        
+        
     } else if(galleryImages[2].src === slide3) {
-        galleryImages[2].class.add = '--active';
-        galleryImages[2].class.remove = '--inactive';
+        galleryImages[2].classList.add = '--active';
+        galleryImages[2].classList.remove = '--inactive';
+        
+        
     } else {
-        galleryImages.class.remove = '--active';
+        galleryImages.classList.remove = '--active';
         
     }
 
+    
 });
+
+let indicator1 = indicators[0];
+let indicator2 = indicators[1];
+let indicator3 = indicators[2];
+
+// indicators.forEach(indicator => {
+//     indicators.addEventListener('click', () => {
+//         indicator[0] = galleryImages[0];
+//     })
+// });
+
+indicator1.addEventListener('click', () => {
+    indicator1 = galleryImages[1].src = galleryImages[0];
+})
