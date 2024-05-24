@@ -147,6 +147,7 @@ input[type=search] {
   gap: var(--D_medium);
   row-gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .products_card_item {
   position: relative; /* Needed for the ribbon */
@@ -357,4 +358,38 @@ input[type=search] {
 .learn_more_contact_link {
   font-weight: bold;
   text-decoration: underline;
+}
+
+
+
+/* -------------------------------------    RESPONSIVE    ---------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+  .filter_search_box {
+    background-color: var(--Color_secondary_background);
+    margin: 1.5rem;
+  }
+  .filter_search_section {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+
+  .products_cards {
+    margin: 0 1.5rem 1.5rem;
+    display: flex;
+    gap: var(--D_medium);
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .products_card_item {
+    flex: 0 1 calc(50% - 1rem);
+    box-shadow: 2px 2px 16px 0px rgb(48, 52, 55, .25);
+    border-radius: var(--D_xsmall);
+}
+
 }
