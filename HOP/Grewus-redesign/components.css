@@ -1,12 +1,20 @@
 
 /*      --------------------      GENEREL RULES        --------------------      */
 /*
+    https://www.linkedin.com/pulse/best-practices-writing-clean-maintainable-code-udara-abeythilake/
+
+    "Naming stuff is hard"
     - Use classes instead of id
-    - Use Snake Case for naming stuff (name_name)
+    - Use Snake Case for naming stuff (snake_case)
+    - Use descriptive names ("calculate_average" instead of "avg")
+    - Avoid abbreviations ("photo_section" instead of "pt_sec")
+    - No reserved keywords ("if", "else" or "for")
+
+    "Make it skim reading proof, to avoid struggels"
+    - Use proper indentation (Indent code properly to make it easier to read and follow, such as where loops and conditional statements begin and end)
+    - Use whitespace (separate different sections of code with blank lines to make it easier to distinguish)
+    - Use comments (not everywere, but where it makes sense to explain stuff)
 */
-
-
-
 
 
 
@@ -862,6 +870,9 @@ button:hover{
     margin-bottom: var(--D_small);
 
 }
+.world_map {
+    max-width: 100%;
+}
 
 
 
@@ -1200,6 +1211,22 @@ footer {
         font-size: var(--M_subheader);
     }
 
+
+    /* -----------------------      Sub-header section      ------------------------ */
+    .subheader_section {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1.5rem;
+    }
+    .subheader_section_image img {
+        display: none;
+    }
+
+    /* -------------------------        Meet the team       ------------------------- */
+    .meet_the_team_section {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
 
 
 

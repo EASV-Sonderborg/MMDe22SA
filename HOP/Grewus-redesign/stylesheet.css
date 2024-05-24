@@ -17,90 +17,6 @@
 
 
 
-/*      --------------------      ROOT        --------------------      */
-
-:root {
-    /* Colors*/
-    /* Primary */
-    --Color_primary: #0B5CAA;
-    --Color_primary_acoustic: #0365b1;
-    --Color_primary_haptic: #e6007e;
-    --Color_primary_font: #303437;
-    --Color_primary_background: #fafafa;
-    --Color_contact_background: #E7EFF7;
-    /* Secondary */
-    --Color_secondary_font: #f4f4f4;
-    --Color_secondary_background: #f4f4f4;
-    --haptic_secondary_color: #FEF3F9;
-    --acoustics_secondary_color: #CDE0EF;
-    /* Hover */
-    --nav-hover: #003a71;
-    /* Gradient */
-    --Color_header_gradient: linear-gradient( #f4f4f4 , #f4f4f400);
-    --Color_horizontal_gradient: linear-gradient(to right, #0365b1 , #e6007e);
-    --Color_vertical_gradient: linear-gradient( #0365b1 , #e6007e);
-    
-    /* Desktop */
-    /* Fonts */
-    --D_header: 2rem;
-    --D_subheader: 1.5rem;
-    --D_cardheader: 1.25rem;
-    --D_nav: 1.25rem;
-    --D_sub__nav: 1.25rem;
-    --D_body: 1rem;
-    --D_button: 1rem;
-    --D_footer: 1rem;
-    /* Spacing */
-    /* Spacing */
-    --D_xsmall: 0.5rem;
-    --D_small: 1rem;
-    --D_medium: 1.5rem;
-    --D_large: 2rem;
-    --D_xlarge: 3rem;
-    --D_xxlarge: 4rem;
-
-    /* Mobile */
-    /* Fonts */
-    --M_header: 1.5rem;
-    --M_subheader: 1.25rem;
-    --M_cardheader: 1.125rem;
-    --M_nav: 1.125rem;
-    --M_sub__nav: 1.125rem;
-    --M_body: 1rem;
-    --M_button: 1rem;
-    --M_footer: 1rem;
-    /*Spacing */
-    --M_xxsmall: 0.5rem;
-    --M_xsmall: 1rem;
-    --M_small: 1.5rem;
-    --M_medium_: 2rem;
-    --M_large: 2.5rem;
-    --M_xlarge: 3rem;
-    --M_xxlarge: 4rem;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-}
-body {
-    background-color: var(--Color_primary_background);
-}
-h1, h2, h3, h4 {
-    font-family: 'Raleway';
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--Color_primary_font);
-}
-h5, h6, p {
-    font-family: 'Calibri';
-    font-weight: normal;
-    color: var(--Color_primary_font);
-}
-
 
 /* ------------------------------------------ ABOUT GREWUS ------------------------------------------ */
 
@@ -181,7 +97,6 @@ input[type=search] {
 }
 
 /* Sub filters */
-
 .sub_filters {
   display: none;
   margin-top: 1rem;
@@ -330,39 +245,6 @@ input[type=search] {
 
 
 /* --------------------------------------------- CONTACT --------------------------------------------- */
-.meet_the_team_section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-.meet_the_team_section_image img {
-  width: 100%;
-  border-radius: .5rem;
-}
-.meet_the_team_section_header {
-  color: var(--Color_primary_font);
-  display: flex;
-  justify-content: left;
-  align-items: center;
-}
-.meet_the_team_section_header::before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 50px;
-  background: var(--Color_vertical_gradient); /* Gradient on the vertical line */
-  margin-right: 1rem;
-}
-.meet_the_team_section_text {
-  color: var(--Color_primary_font);
-  line-height: 1.5;
-}
-
-
 
 .contact_information_section {
   display: grid;
