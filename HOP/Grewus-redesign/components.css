@@ -133,6 +133,15 @@ h3 {
     display: none
 }
 
+.backToTop{
+    position: fixed; 
+    z-index: 1;
+    right: 4rem; 
+    bottom: 2rem;
+    float: right;
+    display: none;
+}
+
 /*      --------------------      NAVIGATION        --------------------      */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
