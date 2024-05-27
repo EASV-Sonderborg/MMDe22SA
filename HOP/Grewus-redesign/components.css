@@ -491,12 +491,14 @@ button:hover{
 .header_section {
     background: var(--Color_header_gradient);
     max-width: 100%;
-    padding: 4rem;
+    /* padding: 4rem; */
+    padding: 0 4rem 0;
 }
 .header_section_header {
     color: var(--Color_primary_font);
     text-align: center;
     margin-bottom: 2rem;
+    padding-top: var(--D_large);
     font-size: var(--D_header);
 }
 .header_section_info {
@@ -585,7 +587,7 @@ button:hover{
     margin-bottom: var(--D_large);
 }
 .cards {
-    margin: 0 4rem 4rem;
+    margin: 0 4rem 2rem;
     display: flex;
     gap: var(--D_medium);
     row-gap: 2rem;
@@ -645,8 +647,7 @@ button:hover{
 .gallery {
     display: flex;
     justify-content: center;
-    gap: -30px;
-    margin-bottom: var(--D_large);
+    margin-bottom: var(--D_small);
 }
 .galleryImg {
     width: 400px;
@@ -763,7 +764,7 @@ button:hover{
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: var(--D_xxlarge);
+    margin-bottom: var(--D_large);
 }
 .demo_img{
     padding: 0 var(--D_xxlarge);
