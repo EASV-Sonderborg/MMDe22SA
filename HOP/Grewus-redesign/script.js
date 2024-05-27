@@ -1,18 +1,52 @@
+// const hamburger = document.querySelector(".hamburger");
+// const navMenu = document.querySelector(".nav-menu");
+// const navLink = document.querySelectorAll(".nav-link");
+// hamburger.addEventListener("click", mobileMenu);
+// navLink.forEach(n => n.addEventListener("click", closeMenu));
+// function mobileMenu() {
+//     hamburger.classList.toggle("active");
+//     navMenu.classList.toggle("active");
+// }
+// function closeMenu() {
+//     hamburger.classList.remove("active");
+//     navMenu.classList.remove("active");
+// }
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
+const dropbtns = document.querySelectorAll('.dropbtn');
+
 hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+dropbtns.forEach(dropbtn => {
+    dropbtn.addEventListener('click', (event) => {
+        const dropdownContent = event.target.nextElementSibling;
+        dropdownContent.classList.toggle('--responsive');
+        closeDropdown(event.target); // Pass the current dropbtn to the closeDropdown function
+    });
+});
+
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-}
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    closeAllDropdowns(); // Close all dropdowns when the mobile menu is toggled
 }
 
+function closeAllDropdowns() {
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+    dropdownContents.forEach(dropdown => {
+        dropdown.classList.remove('--responsive');
+    });
+}
 
+function closeDropdown(currentDropbtn) {
+    const dropdownContents = document.querySelectorAll('.dropdown-content');
+    dropdownContents.forEach(dropdown => {
+        if (dropdown !== currentDropbtn.nextElementSibling) {
+            dropdown.classList.remove('--responsive');
+        }
+    });
+}
 
 
 
