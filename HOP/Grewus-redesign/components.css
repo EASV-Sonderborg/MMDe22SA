@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/* Style the navigation menu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* Header font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Paragraph text */
+
 
 /*      --------------------      GENEREL RULES        --------------------      */
 /*
@@ -109,13 +118,13 @@ body {
     background-color: var(--Color_primary_background);
 }
 h1, h2, h3, h4 {
-    font-family: 'Raleway';
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--Color_primary_font);
 }
 h5, h6, p {
-    font-family: 'Calibri';
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: normal;
     color: var(--Color_primary_font);
 }
@@ -144,9 +153,9 @@ h3 {
 
 /*      --------------------      NAVIGATION        --------------------      */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap'); */
 /* Style the navigation menu */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap'); */
 * {
     margin: 0;
     padding: 0;
